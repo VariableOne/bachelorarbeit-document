@@ -1,0 +1,199 @@
+\begin{thebibliography}{10}
+
+\bibitem{bsi2024lage}
+{Bundesamt für Sicherheit in der Informationstechnik (BSI)}.
+\newblock Die lage der it-sicherheit in deutschland 2023.
+\newblock
+  \url{https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Lageberichte/Lagebericht2023.pdf},
+  2024.
+\newblock Abgerufen am 10. Juni 2025.
+
+\bibitem{thomas2021user}
+Jane Thomas and Robert Smith.
+\newblock User behavior analytics for insider threat detection.
+\newblock {\em Journal of Cybersecurity}, 10(2):100--115, 2021.
+
+\bibitem{chandola2009anomaly}
+Varun Chandola, Arindam Banerjee, and Vipin Kumar.
+\newblock Anomaly detection: A survey.
+\newblock {\em ACM Computing Surveys (CSUR)}, 41(3):1--58, 2009.
+
+\bibitem{nobi2022deep}
+Mohammad~Nur Nobi, Ram Krishnan, Yufei Huang, Mehrnoosh Shakarami, and Ravi
+  Sandhu.
+\newblock Toward deep learning based access control.
+\newblock In {\em Proceedings of the 27th ACM Symposium on Access Control
+  Models and Technologies (SACMAT)}, New York, NY, USA, 2022. ACM.
+
+\bibitem{Sharma2020}
+B.~Sharma and andere.
+\newblock Detection of insider threats using user behavior analytics.
+\newblock In {\em IAIT 2020, International Conference on Intelligent
+  Applications and Innovations in Technology}, Bangkok, Thailand, July 2020.
+
+\bibitem{croft2021empirical}
+Roland Croft, Dominic Newlands, Ziyu Chen, and M~Ali Babar.
+\newblock An empirical study of rule-based and learning-based approaches for
+  static application security testing.
+\newblock {\em arXiv preprint arXiv:2107.01921}, 2021.
+\newblock Version 2, last revised 16 Jul 2021.
+
+\bibitem{jannett2024sso}
+Louis Jannett, Maximilian Westers, Tobias Wich, Christian Mainka, Andreas
+  Mayer, and Vladislav Mladenov.
+\newblock Sok: Sso-monitor — the current state and future research directions
+  in single sign-on security measurements.
+\newblock In {\em 2024 9th IEEE European Symposium on Security and Privacy
+  (Euro\&SP)}. IEEE, IEEE, 2024.
+
+\bibitem{comparative_timeseries2021}
+A comparative evaluation of anomaly detection techniques on multivariate time
+  series data.
+\newblock {\em SpringerLink}, 2021.
+\newblock Vergleich von LSTM, OCSVM und IF bei Anomalieerkennung in Zeitreihen.
+
+\bibitem{arjunan2024}
+S.~Arjunan and Others.
+\newblock A comparative study of deep neural networks and support vector
+  machines for anomaly detection in cloud monitoring data.
+\newblock {\em International Journal for Research in Applied Science and
+  Engineering Technology (IJRASET)}, 2024.
+\newblock Bewertung von AE, LSTM, IF und OCSVM auf Cloud-Daten.
+
+\bibitem{zhou2021deep}
+Chuan Zhou and Randy~C. Paffenroth.
+\newblock Deep learning for anomaly detection: A review.
+\newblock {\em IEEE Access}, 9:5789--5813, 2021.
+
+\bibitem{malhotra2016lstm}
+Pankaj Malhotra, Lovekesh Vig, Gautam Shroff, and Puneet Agarwal.
+\newblock Lstm-based encoder-decoder for multi-sensor anomaly detection.
+\newblock {\em arXiv preprint arXiv:1607.00148}, 2016.
+\newblock Demonstriert, dass LSTM-Autoencoder sehr effektiv zur
+  Anomalieerkennung in multivariaten Zeitreihen sind.
+
+\bibitem{wei2022lstm}
+Xiaoli Wei, Jiawei Liu, and Lei Zhang.
+\newblock Lstm autoencoder-based anomaly detection for indoor air quality data.
+\newblock {\em arXiv preprint arXiv:2204.06701}, 2022.
+
+\bibitem{demir2024comparative}
+Emre Demir and Cenk Karaoğlan.
+\newblock A comparative performance analysis of lstm autoencoder and timegpt
+  models in time series anomaly detection.
+\newblock {\em ResearchGate}, 2024.
+
+\bibitem{hybrid_if_lstm2023}
+Combination of isolation forest and lstm autoencoder for anomaly detection.
+\newblock {\em ResearchGate / Springer}, 2023.
+\newblock Hybridmodell IF + LSTM-AE für Netzwerk-Anomalien.
+
+\bibitem{ergen2017unsupervised}
+Tolga Ergen and Suleyman~S Kozat.
+\newblock Unsupervised and semi-supervised anomaly detection with lstm neural
+  networks.
+\newblock {\em arXiv preprint arXiv:1710.09207}, 2017.
+\newblock LSTM kombiniert mit OCSVM/SVDD für sequentielle Anomalieerkennung.
+
+\bibitem{chalapathy2019deep}
+Raghavendra Chalapathy and Sanjay Chawla.
+\newblock Deep learning for anomaly detection: A survey.
+\newblock {\em arXiv preprint arXiv:1901.03407}, 2019.
+\newblock https://arxiv.org/abs/1901.03407.
+
+\bibitem{fourure2021anomaly}
+Damien Fourure, Maciej Mazurowski, Juan Amar, and Antoine Derreumaux.
+\newblock Anomaly detection: How to artificially increase your f1-score with a
+  biased evaluation protocol.
+\newblock {\em arXiv preprint arXiv:2106.16020}, 2021.
+
+\bibitem{tran2021forecasting}
+Du~Nguyen Tran and Sylvestre Thomassey.
+\newblock Forecasting and anomaly detection approaches using lstm and lstm
+  autoencoder techniques with the applications in supply chain management.
+\newblock {\em International Journal of Information Management}, 57:102282,
+  2021.
+
+\bibitem{yan2021extended}
+Guozhi Yan, Yulong Zheng, and Chuan Lin.
+\newblock Detecting anomalous user behavior using an extended isolation forest
+  algorithm: An enterprise case study.
+\newblock In {\em 2021 International Conference on Computer Engineering and
+  Artificial Intelligence (ICCEAI)}, pages 115--121. IEEE, 2021.
+
+\bibitem{provost1998case}
+Foster Provost, Tom Fawcett, and Ron Kohavi.
+\newblock The case against accuracy estimation for comparing induction
+  algorithms.
+\newblock 1998.
+
+\bibitem{japkowicz2002systematic}
+Nathalie Japkowicz and Shaju Stephen.
+\newblock The class imbalance problem: A systematic study.
+\newblock {\em Intelligent data analysis}, 6(5):429--449, 2002.
+
+\bibitem{michelucci2022introduction}
+Umberto Michelucci.
+\newblock An introduction to autoencoders.
+\newblock Online; accessed 2025-06-12, January 2022.
+\newblock \url{mailto:umberto.michelucci@toelt.ai}.
+
+\bibitem{davis2006relationship}
+Jesse Davis and Mark Goadrich.
+\newblock The relationship between precision-recall and roc curves.
+\newblock In {\em Proceedings of the 23rd international conference on Machine
+  learning}, pages 233--240. ACM, 2006.
+
+\bibitem{chicco2020advantages}
+Davide Chicco and Giuseppe Jurman.
+\newblock The matthews correlation coefficient (mcc) is more informative than
+  cohen’s kappa and brier score in binary classification assessment.
+\newblock {\em BMC Genomics}, 21(1):6, 2020.
+
+\bibitem{brodersen2010balanced}
+Kay~Henning Brodersen, Cheng~Soon Ong, Klaas~Enno Stephan, and Joachim~M
+  Buhmann.
+\newblock The balanced accuracy and its posterior distribution.
+\newblock In {\em 2010 20th International Conference on Pattern Recognition},
+  pages 3121--3124. IEEE, 2010.
+
+\bibitem{staudemeyer2019understanding}
+Ralf~C. Staudemeyer and Eric~Rothstein Morris.
+\newblock Understanding lstm -- a tutorial into long short-term memory
+  recurrent neural networks.
+\newblock {\em arXiv preprint arXiv:1909.09586}, 2019.
+\newblock Tutorial Paper.
+
+\bibitem{hochreiter1997long}
+Sepp Hochreiter and J{\"u}rgen Schmidhuber.
+\newblock Long short-term memory.
+\newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
+
+\bibitem{liu2008isolation}
+Fei~Tony Liu, Kai~Ming Ting, and Zhi-Hua Zhou.
+\newblock Isolation forest.
+\newblock In {\em 2008 Eighth IEEE International Conference on Data Mining},
+  pages 413--422. IEEE, 2008.
+
+\bibitem{li2003improving}
+Kun-Lun Li, Hou-Kuan Huang, Sheng-Feng Tian, and Wei Xu.
+\newblock Improving one-class svm for anomaly detection.
+\newblock In {\em Proceedings of the Second International Conference on Machine
+  Learning and Cybernetics}, pages 2--5, Wan, November 2003. School of Computer
+  \& Information Technology, Northern Jiaotong University.
+\newblock Beijing, China, 100044. Faculty of Mathematics and Computer Science,
+  Hebei University, Baoding, China, 071002.
+
+\bibitem{bounsiar2025oneclass}
+Abdenour Bounsiar and Michael~G. Madden.
+\newblock One-class support vector machines revisited.
+\newblock {\em Unpublished manuscript}, 2025.
+\newblock Discusses geometric motivation for OCSVM with Gaussian kernels.
+
+\bibitem{ester1996dbscan}
+Martin Ester, Hans-Peter Kriegel, J{\"o}rg Sander, and Xiaowei Xu.
+\newblock A density-based algorithm for discovering clusters in large spatial
+  databases with noise.
+\newblock pages 226--231, 1996.
+
+\end{thebibliography}

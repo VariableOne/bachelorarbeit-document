@@ -1,0 +1,56 @@
+This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: bachelorarbeit.aux
+The style file: unsrt.bst
+Database file #1: quellen.bib
+I was expecting a `,' or a `}'---line 255 of file quellen.bib
+ :  
+ :  url = {https://arxiv.org/abs/2201.03898}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty author in comparative_timeseries2021
+Warning--empty author in hybrid_if_lstm2023
+Warning--empty journal in provost1998case
+Warning--empty journal in ester1996dbscan
+You've used 31 entries,
+            1791 wiz_defined-function locations,
+            631 strings with 10236 characters,
+and the built_in function-call counts, 6852 in all, are:
+= -- 636
+> -- 298
+< -- 6
++ -- 111
+- -- 80
+* -- 385
+:= -- 1083
+add.period$ -- 110
+call.type$ -- 31
+change.case$ -- 31
+chr.to.int$ -- 0
+cite$ -- 35
+duplicate$ -- 334
+empty$ -- 664
+format.name$ -- 80
+if$ -- 1566
+int.to.chr$ -- 0
+int.to.str$ -- 31
+missing$ -- 29
+newline$ -- 168
+num.names$ -- 29
+pop$ -- 104
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 165
+stack$ -- 0
+substring$ -- 333
+swap$ -- 86
+text.length$ -- 6
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 4
+while$ -- 59
+width$ -- 33
+write$ -- 354
+(There was 1 error message)

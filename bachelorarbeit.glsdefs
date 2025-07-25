@@ -1,0 +1,784 @@
+\glsdefs@newdocentry{abac}%
+{%
+name={ABAC},%
+sort={ABAC},%
+type={main},%
+first={ABAC},%
+firstplural={ABACs},%
+text={ABAC},%
+plural={ABACs},%
+description={Zugriffskontrolle basierend auf Benutzerattributen wie Rolle, Standort, Zeit etc.},%
+descriptionplural={Zugriffskontrolle basierend auf Benutzerattributen wie Rolle, Standort, Zeit etc.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{aucpr}%
+{%
+name={AUC-PR},%
+sort={AUC-PR},%
+type={main},%
+first={AUC-PR},%
+firstplural={AUC-PRs},%
+text={AUC-PR},%
+plural={AUC-PRs},%
+description={Area Under the Precision and Recall Curve – misst die Leistung eines Modells im Umgang mit unausgeglichenen Klassen.},%
+descriptionplural={Area Under the Precision and Recall Curve – misst die Leistung eines Modells im Umgang mit unausgeglichenen Klassen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{aucroc}%
+{%
+name={AUC-ROC},%
+sort={AUC-ROC},%
+type={main},%
+first={AUC-ROC},%
+firstplural={AUC-ROCs},%
+text={AUC-ROC},%
+plural={AUC-ROCs},%
+description={Area Under the Receiver Operating Characteristic Curve – misst die Trennschärfe eines Klassifikationsmodells.},%
+descriptionplural={Area Under the Receiver Operating Characteristic Curve – misst die Trennschärfe eines Klassifikationsmodells.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{Autoencoder}%
+{%
+name={AE},%
+sort={AE},%
+type={main},%
+first={AE},%
+firstplural={AEs},%
+text={AE},%
+plural={AEs},%
+description={Autoencoder – Neuronales Netzwerk zur komprimierten Darstellung und Rekonstruktion von Daten.},%
+descriptionplural={Autoencoder – Neuronales Netzwerk zur komprimierten Darstellung und Rekonstruktion von Daten.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{balancedaccuracy}%
+{%
+name={Balanced Accuracy},%
+sort={Balanced Accuracy},%
+type={main},%
+first={Balanced Accuracy},%
+firstplural={Balanced Accuracys},%
+text={Balanced Accuracy},%
+plural={Balanced Accuracys},%
+description={Durchschnitt aus Sensitivität (Recall) und Spezifität; besonders geeignet bei unausgeglichenen Klassenverhältnissen},%
+descriptionplural={Durchschnitt aus Sensitivität (Recall) und Spezifität; besonders geeignet bei unausgeglichenen Klassenverhältnissen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{clientrole}%
+{%
+name={Client-Role},%
+sort={Client-Role},%
+type={main},%
+first={Client-Role},%
+firstplural={Client-Roles},%
+text={Client-Role},%
+plural={Client-Roles},%
+description={Client-spezifische Rollen in Keycloak, die Zugriffsrechte innerhalb einer bestimmten Anwendung steuern},%
+descriptionplural={Client-spezifische Rollen in Keycloak, die Zugriffsrechte innerhalb einer bestimmten Anwendung steuern},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dbscan}%
+{%
+name={DBSCAN},%
+sort={DBSCAN},%
+type={main},%
+first={DBSCAN},%
+firstplural={DBSCANs},%
+text={DBSCAN},%
+plural={DBSCANs},%
+description={Density-Based Spatial Clustering of Applications with Noise – Clustering-Verfahren für dichte Datenregionen.},%
+descriptionplural={Density-Based Spatial Clustering of Applications with Noise – Clustering-Verfahren für dichte Datenregionen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{dgx}%
+{%
+name={DGX},%
+sort={DGX},%
+type={main},%
+first={DGX},%
+firstplural={DGXs},%
+text={DGX},%
+plural={DGXs},%
+description={Deep GPU Xceleration – NVIDIA-Hardwareplattform zur KI-Beschleunigung.},%
+descriptionplural={Deep GPU Xceleration – NVIDIA-Hardwareplattform zur KI-Beschleunigung.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hybridmodell}%
+{%
+name={Hybridmodell},%
+sort={Hybridmodell},%
+type={main},%
+first={Hybridmodell},%
+firstplural={Hybridmodells},%
+text={Hybridmodell},%
+plural={Hybridmodells},%
+description={Ein Modell, das zwei oder mehr unterschiedliche Verfahren kombiniert, z.\,B. LSTM-Autoencoder mit einem klassischen ML-Algorithmus wie Isolation Forest},%
+descriptionplural={Ein Modell, das zwei oder mehr unterschiedliche Verfahren kombiniert, z.\,B. LSTM-Autoencoder mit einem klassischen ML-Algorithmus wie Isolation Forest},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{iam}%
+{%
+name={IAM},%
+sort={IAM},%
+type={main},%
+first={IAM},%
+firstplural={IAMs},%
+text={IAM},%
+plural={IAMs},%
+description={Identity and Access Management – Verwaltung von Identitäten und Zugriffsrechten.},%
+descriptionplural={Identity and Access Management – Verwaltung von Identitäten und Zugriffsrechten.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{if}%
+{%
+name={IF},%
+sort={IF},%
+type={main},%
+first={IF},%
+firstplural={IFs},%
+text={IF},%
+plural={IFs},%
+description={Isolation Forest – Verfahren zur Anomalieerkennung durch zufällige Isolation.},%
+descriptionplural={Isolation Forest – Verfahren zur Anomalieerkennung durch zufällige Isolation.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{keycloak}%
+{%
+name={Keycloak},%
+sort={Keycloak},%
+type={main},%
+first={Keycloak},%
+firstplural={Keycloaks},%
+text={Keycloak},%
+plural={Keycloaks},%
+description={Open-Source Identity-Management-Lösung mit Funktionen wie SSO, RBAC und Brute-Force-Schutz.},%
+descriptionplural={Open-Source Identity-Management-Lösung mit Funktionen wie SSO, RBAC und Brute-Force-Schutz.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lstmae}%
+{%
+name={LSTM-Autoencoder},%
+sort={LSTM-Autoencoder},%
+type={main},%
+first={LSTM-Autoencoder},%
+firstplural={LSTM-Autoencoders},%
+text={LSTM-Autoencoder},%
+plural={LSTM-Autoencoders},%
+description={Ein neuronales Netzwerk, das auf Long Short-Term Memory-Zellen basiert, um Sequenzen zu kodieren und zu rekonstruieren, oft zur Anomalieerkennung in Zeitreihen},%
+descriptionplural={Ein neuronales Netzwerk, das auf Long Short-Term Memory-Zellen basiert, um Sequenzen zu kodieren und zu rekonstruieren, oft zur Anomalieerkennung in Zeitreihen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lstm}%
+{%
+name={LSTM},%
+sort={LSTM},%
+type={main},%
+first={LSTM},%
+firstplural={LSTMs},%
+text={LSTM},%
+plural={LSTMs},%
+description={Long Short-Term Memory – Neuronales Netz zur Verarbeitung von Sequenzdaten mit Langzeitspeicher.},%
+descriptionplural={Long Short-Term Memory – Neuronales Netz zur Verarbeitung von Sequenzdaten mit Langzeitspeicher.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mcc}%
+{%
+name={Matthews Correlation Coefficient (MCC)},%
+sort={Matthews Correlation Coefficient (MCC)},%
+type={main},%
+first={Matthews Correlation Coefficient (MCC)},%
+firstplural={Matthews Correlation Coefficient (MCC)s},%
+text={Matthews Correlation Coefficient (MCC)},%
+plural={Matthews Correlation Coefficient (MCC)s},%
+description={Eine robuste Metrik, die alle Werte der Konfusionsmatrix berücksichtigt; besonders geeignet bei unausgeglichenen Datensätzen},%
+descriptionplural={Eine robuste Metrik, die alle Werte der Konfusionsmatrix berücksichtigt; besonders geeignet bei unausgeglichenen Datensätzen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mitreattack}%
+{%
+name={MITRE ATT\&CK},%
+sort={MITRE ATT\&CK},%
+type={main},%
+first={MITRE ATT\&CK},%
+firstplural={MITRE ATT\&CKs},%
+text={MITRE ATT\&CK},%
+plural={MITRE ATT\&CKs},%
+description={MITRE Adversarial Tactics, Techniques, and Common Knowledge – öffentliches Framework zur Kategorisierung von Angriffstechniken.},%
+descriptionplural={MITRE Adversarial Tactics, Techniques, and Common Knowledge – öffentliches Framework zur Kategorisierung von Angriffstechniken.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ml}%
+{%
+name={ML},%
+sort={ML},%
+type={main},%
+first={ML},%
+firstplural={MLs},%
+text={ML},%
+plural={MLs},%
+description={Machine Learning – Teilgebiet der KI, bei dem Systeme aus Daten lernen.},%
+descriptionplural={Machine Learning – Teilgebiet der KI, bei dem Systeme aus Daten lernen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ocsvm}%
+{%
+name={OCSVM},%
+sort={OCSVM},%
+type={main},%
+first={OCSVM},%
+firstplural={OCSVMs},%
+text={OCSVM},%
+plural={OCSVMs},%
+description={One-Class Support Vector Machine – Algorithmus zur Anomalieerkennung mit einseitiger Klassifikation.},%
+descriptionplural={One-Class Support Vector Machine – Algorithmus zur Anomalieerkennung mit einseitiger Klassifikation.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rbac}%
+{%
+name={RBAC},%
+sort={RBAC},%
+type={main},%
+first={RBAC},%
+firstplural={RBACs},%
+text={RBAC},%
+plural={RBACs},%
+description={Role-Based Access Control – Zugriffskontrolle auf Basis definierter Rollen.},%
+descriptionplural={Role-Based Access Control – Zugriffskontrolle auf Basis definierter Rollen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{realm}%
+{%
+name={Realm},%
+sort={Realm},%
+type={main},%
+first={Realm},%
+firstplural={Realms},%
+text={Realm},%
+plural={Realms},%
+description={Ein Verwaltungsbereich in Keycloak, in dem Clients, Benutzer und Rollen organisiert sind},%
+descriptionplural={Ein Verwaltungsbereich in Keycloak, in dem Clients, Benutzer und Rollen organisiert sind},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{realmrole}%
+{%
+name={Realm-Role},%
+sort={Realm-Role},%
+type={main},%
+first={Realm-Role},%
+firstplural={Realm-Roles},%
+text={Realm-Role},%
+plural={Realm-Roles},%
+description={Globale Rollen in Keycloak, die auf alle Clients eines Realms angewendet werden können},%
+descriptionplural={Globale Rollen in Keycloak, die auf alle Clients eines Realms angewendet werden können},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{rnn}%
+{%
+name={RNN},%
+sort={RNN},%
+type={main},%
+first={RNN},%
+firstplural={RNNs},%
+text={RNN},%
+plural={RNNs},%
+description={Recurrent Neural Network – Neuronales Netz zur Verarbeitung zeitabhängiger Daten.},%
+descriptionplural={Recurrent Neural Network – Neuronales Netz zur Verarbeitung zeitabhängiger Daten.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{scikit}%
+{%
+name={Scikit-learn},%
+sort={Scikit-learn},%
+type={main},%
+first={Scikit-learn},%
+firstplural={Scikit-learns},%
+text={Scikit-learn},%
+plural={Scikit-learns},%
+description={Eine weit verbreitete Python-Bibliothek für maschinelles Lernen mit Tools für Klassifikation, Regression, Clustering und Modellbewertung},%
+descriptionplural={Eine weit verbreitete Python-Bibliothek für maschinelles Lernen mit Tools für Klassifikation, Regression, Clustering und Modellbewertung},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{sso}%
+{%
+name={SSO},%
+sort={SSO},%
+type={main},%
+first={SSO},%
+firstplural={SSOs},%
+text={SSO},%
+plural={SSOs},%
+description={Single Sign-On – Einmalige Authentifizierung für den Zugriff auf mehrere Anwendungen.},%
+descriptionplural={Single Sign-On – Einmalige Authentifizierung für den Zugriff auf mehrere Anwendungen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{zerodayangriff}%
+{%
+name={Zero-Day-Angriff},%
+sort={Zero-Day-Angriff},%
+type={main},%
+first={Zero-Day-Angriff},%
+firstplural={Zero-Day-Angriffs},%
+text={Zero-Day-Angriff},%
+plural={Zero-Day-Angriffs},%
+description={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.},%
+descriptionplural={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{saml}%
+{%
+name={SAML},%
+sort={SAML},%
+type={main},%
+first={SAML},%
+firstplural={SAMLs},%
+text={SAML},%
+plural={SAMLs},%
+description={Security Assertion Markup Language – Ein XML-basiertes Standardprotokoll zur Übertragung von Authentifizierungs- und Autorisierungsinformationen zwischen Identity Providern und Service Providern.},%
+descriptionplural={Security Assertion Markup Language – Ein XML-basiertes Standardprotokoll zur Übertragung von Authentifizierungs- und Autorisierungsinformationen zwischen Identity Providern und Service Providern.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{oidc}%
+{%
+name={OIDC},%
+sort={OIDC},%
+type={main},%
+first={OIDC},%
+firstplural={OIDCs},%
+text={OIDC},%
+plural={OIDCs},%
+description={OpenID Connect – Ein modernes Authentifizierungsprotokoll, das auf OAuth 2.0 aufbaut und zur sicheren Überprüfung der Identität eines Benutzers verwendet wird.},%
+descriptionplural={OpenID Connect – Ein modernes Authentifizierungsprotokoll, das auf OAuth 2.0 aufbaut und zur sicheren Überprüfung der Identität eines Benutzers verwendet wird.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{idp}%
+{%
+name={IdP},%
+sort={IdP},%
+type={main},%
+first={IdP},%
+firstplural={IdPs},%
+text={IdP},%
+plural={IdPs},%
+description={Identity Provider – Ein externer Dienst, der die Authentifizierung von Benutzern übernimmt und Identitätsinformationen an andere Dienste weitergibt.},%
+descriptionplural={Identity Provider – Ein externer Dienst, der die Authentifizierung von Benutzern übernimmt und Identitätsinformationen an andere Dienste weitergibt.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
