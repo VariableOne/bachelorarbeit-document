@@ -8,10 +8,11 @@
 \usepackage{cite}
 \usepackage{hyperref}
 \usepackage{url}
-\usepackage{glossaries}
 \usepackage{setspace}
 \onehalfspacing 
+\usepackage{glossaries}
 \makeglossaries
+
 
 \usepackage{endnotes}
 \usepackage{float} 
@@ -76,6 +77,7 @@
 	\textbf{DBSCAN:} Density-Based Spatial Clustering of Applications with Noise
 	\textbf{DGX:} Deep GPU Xceleration \\[1em]
 	\textbf{IAM:} Identity und Access Management \\[1em]
+	\textbf{IdP:} Identity Provider (Identitätsanbieter) \\[1em]
 	\textbf{IF:} Isolation Forest \\[1em]
 	\textbf{LSTM:} Long Short Term Memory \\[1em]
 	\textbf{MCC:} Matthews Correlation Coefficient \\[1em]
@@ -83,17 +85,31 @@
 		and Common Knowledge \\[1em]
 	\textbf{ML:} Machine Learning \\[1em]
 	\textbf{OCSVM:} One Class Support Vector Machine \\[1em]
+	\textbf{OIDC:} OpenID Connect \\[1em]
 	\textbf{RBAC:} Role-Based Access Control \\[1em]
 	\textbf{RNN:} Recurrent Neural Network \\[1em]
+	\textbf{SAML:} Security Assertion Markup Language \\[1em]
 	\textbf{SSO:} Single-Sign-On \\[1em]
-	\textbf {UBA:} User Behavior Analytics \\[0.1em]
-	\textbf {UEBA:} User and Entity Behavior Analytics \\[0.1em]
+	\textbf {UBA:} User Behavior Analytics \\[1em]
+	\textbf {UEBA:} User and Entity Behavior Analytics \\[1em]
+	
 	
 	\newpage
 	
 	\newglossaryentry{abac}{
 		name={ABAC},
 		description={Zugriffskontrolle basierend auf Benutzerattributen wie Rolle, Standort, Zeit etc.}
+	}
+	
+	
+	\newglossaryentry{accesslogs}{
+		name={Access Logs},
+		description={Protokolle von HTTP-Zugriffen und Statuscodes. Werden häufig auf Webserver- oder Proxy-Ebene erstellt, nicht direkt in Keycloak.}
+	}
+	
+	\newglossaryentry{adminlogs}{
+		name={Admin Logs},
+		description={Logs, die administrative Operationen wie CREATE, UPDATE oder DELETE dokumentieren. Enthalten z.\,B. das Feld \textit{operationType}.}
 	}
 	
 	\newglossaryentry{aucpr}{
@@ -106,6 +122,22 @@
 		description={Area Under the Receiver Operating Characteristic Curve – misst die Trennschärfe eines Klassifikationsmodells.}
 	}
 	
+	\newglossaryentry{auditlogs}{
+		name={Audit-Logs},
+		description={Logs zur Nachvollziehbarkeit administrativer Änderungen. In Keycloak Teil der Admin-Logs.}
+	}
+	
+	\newglossaryentry{authcodegrant}{
+		name={Authorization Code Grant},
+		description={OAuth2-Grant-Typ, bei dem der Benutzer über einen Code authentifiziert wird, der vom Client gegen ein Token eingetauscht wird.}
+	}
+	
+	
+	\newglossaryentry{authflow}{
+		name={Authentication Flow},
+		description={Ablauf, der festlegt, wie sich Benutzer oder Clients bei Keycloak authentifizieren.}
+	}
+	
 	\newglossaryentry{Autoencoder}{
 		name={AE},
 		description={Autoencoder – Neuronales Netzwerk zur komprimierten Darstellung und Rekonstruktion von Daten.}
@@ -116,9 +148,54 @@
 		description={Durchschnitt aus Sensitivität (Recall) und Spezifität; besonders geeignet bei unausgeglichenen Klassenverhältnissen}
 	}
 	
+	\newglossaryentry{botnetz}{
+		name={Botnetz},
+		description={Ein Zusammenschluss kompromittierter Geräte (Bots), die ferngesteuert werden, oft zur Durchführung koordinierter Angriffe wie DDoS oder zur Verbreitung von Malware.}
+	}
+	
+	\newglossaryentry{bottleneck}{
+		name=Bottleneck,
+		description={Engste Stelle eines Autoencoders, in der die komprimierte Datenrepräsentation gespeichert wird}
+	}
+	
+	\newglossaryentry{bruteforce}{
+		name={Brute-Force-Angriff},
+		description={Angriffsmethode, bei der Passwörter oder Zugangsdaten durch systematisches Ausprobieren aller möglichen Kombinationen erraten werden.}
+	}
+	
+	\newglossaryentry{client}{
+		name={Client},
+		description={Anwendung oder Dienst, der Keycloak zur Authentifizierung und Autorisierung verwendet.}
+	}
+	
+	\newglossaryentry{clientcredentials}{
+		name={Client Credentials Grant},
+		description={OAuth2-Grant-Typ, bei dem sich ein Client ohne Benutzerinteraktion authentifiziert.}
+	}
+	
+	\newglossaryentry{clientlogin}{
+		name={CLIENT LOGIN},
+		description={Event-Typ in Keycloak, der bei Anmeldung über einen Drittanbieter-Client (z.\,B. via OAuth2) generiert wird.}
+	}
+	
 	\newglossaryentry{clientrole}{
 		name=Client-Role,
 		description={Client-spezifische Rollen in Keycloak, die Zugriffsrechte innerhalb einer bestimmten Anwendung steuern}
+	}
+	
+	\newglossaryentry{clientscope}{
+		name={Client-Scope},
+		description={Legt fest, welche Benutzerdaten in ein Token aufgenommen werden, wenn sich ein Benutzer über einen Client authentifiziert.}
+	}
+	
+	\newglossaryentry{codetotoken}{
+		name={CODE TO TOKEN},
+		description={Keycloak-Event, das auftritt, wenn ein Authentifizierungscode erfolgreich gegen ein Token eingetauscht wird.}
+	}
+	
+	\newglossaryentry{customlogs}{
+		name={Custom Logs},
+		description={Benutzerspezifische oder erweiterte Logs, die über Keycloak-Extensions (z.\,B. SPIs) erzeugt werden.}
 	}
 	
 	\newglossaryentry{dbscan}{
@@ -126,9 +203,77 @@
 		description={Density-Based Spatial Clustering of Applications with Noise – Clustering-Verfahren für dichte Datenregionen.}
 	}
 	
+	\newglossaryentry{ddos}{
+		name={DDoS},
+		description={Distributed Denial of Service – ein Angriff, bei dem viele Systeme gleichzeitig eine Zielressource mit Anfragen überfluten, um sie unzugänglich zu machen.}
+	}
+	
+	\newglossaryentry{decoder}{
+		name=Decoder,
+		description={Teil eines Autoencoders, der versucht, aus der komprimierten Repräsentation die Originaldaten zu rekonstruieren}
+	}
+	
+	\newglossaryentry{denoising}{
+		name=Denoising Autoencoder,
+		description={Autoencoder, der lernt, verrauschte Eingaben zu bereinigen und zu rekonstruieren}
+	}
+	
 	\newglossaryentry{dgx}{
 		name={DGX},
 		description={Deep GPU Xceleration – NVIDIA-Hardwareplattform zur KI-Beschleunigung.}
+	}
+	
+		
+	\newglossaryentry{encoder}{
+		name=Encoder,
+		description={Teil eines Autoencoders, der Daten in eine niedrigdimensionale Repräsentation komprimiert}
+	}
+	
+	\newglossaryentry{eps}{
+		name=Eps,
+		description={Radius in DBSCAN, der zur Definition der Nachbarschaft eines Punktes dient}
+	}
+	
+	
+	\newglossaryentry{eventlogs}{
+		name={Event-Logs},
+		description={Protokolle von Benutzer- und Administratoraktionen innerhalb von Keycloak. Enthalten Informationen zu Zeitpunkt, Nutzer-ID, Realm usw.}
+	}
+
+	\newglossaryentry{eventtype}{
+		name={Event-Typ},
+		description={Bezeichnet die Art des ausgelösten Ereignisses, z.\,B. LOGIN, LOGOUT, TOKEN\_REFRESH etc.}
+	}
+	
+	\newglossaryentry{feature-space}{
+		name=Feature Space (Merkmalsraum),
+		description={Der Raum, in dem Datenpunkte durch Merkmale abgebildet werden, häufig hochdimensional}
+	}
+	
+	
+	\newglossaryentry{filebeat}{
+		name={Filebeat},
+		description={Lightweight-Agent, der Logdateien überwacht und deren Inhalte an zentrale Systeme wie Logstash weiterleitet.}
+	}
+	
+	\newglossaryentry{gamma}{
+		name={\texttt{gamma}},
+		description={Parameter der RBF-Kernel-Funktion bei der One-Class SVM; legt fest, wie stark ein einzelner Trainingspunkt die Entscheidungsgrenze beeinflusst}
+	}
+	
+	\newglossaryentry{granttype}{
+		name={Grant Type},
+		description={Verfahren, mit dem ein Client oder Benutzer bei einem Authentifizierungsserver ein Token anfordert.}
+	}
+	
+	\newglossaryentry{hdbscan}{
+		name=HDBSCAN,
+		description={Hierarchical Density-Based Spatial Clustering of Applications with Noise, eine hierarchische Erweiterung von DBSCAN}
+	}
+	
+	\newglossaryentry{hiddenstate}{
+		name=Hidden State,
+		description={Interner Zustand eines RNNs, der Informationen über vorherige Zeitschritte speichert}
 	}
 	
 	\newglossaryentry{hybridmodell}{
@@ -141,14 +286,81 @@
 		description={Identity and Access Management – Verwaltung von Identitäten und Zugriffsrechten.}
 	}
 	
+	\newglossaryentry{idp}{
+		name={Identity Provider (IdP)},
+		description={Externer Anbieter, der Authentifizierungsdienste bereitstellt (z.\,B. Google, Microsoft).}
+	}
+	
 	\newglossaryentry{if}{
 		name={IF},
 		description={Isolation Forest – Verfahren zur Anomalieerkennung durch zufällige Isolation.}
+	}
+		
+	\newglossaryentry{isolationtree}{
+		name=Isolation Tree,
+		description={Binärer Baum aus dem Isolation Forest-Verfahren zur Isolierung von Datenpunkten}
+	}
+	
+	\newglossaryentry{insiderthreat}{
+		name={Insider Threat},
+		description={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht, z.\,B. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.}
+	}
+	
+	\newglossaryentry{jbosslogging}{
+		name={JBoss Logging},
+		description={Logging-API aus dem JBoss-Ökosystem. Bietet eine Abstraktionsschicht über verschiedene Logging-Backends wie log4j, JUL oder slf4j.}
+	}
+	
+	\newglossaryentry{jul}{
+		name={JUL (java.util.logging)},
+		description={In Java integriertes Logging-Framework. Funktional eingeschränkt und schwer konfigurierbar im Vergleich zu log4j oder logback.}
+	}
+	
+	\newglossaryentry{k8slogging}{
+		name={Kubernetes Logging},
+		description={Logging-Ansätze für containerisierte Anwendungen innerhalb von Kubernetes-Umgebungen, oft via Sidecars oder Remote-Stacks.}
 	}
 	
 	\newglossaryentry{keycloak}{
 		name={Keycloak},
 		description={Open-Source Identity-Management-Lösung mit Funktionen wie SSO, RBAC und Brute-Force-Schutz.}
+	}
+	
+	\newglossaryentry{kmeans}{
+		name=K-Means,
+		description={Clustering-Verfahren, das Daten in vordefinierte Cluster basierend auf Mittelwerten aufteilt}
+	}
+	
+	\newglossaryentry{lof}{
+		name=LOF,
+		description={Local Outlier Factor, ein Verfahren zur Anomalieerkennung über Vergleich lokaler Dichten}
+	}
+	
+	
+	\newglossaryentry{log4j}{
+		name={Log4j},
+		description={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (z. B. Log4Shell) kritisch betrachtet.}
+	}
+	
+	\newglossaryentry{logback}{
+		name={Logback},
+		description={Moderne Logging-Implementierung, die SLF4J unterstützt und als Nachfolger von log4j gilt.}
+	}
+	
+	\newglossaryentry{logcategory}{
+		name={Category (Logging)},
+		description={Bezeichnung des Moduls oder der Komponente, aus der ein Log stammt (z.\,B. \texttt{org.keycloak.events}).}
+	}
+	
+	
+	\newglossaryentry{loginerror}{
+		name={LOGIN ERROR},
+		description={Event-Typ, der bei einem fehlgeschlagenen Benutzer-Login generiert wird.}
+	}
+	
+	\newglossaryentry{loglevel}{
+		name={Log-Level},
+		description={Gibt die Kritikalität oder den Zweck eines Log-Eintrags an (z.\,B. INFO, ERROR, FATAL, DEBUG).}
 	}
 	
 	\newglossaryentry{lstmae}{
@@ -161,7 +373,6 @@
 		description={Long Short-Term Memory – Neuronales Netz zur Verarbeitung von Sequenzdaten mit Langzeitspeicher.}
 	}
 	
-	
 	\newglossaryentry{mcc}{
 		name={Matthews Correlation Coefficient (MCC)},
 		description={Eine robuste Metrik, die alle Werte der Konfusionsmatrix berücksichtigt; besonders geeignet bei unausgeglichenen Datensätzen}
@@ -172,14 +383,51 @@
 		description={MITRE Adversarial Tactics, Techniques, and Common Knowledge – öffentliches Framework zur Kategorisierung von Angriffstechniken.}
 	}
 	
+	\newglossaryentry{minpts}{
+		name=MinPts,
+		description={Minimale Anzahl an Punkten innerhalb des Eps-Radius, damit ein Punkt als Kernpunkt eines Clusters gilt}
+	}
+	
+	
 	\newglossaryentry{ml}{
 		name={ML},
 		description={Machine Learning – Teilgebiet der KI, bei dem Systeme aus Daten lernen.}
 	}
+
+	\newglossaryentry{noise}{
+		name=Noise,
+		description={Punkte in DBSCAN, die keinem Cluster zugeordnet werden können}
+	}
+	
+	\newglossaryentry{nu}{
+		name={\ensuremath{\nu}},
+		description={Parameter der One-Class SVM, der den Anteil an erwarteten Ausreißern im Trainingsdatensatz steuert}
+	}
+	
+	\newglossaryentry{oauth}{
+		name={OAuth 2.0},
+		description={Autorisierungs-Framework, das sicheren Zugriff auf geschützte Ressourcen ermöglicht.}
+	}
+	
 	
 	\newglossaryentry{ocsvm}{
 		name={OCSVM},
 		description={One-Class Support Vector Machine – Algorithmus zur Anomalieerkennung mit einseitiger Klassifikation.}
+	}
+	
+	\newglossaryentry{oidc}{
+		name={OpenID Connect (OIDC)},
+		description={Auth-Protokoll, das auf OAuth 2.0 basiert und die Identität von Nutzern sicher überträgt.}
+	}
+	
+	\newglossaryentry{operationtype}{
+		name={operationType},
+		description={Feld in Admin-Logs, das die Art der Admin-Aktion angibt, z.\,B. CREATE, UPDATE, DELETE oder ACTION.}
+	}
+	
+	\newglossaryentry{quarkus}{
+		name={Quarkus},
+		description={Modernes Java-Framework, optimiert für containerisierte und cloud-native Anwendungen. Ab Keycloak Version 17 als Basisplattform genutzt.}
 	}
 	
 	\newglossaryentry{rbac}{
@@ -187,9 +435,25 @@
 		description={Role-Based Access Control – Zugriffskontrolle auf Basis definierter Rollen.}
 	}
 	
+	\newglossaryentry{realm}{
+		name={Realm},
+		description={Isolierte Umgebung in Keycloak, in der Benutzer, Rollen und Clients separat verwaltet werden.}
+	}
+	
 	\newglossaryentry{realmrole}{
 		name=Realm-Role,
 		description={Globale Rollen in Keycloak, die auf alle Clients eines Realms angewendet werden können}
+	}
+	
+	\newglossaryentry{rekonstruktionsfehler}{
+		name=Rekonstruktionsfehler,
+		description={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten}
+	}
+	
+	
+	\newglossaryentry{remotelogging}{
+		name={Remote Logging},
+		description={Versand von Logs an externe Systeme oder Services, z.\,B. über Syslog, HTTP oder Filebeat.}
 	}
 	
 	\newglossaryentry{rnn}{
@@ -197,40 +461,34 @@
 		description={Recurrent Neural Network – Neuronales Netz zur Verarbeitung zeitabhängiger Daten.}
 	}
 	
+	\newglossaryentry{saml}{
+		name={SAML},
+		description={Security Assertion Markup Language – XML-basiertes Protokoll für Authentifizierung und Autorisierung.}
+	}
+	
 	\newglossaryentry{scikit}{
 		name=Scikit-learn,
 		description={Eine weit verbreitete Python-Bibliothek für maschinelles Lernen mit Tools für Klassifikation, Regression, Clustering und Modellbewertung}
 	}
 	
-	\newglossaryentry{sso}{
-		name={SSO},
-		description={Single Sign-On – Einmalige Authentifizierung für den Zugriff auf mehrere Anwendungen.}
+	\newglossaryentry{securitylogs}{
+		name={Security Logs},
+		description={Protokollieren sicherheitsrelevante Ereignisse wie z.\,B. verdächtige Logins, Policy-Verletzungen oder Blockierungen.}
 	}
 	
-	\newglossaryentry{zerodayangriff}{
-		name={Zero-Day-Angriff},
-		description={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.}
+	\newglossaryentry{serverlogs}{
+		name={Server-Logs},
+		description={Logs, die Betriebsstatus, Fehler und Debugging-Informationen des Keycloak-Servers dokumentieren.}
+	}
+		
+	\newglossaryentry{serviceaccount}{
+		name={Service Account},
+		description={Konto, das einem Client gehört und ohne Benutzerinteraktion für automatisierte Vorgänge eingesetzt wird.}
 	}
 	
-	}
-	\newglossaryentry{uba}{
-		name={UBA},
-		description={User Behavior Analytics – Analyse des Benutzerverhaltens zur Erkennung von Anomalien und Sicherheitsbedrohungen.}
-	}
-	
-	\newglossaryentry{bruteforce}{
-		name={Brute-Force-Angriff},
-		description={Angriffsmethode, bei der Passwörter oder Zugangsdaten durch systematisches Ausprobieren aller möglichen Kombinationen erraten werden.}
-	}
-	
-	\newglossaryentry{insiderthreat}{
-		name={Insider Threat},
-		description={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht, z.\,B. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.}
-	}
-	
-	\newglossaryentry{botnetz}{
-		name={Botnetz},
-		description={Ein Zusammenschluss kompromittierter Geräte (Bots), die ferngesteuert werden, oft zur Durchführung koordinierter Angriffe wie DDoS oder zur Verbreitung von Malware.}
+	\newglossaryentry{slf4j}{
+		name={SLF4J},
+		description={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j oder logback unterstützt.}
 	}
 	
 	\newglossaryentry{spoofing}{
@@ -238,9 +496,34 @@
 		description={Täuschungstechniken, bei denen sich ein Angreifer als vertrauenswürdige Instanz ausgibt, um Zugang zu Informationen oder Systemen zu erlangen.}
 	}
 	
-	\newglossaryentry{ddos}{
-		name={DDoS},
-		description={Distributed Denial of Service – ein Angriff, bei dem viele Systeme gleichzeitig eine Zielressource mit Anfragen überfluten, um sie unzugänglich zu machen.}
+	\newglossaryentry{sso}{
+		name={SSO},
+		description={Single Sign-On – Einmalige Authentifizierung für den Zugriff auf mehrere Anwendungen.}
+	}
+	
+	\newglossaryentry{syslog}{
+		name={Syslog},
+		description={Standardprotokoll zur Übertragung von Logmeldungen in Netzwerkumgebungen, z.\,B. an zentrale Logserver.}
+	}
+	
+	\newglossaryentry{systemout}{
+		name={System.out / System.err},
+		description={Standard-Ausgabe-/Fehlerstreams in Java. Nicht strukturiert und für produktive Logs ungeeignet.}
+	}
+	
+	\newglossaryentry{timestamp}{
+		name={timestamp},
+		description={Zeitmarke, zu der ein Event im Log registriert wurde. Wichtige Information für zeitbasierte Analysen.}
+	}
+	
+	\newglossaryentry{tokenrefresh}{
+		name={TOKEN\_REFRESH},
+		description={Keycloak-Event-Typ, der beim Aktualisieren eines Zugriffstokens generiert wird.}
+	}
+	
+	\newglossaryentry{uba}{
+		name={UBA},
+		description={User Behavior Analytics – Analyse des Benutzerverhaltens zur Erkennung von Anomalien und Sicherheitsbedrohungen.}
 	}
 	
 	\newglossaryentry{ueba}{
@@ -249,67 +532,24 @@
 	}
 	
 	
-	\newpage
-	\section{Keycloak Terme}
-	
-	\newglossaryentry{realm}{
-		name={Realm},
-		description={Isolierte Umgebung in Keycloak, in der Benutzer, Rollen und Clients separat verwaltet werden.}
+	\newglossaryentry{userlogs}{
+		name={User Logs},
+		description={Logs, die Benutzeraktionen ohne Adminrechte erfassen. Typische Eventtypen sind LOGIN, LOGOUT oder TOKEN-Operationen.}
 	}
 	
-	\newglossaryentry{client}{
-		name={Client},
-		description={Anwendung oder Dienst, der Keycloak zur Authentifizierung und Autorisierung verwendet.}
+	\newglossaryentry{vae}{
+		name=Variational Autoencoder (VAE),
+		description={Autoencoder-Variante, die Wahrscheinlichkeitsverteilungen in der Bottleneck-Schicht modelliert, häufig für generative Modelle}
 	}
 	
-	\newglossaryentry{idp}{
-		name={Identity Provider (IdP)},
-		description={Externer Anbieter, der Authentifizierungsdienste bereitstellt (z.\,B. Google, Microsoft).}
+	\newglossaryentry{wildfly}{
+		name={WildFly},
+		description={Java-Anwendungsserver, früher Basis von Keycloak. Verwendet JBoss Logging und bietet umfangreiche Java EE-Funktionalität.}
 	}
 	
-	\newglossaryentry{oidc}{
-		name={OpenID Connect (OIDC)},
-		description={Auth-Protokoll, das auf OAuth 2.0 basiert und die Identität von Nutzern sicher überträgt.}
-	}
-	
-	\newglossaryentry{saml}{
-		name={SAML},
-		description={Security Assertion Markup Language – XML-basiertes Protokoll für Authentifizierung und Autorisierung.}
-	}
-	
-	\newglossaryentry{oauth}{
-		name={OAuth 2.0},
-		description={Autorisierungs-Framework, das sicheren Zugriff auf geschützte Ressourcen ermöglicht.}
-	}
-	
-	\newglossaryentry{granttype}{
-		name={Grant Type},
-		description={Verfahren, mit dem ein Client oder Benutzer bei einem Authentifizierungsserver ein Token anfordert.}
-	}
-	
-	\newglossaryentry{authflow}{
-		name={Authentication Flow},
-		description={Ablauf, der festlegt, wie sich Benutzer oder Clients bei Keycloak authentifizieren.}
-	}
-	
-	\newglossaryentry{clientcredentials}{
-		name={Client Credentials Grant},
-		description={OAuth2-Grant-Typ, bei dem sich ein Client ohne Benutzerinteraktion authentifiziert.}
-	}
-	
-	\newglossaryentry{authcodegrant}{
-		name={Authorization Code Grant},
-		description={OAuth2-Grant-Typ, bei dem der Benutzer über einen Code authentifiziert wird, der vom Client gegen ein Token eingetauscht wird.}
-	}
-	
-	\newglossaryentry{clientscope}{
-		name={Client-Scope},
-		description={Legt fest, welche Benutzerdaten in ein Token aufgenommen werden, wenn sich ein Benutzer über einen Client authentifiziert.}
-	}
-	
-	\newglossaryentry{serviceaccount}{
-		name={Service Account},
-		description={Konto, das einem Client gehört und ohne Benutzerinteraktion für automatisierte Vorgänge eingesetzt wird.}
+	\newglossaryentry{zerodayangriff}{
+		name={Zero-Day-Angriff},
+		description={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.}
 	}
 	
 	
@@ -319,7 +559,7 @@
 	\section{Einleitung}
 	Laut dem BSI-Lagebericht 2024 ist die Zahl von Cyberangriffen auf Unternehmen durch Ransomware und DDoS-Attacken weiter gestiegen \cite{bsi2024lage}.
 	Angreifende entwickeln kontinuierlich neue Methoden, um Sicherheitsmechanismen zu umgehen und finanzielle oder strategische Vorteile zu erlangen. Herkömmliche, regelbasierte Schutzmaßnahmen – etwa Firewalls oder Brute-Force-Abwehrsysteme – stoßen dabei zunehmend an ihre Grenzen.
-	Besonders schwer zu erkennen sind interne Angreifer, also etwa eigene Mitarbeitende, sowie koordinierte Attacken über Botnetze. Solche Bedrohungen erfordern fortschrittliche Verfahren zur Mustererkennung. Der Einsatz von Künstlicher Intelligenz (KI) in Sicherheitssystemen gewinnt daher zunehmend an Bedeutung. Maschinelle Lernalgorithmen bieten hier ein vielversprechendes Potenzial: Sie können Anomalien identifizieren und das Nutzerverhalten auf Basis theoretischer Modelle analysieren, um Angriffe frühzeitig zu erkennen.
+	Besonders schwer zu erkennen sind interne Angreifer, also etwa eigene Mitarbeitende, sowie koordinierte Attacken über \gls{botnetz}e. Solche Bedrohungen erfordern fortschrittliche Verfahren zur Mustererkennung. Der Einsatz von Künstlicher Intelligenz (KI) in Sicherheitssystemen gewinnt daher zunehmend an Bedeutung. Maschinelle Lernalgorithmen bieten hier ein vielversprechendes Potenzial: Sie können Anomalien identifizieren und das Nutzerverhalten auf Basis theoretischer Modelle analysieren, um Angriffe frühzeitig zu erkennen.
 	
 	\subsection{Benutzerverhalten und Anomalien}
 	
@@ -327,9 +567,9 @@
 	\\[0.5em]
 	Anomalien bezeichnen Datenmuster, die signifikant von erwarteten oder üblichen Verhaltensweisen abweichen. Mathematisch gesehen, ist eine Anomalie, ein abweichender Punkt vom "normalen" Bereich N1 und N2 \cite{chandola2009anomaly}. Sie können beispielsweise im Netzwerkverkehr, in eingebetteten Systemen oder anderen datenverarbeitenden Bereichen auftreten. Solche Abweichungen deuten häufig auf Systemangriffe oder technische Störungen hin.
 	\\[0.5em]
-	Neben systemweiten Anomalien – etwa im Netzwerkverkehr oder bei Gerätezuständen – gewinnen zunehmend benutzerbasierte Auffälligkeiten an Bedeutung.
+	Neben systemweiten Anomalien – etwa im Netzwerkverkehr oder bei Gerätezuständen – gewinnen zunehmend verhaltensbasierte Auffälligkeiten an Bedeutung.
 	Systemweite Anomalien betreffen technische Parameter und Prozesse im gesamten System, wie etwa plötzliche Veränderungen im Datenverkehr, unerwartete Systemlast oder ungewöhnliche Netzwerkverbindungen \cite{chandola2009anomaly}.
-	Benutzerbasierte Anomalien hingegen beziehen sich auf das individuelle Verhalten einzelner Nutzer.
+	Verhaltensbasierte Anomalien hingegen beziehen sich auf das individuelle Verhalten einzelner Nutzer.
 	
 	\subsection{Kategorisierung von Anomalien}
 	Nach \cite{chandola2009anomaly} werden Anomalien in drei Hauptkategorien eingeteilt:
@@ -364,7 +604,7 @@
 	\\[0.5em]
 	In dieser Arbeit wird der Begriff „verhaltensbasierte Anomalien“ mit den Erscheinungsformen von Intrusionsangriffen und Insiderattacken gleichgesetzt, um den Fokus auf sicherheitsrelevante Abweichungen im Nutzerverhalten zu legen. Diese begriffliche Vereinfachung erleichtert die Analyse und Methodik, obwohl Anomalien technisch betrachtet als Indikatoren für verschiedene Angriffstypen verstanden werden sollten.
 	\\[0.5em]
-	Darüber hinaus gelten komplexere Abweichungen – wie Veränderungen in gewohnten Arbeitsabläufen, zeitlichen Mustern von Datei- oder Netzwerkzugriffen oder in der Kommunikation mit untypischen Partnern – ebenfalls als Anomalien. Ungewöhnliche IP-Adressen stellen auf Netzwerkebene ein häufiges Indiz für Anomalien dar, da sie auf einen möglichen unautorisierten Zugriff, eine Spoofing-Attacke (Also Stehlen von Anmeldedaten, in dem der Angreifer eine infiltrierte Anmeldeseite beim Benutzer lädt) oder den Einsatz von anonymisierenden Diensten (z.B. VPNs oder TOR) hindeuten können. In regulären Betriebsabläufen sind IP-Adressen in der Regel geografisch, organisatorisch oder netztechnisch eingeschränkt. Weicht eine Adresse deutlich von bekannten Mustern oder erlaubten Adressräumen ab – etwa durch Zugriffe aus einem anderen Land, über Proxy-Netzwerke oder aus verdächtigen IP-Bereichen (z.B. Botnetze) – kann dies auf kompromittierte Accounts oder externe Angreifer hinweisen. Besonders im Kontext von Benutzerverhalten sind IP-basierte Auffälligkeiten oft ein erstes Signal für Insiderbedrohungen oder gestohlene Zugangsdaten.
+	Darüber hinaus gelten komplexere Abweichungen – wie Veränderungen in gewohnten Arbeitsabläufen, zeitlichen Mustern von Datei- oder Netzwerkzugriffen oder in der Kommunikation mit untypischen Partnern – ebenfalls als Anomalien. Ungewöhnliche IP-Adressen stellen auf Netzwerkebene ein häufiges Indiz für Anomalien dar, da sie auf einen möglichen unautorisierten Zugriff, eine \gls{spoofing}-Attacke (Also Stehlen von Anmeldedaten, in dem der Angreifer eine infiltrierte Anmeldeseite beim Benutzer lädt) oder den Einsatz von anonymisierenden Diensten (z.B. VPNs oder TOR) hindeuten können. In regulären Betriebsabläufen sind IP-Adressen in der Regel geografisch, organisatorisch oder netztechnisch eingeschränkt. Weicht eine Adresse deutlich von bekannten Mustern oder erlaubten Adressräumen ab – etwa durch Zugriffe aus einem anderen Land, über Proxy-Netzwerke oder aus verdächtigen IP-Bereichen (z.B. Botnetze) – kann dies auf kompromittierte Accounts oder externe Angreifer hinweisen. Besonders im Kontext von Benutzerverhalten sind IP-basierte Auffälligkeiten oft ein erstes Signal für Insiderbedrohungen oder gestohlene Zugangsdaten.
 	\\[0.5em]
 	Insgesamt bilden solche Merkmale die Grundlage moderner Systeme zur Anomalieerkennung, die auf Verfahren des maschinellen Lernens und der Statistik beruhen, um potenzielle Sicherheitsrisiken automatisiert und präventiv zu identifizieren. In dieser Arbeit liegt der Fokus auf der Erkennung von verhaltensbasierten Anomalien, bzw. auf Intrusionsangriffe und Insider Threat Attacken.
 	
@@ -383,14 +623,14 @@
 	Diese Schwächen verdeutlichen, dass klassische, regelbasierte Sicherheitsarchitekturen zunehmend an ihre Grenzen stoßen. Um aktuelle Bedrohungen wirksam erkennen und abwehren zu können, bedarf es dynamischer, lernfähiger Systeme, wie sie beispielsweise durch Verfahren des maschinellen Lernens und der \gls{uba} realisiert werden können.
 	
 	\subsection{Motivation: Maschinelle Lernmodelle als zukünftige Sicherheitsmaßnahme}
-	Die Motivation dieser Arbeit besteht darin, geeignete maschinelle Lernmodelle zu identifizieren, mit denen benutzerbasierte Anomalien in Keycloak-Logs erkannt werden können. Maschinelle Lernmodelle stellen heute eine vielversprechende Alternative zu klassischen, regelbasierten Sicherheitsmaßnahmen dar, da sie dynamisch auf neue Bedrohungen reagieren können.
+	Die Motivation dieser Arbeit besteht darin, geeignete maschinelle Lernmodelle zu identifizieren, mit denen verhaltensbasierte Anomalien in Keycloak-Logs erkannt werden können. Maschinelle Lernmodelle stellen heute eine vielversprechende Alternative zu klassischen, regelbasierten Sicherheitsmaßnahmen dar, da sie dynamisch auf neue Bedrohungen reagieren können.
 	\\[0.5em]
 	Im Gegensatz zu statischen Regeln, die lediglich bekannte Muster erfassen, sind ML-Modelle in der Lage, aus großen Datenmengen zu lernen und auch unbekannte Anomalien zu identifizieren, die auf potenzielle Angriffe hindeuten. Dadurch sind sie besonders effektiv im Umgang mit Zero-Day-Angriffen oder komplexen, sich ständig wandelnden Bedrohungsszenarien. Ein weiterer Vorteil ist die Fähigkeit zur kontinuierlichen Anpassung, sodass sich ML-Modelle automatisch auf veränderte Rahmenbedingungen einstellen, ohne dass ein manueller Eingriff notwendig ist.
 	\\[0.5em]
 	Im Ausblick besteht Interesse daran, das leistungsfähigste Modell in ein Tool zu integrieren, welches von der Intension GmbH genutzt werden kann. Dadurch sollen Kosten eingespart werden, da herkömmliche maschinelle Analysetools häufig mit hohen Lizenzgebühren verbunden sind. Aufgrund datenschutzrechtlicher Vorgaben wurde entschieden, die Keycloak-Logs selbst zu generieren, wie im entsprechenden Kapitel näher erläutert wird.
 	
 	\subsection{User (and Entity) Behavior Analytics (U(E)BA)}
-	UEBA ist ein ganzheitlicher Ansatz zur Gewährleistung einer erstklassigen Sicherheit in einem Unternehmen und zur Erkennung von Benutzern, die eine Sicherheitsverletzung im System verursachen könnten. UEBA kann normales und abnormales Verhalten sowohl von Menschen als auch von Computern identifizieren 
+	\gls{ueba} ist ein ganzheitlicher Ansatz zur Gewährleistung einer erstklassigen Sicherheit in einem Unternehmen und zur Erkennung von Benutzern, die eine Sicherheitsverletzung im System verursachen könnten. UEBA kann normales und abnormales Verhalten sowohl von Menschen als auch von Computern identifizieren 
 	\footnote{\url{https://www.forbes.com/sites/quora/2017/09/15/what-are-the-biggest-challenges-facing-the-cybersecurity-industry}}
 	 Die Analyse erfolgt dabei häufig unter Einsatz maschineller Lernverfahren.
 	\\[0.5em]
@@ -422,7 +662,7 @@
 	Die Literatur legt nahe, dass klassische Verfahren wie One-Class SVM (OC-SVM) und Isolation Forest besonders durch ihre Robustheit und gute Performance auf tabellarischen Daten überzeugen \cite{pang2021deep}, owbei OCSVMs sogar Anomalien präziser erkenne können als Autoencoder \cite{arjunan2024}. Für sequenzielle Daten wie Zeitreihen oder Nutzerinteraktionen zeigen hingegen neuronale Netze wie Long Short-Term Memory (\gls{lstm}) und Autoencoder signifikante Vorteile, da sie zeitliche Abhängigkeiten und komplexe Muster besser erfassen können \cite{demir2024comparative}. Studien wie \cite{ergen2017unsupervised} zeigen, dass die Kombination von LSTM-basierten Architekturen mit OC-SVM oder SVDD \footnote{https://github.com/lukasruff/Deep-SVDD-PyTorch} zu signifikant verbesserten Erkennungsraten bei der Anomalieerkennung führt – insbesondere bei sequenziellen Daten. Andere Arbeiten wie \cite{ghrib2020hybrid} untersuchen ähnliche hybride Ansätze, etwa in Verbindung mit Isolation Forest, und berichten neben Leistungsgewinnen auch über eine mögliche Reduktion der Rechenzeit. Auch \gls{dbscan} wird erfolgreich zur Cluster-basierten Anomalieerkennung eingesetzt, insbesondere bei unstrukturierten oder verrauschten Daten. Insgesamt zeigt sich, dass der domänenspezifische, kombinierte Einsatz dieser Verfahren besonders vielversprechend ist, um die Herausforderungen bei der Erkennung verhaltensbasierter Anomalien in realen Anwendungen effizient zu bewältigen.
 	
 	\subsection{Problematik und Begrenzung von Modellen}
-	Die Literatur zeigt jedoch auch potenzielle Schwächen der genannten Netzwerke und Modelle. LSTM und Autoencoder als \gls{hybridmodell} benötigen große Datenmengen und sind anfällig für Overfitting. Zudem sind sie schwer interpretierbar. Auch Isolation Forest ist oft sensitiv gegenüber der Wahl der Parameter \cite{chua2024web}. DBSCAN ist beispielsweise sehr empfindlich gegenüber der Wahl von Parametern wie Epsilon und MinPts, erkennt Cluster mit unterschiedlicher Dichte nur schlecht und kann bei hohem Rauschen versagen. Auch OCSVM ist dem gegenüber sensible bei der Wahl der Parameter.
+	Die Literatur zeigt jedoch auch potenzielle Schwächen der genannten Netzwerke und Modelle. LSTM und Autoencoder als \gls{hybridmodell} benötigen große Datenmengen und sind anfällig für Overfitting. Zudem sind sie schwer interpretierbar. Auch Isolation Forest ist oft sensitiv gegenüber der Wahl der Parameter \cite{chua2024web}. DBSCAN ist beispielsweise sehr empfindlich gegenüber der Wahl von Parametern wie \gls{eps} und \gls{minpts}, erkennt Cluster mit unterschiedlicher Dichte nur schlecht und kann bei hohem Rauschen versagen. Auch OCSVM ist dem gegenüber sensible bei der Wahl der Parameter.
 	\\[0.5em]
 	Auch Hybridmodelle haben ihre Schwächen: Zwar verbessern sie häufig die Leistung, gleichzeitig erhöhen sie jedoch die Komplexität, was die Interpretierbarkeit erschwert. Zudem wird das Training aufwendiger, was den Einsatz in Echtzeitanwendungen erschwert.
 	
@@ -553,7 +793,7 @@
 	
 	\section{Angewandte Technologie: Keycloak}
 	Keycloak ist ein IAM-Tool mit SSO-Funktion. Es bietet an, Benutzerdaten und Firmendaten sicher und strukturiert zu speichern. Jedes mal, wenn man sich über Keycloak bei einem Dienstleister anmeldet, so wird durch SSO die Anmelden- und Autorisierungsdaten an diesen weitergegeben.
-	Keycloaks Struktur beinhaltet Bereiche, die auch Realms genannt werden, in denen sogenannte Clients angelegt werden können. Die Clients stellen die jeweiligen Anwendungen dar, die u.A. Benutzerdaten und Daten von Gruppen beinhalten. 
+	Keycloaks Struktur beinhaltet Bereiche, die auch \gls{realm}s genannt werden, in denen sogenannte \gls{client}s angelegt werden können. Die Clients stellen die jeweiligen Anwendungen dar, die u.A. Benutzerdaten und Daten von Gruppen beinhalten. 
 	
 	\subsection{Terminologien in Keycloak}
 	Keycloak ist ein auf Rollen basiertes Identitäts- und Zugriffsmanagementsystem (RBAC). Für ein besseres Verständnis der zentralen Begriffe und Abläufe wird in diesem Abschnitt ein Überblick über die wichtigsten Terminologien und Konzepte gegeben.
@@ -565,13 +805,13 @@
 	Standardmäßig existiert ein sogenannter \textit{Master-Realm}, der übergeordnete Verwaltungsrechte besitzt. Er enthält den \textit{Admin-User}, der Zugriff auf alle anderen Realms und deren Komponenten hat. Der Admin kann CRUD-Operationen (Create, Read, Update, Delete) auf Benutzer, Gruppen und Clients ausführen. Normale Benutzer hingegen sehen nur den eigenen Realm und haben nur eingeschränkte Rechte, sofern ihnen keine speziellen Rollen zugewiesen wurden.
 	
 	\vspace{0.5em}
-	\textbf{Authentifizierung über Clients und Identity Provider (IdP):}\\
+	\textbf{Authentifizierung über Clients und \gls{idp} (IdP):}\\
 	Benutzer können sich entweder direkt bei Keycloak oder über einen Client anmelden. Die Authentifizierung erfolgt meist über einen externen \textit{Identity Provider} (IdP), wie z.\,B. Google oder Microsoft. Dieses Verfahren ermöglicht \textit{Single Sign-On} (SSO): Der Benutzer meldet sich bei einem Drittanbieter an und ist gleichzeitig auch bei Keycloak und weiteren Diensten authentifiziert.
 	
 	Für die Kommunikation zwischen IdPs und Keycloak kommen verschiedene Protokolle zum Einsatz:
 	\begin{itemize}
-		\item \textbf{OpenID Connect (OIDC):} Modernes Authentifizierungsprotokoll basierend auf OAuth 2.0. Es ermöglicht, Benutzeridentität und Profildaten sicher abzurufen.
-		\item \textbf{SAML:} XML-basiertes, etabliertes Standardprotokoll für Authentifizierungs- und Autorisierungsdaten.
+		\item \textbf{\gls{oidc} (OIDC):} Modernes Authentifizierungsprotokoll basierend auf \gls{oauth}. Es ermöglicht, Benutzeridentität und Profildaten sicher abzurufen.
+		\item \textbf{\gls{saml}:} XML-basiertes, etabliertes Standardprotokoll für Authentifizierungs- und Autorisierungsdaten.
 		\item \textbf{OAuth 2.0:} Framework zur Autorisierung, auf dem u.\,a. OIDC aufbaut.
 	\end{itemize}
 	
@@ -583,17 +823,17 @@
 	\end{figure}
 	
 	\vspace{0.5em}
-	\textbf{Grant Typen und Authentifizierungsflüsse:}\\
+	\textbf{\gls{granttype}n und Authentifizierungsflüsse:}\\
 	Keycloak unterstützt verschiedene \textit{Grant Types}, die beschreiben, wie sich Benutzer oder Clients authentifizieren:
 	
 	\begin{itemize}
-		\item \textbf{Authorization Code Grant:} Benutzer wird zur Keycloak-Loginseite weitergeleitet. Nach erfolgreicher Authentifizierung erhält der Client einen Authorization Code, den er gegen ein Access Token eintauscht. Das Passwort wird dabei nie an die Client-Anwendung weitergegeben.
-		\item \textbf{Client Credentials Grant:} Wird für Clients ohne Benutzerinteraktion verwendet. Der Client authentifiziert sich mit seiner Client-ID und einem geheimen Schlüssel (Client Secret), um ein Access Token zu erhalten.
+		\item \textbf{\gls{authcodegrant}:} Benutzer wird zur Keycloak-Loginseite weitergeleitet. Nach erfolgreicher Authentifizierung erhält der Client einen Authorization Code, den er gegen ein Access Token eintauscht. Das Passwort wird dabei nie an die Client-Anwendung weitergegeben.
+		\item \textbf{\gls{clientcredentials}:} Wird für Clients ohne Benutzerinteraktion verwendet. Der Client authentifiziert sich mit seiner Client-ID und einem geheimen Schlüssel (Client Secret), um ein Access Token zu erhalten.
 	\end{itemize}
 	
 	Die \textbf{Client Authentifizierungsmethode} legt fest, wie der Client gegenüber dem Server seine Identität nachweist – z.\,B. mittels Client Secret oder Zertifikat. Während der Grant-Typ die Art der Anmeldung bestimmt, definiert die Client-Authentifizierungsmethode die technische Form des Identitätsnachweises.
 	
-	Zusätzlich existieren in Keycloak sogenannte \textit{Authentication Flows}, die den Ablauf der Authentifizierung steuern:
+	Zusätzlich existieren in Keycloak sogenannte \textit{\gls{authflow}s}, die den Ablauf der Authentifizierung steuern:
 	
 	\begin{itemize}
 		\item \textbf{Standard Flow:} Meist Authorization Code Grant mit Weiterleitung zur Login-Seite.
@@ -611,7 +851,7 @@
 	\end{figure}
 	
 	\vspace{0.5em}
-	\textbf{Client-Scope:}\\
+	\textbf{\gls{clientscope}:}\\
 	Der \textit{Client-Scope} definiert, welche Benutzerdaten in das Token aufgenommen werden, wenn sich ein Benutzer über einen Client anmeldet. Typische Informationen sind Name, Nachname und E-Mail. Diese Daten werden verschlüsselt übertragen, jedoch besteht ein gewisses Risiko bei Missbrauch oder Diebstahl des Tokens.
 	
 	\vspace{0.5em}
@@ -624,14 +864,14 @@
 	\end{itemize}
 	
 	\vspace{0.5em}
-	\textbf{Service Account Roles:}\\
+	\textbf{\gls{serviceaccount} Roles:}\\
 	Clients können sich in Keycloak auch selbst authentifizieren – ohne Benutzerinteraktion. Wird die \textit{Service Account}-Funktion für einen Client aktiviert, erhält dieser ein eigenes Servicekonto. Dieses Konto kann mit Rollen ausgestattet werden, um Rechte auf bestimmte Ressourcen oder Operationen zu erhalten – z.\,B. für automatisierte Backend-Operationen.
 	
 	\subsection{Komponenten der Log-Erzeugung}
-	Keycloak generiert Logs über eine Kombination aus verschiedenen Frameworks und Komponenten. Grundlage bildet das Logging-Framework von JBoss, wobei moderne Versionen von Keycloak zusätzlich auf das Quarkus-Framework setzen.
+	Keycloak generiert Logs über eine Kombination aus verschiedenen Frameworks und Komponenten. Grundlage bildet das Logging-Framework von JBoss, wobei moderne Versionen von Keycloak zusätzlich auf das \gls{quarkus}-Framework setzen.
 	\vspace{0.5em}
-	\textbf{Von WildFly zu Quarkus – Technologiewechsel:}\\
-	Ursprünglich basierte Keycloak auf dem \textbf{WildFly}-Anwendungsserver\footnote{\url{https://www.wildfly.org/}}, der wiederum die \textbf{JBoss Logging}-Infrastruktur verwendet. Ab Keycloak Version 17 wurde WildFly durch das \textbf{Quarkus}-Framework ersetzt – ein modernes Java-Framework, das speziell für containerisierte und cloud-native Anwendungen entwickelt wurde. Quarkus unterstützt ebenfalls JBoss Logging, sodass bestehende Logging-Mechanismen weiterhin funktionieren.
+	\textbf{Von \gls{wildfly} zu Quarkus – Technologiewechsel:}\\
+	Ursprünglich basierte Keycloak auf dem \textbf{WildFly}-Anwendungsserver\footnote{\url{https://www.wildfly.org/}}, der wiederum die \textbf{\gls{jbosslogging}}-Infrastruktur verwendet. Ab Keycloak Version 17 wurde WildFly durch das \textbf{Quarkus}-Framework ersetzt – ein modernes Java-Framework, das speziell für containerisierte und cloud-native Anwendungen entwickelt wurde. Quarkus unterstützt ebenfalls JBoss Logging, sodass bestehende Logging-Mechanismen weiterhin funktionieren.
 	
 	\begin{figure}[H]
 		\centering
@@ -642,15 +882,15 @@
 	
 	\vspace{0.5em}
 	\textbf{Rolle von JBoss Logging:}\\
-	JBoss Logging dient in Keycloak als zentrale Logging-API. Es abstrahiert verschiedene Logging-Backends (wie \texttt{log4j}, \texttt{JUL}, \texttt{Slf4j}) und ermöglicht die strukturierte Ausgabe sicherheitsrelevanter Informationen – z.\,B.:
+	JBoss Logging dient in Keycloak als zentrale Logging-API. Es abstrahiert verschiedene Logging-Backends (wie \texttt{\gls{log4j}}, \texttt{JUL}, \texttt{\gls{slf4j}}) und ermöglicht die strukturierte Ausgabe sicherheitsrelevanter Informationen – z.\,B.:
 	\begin{itemize}
 		\item \texttt{Realm-ID}
 		\item \texttt{Benutzer-ID}
 		\item \texttt{IP-Adresse}
-		\item \texttt{Event-Typ}
+		\item \texttt{\gls{eventtype}}
 	\end{itemize}
 	
-	Der Vorteil liegt in der Flexibilität: Entwickler müssen sich nicht auf ein spezifisches Logging-Backend festlegen, sondern können über die einheitliche JBoss-API verschiedene Ausgabekanäle konfigurieren (Konsole, Datei, syslog etc.).
+	Der Vorteil liegt in der Flexibilität: Entwickler müssen sich nicht auf ein spezifisches Logging-Backend festlegen, sondern können über die einheitliche JBoss-API verschiedene Ausgabekanäle konfigurieren (Konsole, Datei, \gls{syslog} etc.).
 	
 	\vspace{0.5em}
 	\textbf{Warum nicht Log4j, Logback oder JUL?}\\
@@ -659,7 +899,7 @@
 		\item \textbf{Log4j / Logback:} Mächtig, aber externe Abhängigkeiten und teils Sicherheitsrisiken (z.\,B. Log4Shell).
 		\item \textbf{JUL (java.util.logging):} Eingebaut, aber funktional begrenzt.
 		\item \textbf{Slf4j:} Nur eine Fassade – erfordert Backend wie Logback oder Log4j.
-		\item \textbf{System.out / System.err:} Nicht strukturiert, ungeeignet für produktive Logs.
+		\item \textbf{\gls{systemout} / System.err:} Nicht strukturiert, ungeeignet für produktive Logs.
 	\end{itemize}
 	
 	\begin{figure}[H]
@@ -689,7 +929,7 @@
 	\vspace{0.5em}
 	Neben dem klassischen System-Logging bietet Keycloak ein eigenes Audit- und Event-Logging-Subsystem, das unabhängig vom allgemeinen Logsystem funktioniert. Mithilfe des EventListener-SPI können verschiedene Ereignisse – etwa Admin-Änderungen oder Benutzeraktionen – gezielt erfasst werden. Die Ausgabe kann dabei in Form einfacher Logs, in Syslog-Formate oder in benutzerdefinierte Kanäle erfolgen.
 	\vspace{0.5em}
-	Abschließend unterstützt Keycloak die Integration in externe Logging-Systeme durch Syslog oder Remote Logging. So lassen sich Logs über Tools wie Filebeat an zentrale Systeme weiterleiten (z.B. Logstash oder Cloud-Dienste wie AWS CloudWatch, Google Stackdriver oder Azure Monitor) oder Kubernetes. Dies ist insbesondere in containerisierten oder skalierenden Cloud-Umgebungen entscheidend für Monitoring, Fehleranalyse und Sicherheitsüberwachung.
+	Abschließend unterstützt Keycloak die Integration in externe Logging-Systeme durch Syslog oder \gls{remotelogging}. So lassen sich Logs über Tools wie \gls{filebeat} an zentrale Systeme weiterleiten (z.B. Logstash oder Cloud-Dienste wie AWS CloudWatch, Google Stackdriver oder Azure Monitor) oder Kubernetes. Dies ist insbesondere in containerisierten oder skalierenden Cloud-Umgebungen entscheidend für Monitoring, Fehleranalyse und Sicherheitsüberwachung.
 	
 	\subsection{Log-Dateien in Keycloak}
 	Logging, bzw. Protokollierung ist ein essentieller Bestandteil für die Überwachung von IT-Systemen. Für das IT-Monitoring dienen Logs zur Verhinderung und Detektion von Anomalien, sei es im Netzwerk, in einem IoT-Gerät oder eben in IAM-Tools. 
@@ -697,12 +937,12 @@
 	In Keycloak werden verschiedene Log-Arten unterteilt, wobei die Logs für das Netzwerk, die Access Logs u.A. nicht direkt zu Keycloak gehören.
 	Kecyloak unterteilt Logs in folgende Kategorien:
 	\begin{itemize}
-		\item Server-Logs: Betriebsstatus, Fehler, Debugging-Infos
-		\item Event-Logs: Benutzer- und Admin-Events (Event-System)
-		\item Audit-Logs: Nachvollziehbarkeit von Änderungen (Admin Events)
-		\item Access Logs: Zugriffsversuche und HTTP-Statuscodes (HTTP Layer / Reverse Proxy)
-		\item Security Logs: Sicherheitsrelevante Ereignisse und Warnungen
-		\item Custom Logs: Erweiterungen und Plugins können eigene Logs erzeugen (SPI)
+		\item \gls{serverlogs}: Betriebsstatus, Fehler, Debugging-Infos
+		\item \gls{eventlogs}: Benutzer- und Admin-Events (Event-System)
+		\item \gls{auditlogs}: Nachvollziehbarkeit von Änderungen (Admin Events)
+		\item \gls{accesslogs}: Zugriffsversuche und HTTP-Statuscodes (HTTP Layer / Reverse Proxy)
+		\item \gls{securitylogs}: Sicherheitsrelevante Ereignisse und Warnungen
+		\item \gls{customlogs}: Erweiterungen und Plugins können eigene Logs erzeugen (SPI)
 	\end{itemize}
 	Die Logs werden dabei von unterschiedlichen Instanzen in Keycloak erzeugt. Die Server-Logs werden  vom Keycloak-Server selbst erzeugt und weisen die Kategorie \textit{org.keycloak.services} auf. Sie werden mit dem Quarkus-Framework erzeugt.
 	\\[0.5em]
@@ -718,8 +958,8 @@
 	Keycloak unterteilt unter Anderem zwei Arten von Events-Logs:
 	
 	\begin{itemize}
-		\item Admin Logs (Audit Logs)
-		\item User Logs (Event Logs)
+		\item \gls{adminlogs}(Audit Logs)
+		\item \gls{userlogs} (Event Logs)
 	\end{itemize}
 	
 	Die Admin Logs enthalten alle Logs bzgl. den Operationen des Admins und die User Logs nur die Logs von Benutzern, die nicht Admin sein.
@@ -728,7 +968,7 @@
 	Folgende Features sind stets in den User Event Logs enthalten:
 	
 	\begin{itemize}
-		\item timestamp
+		\item \gls{timestamp}
 		\item log\_level
 		\item category
 		\item type
@@ -742,12 +982,12 @@
 	\\[0.5em]
 	Desweiteren unterteilt Keycloak noch sogenannte Log-Level. Diese zeigen, ob eine bestimmte Operation erfolgreich war oder nicht oder geben andere Informationen bzgl. einer Operation.
 	Bekannte Log-Level sind z.B. INFO, FATAL oder ERROR. Alle Arten finden sich in der Dokumentation \footnote{https://www.keycloak.org/server/logging}.
-	Das Loglevel (z.B. FATAL, ERROR, INFO) bestimmt die Art des Logs, z.B. ob es zum Debugging dient oder eine Warnung erschient, entweder ein Fehler oder eine Info.
+	Das \gls{loglevel} (z.B. FATAL, ERROR, INFO) bestimmt die Art des Logs, z.B. ob es zum Debugging dient oder eine Warnung erschient, entweder ein Fehler oder eine Info.
 	\\[0.5em]
-	"Category" beschreibt hier die Art des Logs. Da in dieser Arbeit mit Keycloak-Logs gearbeitet wird, kommen insbesondere der JBossLogger \footnote{https://docs.jboss.org/process-guide/en/html/logging.html} und die JPA-Komponente \footnote{https://docs.spring.io/spring-data/jpa/reference/index.html} von Keycloak zum Einsatz.
+	"\gls{logcategory}" beschreibt hier die Art des Logs. Da in dieser Arbeit mit Keycloak-Logs gearbeitet wird, kommen insbesondere der JBossLogger \footnote{https://docs.jboss.org/process-guide/en/html/logging.html} und die JPA-Komponente \footnote{https://docs.spring.io/spring-data/jpa/reference/index.html} von Keycloak zum Einsatz.
 	\\[0.5em]
 	Des weiteren von Bedeutung in den Logs haben die Ereignis-Typen:
-	Bspw. ist LOGIN ein Ereignis-Typ bei dem der Benutzer sich anmeldet. Dies wird in Keycloak auch regelmäßig dokumentiert. Andere Ereignistypen sind bspw. TOKEN\_REFRESH, bei dem der Benutzer einen neuen Token bekommt. 
+	Bspw. ist LOGIN ein Ereignis-Typ bei dem der Benutzer sich anmeldet. Dies wird in Keycloak auch regelmäßig dokumentiert. Andere Ereignistypen sind bspw. \gls{tokenrefresh}, bei dem der Benutzer einen neuen Token bekommt. 
 	
 	\begin{figure}[H]
 		\centering
@@ -760,18 +1000,18 @@
 	
 	\begin{itemize}
 		\item LOGIN: Log, der generiert wird, wenn sich ein Benutzer erfolgreich einloggt über  Keycloak selbst.
-		\item CODE TO TOKEN: Wird erzeugt, sobald der Benutzer sich über seine Anmeldedaten auf dem Keycloak-Server authentifiziert hat und von diesem einen Access Token erhalten hat.
-		\item CLIENT LOGIN: Log, der generiert wird, sobald sich der Benutzer über einen Drittanbieter einloggt.
-		\item LOGIN ERROR: Fehler beim Login über Keycloak
+		\item \gls{codetotoken}: Wird erzeugt, sobald der Benutzer sich über seine Anmeldedaten auf dem Keycloak-Server authentifiziert hat und von diesem einen Access Token erhalten hat.
+		\item \gls{clientlogin}: Log, der generiert wird, sobald sich der Benutzer über einen Drittanbieter einloggt.
+		\item \gls{loginerror}: Fehler beim Login über Keycloak
 		\item CODE TO TOKEN ERROR: Anmeldedaten war falsch, Server lehnt Anmeldedaten von Benutzer ab
 	\end{itemize}
-	In den Admin Logs wiederum sind noch Features enthalten, welche in den normalen User Event Logs nicht vorkommen, u.A. 'operationType': Diese beinhalten typische CRUD-Operationen wie UPDATE, CREATE, DELETE und ACTION \footnote{https://github.com/keycloak/keycloak/blob/main/model/jpa/src/main/java/org/keycloak/events/jpa/JpaAdminEventQuery.java}. 
+	In den Admin Logs wiederum sind noch Features enthalten, welche in den normalen User Event Logs nicht vorkommen, u.A. '\gls{operationtype}': Diese beinhalten typische CRUD-Operationen wie UPDATE, CREATE, DELETE und ACTION \footnote{https://github.com/keycloak/keycloak/blob/main/model/jpa/src/main/java/org/keycloak/events/jpa/JpaAdminEventQuery.java}. 
 	\\[0.5em]
 	
 	\section{Theoretischer Hintergrund der Modelle}
 	\subsection{LSTM}
 	Long Short-Term Memory (LSTM) ist ein Recurrent Neural Network (\gls{rnn}), welches dazu entwickelt wird zeitabhängige Datenabfolgen zu erkennen und zu analysieren \cite{staudemeyer2019understanding}.
-	RNNs sind eine spezielle Klasse von neuronalen Netzwerken, welche dazu entwickelt wurden, sequentielle Daten zu verarbeiten, also Daten bei den die Reihenfolge der zu verarbeitenden Daten entscheiden ist. daher eignen sie sich gut Zeitreihen zu analysieren. RNNs können die nacheinander folgenden, abhängigen Daten anhand eines sogenannten Hidden Errors analysieren: Dabei wird im Hidden Error die zuvor analysierten Daten behalten und mit den nächsten Daten in einem gemeinsamen Kontext verarbeitet. Der Hidden State wird bei jedem Zeitschritt aktualisiert und bildet somit einen gemeinsamen Kontext für die Verarbeitung der aktuellen und vorherigen Eingaben.
+	RNNs sind eine spezielle Klasse von neuronalen Netzwerken, welche dazu entwickelt wurden, sequentielle Daten zu verarbeiten, also Daten bei den die Reihenfolge der zu verarbeitenden Daten entscheiden ist. daher eignen sie sich gut Zeitreihen zu analysieren. RNNs können die nacheinander folgenden, abhängigen Daten anhand eines sogenannten Hidden Errors analysieren: Dabei wird im Hidden Error die zuvor analysierten Daten behalten und mit den nächsten Daten in einem gemeinsamen Kontext verarbeitet. Der \gls{hiddenstate} wird bei jedem Zeitschritt aktualisiert und bildet somit einen gemeinsamen Kontext für die Verarbeitung der aktuellen und vorherigen Eingaben.
 	Das Problem an RNNs ist jedoch, dass bei längeren Datensequenzen die Erinnerung der zu weit liegenden Daten verblasst.
 	LSTMs gleichen diese Nachteile aus: Sie besitzen über eine Zellstruktur, die gewährleistet, dass auch zu alte Datensequenzen noch erinnert werden.
 	Dies wird durch diese drei Bestandteile gewährleistet \cite{hochreiter1997long}:
@@ -785,11 +1025,11 @@
 	LSTM werden in vielen Bereichen, wie z.B: in IoT eingesetzt \cite{wei2022lstm}.
 	
 	\subsection{Autoencoder}
-	Ein Autoencoder ist eine spezielle Form eines neuronalen Netzwerks, das aus zwei Hauptbestandteilen besteht: der Encoder- und der Decoder-Schicht \cite{michelucci2022introduction}.
+	Ein Autoencoder ist eine spezielle Form eines neuronalen Netzwerks, das aus zwei Hauptbestandteilen besteht: der \gls{encoder}- und der \gls{decoder}-Schicht \cite{michelucci2022introduction}.
 	\\[0.5em]
-	Die Encoder-Schicht komprimiert die Eingabedaten und reduziert ihre Dimensionen auf eine kleinere Repräsentation, die sogenannte Bottleneck-Schicht. Diese Bottleneck-Schicht ist der engste Teil des Netzwerks und zwingt das Modell, die wichtigsten Merkmale der Daten in verdichteter Form zu lernen. Dadurch werden irrelevante oder redundante Informationen herausgefiltert, was den Autoencoder befähigt, die Essenz der Eingabedaten zu erfassen.
+	Die Encoder-Schicht komprimiert die Eingabedaten und reduziert ihre Dimensionen auf eine kleinere Repräsentation, die sogenannte \gls{bottleneck}-Schicht. Diese Bottleneck-Schicht ist der engste Teil des Netzwerks und zwingt das Modell, die wichtigsten Merkmale der Daten in verdichteter Form zu lernen. Dadurch werden irrelevante oder redundante Informationen herausgefiltert, was den Autoencoder befähigt, die Essenz der Eingabedaten zu erfassen.
 	\\[0.5em]
-	Die Decoder-Schicht nimmt diese komprimierte Repräsentation und versucht, die ursprünglichen Daten daraus möglichst genau zu rekonstruieren. Das Netzwerk lernt durch Minimierung des Rekonstruktionsfehlers, also der Differenz zwischen Eingabedaten und rekonstruierten Daten. Dieser Fehler ist bedeutend für die spätere Hybridarchitektur.
+	Die Decoder-Schicht nimmt diese komprimierte Repräsentation und versucht, die ursprünglichen Daten daraus möglichst genau zu rekonstruieren. Das Netzwerk lernt durch Minimierung des \gls{rekonstruktionsfehler}s, also der Differenz zwischen Eingabedaten und rekonstruierten Daten. Dieser Fehler ist bedeutend für die spätere Hybridarchitektur.
 	\\[0.5em]
 	Diese Fähigkeit macht Autoencoder besonders nützlich für Aufgaben wie Anomalieerkennung. Wenn die Rekonstruktion schlecht gelingt (hoher Rekonstruktionsfehler), deutet dies darauf hin, dass die Eingabedaten von den gelernten Mustern abweichen und somit potenziell eine Anomalie darstellen.
 	
@@ -797,7 +1037,7 @@
 	Der Bottleneck ist entscheidend, da er die Kapazität des Autoencoders steuert. Ein zu kleiner Bottleneck kann dazu führen, dass wichtige Informationen verloren gehen und die Rekonstruktion schlecht wird. Ein zu großer Bottleneck hingegen erlaubt es dem Netzwerk, einfach die Identität zu lernen und Daten "durchzuschleusen", wodurch der Autoencoder seine Fähigkeit zur Merkmalskompression verliert.
 	
 	\paragraph{Varianten und Architekturen}
-	Neben dem klassischen Autoencoder gibt es weitere Varianten, z.B. den Variational Autoencoder (VAE), der probabilistische Modelle nutzt und generative Fähigkeiten besitzt, oder den Denoising Autoencoder, der lernt, verrauschte Eingaben zu bereinigen. Außerdem können Autoencoder aus mehreren Schichten bestehen (deep Autoencoder), um komplexere Merkmale zu extrahieren.
+	Neben dem klassischen Autoencoder gibt es weitere Varianten, z.B. den \gls{vae} (VAE), der probabilistische Modelle nutzt und generative Fähigkeiten besitzt, oder den \gls{denoising}, der lernt, verrauschte Eingaben zu bereinigen. Außerdem können Autoencoder aus mehreren Schichten bestehen (deep Autoencoder), um komplexere Merkmale zu extrahieren.
 	
 	\paragraph{Vor- und Nachteile}
 	Autoencoder bieten den Vorteil, dass sie Merkmale automatisch extrahieren können, ohne dass explizite Labels benötigt werden. Dadurch eignen sie sich gut für unüberwachte Lernaufgaben. Zudem ermöglichen sie eine effiziente Dimensionsreduktion und Datenkompression. Allerdings benötigen Autoencoder zum Trainieren große Datenmengen. Bei einem zu stark eingeschränkten Bottleneck besteht zudem die Gefahr, dass sie eine triviale Identitätsfunktion lernen. Weiterhin ist der Rekonstruktionsfehler nicht immer ein perfekter Indikator für Anomalien, insbesondere bei sehr komplexen Daten. Schließlich kann das Training solcher Modelle rechnerisch sehr aufwendig sein.
@@ -831,7 +1071,7 @@
 		\label{fig:screenshot005}
 	\end{figure}
 	
-	Der Algorithmus erzeugt Isolation Trees, welche aus Blattknoten oder aus einem inneren Knoten besteht,d er eine Testregel enthält, die die Daten in zwei Gruppen aufteilt. Die Testregel besteht aus einem Wert aus der Auswahl eines Merkmals  q und einem Schwellenwert p, so dass alle Datenpunkte, deren Wert für q kleiner als p ist, in den linken Kindknoten kommen, und alle anderen in den rechten Kindknoten.
+	Der Algorithmus erzeugt \gls{isolationtree}s, welche aus Blattknoten oder aus einem inneren Knoten besteht,d er eine Testregel enthält, die die Daten in zwei Gruppen aufteilt. Die Testregel besteht aus einem Wert aus der Auswahl eines Merkmals  q und einem Schwellenwert p, so dass alle Datenpunkte, deren Wert für q kleiner als p ist, in den linken Kindknoten kommen, und alle anderen in den rechten Kindknoten.
 	\\[0.5em]
 	Zum Aufbau eines solchen Baums nimmt man eine Stichprobe von Datenpunkten und teilt sie rekursiv auf, indem man zufällig ein Merkmal und einen Split-Wert auswählt. Dieser Prozess wird so lange wiederholt, bis
 	eine maximale Baumhöhe erreicht ist, nur noch ein Datenpunkt übrig ist, oder
@@ -862,7 +1102,7 @@
 		\caption{Visuelle Darstellung  OCSVM. Quelle: https://www.mdpi.com/2076-3417/13/3/1734}
 		\label{fig:screenshot006}
 	\end{figure}
-	Ein zentrales Problem bei One-Class Support Vector Machines (\gls{ocsvm}) besteht darin, dass der Ursprung im Merkmalsraum als Repräsentant für Anomalien dient, obwohl dies in der Realität nicht immer zutrifft \cite{bounsiar2025oneclass}. In ihrer Arbeit erklären die Autoren, dass die Trennung der Zielklasse vom Ursprung (also von den Ausreißern) häufig missverstanden wird. Sie schlagen eine geometrische Interpretation vor, bei der die Zielklasse vom übrigen Raum getrennt wird, insbesondere wenn ein Gauß-Kernel verwendet wird.
+	Ein zentrales Problem bei One-Class Support Vector Machines (\gls{ocsvm}) besteht darin, dass der Ursprung im \gls{feature-space} als Repräsentant für Anomalien dient, obwohl dies in der Realität nicht immer zutrifft \cite{bounsiar2025oneclass}. In ihrer Arbeit erklären die Autoren, dass die Trennung der Zielklasse vom Ursprung (also von den Ausreißern) häufig missverstanden wird. Sie schlagen eine geometrische Interpretation vor, bei der die Zielklasse vom übrigen Raum getrennt wird, insbesondere wenn ein Gauß-Kernel verwendet wird.
 	
 	\subsection{DBSCAN}
 	DBSCAN ist ein dichtebasiertes Cluteringverfahren, dass Datenpunkte anhand ihrer Dichte zu anderen Punkten klassifizieren kann.
@@ -876,12 +1116,12 @@
 	\end{figure}
 	
 	Der Algorithmus läuft folgendermaßen ab:
-	Man startet von einem bestimmten Punkt p. Daraufhin werden alle Punkte gesucht, welche sich in der Nähe von p befinden. Sobald eine Mindestanzahl von Eps erreicht ist, die auch durch MinPts festgelegt wird, so bildet sich ein Cluster. Danach werden alle Punkte die nun zu einem Cluster gehören, aus einer Liste an verbleibenden Punkten herausgenommen. Daraufhin wird p zufällig an einen weiteren Ort im Raum platziert, wo noch kein Cluster gebildet wurde. Dies geschieht solange, bis keine Punkte in der Liste übrig sind. Die restlichen Punkte, die keinem Cluster zugeordnet sind, heißen Noises. Wenn es zu viele Noises gibt, heisst das, dass nicht effizient klassifiziert wurde \cite{ester1996dbscan}. 
+	Man startet von einem bestimmten Punkt p. Daraufhin werden alle Punkte gesucht, welche sich in der Nähe von p befinden. Sobald eine Mindestanzahl von \textit{Eps} erreicht ist, die auch durch \textit{MinPts} festgelegt wird, so bildet sich ein Cluster. Danach werden alle Punkte die nun zu einem Cluster gehören, aus einer Liste an verbleibenden Punkten herausgenommen. Daraufhin wird p zufällig an einen weiteren Ort im Raum platziert, wo noch kein Cluster gebildet wurde. Dies geschieht solange, bis keine Punkte in der Liste übrig sind. Die restlichen Punkte, die keinem Cluster zugeordnet sind, heißen \textit{\gls{noise}s}. Wenn es zu viele Noises gibt, heisst das, dass nicht effizient klassifiziert wurde \cite{ester1996dbscan}. 
 	
 	\subsection{Alternative Algorithmen}
-	Wie bereits im Forschungsstand erwähnt, wurde als Alternative zu DBSCAN auch das hierarchische Verfahren HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise) in Betracht gezogen. HDBSCAN ist in vielerlei Hinsicht robuster als DBSCAN, insbesondere bei der Identifikation von Clustern in hochdimensionalen oder verrauschten Daten. Ein Vorteil von HDBSCAN ist, dass es keine globale Dichte-Schwelle benötigt und sich besser an lokale Datenstrukturen anpasst. Aufgrund der derzeit noch begrenzten Anzahl an Studien und praktischen Erfahrungswerten zu HDBSCAN im konkreten Anwendungsbereich wurde jedoch auf den Einsatz verzichtet. Für zukünftige Arbeiten wäre es durchaus interessant, HDBSCAN in Kombination mit LSTM-Autoencodern (LSTM-AE) näher zu untersuchen.
+	Wie bereits im Forschungsstand erwähnt, wurde als Alternative zu DBSCAN auch das hierarchische Verfahren \gls{hdbscan} (Hierarchical Density-Based Spatial Clustering of Applications with Noise) in Betracht gezogen. HDBSCAN ist in vielerlei Hinsicht robuster als DBSCAN, insbesondere bei der Identifikation von Clustern in hochdimensionalen oder verrauschten Daten. Ein Vorteil von HDBSCAN ist, dass es keine globale Dichte-Schwelle benötigt und sich besser an lokale Datenstrukturen anpasst. Aufgrund der derzeit noch begrenzten Anzahl an Studien und praktischen Erfahrungswerten zu HDBSCAN im konkreten Anwendungsbereich wurde jedoch auf den Einsatz verzichtet. Für zukünftige Arbeiten wäre es durchaus interessant, HDBSCAN in Kombination mit LSTM-Autoencodern (LSTM-AE) näher zu untersuchen.
 	\\[0.5em]
-	Darüber hinaus wurden auch weitere Anomalieerkennungsverfahren wie K-Means und LOF (Local Outlier Factor) evaluiert. Beide Methoden sind grundsätzlich für die Anomalieerkennung geeignet, insbesondere bei kleineren und klar strukturierten Datensätzen. Allerdings stoßen K-Means und LOF bei großen, komplexen oder verrauschten Datenmengen an ihre Grenzen. K-Means ist dabei empfindlich gegenüber Ausreißern und erfordert die Festlegung der Clusteranzahl vorab. LOF erkennt Ausreißer, indem es die lokale Dichte eines Datenpunkts mit der seiner Nachbarn vergleicht und Punkte mit stark abweichender Dichte als potenzielle Anomalien markiert. Allerdings wird LOF mit zunehmender Datenmenge zunehmend ineffizient.
+	Darüber hinaus wurden auch weitere Anomalieerkennungsverfahren wie \gls{kmeans} und \gls{lof} (Local Outlier Factor) evaluiert. Beide Methoden sind grundsätzlich für die Anomalieerkennung geeignet, insbesondere bei kleineren und klar strukturierten Datensätzen. Allerdings stoßen K-Means und LOF bei großen, komplexen oder verrauschten Datenmengen an ihre Grenzen. K-Means ist dabei empfindlich gegenüber Ausreißern und erfordert die Festlegung der Clusteranzahl vorab. LOF erkennt Ausreißer, indem es die lokale Dichte eines Datenpunkts mit der seiner Nachbarn vergleicht und Punkte mit stark abweichender Dichte als potenzielle Anomalien markiert. Allerdings wird LOF mit zunehmender Datenmenge zunehmend ineffizient.
 	
 	\section{Implementierung}
 	\subsection{Hybridmodelle mit LSTM-AE}
@@ -925,7 +1165,7 @@
 	Die Trainingsfehler, also die Daten, welche nicht klar klassifiziert werden konnten, werden danach jeweils mit einem der vorimplementierten Modelle trainiert. Im Fall des Isolation Forest wird ein auf Entscheidungsbäumen basierender Algorithmus genutzt, der speziell für die Erkennung von Ausreißern in hochdimensionalen Daten entwickelt wurde. Dabei wird das Modell auf den Fehlerwerten der Trainingsdaten fitten, um anschließend auf die Testdaten angewendet zu werden. Die Vorhersage klassifiziert dabei jeden Datenpunkt als normal (1) oder anomal (-1). Diese Ergebnisse werden binär kodiert, um eine einfache Auswertung zu ermöglichen. Da die zugrunde liegenden Daten sequenzbasiert aufgebaut sind – beispielsweise aus Zeitreihen bestehen – wird zusätzlich ein Abgleich mit den tatsächlichen Labeln vorgenommen. Hierzu wird aus den Zielwerten der Testdaten die letzte Klasse jeder Sequenz extrahiert, um sie mit den Vorhersagen vergleichen zu können.
 	
 	\subsubsection{Implementierung: OCSVM}
-	Für die Umsetzung der One-Class SVM wird das Modell mit einem sehr niedrigen nu-Wert von 0.005 initialisiert. Dieser Wert steuert die erwartete Rate an Ausreißern im Trainingsdatensatz. Zusätzlich wird der Parameter gamma auf 50 gesetzt, was die Einflussweite einzelner Datenpunkte auf die Entscheidungsgrenze definiert. Anschließend wird das Modell mit den Fehlerwerten der Trainingsdaten trainiert, die zuvor durch ein Rekonstruktionsmodell (z.\,B. LSTM-Autoencoder) erzeugt wurden.Nach dem Training wird die One-Class SVM auf die Fehler der Testdaten angewendet. Die Methode predict() liefert Vorhersagen in Form von 1 (normal) oder -1 (anomal). Diese Vorhersagen werden daraufhin in binäre Werte (1 = Anomalie, 0 = normal) umgewandelt. Um die Klassifikation korrekt auszuwerten, wird wie auch bei den anderen Verfahren für jedes Sequenzfenster das zugehörige Label aus den ursprünglichen Testlabels extrahiert. Daraus entsteht ein Label-Vektor, der mit den Vorhersagen verglichen wird.
+	Für die Umsetzung der One-Class SVM wird das Modell mit einem sehr niedrigen \gls{nu}-Wert von 0.005 initialisiert. Dieser Wert steuert die erwartete Rate an Ausreißern im Trainingsdatensatz. Zusätzlich wird der Parameter \gls{gamma} auf 50 gesetzt, was die Einflussweite einzelner Datenpunkte auf die Entscheidungsgrenze definiert. Anschließend wird das Modell mit den Fehlerwerten der Trainingsdaten trainiert, die zuvor durch ein Rekonstruktionsmodell (z.\,B. LSTM-Autoencoder) erzeugt wurden.Nach dem Training wird die One-Class SVM auf die Fehler der Testdaten angewendet. Die Methode predict() liefert Vorhersagen in Form von 1 (normal) oder -1 (anomal). Diese Vorhersagen werden daraufhin in binäre Werte (1 = Anomalie, 0 = normal) umgewandelt. Um die Klassifikation korrekt auszuwerten, wird wie auch bei den anderen Verfahren für jedes Sequenzfenster das zugehörige Label aus den ursprünglichen Testlabels extrahiert. Daraus entsteht ein Label-Vektor, der mit den Vorhersagen verglichen wird.
 	
 	\subsubsection{Implementierung: DBSCAN}
 	Im Fall von DBSCAN handelt es sich um ein dichtebasiertes Clusteringverfahren, das keine explizite Trainingsphase benötigt. Das Modell wird direkt auf die Fehlerwerte der Testdaten angewendet. Als Parameter wird eps = 0.05 gewählt, um die maximale Nachbarschaftsdistanz für die Punkte zu begrenzen, sowie min\_samples = 40, was die Mindestanzahl an Nachbarn definiert, um als Kernpunkt eines Clusters zu gelten. Die Methode fit\_predict() gibt für jeden Punkt entweder eine Clusterzuweisung (0, 1, …) oder -1 zurück – letzteres kennzeichnet Datenpunkte, die als Rauschen bzw. Anomalien erkannt wurden.
@@ -948,7 +1188,7 @@
 	
 	\section{Möglichkeit 1: Generierung der Logs}
 	\subsection{Angriffsfälle}
-	Nach jetzigem Stand gehören zu den häufigsten Insider-Attacken in IT-Systemen u.A. der Missbrauch von hohen Privilegien, Rollen und Recht, Datendiebstahl, sowie der Manipulation wichtiger Daten, wie bspw. dem Löschen von wichtigen Dateien \cite{singh2022insiderthreats}. Brute-Force Angriffe gehören ebenfalls zu den wichtigsten Attacken. Es wurden jene Angriffsmöglichkeiten umgesetzt, welcher auch am wahrscheinlichsten auftreten und auch in den Logs erkennbar sind. Datendiebstahl bspw. lässt sich nicht direkt erkennen in Keycloak, weil in den Log-Dateien wenig zum Upload großer Dateien etwas angegeben wird. Es wird erwartet, dass Angriffe, wie dem Stehlen von Rollen in Keycloak eher auftreten würden, sowie Brute-Force Attacken, weshalb diese Anwendungsfälle umgesetzt werden. Sie sind zudem in den Logs bspw., durch Attribute wie dem Event Typ LOGIN\_ERROR erkennbar. 
+	Nach jetzigem Stand gehören zu den häufigsten \gls{insiderthreat}-Attacken in IT-Systemen u.A. der Missbrauch von hohen Privilegien, Rollen und Recht, Datendiebstahl, sowie der Manipulation wichtiger Daten, wie bspw. dem Löschen von wichtigen Dateien \cite{singh2022insiderthreats}. Brute-Force Angriffe gehören ebenfalls zu den wichtigsten Attacken. Es wurden jene Angriffsmöglichkeiten umgesetzt, welcher auch am wahrscheinlichsten auftreten und auch in den Logs erkennbar sind. Datendiebstahl bspw. lässt sich nicht direkt erkennen in Keycloak, weil in den Log-Dateien wenig zum Upload großer Dateien etwas angegeben wird. Es wird erwartet, dass Angriffe, wie dem Stehlen von Rollen in Keycloak eher auftreten würden, sowie Brute-Force Attacken, weshalb diese Anwendungsfälle umgesetzt werden. Sie sind zudem in den Logs bspw., durch Attribute wie dem Event Typ LOGIN\_ERROR erkennbar. 
 	\\[0.5em]
 	Da der Fokus dieser Arbeit auf dem Gebiet des anomalen Benutzerverhaltens liegt, werden bewusst Angriffsfälle wie DDoS-Attacken nicht berücksichtigt. Von daher werden nur folgende Angriffsfälle modelliert in den Logs:
 	
@@ -1114,7 +1354,7 @@
 	\begin{itemize}
 		\item \textbf{Session Hijacking:}  Missbrauch einer Session jemand anderes
 		\item \textbf{Account Sabotage:}  Viele,Wichtige Ressourcen werden gelöscht oder verändert oder zugegriffen
-		\item \textbf{Brute Force Attacke} 
+		\item \textbf{Brute Force Attacke (\gls{bruteforce})} 
 	\end{itemize}
 	
 	\subsection{Selenium-Tests zur Erzeugung der Angriffsszenarien}

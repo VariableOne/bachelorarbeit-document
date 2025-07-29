@@ -26,6 +26,62 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{accesslogs}%
+{%
+name={Access Logs},%
+sort={Access Logs},%
+type={main},%
+first={Access Logs},%
+firstplural={Access Logss},%
+text={Access Logs},%
+plural={Access Logss},%
+description={Protokolle von HTTP-Zugriffen und Statuscodes. Werden häufig auf Webserver- oder Proxy-Ebene erstellt, nicht direkt in Keycloak.},%
+descriptionplural={Protokolle von HTTP-Zugriffen und Statuscodes. Werden häufig auf Webserver- oder Proxy-Ebene erstellt, nicht direkt in Keycloak.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{adminlogs}%
+{%
+name={Admin Logs},%
+sort={Admin Logs},%
+type={main},%
+first={Admin Logs},%
+firstplural={Admin Logss},%
+text={Admin Logs},%
+plural={Admin Logss},%
+description={Logs, die administrative Operationen wie CREATE, UPDATE oder DELETE dokumentieren. Enthalten z.\,B. das Feld \textit {operationType}.},%
+descriptionplural={Logs, die administrative Operationen wie CREATE, UPDATE oder DELETE dokumentieren. Enthalten z.\,B. das Feld \textit {operationType}.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{aucpr}%
 {%
 name={AUC-PR},%
@@ -65,6 +121,90 @@ text={AUC-ROC},%
 plural={AUC-ROCs},%
 description={Area Under the Receiver Operating Characteristic Curve – misst die Trennschärfe eines Klassifikationsmodells.},%
 descriptionplural={Area Under the Receiver Operating Characteristic Curve – misst die Trennschärfe eines Klassifikationsmodells.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{auditlogs}%
+{%
+name={Audit-Logs},%
+sort={Audit-Logs},%
+type={main},%
+first={Audit-Logs},%
+firstplural={Audit-Logss},%
+text={Audit-Logs},%
+plural={Audit-Logss},%
+description={Logs zur Nachvollziehbarkeit administrativer Änderungen. In Keycloak Teil der Admin-Logs.},%
+descriptionplural={Logs zur Nachvollziehbarkeit administrativer Änderungen. In Keycloak Teil der Admin-Logs.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{authcodegrant}%
+{%
+name={Authorization Code Grant},%
+sort={Authorization Code Grant},%
+type={main},%
+first={Authorization Code Grant},%
+firstplural={Authorization Code Grants},%
+text={Authorization Code Grant},%
+plural={Authorization Code Grants},%
+description={OAuth2-Grant-Typ, bei dem der Benutzer über einen Code authentifiziert wird, der vom Client gegen ein Token eingetauscht wird.},%
+descriptionplural={OAuth2-Grant-Typ, bei dem der Benutzer über einen Code authentifiziert wird, der vom Client gegen ein Token eingetauscht wird.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{authflow}%
+{%
+name={Authentication Flow},%
+sort={Authentication Flow},%
+type={main},%
+first={Authentication Flow},%
+firstplural={Authentication Flows},%
+text={Authentication Flow},%
+plural={Authentication Flows},%
+description={Ablauf, der festlegt, wie sich Benutzer oder Clients bei Keycloak authentifizieren.},%
+descriptionplural={Ablauf, der festlegt, wie sich Benutzer oder Clients bei Keycloak authentifizieren.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -138,6 +278,174 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{botnetz}%
+{%
+name={Botnetz},%
+sort={Botnetz},%
+type={main},%
+first={Botnetz},%
+firstplural={Botnetzs},%
+text={Botnetz},%
+plural={Botnetzs},%
+description={Ein Zusammenschluss kompromittierter Geräte (Bots), die ferngesteuert werden, oft zur Durchführung koordinierter Angriffe wie DDoS oder zur Verbreitung von Malware.},%
+descriptionplural={Ein Zusammenschluss kompromittierter Geräte (Bots), die ferngesteuert werden, oft zur Durchführung koordinierter Angriffe wie DDoS oder zur Verbreitung von Malware.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{bottleneck}%
+{%
+name={Bottleneck},%
+sort={Bottleneck},%
+type={main},%
+first={Bottleneck},%
+firstplural={Bottlenecks},%
+text={Bottleneck},%
+plural={Bottlenecks},%
+description={Engste Stelle eines Autoencoders, in der die komprimierte Datenrepräsentation gespeichert wird},%
+descriptionplural={Engste Stelle eines Autoencoders, in der die komprimierte Datenrepräsentation gespeichert wird},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{bruteforce}%
+{%
+name={Brute-Force-Angriff},%
+sort={Brute-Force-Angriff},%
+type={main},%
+first={Brute-Force-Angriff},%
+firstplural={Brute-Force-Angriffs},%
+text={Brute-Force-Angriff},%
+plural={Brute-Force-Angriffs},%
+description={Angriffsmethode, bei der Passwörter oder Zugangsdaten durch systematisches Ausprobieren aller möglichen Kombinationen erraten werden.},%
+descriptionplural={Angriffsmethode, bei der Passwörter oder Zugangsdaten durch systematisches Ausprobieren aller möglichen Kombinationen erraten werden.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{client}%
+{%
+name={Client},%
+sort={Client},%
+type={main},%
+first={Client},%
+firstplural={Clients},%
+text={Client},%
+plural={Clients},%
+description={Anwendung oder Dienst, der Keycloak zur Authentifizierung und Autorisierung verwendet.},%
+descriptionplural={Anwendung oder Dienst, der Keycloak zur Authentifizierung und Autorisierung verwendet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{clientcredentials}%
+{%
+name={Client Credentials Grant},%
+sort={Client Credentials Grant},%
+type={main},%
+first={Client Credentials Grant},%
+firstplural={Client Credentials Grants},%
+text={Client Credentials Grant},%
+plural={Client Credentials Grants},%
+description={OAuth2-Grant-Typ, bei dem sich ein Client ohne Benutzerinteraktion authentifiziert.},%
+descriptionplural={OAuth2-Grant-Typ, bei dem sich ein Client ohne Benutzerinteraktion authentifiziert.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{clientlogin}%
+{%
+name={CLIENT LOGIN},%
+sort={CLIENT LOGIN},%
+type={main},%
+first={CLIENT LOGIN},%
+firstplural={CLIENT LOGINs},%
+text={CLIENT LOGIN},%
+plural={CLIENT LOGINs},%
+description={Event-Typ in Keycloak, der bei Anmeldung über einen Drittanbieter-Client (z.\,B. via OAuth2) generiert wird.},%
+descriptionplural={Event-Typ in Keycloak, der bei Anmeldung über einen Drittanbieter-Client (z.\,B. via OAuth2) generiert wird.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{clientrole}%
 {%
 name={Client-Role},%
@@ -149,6 +457,90 @@ text={Client-Role},%
 plural={Client-Roles},%
 description={Client-spezifische Rollen in Keycloak, die Zugriffsrechte innerhalb einer bestimmten Anwendung steuern},%
 descriptionplural={Client-spezifische Rollen in Keycloak, die Zugriffsrechte innerhalb einer bestimmten Anwendung steuern},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{clientscope}%
+{%
+name={Client-Scope},%
+sort={Client-Scope},%
+type={main},%
+first={Client-Scope},%
+firstplural={Client-Scopes},%
+text={Client-Scope},%
+plural={Client-Scopes},%
+description={Legt fest, welche Benutzerdaten in ein Token aufgenommen werden, wenn sich ein Benutzer über einen Client authentifiziert.},%
+descriptionplural={Legt fest, welche Benutzerdaten in ein Token aufgenommen werden, wenn sich ein Benutzer über einen Client authentifiziert.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{codetotoken}%
+{%
+name={CODE TO TOKEN},%
+sort={CODE TO TOKEN},%
+type={main},%
+first={CODE TO TOKEN},%
+firstplural={CODE TO TOKENs},%
+text={CODE TO TOKEN},%
+plural={CODE TO TOKENs},%
+description={Keycloak-Event, das auftritt, wenn ein Authentifizierungscode erfolgreich gegen ein Token eingetauscht wird.},%
+descriptionplural={Keycloak-Event, das auftritt, wenn ein Authentifizierungscode erfolgreich gegen ein Token eingetauscht wird.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{customlogs}%
+{%
+name={Custom Logs},%
+sort={Custom Logs},%
+type={main},%
+first={Custom Logs},%
+firstplural={Custom Logss},%
+text={Custom Logs},%
+plural={Custom Logss},%
+description={Benutzerspezifische oder erweiterte Logs, die über Keycloak-Extensions (z.\,B. SPIs) erzeugt werden.},%
+descriptionplural={Benutzerspezifische oder erweiterte Logs, die über Keycloak-Extensions (z.\,B. SPIs) erzeugt werden.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -194,6 +586,90 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{ddos}%
+{%
+name={DDoS},%
+sort={DDoS},%
+type={main},%
+first={DDoS},%
+firstplural={DDoSs},%
+text={DDoS},%
+plural={DDoSs},%
+description={Distributed Denial of Service – ein Angriff, bei dem viele Systeme gleichzeitig eine Zielressource mit Anfragen überfluten, um sie unzugänglich zu machen.},%
+descriptionplural={Distributed Denial of Service – ein Angriff, bei dem viele Systeme gleichzeitig eine Zielressource mit Anfragen überfluten, um sie unzugänglich zu machen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{decoder}%
+{%
+name={Decoder},%
+sort={Decoder},%
+type={main},%
+first={Decoder},%
+firstplural={Decoders},%
+text={Decoder},%
+plural={Decoders},%
+description={Teil eines Autoencoders, der versucht, aus der komprimierten Repräsentation die Originaldaten zu rekonstruieren},%
+descriptionplural={Teil eines Autoencoders, der versucht, aus der komprimierten Repräsentation die Originaldaten zu rekonstruieren},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{denoising}%
+{%
+name={Denoising Autoencoder},%
+sort={Denoising Autoencoder},%
+type={main},%
+first={Denoising Autoencoder},%
+firstplural={Denoising Autoencoders},%
+text={Denoising Autoencoder},%
+plural={Denoising Autoencoders},%
+description={Autoencoder, der lernt, verrauschte Eingaben zu bereinigen und zu rekonstruieren},%
+descriptionplural={Autoencoder, der lernt, verrauschte Eingaben zu bereinigen und zu rekonstruieren},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{dgx}%
 {%
 name={DGX},%
@@ -205,6 +681,286 @@ text={DGX},%
 plural={DGXs},%
 description={Deep GPU Xceleration – NVIDIA-Hardwareplattform zur KI-Beschleunigung.},%
 descriptionplural={Deep GPU Xceleration – NVIDIA-Hardwareplattform zur KI-Beschleunigung.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{encoder}%
+{%
+name={Encoder},%
+sort={Encoder},%
+type={main},%
+first={Encoder},%
+firstplural={Encoders},%
+text={Encoder},%
+plural={Encoders},%
+description={Teil eines Autoencoders, der Daten in eine niedrigdimensionale Repräsentation komprimiert},%
+descriptionplural={Teil eines Autoencoders, der Daten in eine niedrigdimensionale Repräsentation komprimiert},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{eps}%
+{%
+name={Eps},%
+sort={Eps},%
+type={main},%
+first={Eps},%
+firstplural={Epss},%
+text={Eps},%
+plural={Epss},%
+description={Radius in DBSCAN, der zur Definition der Nachbarschaft eines Punktes dient},%
+descriptionplural={Radius in DBSCAN, der zur Definition der Nachbarschaft eines Punktes dient},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{eventlogs}%
+{%
+name={Event-Logs},%
+sort={Event-Logs},%
+type={main},%
+first={Event-Logs},%
+firstplural={Event-Logss},%
+text={Event-Logs},%
+plural={Event-Logss},%
+description={Protokolle von Benutzer- und Administratoraktionen innerhalb von Keycloak. Enthalten Informationen zu Zeitpunkt, Nutzer-ID, Realm usw.},%
+descriptionplural={Protokolle von Benutzer- und Administratoraktionen innerhalb von Keycloak. Enthalten Informationen zu Zeitpunkt, Nutzer-ID, Realm usw.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{eventtype}%
+{%
+name={Event-Typ},%
+sort={Event-Typ},%
+type={main},%
+first={Event-Typ},%
+firstplural={Event-Typs},%
+text={Event-Typ},%
+plural={Event-Typs},%
+description={Bezeichnet die Art des ausgelösten Ereignisses, z.\,B. LOGIN, LOGOUT, TOKEN\_REFRESH etc.},%
+descriptionplural={Bezeichnet die Art des ausgelösten Ereignisses, z.\,B. LOGIN, LOGOUT, TOKEN\_REFRESH etc.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{feature-space}%
+{%
+name={Feature Space (Merkmalsraum)},%
+sort={Feature Space (Merkmalsraum)},%
+type={main},%
+first={Feature Space (Merkmalsraum)},%
+firstplural={Feature Space (Merkmalsraum)s},%
+text={Feature Space (Merkmalsraum)},%
+plural={Feature Space (Merkmalsraum)s},%
+description={Der Raum, in dem Datenpunkte durch Merkmale abgebildet werden, häufig hochdimensional},%
+descriptionplural={Der Raum, in dem Datenpunkte durch Merkmale abgebildet werden, häufig hochdimensional},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{filebeat}%
+{%
+name={Filebeat},%
+sort={Filebeat},%
+type={main},%
+first={Filebeat},%
+firstplural={Filebeats},%
+text={Filebeat},%
+plural={Filebeats},%
+description={Lightweight-Agent, der Logdateien überwacht und deren Inhalte an zentrale Systeme wie Logstash weiterleitet.},%
+descriptionplural={Lightweight-Agent, der Logdateien überwacht und deren Inhalte an zentrale Systeme wie Logstash weiterleitet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{gamma}%
+{%
+name={\texttt {gamma}},%
+sort={\texttt {gamma}},%
+type={main},%
+first={\protect \texttt  {gamma}},%
+firstplural={\protect \texttt  {gamma}s},%
+text={\protect \texttt  {gamma}},%
+plural={\protect \texttt  {gamma}s},%
+description={Parameter der RBF-Kernel-Funktion bei der One-Class SVM; legt fest, wie stark ein einzelner Trainingspunkt die Entscheidungsgrenze beeinflusst},%
+descriptionplural={Parameter der RBF-Kernel-Funktion bei der One-Class SVM; legt fest, wie stark ein einzelner Trainingspunkt die Entscheidungsgrenze beeinflusst},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{granttype}%
+{%
+name={Grant Type},%
+sort={Grant Type},%
+type={main},%
+first={Grant Type},%
+firstplural={Grant Types},%
+text={Grant Type},%
+plural={Grant Types},%
+description={Verfahren, mit dem ein Client oder Benutzer bei einem Authentifizierungsserver ein Token anfordert.},%
+descriptionplural={Verfahren, mit dem ein Client oder Benutzer bei einem Authentifizierungsserver ein Token anfordert.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hdbscan}%
+{%
+name={HDBSCAN},%
+sort={HDBSCAN},%
+type={main},%
+first={HDBSCAN},%
+firstplural={HDBSCANs},%
+text={HDBSCAN},%
+plural={HDBSCANs},%
+description={Hierarchical Density-Based Spatial Clustering of Applications with Noise, eine hierarchische Erweiterung von DBSCAN},%
+descriptionplural={Hierarchical Density-Based Spatial Clustering of Applications with Noise, eine hierarchische Erweiterung von DBSCAN},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{hiddenstate}%
+{%
+name={Hidden State},%
+sort={Hidden State},%
+type={main},%
+first={Hidden State},%
+firstplural={Hidden States},%
+text={Hidden State},%
+plural={Hidden States},%
+description={Interner Zustand eines RNNs, der Informationen über vorherige Zeitschritte speichert},%
+descriptionplural={Interner Zustand eines RNNs, der Informationen über vorherige Zeitschritte speichert},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -278,6 +1034,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{idp}%
+{%
+name={Identity Provider (IdP)},%
+sort={Identity Provider (IdP)},%
+type={main},%
+first={Identity Provider (IdP)},%
+firstplural={Identity Provider (IdP)s},%
+text={Identity Provider (IdP)},%
+plural={Identity Provider (IdP)s},%
+description={Externer Anbieter, der Authentifizierungsdienste bereitstellt (z.\,B. Google, Microsoft).},%
+descriptionplural={Externer Anbieter, der Authentifizierungsdienste bereitstellt (z.\,B. Google, Microsoft).},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{if}%
 {%
 name={IF},%
@@ -306,6 +1090,146 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{isolationtree}%
+{%
+name={Isolation Tree},%
+sort={Isolation Tree},%
+type={main},%
+first={Isolation Tree},%
+firstplural={Isolation Trees},%
+text={Isolation Tree},%
+plural={Isolation Trees},%
+description={Binärer Baum aus dem Isolation Forest-Verfahren zur Isolierung von Datenpunkten},%
+descriptionplural={Binärer Baum aus dem Isolation Forest-Verfahren zur Isolierung von Datenpunkten},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{insiderthreat}%
+{%
+name={Insider Threat},%
+sort={Insider Threat},%
+type={main},%
+first={Insider Threat},%
+firstplural={Insider Threats},%
+text={Insider Threat},%
+plural={Insider Threats},%
+description={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht, z.\,B. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.},%
+descriptionplural={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht, z.\,B. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{jbosslogging}%
+{%
+name={JBoss Logging},%
+sort={JBoss Logging},%
+type={main},%
+first={JBoss Logging},%
+firstplural={JBoss Loggings},%
+text={JBoss Logging},%
+plural={JBoss Loggings},%
+description={Logging-API aus dem JBoss-Ökosystem. Bietet eine Abstraktionsschicht über verschiedene Logging-Backends wie log4j, JUL oder slf4j.},%
+descriptionplural={Logging-API aus dem JBoss-Ökosystem. Bietet eine Abstraktionsschicht über verschiedene Logging-Backends wie log4j, JUL oder slf4j.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{jul}%
+{%
+name={JUL (java.util.logging)},%
+sort={JUL (java.util.logging)},%
+type={main},%
+first={JUL (java.util.logging)},%
+firstplural={JUL (java.util.logging)s},%
+text={JUL (java.util.logging)},%
+plural={JUL (java.util.logging)s},%
+description={In Java integriertes Logging-Framework. Funktional eingeschränkt und schwer konfigurierbar im Vergleich zu log4j oder logback.},%
+descriptionplural={In Java integriertes Logging-Framework. Funktional eingeschränkt und schwer konfigurierbar im Vergleich zu log4j oder logback.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{k8slogging}%
+{%
+name={Kubernetes Logging},%
+sort={Kubernetes Logging},%
+type={main},%
+first={Kubernetes Logging},%
+firstplural={Kubernetes Loggings},%
+text={Kubernetes Logging},%
+plural={Kubernetes Loggings},%
+description={Logging-Ansätze für containerisierte Anwendungen innerhalb von Kubernetes-Umgebungen, oft via Sidecars oder Remote-Stacks.},%
+descriptionplural={Logging-Ansätze für containerisierte Anwendungen innerhalb von Kubernetes-Umgebungen, oft via Sidecars oder Remote-Stacks.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{keycloak}%
 {%
 name={Keycloak},%
@@ -317,6 +1241,202 @@ text={Keycloak},%
 plural={Keycloaks},%
 description={Open-Source Identity-Management-Lösung mit Funktionen wie SSO, RBAC und Brute-Force-Schutz.},%
 descriptionplural={Open-Source Identity-Management-Lösung mit Funktionen wie SSO, RBAC und Brute-Force-Schutz.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{kmeans}%
+{%
+name={K-Means},%
+sort={K-Means},%
+type={main},%
+first={K-Means},%
+firstplural={K-Meanss},%
+text={K-Means},%
+plural={K-Meanss},%
+description={Clustering-Verfahren, das Daten in vordefinierte Cluster basierend auf Mittelwerten aufteilt},%
+descriptionplural={Clustering-Verfahren, das Daten in vordefinierte Cluster basierend auf Mittelwerten aufteilt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{lof}%
+{%
+name={LOF},%
+sort={LOF},%
+type={main},%
+first={LOF},%
+firstplural={LOFs},%
+text={LOF},%
+plural={LOFs},%
+description={Local Outlier Factor, ein Verfahren zur Anomalieerkennung über Vergleich lokaler Dichten},%
+descriptionplural={Local Outlier Factor, ein Verfahren zur Anomalieerkennung über Vergleich lokaler Dichten},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{log4j}%
+{%
+name={Log4j},%
+sort={Log4j},%
+type={main},%
+first={Log4j},%
+firstplural={Log4js},%
+text={Log4j},%
+plural={Log4js},%
+description={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (z. B. Log4Shell) kritisch betrachtet.},%
+descriptionplural={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (z. B. Log4Shell) kritisch betrachtet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{logback}%
+{%
+name={Logback},%
+sort={Logback},%
+type={main},%
+first={Logback},%
+firstplural={Logbacks},%
+text={Logback},%
+plural={Logbacks},%
+description={Moderne Logging-Implementierung, die SLF4J unterstützt und als Nachfolger von log4j gilt.},%
+descriptionplural={Moderne Logging-Implementierung, die SLF4J unterstützt und als Nachfolger von log4j gilt.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{logcategory}%
+{%
+name={Category (Logging)},%
+sort={Category (Logging)},%
+type={main},%
+first={Category (Logging)},%
+firstplural={Category (Logging)s},%
+text={Category (Logging)},%
+plural={Category (Logging)s},%
+description={Bezeichnung des Moduls oder der Komponente, aus der ein Log stammt (z.\,B. \texttt {org.keycloak.events}).},%
+descriptionplural={Bezeichnung des Moduls oder der Komponente, aus der ein Log stammt (z.\,B. \texttt {org.keycloak.events}).},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{loginerror}%
+{%
+name={LOGIN ERROR},%
+sort={LOGIN ERROR},%
+type={main},%
+first={LOGIN ERROR},%
+firstplural={LOGIN ERRORs},%
+text={LOGIN ERROR},%
+plural={LOGIN ERRORs},%
+description={Event-Typ, der bei einem fehlgeschlagenen Benutzer-Login generiert wird.},%
+descriptionplural={Event-Typ, der bei einem fehlgeschlagenen Benutzer-Login generiert wird.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{loglevel}%
+{%
+name={Log-Level},%
+sort={Log-Level},%
+type={main},%
+first={Log-Level},%
+firstplural={Log-Levels},%
+text={Log-Level},%
+plural={Log-Levels},%
+description={Gibt die Kritikalität oder den Zweck eines Log-Eintrags an (z.\,B. INFO, ERROR, FATAL, DEBUG).},%
+descriptionplural={Gibt die Kritikalität oder den Zweck eines Log-Eintrags an (z.\,B. INFO, ERROR, FATAL, DEBUG).},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -446,6 +1566,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{minpts}%
+{%
+name={MinPts},%
+sort={MinPts},%
+type={main},%
+first={MinPts},%
+firstplural={MinPtss},%
+text={MinPts},%
+plural={MinPtss},%
+description={Minimale Anzahl an Punkten innerhalb des Eps-Radius, damit ein Punkt als Kernpunkt eines Clusters gilt},%
+descriptionplural={Minimale Anzahl an Punkten innerhalb des Eps-Radius, damit ein Punkt als Kernpunkt eines Clusters gilt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{ml}%
 {%
 name={ML},%
@@ -474,6 +1622,90 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{noise}%
+{%
+name={Noise},%
+sort={Noise},%
+type={main},%
+first={Noise},%
+firstplural={Noises},%
+text={Noise},%
+plural={Noises},%
+description={Punkte in DBSCAN, die keinem Cluster zugeordnet werden können},%
+descriptionplural={Punkte in DBSCAN, die keinem Cluster zugeordnet werden können},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{nu}%
+{%
+name={\ensuremath {\nu }},%
+sort={\ensuremath {\nu }},%
+type={main},%
+first={\protect \ensuremath  {\nu }},%
+firstplural={\protect \ensuremath  {\nu }s},%
+text={\protect \ensuremath  {\nu }},%
+plural={\protect \ensuremath  {\nu }s},%
+description={Parameter der One-Class SVM, der den Anteil an erwarteten Ausreißern im Trainingsdatensatz steuert},%
+descriptionplural={Parameter der One-Class SVM, der den Anteil an erwarteten Ausreißern im Trainingsdatensatz steuert},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{oauth}%
+{%
+name={OAuth 2.0},%
+sort={OAuth 2.0},%
+type={main},%
+first={OAuth 2.0},%
+firstplural={OAuth 2.0s},%
+text={OAuth 2.0},%
+plural={OAuth 2.0s},%
+description={Autorisierungs-Framework, das sicheren Zugriff auf geschützte Ressourcen ermöglicht.},%
+descriptionplural={Autorisierungs-Framework, das sicheren Zugriff auf geschützte Ressourcen ermöglicht.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{ocsvm}%
 {%
 name={OCSVM},%
@@ -485,6 +1717,90 @@ text={OCSVM},%
 plural={OCSVMs},%
 description={One-Class Support Vector Machine – Algorithmus zur Anomalieerkennung mit einseitiger Klassifikation.},%
 descriptionplural={One-Class Support Vector Machine – Algorithmus zur Anomalieerkennung mit einseitiger Klassifikation.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{oidc}%
+{%
+name={OpenID Connect (OIDC)},%
+sort={OpenID Connect (OIDC)},%
+type={main},%
+first={OpenID Connect (OIDC)},%
+firstplural={OpenID Connect (OIDC)s},%
+text={OpenID Connect (OIDC)},%
+plural={OpenID Connect (OIDC)s},%
+description={Auth-Protokoll, das auf OAuth 2.0 basiert und die Identität von Nutzern sicher überträgt.},%
+descriptionplural={Auth-Protokoll, das auf OAuth 2.0 basiert und die Identität von Nutzern sicher überträgt.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{operationtype}%
+{%
+name={operationType},%
+sort={operationType},%
+type={main},%
+first={operationType},%
+firstplural={operationTypes},%
+text={operationType},%
+plural={operationTypes},%
+description={Feld in Admin-Logs, das die Art der Admin-Aktion angibt, z.\,B. CREATE, UPDATE, DELETE oder ACTION.},%
+descriptionplural={Feld in Admin-Logs, das die Art der Admin-Aktion angibt, z.\,B. CREATE, UPDATE, DELETE oder ACTION.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{quarkus}%
+{%
+name={Quarkus},%
+sort={Quarkus},%
+type={main},%
+first={Quarkus},%
+firstplural={Quarkuss},%
+text={Quarkus},%
+plural={Quarkuss},%
+description={Modernes Java-Framework, optimiert für containerisierte und cloud-native Anwendungen. Ab Keycloak Version 17 als Basisplattform genutzt.},%
+descriptionplural={Modernes Java-Framework, optimiert für containerisierte und cloud-native Anwendungen. Ab Keycloak Version 17 als Basisplattform genutzt.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -539,8 +1855,8 @@ first={Realm},%
 firstplural={Realms},%
 text={Realm},%
 plural={Realms},%
-description={Ein Verwaltungsbereich in Keycloak, in dem Clients, Benutzer und Rollen organisiert sind},%
-descriptionplural={Ein Verwaltungsbereich in Keycloak, in dem Clients, Benutzer und Rollen organisiert sind},%
+description={Isolierte Umgebung in Keycloak, in der Benutzer, Rollen und Clients separat verwaltet werden.},%
+descriptionplural={Isolierte Umgebung in Keycloak, in der Benutzer, Rollen und Clients separat verwaltet werden.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -586,6 +1902,62 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{rekonstruktionsfehler}%
+{%
+name={Rekonstruktionsfehler},%
+sort={Rekonstruktionsfehler},%
+type={main},%
+first={Rekonstruktionsfehler},%
+firstplural={Rekonstruktionsfehlers},%
+text={Rekonstruktionsfehler},%
+plural={Rekonstruktionsfehlers},%
+description={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten},%
+descriptionplural={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{remotelogging}%
+{%
+name={Remote Logging},%
+sort={Remote Logging},%
+type={main},%
+first={Remote Logging},%
+firstplural={Remote Loggings},%
+text={Remote Logging},%
+plural={Remote Loggings},%
+description={Versand von Logs an externe Systeme oder Services, z.\,B. über Syslog, HTTP oder Filebeat.},%
+descriptionplural={Versand von Logs an externe Systeme oder Services, z.\,B. über Syslog, HTTP oder Filebeat.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{rnn}%
 {%
 name={RNN},%
@@ -597,6 +1969,34 @@ text={RNN},%
 plural={RNNs},%
 description={Recurrent Neural Network – Neuronales Netz zur Verarbeitung zeitabhängiger Daten.},%
 descriptionplural={Recurrent Neural Network – Neuronales Netz zur Verarbeitung zeitabhängiger Daten.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{saml}%
+{%
+name={SAML},%
+sort={SAML},%
+type={main},%
+first={SAML},%
+firstplural={SAMLs},%
+text={SAML},%
+plural={SAMLs},%
+description={Security Assertion Markup Language – XML-basiertes Protokoll für Authentifizierung und Autorisierung.},%
+descriptionplural={Security Assertion Markup Language – XML-basiertes Protokoll für Authentifizierung und Autorisierung.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -642,6 +2042,146 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{securitylogs}%
+{%
+name={Security Logs},%
+sort={Security Logs},%
+type={main},%
+first={Security Logs},%
+firstplural={Security Logss},%
+text={Security Logs},%
+plural={Security Logss},%
+description={Protokollieren sicherheitsrelevante Ereignisse wie z.\,B. verdächtige Logins, Policy-Verletzungen oder Blockierungen.},%
+descriptionplural={Protokollieren sicherheitsrelevante Ereignisse wie z.\,B. verdächtige Logins, Policy-Verletzungen oder Blockierungen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{serverlogs}%
+{%
+name={Server-Logs},%
+sort={Server-Logs},%
+type={main},%
+first={Server-Logs},%
+firstplural={Server-Logss},%
+text={Server-Logs},%
+plural={Server-Logss},%
+description={Logs, die Betriebsstatus, Fehler und Debugging-Informationen des Keycloak-Servers dokumentieren.},%
+descriptionplural={Logs, die Betriebsstatus, Fehler und Debugging-Informationen des Keycloak-Servers dokumentieren.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{serviceaccount}%
+{%
+name={Service Account},%
+sort={Service Account},%
+type={main},%
+first={Service Account},%
+firstplural={Service Accounts},%
+text={Service Account},%
+plural={Service Accounts},%
+description={Konto, das einem Client gehört und ohne Benutzerinteraktion für automatisierte Vorgänge eingesetzt wird.},%
+descriptionplural={Konto, das einem Client gehört und ohne Benutzerinteraktion für automatisierte Vorgänge eingesetzt wird.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{slf4j}%
+{%
+name={SLF4J},%
+sort={SLF4J},%
+type={main},%
+first={SLF4J},%
+firstplural={SLF4Js},%
+text={SLF4J},%
+plural={SLF4Js},%
+description={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j oder logback unterstützt.},%
+descriptionplural={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j oder logback unterstützt.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{spoofing}%
+{%
+name={Spoofing},%
+sort={Spoofing},%
+type={main},%
+first={Spoofing},%
+firstplural={Spoofings},%
+text={Spoofing},%
+plural={Spoofings},%
+description={Täuschungstechniken, bei denen sich ein Angreifer als vertrauenswürdige Instanz ausgibt, um Zugang zu Informationen oder Systemen zu erlangen.},%
+descriptionplural={Täuschungstechniken, bei denen sich ein Angreifer als vertrauenswürdige Instanz ausgibt, um Zugang zu Informationen oder Systemen zu erlangen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{sso}%
 {%
 name={SSO},%
@@ -670,17 +2210,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{zerodayangriff}%
+\glsdefs@newdocentry{syslog}%
 {%
-name={Zero-Day-Angriff},%
-sort={Zero-Day-Angriff},%
+name={Syslog},%
+sort={Syslog},%
 type={main},%
-first={Zero-Day-Angriff},%
-firstplural={Zero-Day-Angriffs},%
-text={Zero-Day-Angriff},%
-plural={Zero-Day-Angriffs},%
-description={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.},%
-descriptionplural={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.},%
+first={Syslog},%
+firstplural={Syslogs},%
+text={Syslog},%
+plural={Syslogs},%
+description={Standardprotokoll zur Übertragung von Logmeldungen in Netzwerkumgebungen, z.\,B. an zentrale Logserver.},%
+descriptionplural={Standardprotokoll zur Übertragung von Logmeldungen in Netzwerkumgebungen, z.\,B. an zentrale Logserver.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -698,17 +2238,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{saml}%
+\glsdefs@newdocentry{systemout}%
 {%
-name={SAML},%
-sort={SAML},%
+name={System.out / System.err},%
+sort={System.out / System.err},%
 type={main},%
-first={SAML},%
-firstplural={SAMLs},%
-text={SAML},%
-plural={SAMLs},%
-description={Security Assertion Markup Language – Ein XML-basiertes Standardprotokoll zur Übertragung von Authentifizierungs- und Autorisierungsinformationen zwischen Identity Providern und Service Providern.},%
-descriptionplural={Security Assertion Markup Language – Ein XML-basiertes Standardprotokoll zur Übertragung von Authentifizierungs- und Autorisierungsinformationen zwischen Identity Providern und Service Providern.},%
+first={System.out / System.err},%
+firstplural={System.out / System.errs},%
+text={System.out / System.err},%
+plural={System.out / System.errs},%
+description={Standard-Ausgabe-/Fehlerstreams in Java. Nicht strukturiert und für produktive Logs ungeeignet.},%
+descriptionplural={Standard-Ausgabe-/Fehlerstreams in Java. Nicht strukturiert und für produktive Logs ungeeignet.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -726,17 +2266,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{oidc}%
+\glsdefs@newdocentry{timestamp}%
 {%
-name={OIDC},%
-sort={OIDC},%
+name={timestamp},%
+sort={timestamp},%
 type={main},%
-first={OIDC},%
-firstplural={OIDCs},%
-text={OIDC},%
-plural={OIDCs},%
-description={OpenID Connect – Ein modernes Authentifizierungsprotokoll, das auf OAuth 2.0 aufbaut und zur sicheren Überprüfung der Identität eines Benutzers verwendet wird.},%
-descriptionplural={OpenID Connect – Ein modernes Authentifizierungsprotokoll, das auf OAuth 2.0 aufbaut und zur sicheren Überprüfung der Identität eines Benutzers verwendet wird.},%
+first={timestamp},%
+firstplural={timestamps},%
+text={timestamp},%
+plural={timestamps},%
+description={Zeitmarke, zu der ein Event im Log registriert wurde. Wichtige Information für zeitbasierte Analysen.},%
+descriptionplural={Zeitmarke, zu der ein Event im Log registriert wurde. Wichtige Information für zeitbasierte Analysen.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -754,17 +2294,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{idp}%
+\glsdefs@newdocentry{tokenrefresh}%
 {%
-name={IdP},%
-sort={IdP},%
+name={TOKEN\_REFRESH},%
+sort={TOKEN\_REFRESH},%
 type={main},%
-first={IdP},%
-firstplural={IdPs},%
-text={IdP},%
-plural={IdPs},%
-description={Identity Provider – Ein externer Dienst, der die Authentifizierung von Benutzern übernimmt und Identitätsinformationen an andere Dienste weitergibt.},%
-descriptionplural={Identity Provider – Ein externer Dienst, der die Authentifizierung von Benutzern übernimmt und Identitätsinformationen an andere Dienste weitergibt.},%
+first={TOKEN\protect \_REFRESH},%
+firstplural={TOKEN\protect \_REFRESHs},%
+text={TOKEN\protect \_REFRESH},%
+plural={TOKEN\protect \_REFRESHs},%
+description={Keycloak-Event-Typ, der beim Aktualisieren eines Zugriffstokens generiert wird.},%
+descriptionplural={Keycloak-Event-Typ, der beim Aktualisieren eines Zugriffstokens generiert wird.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -784,15 +2324,155 @@ parent={},%
 
 \glsdefs@newdocentry{uba}%
 {%
-name={uba},%
-sort={uba},%
+name={UBA},%
+sort={UBA},%
 type={main},%
-first={uba},%
-firstplural={ubas},%
-text={uba},%
-plural={ubas},%
-description={},%
-descriptionplural={},%
+first={UBA},%
+firstplural={UBAs},%
+text={UBA},%
+plural={UBAs},%
+description={User Behavior Analytics – Analyse des Benutzerverhaltens zur Erkennung von Anomalien und Sicherheitsbedrohungen.},%
+descriptionplural={User Behavior Analytics – Analyse des Benutzerverhaltens zur Erkennung von Anomalien und Sicherheitsbedrohungen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{ueba}%
+{%
+name={UEBA},%
+sort={UEBA},%
+type={main},%
+first={UEBA},%
+firstplural={UEBAs},%
+text={UEBA},%
+plural={UEBAs},%
+description={User and Entity Behavior Analytics – Verfahren zur Analyse des Verhaltens von Benutzern und technischen Entitäten mit dem Ziel, sicherheitsrelevante Anomalien zu identifizieren.},%
+descriptionplural={User and Entity Behavior Analytics – Verfahren zur Analyse des Verhaltens von Benutzern und technischen Entitäten mit dem Ziel, sicherheitsrelevante Anomalien zu identifizieren.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{userlogs}%
+{%
+name={User Logs},%
+sort={User Logs},%
+type={main},%
+first={User Logs},%
+firstplural={User Logss},%
+text={User Logs},%
+plural={User Logss},%
+description={Logs, die Benutzeraktionen ohne Adminrechte erfassen. Typische Eventtypen sind LOGIN, LOGOUT oder TOKEN-Operationen.},%
+descriptionplural={Logs, die Benutzeraktionen ohne Adminrechte erfassen. Typische Eventtypen sind LOGIN, LOGOUT oder TOKEN-Operationen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vae}%
+{%
+name={Variational Autoencoder (VAE)},%
+sort={Variational Autoencoder (VAE)},%
+type={main},%
+first={Variational Autoencoder (VAE)},%
+firstplural={Variational Autoencoder (VAE)s},%
+text={Variational Autoencoder (VAE)},%
+plural={Variational Autoencoder (VAE)s},%
+description={Autoencoder-Variante, die Wahrscheinlichkeitsverteilungen in der Bottleneck-Schicht modelliert, häufig für generative Modelle},%
+descriptionplural={Autoencoder-Variante, die Wahrscheinlichkeitsverteilungen in der Bottleneck-Schicht modelliert, häufig für generative Modelle},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{wildfly}%
+{%
+name={WildFly},%
+sort={WildFly},%
+type={main},%
+first={WildFly},%
+firstplural={WildFlys},%
+text={WildFly},%
+plural={WildFlys},%
+description={Java-Anwendungsserver, früher Basis von Keycloak. Verwendet JBoss Logging und bietet umfangreiche Java EE-Funktionalität.},%
+descriptionplural={Java-Anwendungsserver, früher Basis von Keycloak. Verwendet JBoss Logging und bietet umfangreiche Java EE-Funktionalität.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{zerodayangriff}%
+{%
+name={Zero-Day-Angriff},%
+sort={Zero-Day-Angriff},%
+type={main},%
+first={Zero-Day-Angriff},%
+firstplural={Zero-Day-Angriffs},%
+text={Zero-Day-Angriff},%
+plural={Zero-Day-Angriffs},%
+description={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.},%
+descriptionplural={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%

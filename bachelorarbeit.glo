@@ -1,21 +1,81 @@
 \glossaryentry{Keycloak?\glossentry{keycloak}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{Scikit-learn?\glossentry{scikit}|setentrycounter[]{page}"\glsnumberformat}{5}
 \glossaryentry{DGX?\glossentry{dgx}|setentrycounter[]{page}"\glsnumberformat}{5}
+\glossaryentry{Botnetz?\glossentry{botnetz}|setentrycounter[]{page}"\glsnumberformat}{12}
+\glossaryentry{Spoofing?\glossentry{spoofing}|setentrycounter[]{page}"\glsnumberformat}{15}
 \glossaryentry{Keycloak?\glossentry{keycloak}|setentrycounter[]{page}"\glsnumberformat}{15}
 \glossaryentry{IAM?\glossentry{iam}|setentrycounter[]{page}"\glsnumberformat}{15}
 \glossaryentry{SSO?\glossentry{sso}|setentrycounter[]{page}"\glsnumberformat}{15}
 \glossaryentry{RBAC?\glossentry{rbac}|setentrycounter[]{page}"\glsnumberformat}{15}
 \glossaryentry{ABAC?\glossentry{abac}|setentrycounter[]{page}"\glsnumberformat}{15}
 \glossaryentry{Zero-Day-Angriff?\glossentry{zerodayangriff}|setentrycounter[]{page}"\glsnumberformat}{16}
-\glossaryentry{uba?\glossentry{uba}|setentrycounter[]{page}"\glsnumberformat}{16}
+\glossaryentry{UBA?\glossentry{uba}|setentrycounter[]{page}"\glsnumberformat}{16}
+\glossaryentry{UEBA?\glossentry{ueba}|setentrycounter[]{page}"\glsnumberformat}{17}
 \glossaryentry{LSTM?\glossentry{lstm}|setentrycounter[]{page}"\glsnumberformat}{19}
 \glossaryentry{DBSCAN?\glossentry{dbscan}|setentrycounter[]{page}"\glsnumberformat}{19}
 \glossaryentry{Hybridmodell?\glossentry{hybridmodell}|setentrycounter[]{page}"\glsnumberformat}{19}
+\glossaryentry{Eps?\glossentry{eps}|setentrycounter[]{page}"\glsnumberformat}{19}
+\glossaryentry{MinPts?\glossentry{minpts}|setentrycounter[]{page}"\glsnumberformat}{19}
 \glossaryentry{AUC-ROC?\glossentry{aucroc}|setentrycounter[]{page}"\glsnumberformat}{22}
 \glossaryentry{AUC-PR?\glossentry{aucpr}|setentrycounter[]{page}"\glsnumberformat}{23}
 \glossaryentry{Matthews Correlation Coefficient (MCC)?\glossentry{mcc}|setentrycounter[]{page}"\glsnumberformat}{23}
 \glossaryentry{Balanced Accuracy?\glossentry{balancedaccuracy}|setentrycounter[]{page}"\glsnumberformat}{23}
 \glossaryentry{Scikit-learn?\glossentry{scikit}|setentrycounter[]{page}"\glsnumberformat}{26}
 \glossaryentry{DGX?\glossentry{dgx}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{Realm?\glossentry{realm}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{Client?\glossentry{client}|setentrycounter[]{page}"\glsnumberformat}{27}
+\glossaryentry{Identity Provider (IdP)?\glossentry{idp}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{OpenID Connect (OIDC)?\glossentry{oidc}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{OAuth 2.0?\glossentry{oauth}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{SAML?\glossentry{saml}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{Grant Type?\glossentry{granttype}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{Authorization Code Grant?\glossentry{authcodegrant}|setentrycounter[]{page}"\glsnumberformat}{28}
+\glossaryentry{Client Credentials Grant?\glossentry{clientcredentials}|setentrycounter[]{page}"\glsnumberformat}{29}
+\glossaryentry{Authentication Flow?\glossentry{authflow}|setentrycounter[]{page}"\glsnumberformat}{29}
+\glossaryentry{Client-Scope?\glossentry{clientscope}|setentrycounter[]{page}"\glsnumberformat}{29}
+\glossaryentry{Service Account?\glossentry{serviceaccount}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{Quarkus?\glossentry{quarkus}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{WildFly?\glossentry{wildfly}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{JBoss Logging?\glossentry{jbosslogging}|setentrycounter[]{page}"\glsnumberformat}{30}
+\glossaryentry{Log4j?\glossentry{log4j}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{SLF4J?\glossentry{slf4j}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{Event-Typ?\glossentry{eventtype}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{Syslog?\glossentry{syslog}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{System.out / System.err?\glossentry{systemout}|setentrycounter[]{page}"\glsnumberformat}{31}
+\glossaryentry{Remote Logging?\glossentry{remotelogging}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{Filebeat?\glossentry{filebeat}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{Server-Logs?\glossentry{serverlogs}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{Event-Logs?\glossentry{eventlogs}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{Audit-Logs?\glossentry{auditlogs}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{Access Logs?\glossentry{accesslogs}|setentrycounter[]{page}"\glsnumberformat}{33}
+\glossaryentry{Security Logs?\glossentry{securitylogs}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{Custom Logs?\glossentry{customlogs}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{Admin Logs?\glossentry{adminlogs}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{User Logs?\glossentry{userlogs}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{timestamp?\glossentry{timestamp}|setentrycounter[]{page}"\glsnumberformat}{34}
+\glossaryentry{Log-Level?\glossentry{loglevel}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{Category (Logging)?\glossentry{logcategory}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{TOKEN"\_REFRESH?\glossentry{tokenrefresh}|setentrycounter[]{page}"\glsnumberformat}{35}
+\glossaryentry{CODE TO TOKEN?\glossentry{codetotoken}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{CLIENT LOGIN?\glossentry{clientlogin}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{LOGIN ERROR?\glossentry{loginerror}|setentrycounter[]{page}"\glsnumberformat}{36}
+\glossaryentry{operationType?\glossentry{operationtype}|setentrycounter[]{page}"\glsnumberformat}{36}
 \glossaryentry{RNN?\glossentry{rnn}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{Hidden State?\glossentry{hiddenstate}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{Encoder?\glossentry{encoder}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{Decoder?\glossentry{decoder}|setentrycounter[]{page}"\glsnumberformat}{37}
+\glossaryentry{Bottleneck?\glossentry{bottleneck}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{Rekonstruktionsfehler?\glossentry{rekonstruktionsfehler}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{Variational Autoencoder (VAE)?\glossentry{vae}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{Denoising Autoencoder?\glossentry{denoising}|setentrycounter[]{page}"\glsnumberformat}{38}
+\glossaryentry{Isolation Tree?\glossentry{isolationtree}|setentrycounter[]{page}"\glsnumberformat}{40}
 \glossaryentry{OCSVM?\glossentry{ocsvm}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{Feature Space (Merkmalsraum)?\glossentry{feature-space}|setentrycounter[]{page}"\glsnumberformat}{41}
+\glossaryentry{Noise?\glossentry{noise}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{HDBSCAN?\glossentry{hdbscan}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{K-Means?\glossentry{kmeans}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{LOF?\glossentry{lof}|setentrycounter[]{page}"\glsnumberformat}{43}
+\glossaryentry{"\ensuremath {"\nu }?\glossentry{nu}|setentrycounter[]{page}"\glsnumberformat}{45}
+\glossaryentry{"\texttt {gamma}?\glossentry{gamma}|setentrycounter[]{page}"\glsnumberformat}{46}
+\glossaryentry{Insider Threat?\glossentry{insiderthreat}|setentrycounter[]{page}"\glsnumberformat}{47}
+\glossaryentry{Brute-Force-Angriff?\glossentry{bruteforce}|setentrycounter[]{page}"\glsnumberformat}{58}
