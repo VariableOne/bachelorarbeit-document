@@ -782,3 +782,31 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{uba}%
+{%
+name={uba},%
+sort={uba},%
+type={main},%
+first={uba},%
+firstplural={ubas},%
+text={uba},%
+plural={ubas},%
+description={},%
+descriptionplural={},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+

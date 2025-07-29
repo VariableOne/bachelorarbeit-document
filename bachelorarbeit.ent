@@ -41,8 +41,6 @@ Vieweg,
 \@doanenote {3}
 macro:->Single
 Sign-On
-(\gls
-{sso})
 ermöglicht
 einem
 Nutzer
@@ -74,15 +72,24 @@ Redbooks,
 {https://www.redbooks.ibm.com/abstracts/sg247208.html}
 \@endanenote 
 \@doanenote {4}
-macro:->https://nvd.nist.gov/vuln/detail/CVE-2024-4629
+macro:->\url
+{https://www.forbes.com/sites/quora/2017/09/15/what-are-the-biggest-challenges-facing-the-cybersecurity-industry}
 \@endanenote 
 \@doanenote {5}
-macro:->https://nvd.nist.gov/vuln/detail/CVE-2024-4629
+macro:->https://medium.com/sciforce/adversarial-attacks-explained-and-how-to-defend-ml-models-against-them-d76f7d013b18
 \@endanenote 
 \@doanenote {6}
-macro:->https://www.cvedetails.com/cve/CVE-2025-3501
+macro:->\url
+{https://nvd.nist.gov/vuln/detail/CVE-2024-4629}
 \@endanenote 
 \@doanenote {7}
+macro:->\url
+{https://www.cvedetails.com/cve/CVE-2025-3501}
+\@endanenote 
+\@doanenote {8}
+macro:->https://github.com/lukasruff/Deep-SVDD-PyTorch
+\@endanenote 
+\@doanenote {9}
 macro:->Definitionen
 der
 Metriken:
@@ -182,28 +189,22 @@ und
 False
 Negatives.
 \@endanenote 
-\@doanenote {8}
+\@doanenote {10}
 macro:->Überanpassung
-durch
-gleichen,
-starren
-Strukturen
-im
-Modell,
-so
-dass
-es
-nicht
+des
+Modells
+an
+die
+Trainingsdaten,
+wodurch
+die
+Generalisierbarkeit
 auf
 neue
 Daten
-anwendbar
-ist)
-erkennen
-zu
-können.
+leidet.
 \@endanenote 
-\@doanenote {9}
+\@doanenote {11}
 macro:->Scikit-learn:
 Machine
 Learning
@@ -216,7 +217,7 @@ unter:
 \url
 {https://scikit-learn.org/stable/}
 \@endanenote 
-\@doanenote {10}
+\@doanenote {12}
 macro:->Siehe
 Definition
 laut
@@ -224,36 +225,36 @@ NVIDIA:
 \url
 {https://www.nvidia.com/en-us/data-center/dgx-systems/}
 \@endanenote 
-\@doanenote {11}
+\@doanenote {13}
 macro:->Siehe
 technische
 Spezifikationen:
 \url
 {https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html}
 \@endanenote 
-\@doanenote {12}
+\@doanenote {14}
 macro:->\url
 {https://www.wildfly.org/}
 \@endanenote 
-\@doanenote {13}
+\@doanenote {15}
 macro:->https://www.keycloak.org/server/logging
 \@endanenote 
-\@doanenote {14}
+\@doanenote {16}
 macro:->https://docs.jboss.org/process-guide/en/html/logging.html
 \@endanenote 
-\@doanenote {15}
+\@doanenote {17}
 macro:->https://docs.spring.io/spring-data/jpa/reference/index.html
 \@endanenote 
-\@doanenote {16}
+\@doanenote {18}
 macro:->https://github.com/keycloak/keycloak/blob/main/model/jpa/src/main/java/org/keycloak/events/jpa/JpaAdminEventQuery.java
 \@endanenote 
-\@doanenote {17}
+\@doanenote {19}
 macro:->https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml
 \@endanenote 
-\@doanenote {18}
+\@doanenote {20}
 macro:->https://www.keycloak.org/docs-api/latest/rest-api/index.html
 \@endanenote 
-\@doanenote {19}
+\@doanenote {21}
 macro:->\url
 {https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=keycloak}
 \@endanenote 

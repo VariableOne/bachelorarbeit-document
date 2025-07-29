@@ -3,54 +3,53 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: bachelorarbeit.aux
 The style file: unsrt.bst
 Database file #1: quellen.bib
-I was expecting a `,' or a `}'---line 255 of file quellen.bib
+I was expecting a `,' or a `}'---line 309 of file quellen.bib
  :  
  :  url = {https://arxiv.org/abs/2201.03898}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--empty author in comparative_timeseries2021
-Warning--empty author in hybrid_if_lstm2023
+Warning--I didn't find a database entry for "hybrid_if_lstm2023"
 Warning--empty journal in provost1998case
 Warning--empty journal in ester1996dbscan
-You've used 31 entries,
+You've used 32 entries,
             1791 wiz_defined-function locations,
-            631 strings with 10236 characters,
-and the built_in function-call counts, 6852 in all, are:
-= -- 636
-> -- 298
-< -- 6
-+ -- 111
-- -- 80
-* -- 385
-:= -- 1083
-add.period$ -- 110
-call.type$ -- 31
-change.case$ -- 31
+            640 strings with 10790 characters,
+and the built_in function-call counts, 7712 in all, are:
+= -- 702
+> -- 368
+< -- 9
++ -- 134
+- -- 102
+* -- 451
+:= -- 1208
+add.period$ -- 113
+call.type$ -- 32
+change.case$ -- 32
 chr.to.int$ -- 0
-cite$ -- 35
-duplicate$ -- 334
-empty$ -- 664
-format.name$ -- 80
-if$ -- 1566
+cite$ -- 34
+duplicate$ -- 370
+empty$ -- 740
+format.name$ -- 102
+if$ -- 1777
 int.to.chr$ -- 0
-int.to.str$ -- 31
+int.to.str$ -- 32
 missing$ -- 29
-newline$ -- 168
-num.names$ -- 29
-pop$ -- 104
+newline$ -- 169
+num.names$ -- 32
+pop$ -- 118
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 165
+skip$ -- 191
 stack$ -- 0
-substring$ -- 333
-swap$ -- 86
-text.length$ -- 6
+substring$ -- 378
+swap$ -- 110
+text.length$ -- 9
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 59
-width$ -- 33
-write$ -- 354
+warning$ -- 2
+while$ -- 70
+width$ -- 34
+write$ -- 363
 (There was 1 error message)

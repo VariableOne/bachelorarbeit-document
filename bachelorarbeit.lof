@@ -1,15 +1,15 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Protokolle für IdPs in Keycloak}}{26}{figure.1}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Beispielhafte Konfiguration von Authentication Flows in Keycloak}}{27}{figure.2}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Beispiel: Aktivierung von Quarkus-Logging in der Keycloak-Konfiguration}}{28}{figure.3}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Log-Ausgaben, wie sie in einer Quarkus-basierten Keycloak-Instanz erzeugt werden}}{29}{figure.4}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Beispiel Events nach Eventtyp}}{33}{figure.5}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Visuelle Darstellung der Funktion des AEs, Quelle: https://www.researchgate.net/figure/Structure-of-the-autoencoder\_fig1\_365074431}}{36}{figure.6}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Visuelle Darstellung der Funktion des AEs, Quelle: https://www.researchgate.net/figure/Anomaly-Detection-using-Isolation-Forest-18\_fig3\_350551253}}{38}{figure.7}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Visuelle Darstellung OCSVM. Quelle: https://www.mdpi.com/2076-3417/13/3/1734}}{39}{figure.8}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Beispiel DBSCAN-Cluster, Quelle: \url {https://www.baeldung.com/wp-content/uploads/sites/4/2023/04/clusters.png}}}{40}{figure.9}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Architektur}}{41}{figure.10}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Ausschnitt der generierten Logs}}{47}{figure.11}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Daten, die an den Keycloak-Server gesendet werden müssen}}{49}{figure.12}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Hier sieht man die generierten Benutzer für den Testfall}}{50}{figure.13}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Benötigte Rollen für den Client Nintendo}}{52}{figure.14}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Protokolle für IdPs in Keycloak}}{28}{figure.1}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Beispielhafte Konfiguration von Authentication Flows in Keycloak}}{29}{figure.2}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Beispiel: Aktivierung von Quarkus-Logging in der Keycloak-Konfiguration}}{31}{figure.3}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Log-Ausgaben, wie sie in einer Quarkus-basierten Keycloak-Instanz erzeugt werden}}{32}{figure.4}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Beispiel Events nach Eventtyp}}{36}{figure.5}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Visuelle Darstellung der Funktion des AEs, Quelle: https://www.researchgate.net/figure/Structure-of-the-autoencoder\_fig1\_365074431}}{39}{figure.6}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Visuelle Darstellung der Funktion des AEs, Quelle: https://www.researchgate.net/figure/Anomaly-Detection-using-Isolation-Forest-18\_fig3\_350551253}}{40}{figure.7}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Visuelle Darstellung OCSVM. Quelle: https://www.mdpi.com/2076-3417/13/3/1734}}{42}{figure.8}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Beispiel DBSCAN-Cluster, Quelle: \url {https://www.baeldung.com/wp-content/uploads/sites/4/2023/04/clusters.png}}}{42}{figure.9}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Architektur}}{44}{figure.10}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Ausschnitt der generierten Logs}}{50}{figure.11}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Daten, die an den Keycloak-Server gesendet werden müssen}}{52}{figure.12}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Hier sieht man die generierten Benutzer für den Testfall}}{53}{figure.13}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Benötigte Rollen für den Client Nintendo}}{55}{figure.14}%

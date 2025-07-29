@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{cite}
 \usepackage{hyperref}
+\usepackage{url}
 \usepackage{glossaries}
 \usepackage{setspace}
 \onehalfspacing 
@@ -65,13 +66,14 @@
 	\newpage
 	\listoftables
 	\newpage
+	
 	\section*{Abkürzungsverzeichnis}
 	
 	\textbf{ABAC:} Attribute-Based Access Control \\[1em]
 	\textbf{AE:} Autoencoder \\[1em]
 	\textbf{AUC-PR:} Area Under the Precision and Recall Curve \\[1em]
 	\textbf{AUC-ROC:} Area Under the ROC Curve \\[1em]
-	\textbf{DBSCAN:} Density-Based Spatial Clustering of Applications with Noise \\[1em]
+	\textbf{DBSCAN:} Density-Based Spatial Clustering of Applications with Noise
 	\textbf{DGX:} Deep GPU Xceleration \\[1em]
 	\textbf{IAM:} Identity und Access Management \\[1em]
 	\textbf{IF:} Isolation Forest \\[1em]
@@ -84,7 +86,7 @@
 	\textbf{RBAC:} Role-Based Access Control \\[1em]
 	\textbf{RNN:} Recurrent Neural Network \\[1em]
 	\textbf{SSO:} Single-Sign-On \\[1em]
-	textbf {UBA:} User Behavior Analytics \\[0.1em]
+	\textbf {UBA:} User Behavior Analytics \\[0.1em]
 	\textbf {UEBA:} User and Entity Behavior Analytics \\[0.1em]
 	
 	\newpage
@@ -185,11 +187,6 @@
 		description={Role-Based Access Control – Zugriffskontrolle auf Basis definierter Rollen.}
 	}
 	
-	\newglossaryentry{realm}{
-		name=Realm,
-		description={Ein Verwaltungsbereich in Keycloak, in dem Clients, Benutzer und Rollen organisiert sind}
-	}
-	
 	\newglossaryentry{realmrole}{
 		name=Realm-Role,
 		description={Globale Rollen in Keycloak, die auf alle Clients eines Realms angewendet werden können}
@@ -215,108 +212,233 @@
 		description={Angriff auf eine bislang unbekannte Sicherheitslücke, für die noch kein Patch existiert.}
 	}
 	
-	\newglossaryentry{saml}{
-		name={SAML},
-		description={Security Assertion Markup Language – Ein XML-basiertes Standardprotokoll zur Übertragung von Authentifizierungs- und Autorisierungsinformationen zwischen Identity Providern und Service Providern.}
+	}
+	\newglossaryentry{uba}{
+		name={UBA},
+		description={User Behavior Analytics – Analyse des Benutzerverhaltens zur Erkennung von Anomalien und Sicherheitsbedrohungen.}
 	}
 	
-	\newglossaryentry{oidc}{
-		name={OIDC},
-		description={OpenID Connect – Ein modernes Authentifizierungsprotokoll, das auf OAuth 2.0 aufbaut und zur sicheren Überprüfung der Identität eines Benutzers verwendet wird.}
+	\newglossaryentry{bruteforce}{
+		name={Brute-Force-Angriff},
+		description={Angriffsmethode, bei der Passwörter oder Zugangsdaten durch systematisches Ausprobieren aller möglichen Kombinationen erraten werden.}
+	}
+	
+	\newglossaryentry{insiderthreat}{
+		name={Insider Threat},
+		description={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht, z.\,B. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.}
+	}
+	
+	\newglossaryentry{botnetz}{
+		name={Botnetz},
+		description={Ein Zusammenschluss kompromittierter Geräte (Bots), die ferngesteuert werden, oft zur Durchführung koordinierter Angriffe wie DDoS oder zur Verbreitung von Malware.}
+	}
+	
+	\newglossaryentry{spoofing}{
+		name={Spoofing},
+		description={Täuschungstechniken, bei denen sich ein Angreifer als vertrauenswürdige Instanz ausgibt, um Zugang zu Informationen oder Systemen zu erlangen.}
+	}
+	
+	\newglossaryentry{ddos}{
+		name={DDoS},
+		description={Distributed Denial of Service – ein Angriff, bei dem viele Systeme gleichzeitig eine Zielressource mit Anfragen überfluten, um sie unzugänglich zu machen.}
+	}
+	
+	\newglossaryentry{ueba}{
+		name={UEBA},
+		description={User and Entity Behavior Analytics – Verfahren zur Analyse des Verhaltens von Benutzern und technischen Entitäten mit dem Ziel, sicherheitsrelevante Anomalien zu identifizieren.}
+	}
+	
+	
+	\newpage
+	\section{Keycloak Terme}
+	
+	\newglossaryentry{realm}{
+		name={Realm},
+		description={Isolierte Umgebung in Keycloak, in der Benutzer, Rollen und Clients separat verwaltet werden.}
+	}
+	
+	\newglossaryentry{client}{
+		name={Client},
+		description={Anwendung oder Dienst, der Keycloak zur Authentifizierung und Autorisierung verwendet.}
 	}
 	
 	\newglossaryentry{idp}{
-		name={IdP},
-		description={Identity Provider – Ein externer Dienst, der die Authentifizierung von Benutzern übernimmt und Identitätsinformationen an andere Dienste weitergibt.}
+		name={Identity Provider (IdP)},
+		description={Externer Anbieter, der Authentifizierungsdienste bereitstellt (z.\,B. Google, Microsoft).}
 	}
+	
+	\newglossaryentry{oidc}{
+		name={OpenID Connect (OIDC)},
+		description={Auth-Protokoll, das auf OAuth 2.0 basiert und die Identität von Nutzern sicher überträgt.}
+	}
+	
+	\newglossaryentry{saml}{
+		name={SAML},
+		description={Security Assertion Markup Language – XML-basiertes Protokoll für Authentifizierung und Autorisierung.}
+	}
+	
+	\newglossaryentry{oauth}{
+		name={OAuth 2.0},
+		description={Autorisierungs-Framework, das sicheren Zugriff auf geschützte Ressourcen ermöglicht.}
+	}
+	
+	\newglossaryentry{granttype}{
+		name={Grant Type},
+		description={Verfahren, mit dem ein Client oder Benutzer bei einem Authentifizierungsserver ein Token anfordert.}
+	}
+	
+	\newglossaryentry{authflow}{
+		name={Authentication Flow},
+		description={Ablauf, der festlegt, wie sich Benutzer oder Clients bei Keycloak authentifizieren.}
+	}
+	
+	\newglossaryentry{clientcredentials}{
+		name={Client Credentials Grant},
+		description={OAuth2-Grant-Typ, bei dem sich ein Client ohne Benutzerinteraktion authentifiziert.}
+	}
+	
+	\newglossaryentry{authcodegrant}{
+		name={Authorization Code Grant},
+		description={OAuth2-Grant-Typ, bei dem der Benutzer über einen Code authentifiziert wird, der vom Client gegen ein Token eingetauscht wird.}
+	}
+	
+	\newglossaryentry{clientscope}{
+		name={Client-Scope},
+		description={Legt fest, welche Benutzerdaten in ein Token aufgenommen werden, wenn sich ein Benutzer über einen Client authentifiziert.}
+	}
+	
+	\newglossaryentry{serviceaccount}{
+		name={Service Account},
+		description={Konto, das einem Client gehört und ohne Benutzerinteraktion für automatisierte Vorgänge eingesetzt wird.}
+	}
+	
+	
 	\printglossaries 
 	\newpage
 
 	\section{Einleitung}
-	Laut dem BSI-Bericht aus dem Jahr 2024 sind Angriffe auf Unternehmen durch Ransomware und DDoS-Angriffen gestiegen \cite{bsi2024lage}.
-	\\[0.5em]
-	Angreifende entwickeln fortlaufend neue Techniken, um Sicherheitsbarrieren zu umgehen und finanzielle oder strategische Vorteile zu erlangen. Herkömmliche, regelbasierte Schutzmaßnahmen wie Firewalls oder Brute-Force-Abwehrsysteme stoßen hierbei zunehmend an ihre Grenzen.
-	\\[0.5em]
-	Besonders interne Angreifer (also die eigenen Mitarbeiter sogar)- oder über Botnetze koordinierte Attacken sind schwer zu erkennen und erfordern intelligente Systeme zur Mustererkennung. Der Einsatz von Künstlicher Intelligenz (KI) in Sicherheitslösungen wird daher immer wichtiger.
-	Maschinelle Lernalgorithmen können anhand theoretischer Grundlagen Angriffe erkennen - Sie erkennen Anomalien und können das Benutzerverhalten analysieren.
+	Laut dem BSI-Lagebericht 2024 ist die Zahl von Cyberangriffen auf Unternehmen durch Ransomware und DDoS-Attacken weiter gestiegen \cite{bsi2024lage}.
+	Angreifende entwickeln kontinuierlich neue Methoden, um Sicherheitsmechanismen zu umgehen und finanzielle oder strategische Vorteile zu erlangen. Herkömmliche, regelbasierte Schutzmaßnahmen – etwa Firewalls oder Brute-Force-Abwehrsysteme – stoßen dabei zunehmend an ihre Grenzen.
+	Besonders schwer zu erkennen sind interne Angreifer, also etwa eigene Mitarbeitende, sowie koordinierte Attacken über Botnetze. Solche Bedrohungen erfordern fortschrittliche Verfahren zur Mustererkennung. Der Einsatz von Künstlicher Intelligenz (KI) in Sicherheitssystemen gewinnt daher zunehmend an Bedeutung. Maschinelle Lernalgorithmen bieten hier ein vielversprechendes Potenzial: Sie können Anomalien identifizieren und das Nutzerverhalten auf Basis theoretischer Modelle analysieren, um Angriffe frühzeitig zu erkennen.
 	
 	\subsection{Benutzerverhalten und Anomalien}
-	Benutzerverhalten beschreibt die Gesamtheit der Aktionen, Muster und Gewohnheiten, mit denen ein Nutzer ein IT-System verwendet. Dazu zählen beispielsweise Login-Zeiten, Zugriffsrechte, genutzte Ressourcen, Bewegungen im Netzwerk sowie Interaktionen mit Anwendungen und Daten. Die Analyse des Benutzerverhaltens dient dazu, typische Nutzungsmuster zu identifizieren und Abweichungen (Anomalien) zu erkennen, die auf Sicherheitsvorfälle oder Missbrauch hinweisen können \cite{thomas2021user, chandola2009anomaly}.
+	
+	Das Benutzerverhalten umfasst sämtliche Aktionen, Muster und Gewohnheiten, mit denen ein Nutzer ein IT-System verwendet. Dazu zählen unter anderem Login-Zeiten, Zugriffsrechte, genutzte Ressourcen, Netzwerkbewegungen sowie Interaktionen mit Anwendungen und Daten. Die Analyse des Benutzerverhaltens dient dazu, typische Nutzungsmuster zu identifizieren und Abweichungen (sogenannte Anomalien) zu erkennen, die auf Sicherheitsvorfälle oder Missbrauch hindeuten können.
 	\\[0.5em]
-	Anomalien sind abweichende Muster in bestehenden Daten \cite{chandola2009anomaly}. Dazu zählen auch Auffälligkeiten im Netzwerkverkehr, in Embedded Systems sowie in allen anderen Bereichen, in denen Daten verarbeitet werden. Anomalien zeichnen sich dadurch aus, dass sie vom Muster üblicher Daten abweicht und somit auffällig ist, wodurch sie Hinweise auf Systemangriffe geben.
+	Anomalien bezeichnen Datenmuster, die signifikant von erwarteten oder üblichen Verhaltensweisen abweichen. Mathematisch gesehen, ist eine Anomalie, ein abweichender Punkt vom "normalen" Bereich N1 und N2 \cite{chandola2009anomaly}. Sie können beispielsweise im Netzwerkverkehr, in eingebetteten Systemen oder anderen datenverarbeitenden Bereichen auftreten. Solche Abweichungen deuten häufig auf Systemangriffe oder technische Störungen hin.
 	\\[0.5em]
-	Neben systemweiten Anomalien, die beispielsweise Netzwerkverkehr oder Gerätezustände betreffen, gewinnen benutzerbasierte Anomalien zunehmend an Bedeutung. Diese beziehen sich speziell auf ungewöhnliche oder abweichende Verhaltensmuster einzelner Nutzer und ermöglichen so eine gezielte Erkennung von Sicherheitsvorfällen auf Benutzerebene \cite{thomas2021user}.
-	Anomalien im Benutzerverhalten lassen sich nach diese Maßstäben feststellen \cite{chandola2009anomaly, thomas2021user}:
+	Neben systemweiten Anomalien – etwa im Netzwerkverkehr oder bei Gerätezuständen – gewinnen zunehmend benutzerbasierte Auffälligkeiten an Bedeutung.
+	Systemweite Anomalien betreffen technische Parameter und Prozesse im gesamten System, wie etwa plötzliche Veränderungen im Datenverkehr, unerwartete Systemlast oder ungewöhnliche Netzwerkverbindungen \cite{chandola2009anomaly}.
+	Benutzerbasierte Anomalien hingegen beziehen sich auf das individuelle Verhalten einzelner Nutzer.
+	
+	\subsection{Kategorisierung von Anomalien}
+	Nach \cite{chandola2009anomaly} werden Anomalien in drei Hauptkategorien eingeteilt:
 	
 	\begin{itemize}
-		\item Ungewöhnliche Login-Zeiten
-		\item ungewöhnlicher Standort
-		\item ungewöhnliche Rollenprofile
-		\item ungewöhnliche Zugriffsrechte
-		\item zu hohe Anmelde- oder Autorisierungsfehler
+		\item \textbf{Punkt-Anomalien:} Einzelne Dateninstanzen, die im Vergleich zum Großteil der Daten als anomal gelten. Beispiel: Eine Kreditkartentransaktion, deren Betrag deutlich höher ist als die sonst üblichen Ausgaben einer Person.
+		\item \textbf{Kontextuelle Anomalien:} Dateninstanzen, die nur in einem spezifischen Kontext als anomal betrachtet werden, ansonsten jedoch normal sind. Der Kontext wird durch sogenannte \emph{kontextuelle Attribute} definiert, z. B. Zeit oder Ort. Die \emph{verhaltensbezogenen Attribute} beschreiben die eigentlichen Eigenschaften der Dateninstanz. Beispielsweise kann eine Temperatur in einem bestimmten Gebiet im Winter als anomal gelten, im Sommer aber normal sein.
+		\item \textbf{Kollektive Anomalien:} Gruppen von Datenpunkten, die zusammen eine Anomalie darstellen, obwohl einzelne Punkte für sich genommen normal erscheinen.
 	\end{itemize}
+
+	Dabei umfassen kontextuelle Anomalien zwei Arten von Attributen:
 	
-	Darüber hinaus können komplexere Verhaltensmuster, wie die Abweichung von typischen Arbeitsabläufen, Zeitreihen von Datei- oder Netzwerkzugriffen sowie untypische Kommunikationspartner, als Anomalien gelten \cite{thomas2021user}. Die Detektion solcher Muster erfordert fortgeschrittene Algorithmen, die in der Lage sind, sowohl zeitliche Abhängigkeiten als auch Zusammenhänge zu erkennen. 
+	\begin{enumerate}
+		\item \textbf{Kontextuelle Attribute:} Bestimmen den Kontext, z. B. geografische Lage oder Zeitstempel.
+		\item \textbf{Verhaltensbezogene Attribute:} Beschreiben das tatsächliche Verhalten oder die Charakteristik der Dateninstanz, z. B. die gemessene Temperatur oder der Betrag einer Transaktion.
+	\end{enumerate}
+	Obwohl zahlreiche Arbeiten im Bereich der Anomalieerkennung im Nutzerverhalten existieren, fehlt es an einer klaren und systematischen Definition dessen, was genau eine verhaltensbasierte Anomalie konstituiert. Stattdessen werden in der Regel Beispiele genannt, ohne dass diese in ein konsistentes semantisches Modell eingebettet werden. Diese Forschungslücke erschwert die Evaluation und Vergleichbarkeit von Verfahren erheblich – und wird auch in dieser Arbeit als Ausgangspunkt einer kritischen Einordnung aufgegriffen.
 	\\[0.5em]
-	Insgesamt bilden diese Merkmale die Grundlage für viele moderne Anomalieerkennungssysteme, die durch maschinelles Lernen und statistische Verfahren versuchen, automatisiert Auffälligkeiten zu identifizieren und somit präventiv Sicherheitsrisiken zu minimieren.
+	Es wird davon ausgegangen, dass Anomalien welche sich im Benutzerverhalten (Verhaltensbezogene Anomalien) äußern, unter anderem folgende sein können:
+	
+	\begin{itemize}
+		\item ungewöhnliche Login-Zeiten,
+		\item verdächtige Standorte,
+		\item auffällige Rollenprofile,
+		\item unübliche Zugriffsrechte,
+		\item eine Häufung von Anmelde- oder Autorisierungsfehlern.
+	\end{itemize}
+	Ein Benutzer, welcher sich Mitternachts außerhalb der üblichen Geschäftszeit einloggt, ist ungewöhnlich und weicht vom gewöhnlichen Muster ab. Zudem ist es eher so, dass Arbeiter in der Region bleiben, wo sie arbeiten oder im Umkreis. Natürlich muss man hier moderne Szenarien beachten, z.B. tritt es öfter auf, dass Personen im Homeoffice arbeiten und auch weiter weg wohnen und auch manche Entwickler auch bis um Mitternacht nach einem Bug suchen. Wenn dies in einem Unternehmen der Standardfall ist, würden dies keine Anomalien darstellen sondern den üblichen Standardfall. Es wird davon ausgegangen, dass unübliche Zugriffsrechte auf sensible Daten durchaus Anomalien sein können,besonders, wenn ein bestimmter Benutzer eigentlich auf die Quelle keinen Zugriff haben darf oder auch plötzlich viele Rollen hat, die ihm zu viele Rechte in einem System geben. Anmeldefehler können ebenfalls auf Brute-Force Angriffe, bzw. Intrusionsangriffe hindeuten, sowie auf DoS-Angriffe.
+	\\[0.5em]
+	Es handelt sich hierbei um verhaltensbezogene Anomalien. Alle genannten Aspekte sind in \textit{Intrusionsangriffen} und \textit{Insider Threat Attacks} vorhanden. Intrusionsangriffe sind Angriffe außerhalb eines Systems, welche versuchen in eine System zu gelangen, z.B. Brute-Force Angriffe. Insider Threat Attacken sind wiederum Attacken, welche im System selbst schcon auftreten können. Bspw. könnte der Angreifer ein Mitarbeiter im Unternehmen selbst sein.
+	Insider-Attacken äußern sich nach \cite{legg2015visualizing} in den genannten Aspekten: Benutzer zeigen abweichendes Verhalten (z.B. loggt er sich viel früher ein als üblich) oder ein Benutzer zeigt ein Verhalten viel zu oft. z.B. viele Dateien auf einmal herunterladen. Auch neue Attribute, die der Benutzer zuvor nicht, deutet auf eine Insider Attacke hin. Alle Beispiele sind den zuvor definierten Anomalien ähnlich. Man erkennt, dass die Begriffe welche die selben Anomalien beschreiben sollen, nicht klar definiert sind.
+	\\[0.5em]
+	In dieser Arbeit wird der Begriff „verhaltensbasierte Anomalien“ mit den Erscheinungsformen von Intrusionsangriffen und Insiderattacken gleichgesetzt, um den Fokus auf sicherheitsrelevante Abweichungen im Nutzerverhalten zu legen. Diese begriffliche Vereinfachung erleichtert die Analyse und Methodik, obwohl Anomalien technisch betrachtet als Indikatoren für verschiedene Angriffstypen verstanden werden sollten.
+	\\[0.5em]
+	Darüber hinaus gelten komplexere Abweichungen – wie Veränderungen in gewohnten Arbeitsabläufen, zeitlichen Mustern von Datei- oder Netzwerkzugriffen oder in der Kommunikation mit untypischen Partnern – ebenfalls als Anomalien. Ungewöhnliche IP-Adressen stellen auf Netzwerkebene ein häufiges Indiz für Anomalien dar, da sie auf einen möglichen unautorisierten Zugriff, eine Spoofing-Attacke (Also Stehlen von Anmeldedaten, in dem der Angreifer eine infiltrierte Anmeldeseite beim Benutzer lädt) oder den Einsatz von anonymisierenden Diensten (z.B. VPNs oder TOR) hindeuten können. In regulären Betriebsabläufen sind IP-Adressen in der Regel geografisch, organisatorisch oder netztechnisch eingeschränkt. Weicht eine Adresse deutlich von bekannten Mustern oder erlaubten Adressräumen ab – etwa durch Zugriffe aus einem anderen Land, über Proxy-Netzwerke oder aus verdächtigen IP-Bereichen (z.B. Botnetze) – kann dies auf kompromittierte Accounts oder externe Angreifer hinweisen. Besonders im Kontext von Benutzerverhalten sind IP-basierte Auffälligkeiten oft ein erstes Signal für Insiderbedrohungen oder gestohlene Zugangsdaten.
+	\\[0.5em]
+	Insgesamt bilden solche Merkmale die Grundlage moderner Systeme zur Anomalieerkennung, die auf Verfahren des maschinellen Lernens und der Statistik beruhen, um potenzielle Sicherheitsrisiken automatisiert und präventiv zu identifizieren. In dieser Arbeit liegt der Fokus auf der Erkennung von verhaltensbasierten Anomalien, bzw. auf Intrusionsangriffe und Insider Threat Attacken.
 	
 	\subsection{Regelbasierte Methoden und weitere Maßnahmen in \gls{keycloak}}
-	Die Intension GmbH nutzt das Produkt Keycloak \footnote{\url{https://www.keycloak.org/}}, ein \gls{iam}-Tool \footnote{IAM steht für \textit{Identity and Access Management} und beschreibt Systeme zur Verwaltung digitaler Identitäten und Zugriffskontrollen. Vgl. z.\,B. R. Müller: \textit{Identity Management: Konzepte, Technologien, Standards und Praxis}, 2. Auflage, Springer Vieweg, 2016.}., welches Single-Sign On bietet \footnote{Single Sign-On (\gls{sso}) ermöglicht einem Nutzer den Zugriff auf mehrere Anwendungen mit nur einer Anmeldung. Siehe: B. G. Blakley et al.: \textit{An Introduction to Identity Federation}, IBM Redbooks, 2007. \url{https://www.redbooks.ibm.com/abstracts/sg247208.html}}.
-	Keycloak an sich bietet schon vorgefertigte Sicherheitsmaßnahmen an,welche meistens regelbasiert sind. Regelbasierte Sicherheitsmaßnahmen sind dazu gedacht Regeln zu definieren, was in einem System geschehen darf und was nicht. Bekannte Sicherheitsvorfälle haben ein Muster. Nach diesem Muster werden Regeln definiert die zukünftige Angriffe verhindern können. Zudem bietet Keycloak ebenfalls weitere Methoden, wie Zugriffsrechtskontrollen (\gls{rbac}, \gls{abac}, usw.) und Brute-Force-Schutz und für das Netzwerk werden wie üblich Firewalls verwendet.
+	Die Intension GmbH nutzt das Produkt Keycloak\footnote{\url{https://www.keycloak.org/}}, ein \gls{iam}-Tool\footnote{IAM steht für \textit{Identity and Access Management} und beschreibt Systeme zur Verwaltung digitaler Identitäten und Zugriffskontrollen. Vgl. z.\,B. R. Müller: \textit{Identity Management: Konzepte, Technologien, Standards und Praxis}, 2. Auflage, Springer Vieweg, 2016.}, das unter anderem \gls{sso} (Single Sign-On) bietet\footnote{Single Sign-On ermöglicht einem Nutzer den Zugriff auf mehrere Anwendungen mit nur einer Anmeldung. Siehe: B. G. Blakley et al.: \textit{An Introduction to Identity Federation}, IBM Redbooks, 2007. \url{https://www.redbooks.ibm.com/abstracts/sg247208.html}}.
+	\\[0.5em]
+	Keycloak stellt eine Reihe vorgefertigter Sicherheitsmechanismen zur Verfügung, die in der Regel regelbasiert arbeiten. Solche Maßnahmen definieren explizit, welche Aktivitäten im System erlaubt oder verboten sind. Grundlage dieser Regeln sind meist bekannte Angriffsmuster aus früheren Sicherheitsvorfällen. Zusätzlich bietet Keycloak klassische Zugriffskontrollmechanismen wie \gls{rbac} und \gls{abac}, Brute-Force-Erkennung sowie die Möglichkeit zur Integration externer Netzwerkschutzsysteme wie Firewalls.
 	
 	\subsection{Probleme: Grenzen der Sicherheitsmaßnahmen in Keycloak}
-	Obwohl Keycloak bereits eine Vielzahl an Sicherheitsmaßnahmen bietet, darunter regelbasierte Sicherheit, Zugriffsrechtskontrollen (RBAC, ABAC), Brute-Force-Schutz und die Einbindung von Firewalls, sind diese nicht uneingeschränkt wirksam in einer modernen, dynamischen IT-Landschaft. Regelbasierte Sicherheitsmaßnahmen sind oft statisch und reagieren nur auf bekannte Angriffsmuster. Neue, bisher unbekannte Angriffsarten (sogenannte \gls{zerodayangriff}e) können diese Regeln umgehen, da sie nicht auf bestehenden Mustern basieren. Auch RBAC und ABAC stoßen an ihre Grenzen: Während RBAC bei komplexen Rollenstrukturen schnell unübersichtlich wird, ist ABAC in der Umsetzung sehr aufwendig und fehleranfällig, besonders wenn viele Attribute gepflegt und aktuell gehalten werden müssen. Der Brute-Force-Schutz erkennt zwar eine Vielzahl an Fehlversuchen, doch moderne Angriffe verwenden oft verteilte Systeme (z. B. Botnetze), wodurch die Schutzmechanismen umgangen werden können. Ebenso bieten Firewalls zwar eine erste Schutzlinie, sind jedoch gegen interne Bedrohungen oder gezielte Phishing-Angriffe oft machtlos. Die Schwächen dieser Systeme zeigen, dass klassische, regelbasierte Sicherheit zunehmend durch dynamischere, lernfähige Sicherheitssysteme ergänzt werden muss, um aktuellen Bedrohungen wirksam begegnen zu können \cite{nobi2022deep}.
+	Trotz der Vielzahl integrierter Sicherheitsfunktionen stoßen die Schutzmaßnahmen von Keycloak in der Praxis an ihre Grenzen. Regelbasierte Systeme sind statisch und meist nur auf bekannte Muster abgestimmt. Neue, bislang unbekannte Angriffsarten (sogenannte \glspl{zerodayangriff}e) entziehen sich dieser Logik, da keine entsprechenden Regeln vorliegen.
+	\\[0.5em]
+	Auch die Zugriffskontrollmodelle zeigen Schwächen: RBAC wird bei wachsender Komplexität und Vielzahl an Rollen schnell unübersichtlich, während ABAC zwar flexibler ist, dafür jedoch hohen Pflegeaufwand verursacht und anfällig für Fehler ist – insbesondere, wenn viele Attribute aktuell gehalten werden müssen.
+	\\[0.5em]
+	Der integrierte Brute-Force-Schutz erkennt typische Fehlversuchs-Muster, ist jedoch bei modernen Angriffen mit verteilten Systemen (z.\,B. Botnetzen) oft ineffektiv. Firewalls bieten zwar eine erste Verteidigungslinie auf Netzwerkebene, können aber weder interne Bedrohungen noch gezielte Phishing-Angriffe zuverlässig abwehren.
+	\\[0.5em]
+	Diese Schwächen verdeutlichen, dass klassische, regelbasierte Sicherheitsarchitekturen zunehmend an ihre Grenzen stoßen. Um aktuelle Bedrohungen wirksam erkennen und abwehren zu können, bedarf es dynamischer, lernfähiger Systeme, wie sie beispielsweise durch Verfahren des maschinellen Lernens und der \gls{uba} realisiert werden können.
 	
 	\subsection{Motivation: Maschinelle Lernmodelle als zukünftige Sicherheitsmaßnahme}
-	Die Motivation dieser Arbeit ist es herauszufinden, welche maschinellen Lernmodelle sich dazu eignen, benutzerbasierte Anomalien in Keycloak, bzw. in Keycloak-Logs zu erkennen. Maschinelle Lernmodelle stellen in der heutigen Zeit eine vielversprechende Alternative zu klassischen, regelbasierten Sicherheitsmaßnahmen dar, da sie in der Lage sind, dynamisch auf neue Bedrohungen zu reagieren. Anders als statische Regeln, die nur bekannte Muster erkennen, können \gls{ml}-Modelle aus großen Datenmengen lernen und auch unbekannte Anomalien identifizieren, die auf potenzielle Angriffe hinweisen. Dadurch sind sie besonders effektiv im Umgang mit Zero-Day-Angriffen oder komplexen Bedrohungsszenarien, die sich ständig weiterentwickeln. Ein großer Vorteil liegt zudem in der kontinuierlichen Anpassung: ML-Modelle können ihr Verhalten automatisch an neue Gegebenheiten anpassen, ohne dass ein manueller Eingriff notwendig ist.
-	Nach der Evaluierung würde im Ausblick Interesse daran bestehen, das beste Lernmodell in ein Tool hin einzubetten, welches dann die Intension GmbH nutzen kann und Kosten spart, da klassische maschinelle Analysetools oft mit Kosten verbunden sind.
-	Aufgrund datenschutzrechtlicher Bedingungen wurde entschieden die Keycloak-Logs (weiter erläutert im entsprechenden Kapitel) selbst zu generieren.
+	Die Motivation dieser Arbeit besteht darin, geeignete maschinelle Lernmodelle zu identifizieren, mit denen benutzerbasierte Anomalien in Keycloak-Logs erkannt werden können. Maschinelle Lernmodelle stellen heute eine vielversprechende Alternative zu klassischen, regelbasierten Sicherheitsmaßnahmen dar, da sie dynamisch auf neue Bedrohungen reagieren können.
+	\\[0.5em]
+	Im Gegensatz zu statischen Regeln, die lediglich bekannte Muster erfassen, sind ML-Modelle in der Lage, aus großen Datenmengen zu lernen und auch unbekannte Anomalien zu identifizieren, die auf potenzielle Angriffe hindeuten. Dadurch sind sie besonders effektiv im Umgang mit Zero-Day-Angriffen oder komplexen, sich ständig wandelnden Bedrohungsszenarien. Ein weiterer Vorteil ist die Fähigkeit zur kontinuierlichen Anpassung, sodass sich ML-Modelle automatisch auf veränderte Rahmenbedingungen einstellen, ohne dass ein manueller Eingriff notwendig ist.
+	\\[0.5em]
+	Im Ausblick besteht Interesse daran, das leistungsfähigste Modell in ein Tool zu integrieren, welches von der Intension GmbH genutzt werden kann. Dadurch sollen Kosten eingespart werden, da herkömmliche maschinelle Analysetools häufig mit hohen Lizenzgebühren verbunden sind. Aufgrund datenschutzrechtlicher Vorgaben wurde entschieden, die Keycloak-Logs selbst zu generieren, wie im entsprechenden Kapitel näher erläutert wird.
 	
-	\subsection{User and Entity Behavior Analytics (UEBA)}
-	UBA ist das Prinzip anomales Benutzerverhalten zu analysieren. UBA gewährleistet, dass auch Insider-Attacken erkannt werden können. Die Analyse an sich erfolgt durch ML-Methoden\cite{Sharma2020}. User and Entity Behavior Analytics (UEBA) ist die Erweiterung von UBA und beinhaltet zudem noch die Analyse der Entitäten (z.B. Server, Applikationen) und in welcher Beziehung sie mit den jeweiligen Benutzern stehen. Diese Arbeit umfasst größtenteils den Einsatz von UEBA-Techniken, wobei nicht alle Entitäten, wie die Beziehung zwischen den Benutzern und den Servern gewährleistet werden kann, weil die Untersuchung alleine zwischen Keycloak und den Benutzern untersucht und Netzwerkkomponenten nicht mitberücksichtigt. In Echtzeit werden dabei Daten wie bspw. Logs untersucht, um das anhand der zusammenhängenden Logs anomales Benutzerverhalten schlusszufolgern. Zu den UEBA-Techniken zählen u.A.:
-	
+	\subsection{User (and Entity) Behavior Analytics (U(E)BA)}
+	UEBA ist ein ganzheitlicher Ansatz zur Gewährleistung einer erstklassigen Sicherheit in einem Unternehmen und zur Erkennung von Benutzern, die eine Sicherheitsverletzung im System verursachen könnten. UEBA kann normales und abnormales Verhalten sowohl von Menschen als auch von Computern identifizieren 
+	\footnote{\url{https://www.forbes.com/sites/quora/2017/09/15/what-are-the-biggest-challenges-facing-the-cybersecurity-industry}}
+	 Die Analyse erfolgt dabei häufig unter Einsatz maschineller Lernverfahren.
+	\\[0.5em]
+	User and Entity Behavior Analytics (UEBA) stellt eine Weiterentwicklung von User Behavior Analytics (UBA) dar. Während UBA sich ausschließlich auf das Verhalten von Benutzern konzentriert, berücksichtigt UEBA zusätzlich auch Entitäten wie Server, Anwendungen oder Geräte sowie deren Interaktionen mit den Nutzern.
+	\\[0.5em]
+	Da sich diese Arbeit auf Keycloak und das Benutzerverhalten im Rahmen von Authentifizierungsprozessen konzentriert, erfolgt keine vollständige Berücksichtigung aller Entitäten oder ihrer Netzwerkbeziehungen. Der Fokus liegt daher auf der Anwendung klassischer UBA-Methoden.
+	\\[0.5em]
+	Zur Echtzeitüberwachung werden dabei unter anderem Logdaten analysiert, um anhand zusammenhängender Informationen anomales Benutzerverhalten zu identifizieren. Im Rahmen dieser Arbeit werden insbesondere die folgenden UEBA-Techniken verwendet:
 	\begin{itemize}
-		\item Zeitreihenanalyse
-		\item Anomalie-Erkennung
-		\item Maschinelles Lernen
-		\item Clusteranalyse
-		\item regelbasierte Methoden
-		\item Risikobewertung
+		\item Zeitreihenanalyse,
+		\item Anomalieerkennung,
+		\item maschinelles Lernen,
+		\item Clusteranalyse.
 	\end{itemize}
-	
-	Der Fokus dieser Arbeit beschäftigt sich mit der Umsetzung der ersten vier Techniken. Der Fokus liegt darauf, größtenteils auch Insider-Angriffe zu erkennen, also Angriffe, die von eigenen Mitarbeitern aus geschehen.
+	Ziel ist es vor allem, sicherheitsrelevante Abweichungen zu erkennen – insbesondere solche, die auf Insider-Bedrohungen oder gezielte Angriffe hindeuten.
 	
 	\section{Forschungsstand, Herausforderungen und Hypothesen}
 	\subsection{Bisheriger Forschungsstand}
-	Keycloak bietet, wie bereits erwähnt, regelbasierte Sicherheitsmaßnahmen an, die jedoch nur unter vordefinierten Bedingungen bestimmen, welches Verhalten als anormal gilt. Dadurch sind sie wenig flexibel gegenüber neuen Angriffstechniken \cite{croft2021empirical}. Angreifer nutzen sogenannte \textit{Adversarial Attacks}, um diese bekannten Maßnahmen zu umgehen. Da die Funktionsweise der regelbasierten Schutzmechanismen oft öffentlich zugänglich ist, können Angreifer ihre Strategien entsprechend anpassen.
+	Keycloak bietet, wie bereits erwähnt, regelbasierte Sicherheitsmechanismen an, die jedoch ausschließlich auf vordefinierten Bedingungen beruhen. Dadurch können sie lediglich bekannte Muster erkennen und sind wenig flexibel gegenüber neuen oder komplexeren Angriffstechniken \cite{arnaboldi2020techniques}. Angreifende nutzen gezielt sogenannte \textit{Adversarial Attacks} \footnote{https://medium.com/sciforce/adversarial-attacks-explained-and-how-to-defend-ml-models-against-them-d76f7d013b18}, um diese vorhersehbaren Schutzmechanismen zu umgehen. Da die Regeln dieser Systeme häufig offen dokumentiert sind, lassen sich entsprechende Gegenstrategien leicht entwickeln.
 	\\[0.5em]
-	Keycloak bietet auch Brute-Force-Schutz an, welches aber ebenfalls umgangen werden kann \footnote{https://nvd.nist.gov/vuln/detail/CVE-2024-4629}. Hierbei nutzen Angreifer \textit{Timing-Angriffe}. Beim Timing-Angriff durchschaut der Angreifer im System, wie lange der Server braucht, um zu antworten. Bspw. schickt der Angreifer bei der Authentifizierung im Formular den Benutzernamen und ein Passwort mit ab. Anhand der Dauer des Servers kann der Angreifer erkennen, wie lange es braucht um die Anfrage zu verneinen. Wenn es nämlich lange dauert, bedeutet dies auch, dass das Passwort fast korrekt war und bei der Prüfung. Die Zeichen des Passwortes werden nämlich von Anfang bis Ende der Zeichenkette überprüft. Dabei dauert es länger,bis die Anfrage verneint wird, wenn schon mehrere Zeichen korrekt waren, außer die letzten Zeichen. Dies wird natürlich in Millisekunden überprüft, aber anhand von Logs kann der Angreifer analysieren, wie weit die Abstände sind. Das Problem wurde in der Version Keycloak 24.0.4 behoben \footnote{https://nvd.nist.gov/vuln/detail/CVE-2024-4629} 
+	Ein weiteres Beispiel ist der integrierte Brute-Force-Schutz von Keycloak, der jedoch nachweislich umgangen werden kann – etwa durch sogenannte \textit{Timing-Angriffe} \footnote{\url{https://nvd.nist.gov/vuln/detail/CVE-2024-4629}}. Dabei analysiert ein Angreifer die Antwortzeit des Systems, um Rückschlüsse auf den Authentifizierungsprozess zu ziehen. Wird beispielsweise ein korrekter Benutzername, aber ein (fast) korrektes Passwort eingegeben, kann die Antwortzeit minimal verlängert sein – was auf die sequentielle Überprüfung der Passwortzeichen hindeutet. Solche zeitlichen Unterschiede im Millisekundenbereich lassen sich mit ausreichend vielen Versuchen systematisch auswerten.
 	\\[0.5em]
-	Die erwähnten Probleme haben eigene Lösungen, jedoch benötigt es Zeit, um diese Sicherheitslücken zu finden und zu schließen. Des weiteren sind neue Sicherheitslücken bekannt, die regelbasierte Maßnahmen nicht erkennen können, wie bspw. dem Überspringen von der Zertifikatsprüfung \footnote{https://www.cvedetails.com/cve/CVE-2025-3501}. Dies sind jedoch Netzbasierte Sicherheitslücken, welche nicht Forschungsstand dieser Arbeit sind. Dies sollte zeigen, welche Schwachstellen und Backdoors sich in Keycloak aktuell befinden. Verhaltensbasierte Anomalien zählen dementsprechend nicht dazu und wurden kaum erforscht, wobei dies wichtiger wird- zumal, weil auch Insider-Angriffe nicht beachtet werden in Keycloak, bzw. nicht dokumentiert sind. Die Erforschung davon lohnt sich wirtschaftlich, sowie wissenschaftlich und es können neue Erkenntnisse auf diesem Gebiet gewonnen werden. Generell sind Sicherheitsmaßnahmen in SSO-basierten Systemen noch nicht effizient- es fehlen quantifizierbare Metriken, um bspw. zu messen, ob ein System kompromittiert wurde oder nicht. Audit-Logs werden demnach nicht sorgsam genug überwacht und Sitzungen können schnell missbraucht werden \cite{jannett2024sso}. Es werden zwar Produkte angeboten, welche diese Schwächen ausgleichen, jedoch wird allgemein bzgl. des Thema Überwachen von Logs auf Ethische Hürden hingewiesen, die es erlauben Daten, besonders Logs, zu sammeln und zu analysieren (Stichwort Datenschutz).
+	Obwohl für viele Schwachstellen bereits Gegenmaßnahmen existieren, erfordert deren Erkennung und Behebung stets Zeit. Neue Verwundbarkeiten entstehen kontinuierlich – etwa durch das Umgehen von Zertifikatsprüfungen \footnote{\url{https://www.cvedetails.com/cve/CVE-2025-3501}}, was jedoch primär netzwerkbasierte Sicherheitslücken betrifft und damit außerhalb des Fokus dieser Arbeit liegt. Diese Beispiele verdeutlichen die aktuellen Grenzen der in Keycloak implementierten Schutzmechanismen.
 	\\[0.5em]
-	Dies stellt eine vereinfachte Sicht des jetzigen Zustandes in Keycloak dar. Es werden nun die aktuellen Erkenntnisse in Bezug zu den Lernmodellen geschildert.
+	Verhaltensbasierte Anomalien hingegen – etwa verdächtige Login-Zeiten oder Zugriffe auf untypische Ressourcen – sind bislang kaum erforscht. Dabei spielen sie eine zunehmende Rolle, insbesondere zur Erkennung von \textit{Insider Threats}, die im Keycloak-Kontext bisher nicht aktiv adressiert oder dokumentiert sind. Die Erforschung dieser Lücken ist sowohl aus wissenschaftlicher als auch wirtschaftlicher Sicht lohnenswert. Insbesondere bei SSO-Systemen wie Keycloak fehlt es derzeit an quantifizierbaren Metriken, um etwa den Kompromittierungsstatus eines Systems systematisch zu erfassen. Audit-Logs werden oft unzureichend überwacht, wodurch legitime Sitzungen leicht kompromittiert werden können \cite{jannett2024sso}. Zwar existieren kommerzielle Tools zur Unterstützung der Log-Analyse, jedoch werfen diese insbesondere im Hinblick auf Datenschutz und Ethik neue Herausforderungen auf.
 	\\[0.5em]
-	Die Literatur zeigt, dass klassische Verfahren wie One-Class SVM (OC-SVM) und Isolation Forest insbesondere durch ihre Stabilität und gute Performance auf tabellarischen Daten überzeugen \cite{comparative_timeseries2021, arjunan2024, zhou2021deep}. Allerdings weisen mehrere Studien darauf hin, dass Long-Short-Term-Memory (\gls{lstm}) und Autoencoder als neuronale Netzwerke gerade bei sequenziellen Daten wie Zeitreihen oder Nutzeraktivitäten Vorteile bieten, da sie zeitliche Abhängigkeiten und komplexe Muster besser erfassen können \cite{malhotra2016lstm, wei2022lstm, demir2024comparative}. Die Kombination dieser Modelle in Hybridarchitekturen, beispielsweise \gls{lstmae} zusammen mit Isolation Forest oder OC-SVM, führt nachweislich zu einer höheren Erkennungsrate und reduziert gleichzeitig die Rechenzeit, wie \cite{hybrid_if_lstm2023, ergen2017unsupervised} zeigen. Auch \gls{dbscan} wurde in einigen Arbeiten erfolgreich für die Cluster-basierte Anomalieerkennung eingesetzt, insbesondere bei unstrukturierten oder verrauschten Daten. Die Kombination dieser Methoden erlaubt es, die jeweiligen Schwächen einzelner Modelle auszugleichen und robuste Lösungen für unterschiedlichste Domänen, von Netzwerksicherheit bis IoT, zu entwickeln. Insgesamt belegen die Studien, dass ein hybrider und domänenspezifischer Einsatz der vorgestellten Algorithmen vielversprechend ist, um die Herausforderungen der Anomalieerkennung im Bezug zum Benutzerverhalten in realen Anwendungen effizient zu meistern.
+	Die obige Darstellung zeigt eine vereinfachte, aber repräsentative Einschätzung des aktuellen Sicherheitsniveaus in Keycloak. Im folgenden Abschnitt wird der Stand der Forschung hinsichtlich maschineller Lernverfahren zur Anomalieerkennung im Benutzerverhalten dargelegt.
+	\\[0.5em]
+	Die Literatur legt nahe, dass klassische Verfahren wie One-Class SVM (OC-SVM) und Isolation Forest besonders durch ihre Robustheit und gute Performance auf tabellarischen Daten überzeugen \cite{pang2021deep}, owbei OCSVMs sogar Anomalien präziser erkenne können als Autoencoder \cite{arjunan2024}. Für sequenzielle Daten wie Zeitreihen oder Nutzerinteraktionen zeigen hingegen neuronale Netze wie Long Short-Term Memory (\gls{lstm}) und Autoencoder signifikante Vorteile, da sie zeitliche Abhängigkeiten und komplexe Muster besser erfassen können \cite{demir2024comparative}. Studien wie \cite{ergen2017unsupervised} zeigen, dass die Kombination von LSTM-basierten Architekturen mit OC-SVM oder SVDD \footnote{https://github.com/lukasruff/Deep-SVDD-PyTorch} zu signifikant verbesserten Erkennungsraten bei der Anomalieerkennung führt – insbesondere bei sequenziellen Daten. Andere Arbeiten wie \cite{ghrib2020hybrid} untersuchen ähnliche hybride Ansätze, etwa in Verbindung mit Isolation Forest, und berichten neben Leistungsgewinnen auch über eine mögliche Reduktion der Rechenzeit. Auch \gls{dbscan} wird erfolgreich zur Cluster-basierten Anomalieerkennung eingesetzt, insbesondere bei unstrukturierten oder verrauschten Daten. Insgesamt zeigt sich, dass der domänenspezifische, kombinierte Einsatz dieser Verfahren besonders vielversprechend ist, um die Herausforderungen bei der Erkennung verhaltensbasierter Anomalien in realen Anwendungen effizient zu bewältigen.
 	
 	\subsection{Problematik und Begrenzung von Modellen}
-	Die Literatur zeigt jedoch auch potenzielle Schwäche der genannten Netzwerke und Modelle. LSTM und Autoencoder als \gls{hybridmodell} benötigen große Datenmengen und sind anfällig für Overfitting. Sie sind schwer interpretierbar. Auch Isolation Forest und OC-SVM oft sensitiv gegenüber Parameterwahl \cite{chalapathy2019deep}.
-	DBSCAN ist sehr bspw. sensitiv gegenüber Wahl der Parameter (Epsilon, MinPts), erkennt Cluster mit unterschiedlicher Dichte schlecht und kann bei hohem Rauschen versagen.
-	Auch Hybridmodelle haben Ihre Schwächen: Sie verbessern zwar die Leistung, aber erhöhen Komplexität und die Interpretierbarkeit leidet. Das Training wird aufwendig, was die Echtzeitanwendungen erschwert.
+	Die Literatur zeigt jedoch auch potenzielle Schwächen der genannten Netzwerke und Modelle. LSTM und Autoencoder als \gls{hybridmodell} benötigen große Datenmengen und sind anfällig für Overfitting. Zudem sind sie schwer interpretierbar. Auch Isolation Forest ist oft sensitiv gegenüber der Wahl der Parameter \cite{chua2024web}. DBSCAN ist beispielsweise sehr empfindlich gegenüber der Wahl von Parametern wie Epsilon und MinPts, erkennt Cluster mit unterschiedlicher Dichte nur schlecht und kann bei hohem Rauschen versagen. Auch OCSVM ist dem gegenüber sensible bei der Wahl der Parameter.
 	\\[0.5em]
-	Es ergab sich, dass die Paper die selben Probleme feststellten. Eine weitere Studie zeigt, dass auch bei Vergleichsstudien oft nur die Klassifikationsgenauigkeit, auch Accuracy genannt, untersucht wurde und andere Metriken unbeachtet ließen. Bspw. wurden in diesen Studien laut Fourure et Al. häufig nach Metriken wie dem F1-Score gemessen, welche stark vom Anteil an Anomalien (Kontaminationsrate) im Datensatz abhängen. Durch die Wahl bestimmter Trainings- und Testdatensätze kann der F1-Score künstlich erhöht werden, was zu einer verzerrten Bewertung der Modellleistung führt \cite{fourure2021anomaly}. Er und seine Kollegen empfehlen stattdessen, die Evaluierung nach der AUC-Kurve zu messen.
-	Insgesamt lässt sich schlussfolgern, dass die Modelle an sich ihre individuellen Stärken und Schwächen haben, welches die Klassifikationsgenauigkeit bestimmen. Zugleich wird kritisiert, dass viele Studien Metriken verwenden, welche nicht aussagekräftig genug sind.
+	Auch Hybridmodelle haben ihre Schwächen: Zwar verbessern sie häufig die Leistung, gleichzeitig erhöhen sie jedoch die Komplexität, was die Interpretierbarkeit erschwert. Zudem wird das Training aufwendiger, was den Einsatz in Echtzeitanwendungen erschwert.
 	
 	\subsection{Hypothese}
-	Aus der Literatur ergibt sich, dass Kombinationen aus LSTM und \gls{Autoencoder} in mehreren Untersuchungen als besonders robust und effektiv bewertet wurden. Die Studien zeigten einzelne Entwürfe aus LSTM-AE und Isolation Forest und LSTM-AE und One-Class SVM und in den anderen Studien wurden diese jedoch nur einzeln verglichen.
-	Die Stärken und Schwächen wurden ebenfalls erkannt, auch die der Hybridmodelle. Es besteht ein Interesse anhand der gefundenen Literatur, einen gesamten Vergleich zwischen Hybridmodellen aus LSTM-AE und den restlichen genannten maschinellen Lernalgortihmen sowie diese einzeln zu vergleichen. 
+	Aus der Literatur ergibt sich, dass Kombinationen aus LSTM und Autoencoder in zahlreichen Studien als besonders robust und effektiv bewertet wurden – etwa in Szenarien zur Luftqualitätsüberwachung(99{,}5\,\% Genauigkeit)\cite{wei2023lstm}.
+	Andere Studien zeigen, dass sich LSTM-AE mit IF ein gutes Modell bauen lässt,welches Anomalien erkennen kann und ebenfalls eine hohe Accuracy erzielt \cite{tran2020lstm_if}.
+	\\[0.5em]
+	Basierend auf der Literatur besteht daher Interesse an einem umfassenden Vergleich zwischen Hybridmodellen aus LSTM-AE und den weiteren genannten klassischen maschinellen Lernalgorithmen sowie an einem Vergleich dieser Modelle einzeln.
+	\\[0.5em]
 	Daraus wurde folgende Hypothese abgeleitet:
 	\\[0.5em]
-	\textit{Hybridmodelle zur Anomalieerkennung, die LSTM-Autoencoder mit klassischen Verfahren kombinieren, zeigen auf dem Keycloak-Datensatz eine bessere Erkennungsgenauigkeit, Robustheit und Konsistenz als andere Hybridmodelle.
-	}
+	\textit{Hybridmodelle zur Anomalieerkennung, die LSTM-Autoencoder mit klassischen Verfahren kombinieren, zeigen auf dem Keycloak-Datensatz eine bessere Erkennungsgenauigkeit, Robustheit und Konsistenz als andere Hybridmodelle.}
 	\\[0.5em]
-	Entsprechend formuliert sich die Nullhypothese wie folgt:
-	\textit{Es gibt keinen signifikanten Unterschied in der Erkennungsgenauigkeit, Robustheit und Konsistenz zwischen den verschiedenen Hybridmodellen auf Basis von LSTM-Autoencodern kombiniert mit klassischen Algorithmen beim Einsatz auf dem Keycloak-Datensatz.
-	}
+	Die zugehörige Nullhypothese lautet:
+	\\[0.5em]
+	\textit{Es gibt keinen signifikanten Unterschied in Erkennungsgenauigkeit, Robustheit und Konsistenz zwischen verschiedenen Hybridmodellen, die auf LSTM-Autoencodern kombiniert mit klassischen Algorithmen basieren, beim Einsatz auf dem Keycloak-Datensatz.}
 	\\[0.5em]
 	Ziel dieser Arbeit ist es, die Leistungsfähigkeit verschiedener unüberwachter Anomalieerkennungsverfahren, insbesondere Hybridmodelle aus LSTM-Autoencodern kombiniert mit klassischen Algorithmen, anhand eines geeigneten Keycloak-Datensatzes zu evaluieren.
 	\\[0.5em]
@@ -326,20 +448,18 @@
 		\item LSTM-AE und One-Class SVM
 		\item LSTM-AE und DBSCAN
 	\end{itemize}
+	Mit verschiedenen Metriken soll geprüft werden, welches Modell hinsichtlich Klassifikationsgenauigkeit, geringster False-Positive-Rate und Konsistenz die besten Ergebnisse erzielt. Unter Konsistenz wird verstanden, welches Modell nicht zufällig, sondern anhand eines stabilen Algorithmus klassifiziert.
+	\\[0.5em]
+	Die Kombination von Hybridmodellen mit zwei verbundenen Netzwerken und drei klassischen Lernalgorithmen bietet einen interessanten Vergleich, auch wenn der Vergleich zwischen den Modellen als unausgeglichen wahrgenommen werden kann. Es wird jeweils das Hybridmodell LSTM-AE mit einem der drei Lernalgorithmen kombiniert und miteinander verglichen. Obwohl die komplexeren Hybridmodelle aufgrund ihrer Leistungsfähigkeit voraussichtlich besser abschneiden, ist dies genau der Forschungsschwerpunkt: Nicht die absolute Überlegenheit steht im Fokus, sondern die quantitative Bewertung des Mehrwerts tief ergehender Hybridarchitekturen gegenüber klassischen Anomalieerkennungsverfahren.
+	\\[0.5em]
+	Tran et al. zeigen beispielsweise bereits, dass ein Vergleich von LSTM-AE mit weiteren Lernalgorithmen erfolgte und dass das Hybridmodell LSTM-AE bessere Ergebnisse erzielte \cite{tran2021forecasting}. Daher erscheint ein erweiterter Vergleich zwischen komplexeren Hybridmodellen, die noch klassische Lernalgorithmen verwenden, und den einfachen Algorithmen sinnvoll. Zudem kann so geprüft werden, ob komplexere Architekturen eventuell auch Nachteile haben und einfache Modelle unter bestimmten Bedingungen überlegen sind.
+	\\[0.5em]
+	Zudem werden komplexere Daten verwendet, nämlich Logdaten, die Aufschluss über das Benutzerverhalten geben. Auch wenn eine Studie zeigt, dass Isolation Forest hier gute Ergebnisse erzielt \cite{yan2021extended}, gibt es bislang keinen Vergleich mit Hybridmodellen.
+	\\[0.5em]
+	Der Vergleich trägt somit dazu bei, bisherige Studien zu ergänzen und einen neuen wissenschaftlichen Mehrwert zu schaffen, indem einfache Modelle mit komplexeren Hybridmodellen verglichen werden.
+	\\[0.5em]
+	Abschließend wird erwartet, dass die Hybridmodelle insgesamt effizienter sind als die einfachen, wobei die konkrete Architektur entscheidend für diesen Effekt ist.
 	
-	Mit verschiedenen Metriken, will man in dieser Arbeit prüfen, welches Modell hinsichtlich seiner Klassifikationsgenauigkeit, geringsten False-Positive Zuordnungen und Vertraulichkeit die über treffenderen Ergebnisse erzielt. Unter Vertraulichkeit meint man welches Modell dabei nicht zufällig klassifiziert sondern nach einem funktionierenden Algorithmus.
-	\\[0.5em]
-	Die Dynamik zwischen Hybridmodellen mit zwei kombinierten Netzwerken und drei einfachen Lernalgorithmen bieten einen interessanten Vergleich, wobei
-	schon der Vergleich der genannten Modelle als Störfaktor interpretierbar ist. Es wird das Hybridmodell LSTM-AE mit je einem von drei Lernalgorithmen kombiniert und mit den einzelnen Lernalgorithmen verglichen. Dieser Vergleich wirkt zunächst unausgeglichen und die Ergebnisse vorhersehbar (u.A. dass die komplexen Hybridmodelle aufgrund ihrer Leistungsfähigkeit Daten effizienter analysieren können), jedoch ist dies genau der Forschungsschwerpunkt. Der Vergleich dient nicht der Bewertung absoluter Überlegenheit, sondern der quantitativen Einschätzung des Mehrwerts tieferlegender Hybridarchitekturen gegenüber klassischen Anomalieerkennungs-Verfahren.
-	\\[0.5em]
-	Unter anderem zeigen Tran et Al. dass auch schon ein Vergleich mit LSTM-AE und weiteren Lernalgorithmen schon angewandt wurde \cite{tran2021forecasting} und das Hybridmodell LSTM-AE bessere Ergebnisse erzielte. Daher ist es sinnvoll einen erweiterbaren Vergleich zwischen komplexeren Hybridmodellen, welche noch die Lernalgorithmen verwenden, mit den gleichen, jedoch einfachen Algorithmen zu vergleichen. Zudem zeigt ein direkter Vergleich, ob komplexere, maschinelle Architekturen eventuell die Leistungsfähigkeit schwächen und so durch sogar die einfachen Modelle eventuell überlegen sind.
-	\\[0.5em]
-	Zudem werden Daten verwendet, welche komplexer zu analysieren sind, nämlich Logdaten, welche Aufschluss über das Benutzerverhalten geben. Auch wenn eine Studie schon zeigt, dass Isolation Forest bspw. die besten Ergebnisse erzielte \cite{yan2021extended}, so gab es noch keinen Vergleich mit Hybridmodellen.
-	\\[0.5em]
-	Zudem gleicht der Vergleich bisherige Studien ab und trägt dazu bei, einen neuen wissenschaftlichen Mehrwert zu leisten, indem einfache Modelle mit viel komplexeren Hybridmodellen verglichen werden.
-	\\[0.5em]
-	Es wird erwartet, dass die Hybridmodelle insgesamt effizienter sind als die einfachen, wobei die Architektur entscheiden für diese Behauptung ist.
-
 	\section{Methoden und Störfaktoren}
 	\subsection{Metriken}
 	Als Metrik werden die typischen Verfahren wie die Berechnung der Accuracy, der Precision, des Recalls und des F1-Scores
@@ -349,12 +469,15 @@
 		\textbf{Recall} = \(\frac{TP}{TP + FN}\) zeigt, wie viele der tatsächlichen Positiven korrekt erkannt wurden. 
 		\textbf{F1-Score} = \(2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}\) ist das harmonische Mittel von Precision und Recall. 
 		Dabei stehen TP, TN, FP, FN für True Positives, True Negatives, False Positives und False Negatives.}
-	verwendet. Eine Studie weist aber daraufhin, dass des Öfteren diese Methoden angewandt werden und oft nicht valide Begründungen für die Klassifikationsgenauigkeit des Modells bietet. 
+	verwendet. 
 	\\[0.5em]
-	U.a. wies diese Studie daraufhin, dass ein Großteil, der Studien nur anhand der Accuracy der maschinellen Lernmodelle ihre Effizienz misst und andere Eigenschaften ausblenden \cite{provost1998case, japkowicz2002systematic}. Zudem wird hingewiesen, dass durch stark unausgewogenen Klassen die Accuracy irreführend ist. Dies liegt daran, weil die Accuracy nur angibt, wie viele Datenpunkte richtig klassifiziert wurden. Wenn aber die Klassen unausgeglichen sind (z.B. 99\,\% der Datenpunkte gehören Klasse A der Rest zu Klasse B), ist es wahrscheinlicher, dass das Modell lernt immer nur entweder sich für Klasse A oder Klasse B zu entscheiden und wählt- da es mehr Objekte von Klasse A gibt- diese dahin zu klassifizieren, obwohl es noch eine kleinere Klasse B gab, die aber nicht berücksichtigt wurde. Es wird dann zwar eine hohe gute Accuracy von 99\,\% erreicht, was aber bedeutet, dass 1\,\%, die von Klasse B ebenfalls zu Klasse A zugeordnet wurden. Dies nennt man auch Accuracy Paradoxon. Um dieses Parodoxon zu vermeiden, will man in dieser Arbeit Metriken einsetzen, welche ausschlaggebender sind. 
+	Eine Studie weist aber daraufhin, dass des Öfteren diese Methoden angewandt werden und oft nicht valide Begründungen für die Klassifikationsgenauigkeit des Modells bietet. U.a. wies diese Studie daraufhin, dass ein Großteil, der Studien nur anhand der Accuracy der maschinellen Lernmodelle ihre Effizienz misst und andere Eigenschaften ausblenden \cite{provost1998case, japkowicz2002systematic}. Zudem wird hingewiesen, dass durch stark unausgewogenen Klassen die Accuracy irreführend ist. Dies liegt daran, weil die Accuracy nur angibt, wie viele Datenpunkte richtig klassifiziert wurden. Wenn aber die Klassen unausgeglichen sind (z.B. 99\,\% der Datenpunkte gehören Klasse A der Rest zu Klasse B), ist es wahrscheinlicher, dass das Modell lernt immer nur entweder sich für Klasse A oder Klasse B zu entscheiden und wählt- da es mehr Objekte von Klasse A gibt- diese dahin zu klassifizieren, obwohl es noch eine kleinere Klasse B gab, die aber nicht berücksichtigt wurde. Es wird dann zwar eine hohe gute Accuracy von 99\,\% erreicht, was aber bedeutet, dass 1\,\%, die von Klasse B ebenfalls zu Klasse A zugeordnet wurden. Dies nennt man auch Accuracy Paradoxon. Um dieses Parodoxon zu vermeiden, will man in dieser Arbeit Metriken einsetzen, welche ausschlaggebender sind. 
 	\\[0.5em]
 	Eine andere wies daraufhin, dass Metriken des Öfteren falsch ausgewertet werden und der Fokus alleine auf den F1-Score liegt. Dieser aber wiederum lieferte nach der Studie nur oberflächliche Ergebnisse lieferte, weil der Score alleine nicht viel aussagte \cite{michelucci2022introduction}. Micelucci et. Al. kritisieren u.A. am F1-Score, dass dieser zwar eine gute Gewichtung zwischen Precision und Recall zeigt, jedoch an sich nicht genau angeben kann, ob nun wirkliche das Modell Probleme in False-Positive-Klassifizierungen oder False-Negative-Klassifizierungen hat.
 	\\[0.5em]
+	Es zeigt sich, dass verschiedene Studien ähnliche Probleme feststellen. Eine weitere Untersuchung von Fourure et al. zeigt, dass in vielen Vergleichsstudien vor allem die Klassifikationsgenauigkeit (Accuracy) betrachtet wird, während andere wichtige Metriken oft vernachlässigt bleiben. So wurde beispielsweise häufig der F1-Score als Bewertungsmaß verwendet, der jedoch stark vom Anteil an Anomalien (Kontaminationsrate) im Datensatz abhängt. Durch die Auswahl bestimmter Trainings- und Testdatensätze kann der F1-Score künstlich erhöht werden, was zu einer verzerrten Einschätzung der Modellleistung führt \cite{fourure2021anomaly}. Fourure und Kollegen empfehlen stattdessen die Verwendung der AUC-Kurve zur Evaluierung.
+	\\[0.5em]
+	Insgesamt lässt sich festhalten, dass jedes Modell individuelle Stärken und Schwächen besitzt, die die Klassifikationsgenauigkeit beeinflussen. Gleichzeitig wird kritisiert, dass viele Studien auf Metriken zurückgreifen, die nicht ausreichend aussagekräftig sind.
 	Generell ist die Kritik, dass eine einfacher Prozentsatz nicht ausschlaggebend für die Fähigkeiten des Modells ist, dennoch werden diese als übliche Metriken angewandt. Zusätzlich aber noch, um die Störfaktoren der üblichen Metriken zu verringern, werden modernere Metriken angewandt \cite{michelucci2022introduction}:
 	
 	\begin{itemize}
@@ -370,49 +493,64 @@
 	\\[0.5em]
 	Außer diesen Metriken wurde noch überlegt, einen sogenannten Cross-Validation-Test durchzuführen. Cross-Validation ist keine „Metrik“ wie Genauigkeit oder F1-Score, sondern eine Methode zur Modellbewertung. Sie unterteilt dabei den Datensatz in \textit{k} gleich große Teile.  Das Modell wird dann k-mal trainiert, jedes mal mit k-1 Teilen als Trainingsdaten. Der übrig geblieben Teil wird als Testdatensatz und Validierungsdatensatz verwendet. Der Sinn dahinter ist die Traningsdaten so zu verteilen, dass das Modell jedes mal neu trainiert wird. Dies soll Overfitting auf den Daten vermeiden. Durch das Training. Zudem soll sie die Ergebnisse nach jedem Training des k-Datensatzes zeigen, um zu zeigen, ob es an bestimmten Stellen Abweichungen gab, womit sich eben Overfitting erkennen lässt.
 	
-	\subsection{Andere nicht angewandte Metriken}
-	Es wurde überlegt, einen ANOVA-Test durchzuführen. Bei einem ANOVA-Test werden die Ergebnisse mehrerer Gruppen (Klassen) aus einem Datensatz miteinander verglichen. In anderen Worten:
-	ANOVA (Analysis of Variance) ist ein statistischer Test, der prüft, ob sich die Mittelwerte von zwei oder mehr Gruppen signifikant unterscheiden.
+	\subsection{Andere, nicht angewandte Metriken}
+	Im Rahmen der Methodik wurde auch die Durchführung eines ANOVA-Tests (Analysis of Variance) in Betracht gezogen. Der ANOVA-Test prüft, ob sich die Mittelwerte von zwei oder mehr Gruppen signifikant voneinander unterscheiden. 
 	\\[0.5em]
-	Wenn man in einem Datensatz zum Beispiel untersuchen will, wie stark ein Merkmal von einer Gruppenzugehörigkeit abhängt, wird dies mit dem ANOVA-Test geprüft.
+	Beispielsweise könnte man untersuchen, ob sich ein bestimmtes Merkmal – wie etwa das Persönlichkeitsmerkmal „Lieblingstier“ – in Abhängigkeit von einer Gruppenzugehörigkeit, etwa der Haarfarbe, signifikant unterscheidet. Dabei zeigt der ANOVA-Test lediglich auf, ob Unterschiede zwischen den Mittelwerten der Gruppen vorliegen, jedoch nicht, wie stark zwei Merkmale miteinander korrelieren.
 	\\[0.5em]
-	Beispielsweise möchte man herausfinden, ob sich das Persönlichkeitsmerkmal „Lieblingstier“ je nach Haarfarbe unterscheidet. Der ANOVA-Test prüft, ob es signifikante Unterschiede zwischen den Gruppen (hier Haarfarben) bezüglich des Merkmals „Lieblingstier“ gibt.
-	\\[0.5em]
-	Der ANOVA-Test bestimmt jedoch nicht, wie stark zwei Merkmale miteinander korrelieren, sondern ob sich die Mittelwerte eines Merkmals in verschiedenen Gruppen unterscheiden.
-	\\[0.5em]
-	Der Grund, weshalb diese Metrik verworfen wurde, ist, dass es in diesem Fall zu viele Metriken gibt, die auf Anomalien hinweisen. Das Ziel dieser Arbeit ist nicht herauszufinden, welche Merkmale am stärksten mit Anomalien korrelieren, sondern zu prüfen, ob die Modelle in der Lage sind, Anomalien zu erkennen und welches der Modelle anhand der zuvor vorgestellten Metriken die besten Ergebnisse erzielt. Die Anwendung dieser Metrik verfehlt daher den Kern der Arbeit.
-
+	Der ANOVA-Test wurde im vorliegenden Kontext nicht angewandt, da das Ziel der Arbeit nicht darin besteht, einzelne Merkmale hinsichtlich ihrer Korrelation zu Anomalien zu analysieren. Stattdessen soll untersucht werden, wie gut verschiedene Modelle Anomalien erkennen können und welches Modell dabei die besten Ergebnisse in Bezug auf die zuvor erläuterten Metriken erzielt. Die Verwendung des ANOVA-Tests würde diesen Fokus verfehlen, da er keine Aussage über die Leistungsfähigkeit der Modelle in der Anomalieerkennung trifft.
 	
 	\subsection{Störfaktoren}
-	Entscheidend dafür, dass ein "fairer" Vergleich entsteht ist unter anderem, die Art und Weise, wie die Daten zuvor verarbeitet werden. Eine ungenaue Verarbeitung zwischen kategorischen und numerischen Daten kann die Ergebnisse erheblich verändern. Zudem werden die Daten je nach Modell individuell verarbeitet. Während das LSTM-AE-Hybridmodell mehrere Verarbeitungsschritte zwischen den einzelnen Modellen im Hybridmodell voraussetzt (bspw. zuerst die Daten reinigen und dann in Sequenzen umwandeln), sind für die einfachen Modelle nur ein Verarbeitungsschritt, und zwar vorm Training notwendig.
+	Entscheidend für einen „fairen“ Vergleich ist unter anderem die Art und Weise, wie die Daten vorverarbeitet werden. Eine ungenaue Behandlung von kategorischen und numerischen Daten kann die Ergebnisse erheblich verfälschen. Zudem werden die Daten je nach Modell unterschiedlich verarbeitet. Während das LSTM-AE-Hybridmodell mehrere Verarbeitungsschritte zwischen den einzelnen Komponenten erfordert (z. B. Datenreinigung und anschließende Umwandlung in Sequenzen), benötigen die einfachen Modelle meist nur einen Verarbeitungsschritt vor dem Training.
 	\\[0.5em]
-	Ein weiterer Störfaktor ist die Parameterwahl, auf die noch in den Abschnitt der Umsetzung eingegangen wird. Die Parameter wie Epochen-Anzahl, Verarbeitungsgröße und Sequenzlänge bestimmen wie die Modelle arbeiten. Dadurch, dass die Modelle unterschiedlich arbeiten, müssen die Parameter den Modellen zugeschnitten sein. So durch ist aber kein genau "fairer" Vergleich nötig, weil eben die Parameter unterschiedlich sein werden und nicht gleich bei allen Modellen. Zudem ist die Sequenzlänge entscheidend.
+	Ein weiterer Störfaktor ist die Parameterwahl, auf die im Abschnitt zur Umsetzung noch näher eingegangen wird. Parameter wie die Anzahl der Epochen, die Batch-Größe und die Sequenzlänge beeinflussen maßgeblich das Verhalten der Modelle. Da die Modelle unterschiedlich funktionieren, müssen die Parameter individuell angepasst werden. Dadurch ist ein absolut „fairer“ Vergleich schwierig, da die Parameter naturgemäß variieren.
 	\\[0.5em]
-	Ebenfalls entscheidend sind die zu verarbeitenden Daten. Da diese selbst generiert werden, bestimmt die Anzahl der gesetzten "anomalen Zeilen" wie das Modell diese bewertet. Wie schon im Abschnitt der Metriken erwähnt, führen stark unausgeglichene Datensätze zum Accuracy Paradoxon. Da es im Regelfall wenig Anomalien in Datensätzen gibt, wird sich wahrscheinlich zeigen, dass die Anomalien zunächst zu den normalen Daten klassifiziert werden, weshalb weitere Metriken dies Störfaktoren schon ausschalten. Jedoch ist es wichtig zu erkennen, dass die Datensätze unausgeglichen sind.
+	Ebenso entscheidend sind die zu verarbeitenden Daten. Da diese teilweise synthetisch generiert werden, bestimmt der Anteil der als anomal gekennzeichneten Zeilen die Bewertung der Modelle. Wie bereits im Abschnitt zu den Metriken erwähnt, führt eine starke Klassenungleichheit häufig zum Accuracy-Paradoxon. In der Regel sind Anomalien in Datensätzen selten, sodass viele Modelle zunächst anomale Daten als normal klassifizieren. Moderne Metriken helfen, diesen Störeffekt abzufedern. Dennoch ist es wichtig, die Ungleichverteilung der Datensätze zu beachten.
 	\\[0.5em]
-	Zudem ist es wichtig, dass die Daten entsprechend in Trainings, -Test, - und Validierungsdaten eingeteilt werden, um frühzeitig \textit{Overfitting} \footnote{Überanpassung durch gleichen, starren Strukturen im Modell, so dass es nicht auf neue Daten anwendbar ist) erkennen zu können.}
+	Darüber hinaus ist es essentiell, die Daten in Trainings-, Test- und Validierungsdaten aufzuteilen, um frühzeitig \textit{Overfitting} \footnote{Überanpassung des Modells an die Trainingsdaten, wodurch die Generalisierbarkeit auf neue Daten leidet.} erkennen zu können.
 	\\[0.5em]
-	Ebenfalls bestimmt die Zufälligkeit der Daten, wie die Modelle diese verarbeiten. Die Datensätze müssen zufällig generiert sein, jedoch muss beim Erstellen darauf geachtet werden, dass diese auch einen kontinuierlichen Zusammenhang wie es bei realen Cyber-Angriffen der Fall ist, haben. Dies liegt an der sequentiellen Verarbeitungsweise des LSTM. Kontextlose Datenpunkte können schwieriger analysiert werden.
+	Auch die Zufälligkeit der Daten spielt eine Rolle bei der Modellverarbeitung. Die Datensätze müssen zufällig generiert sein, gleichzeitig aber einen kontinuierlichen Zusammenhang besitzen – wie es bei realen Cyberangriffen der Fall ist. Dies ist besonders wichtig für das LSTM, das auf sequenzielle Abhängigkeiten angewiesen ist. Kontextlose Datenpunkte erschweren die Analyse.
 	\\[0.5em]
-	Ebenfalls spielt die Rechenleistung der Modelle eine Rollen bei der Verarbeitungsgenauigkeit. Zu lange oder zu kurze Verarbeitungszeiten und die Rechenintensität bestimmen die Leistungsfähigkeit der Modelle. Dementsprechend werden Regulierungstechniken in den Modellen mit implementiert.
+	Zudem beeinflusst die verfügbare Rechenleistung die Verarbeitungsgenauigkeit der Modelle. Zu lange oder zu kurze Trainingszeiten sowie hohe Rechenintensität wirken sich auf die Leistungsfähigkeit aus. Deshalb werden in den Modellen Regulierungstechniken implementiert, um eine optimale Balance zu gewährleisten.
 	\\[0.5em]
-	Da die Generierung der Logs Probleme aufweist, wird auch in Betracht gezogen, echte Daten zu verwenden. Diese Daten ergattert man dann durch automatisierte Tests (auf die im Laufe der Arbeit eingegangen wird), welche die Logs erzeugen.Zudem wurde erwägt, firmeninterne Daten zu verwenden. 
+	Da die Generierung synthetischer Logs Herausforderungen mit sich bringt, wird ebenfalls in Betracht gezogen, echte Daten zu verwenden. Diese können z. B. durch automatisierte Tests (auf die im weiteren Verlauf der Arbeit eingegangen wird) generiert werden. Auch firmeninterne Daten wurden erwogen.
 	\\[0.5em]
-	Weil diese in der Realität nur mangelnd vorhanden sind, ergeben sich nur wenige Trainings- und Testdaten. LSTMs sind Neuronale Netzwerke, die man als "datenhungrig" bezeichnen würde, da sie dafür gebaut sind, hochkomplexe zeitbasierte Daten zu analysieren und keine vierstellige Anzahl von Logs. Es könnte damit zur Unterforderung des Modells führen"- und dies kann die Ergebnisse erheblich beeinflussen.
+	Da solche realen Daten häufig begrenzt verfügbar sind, stehen meist nur wenige Trainings- und Testdaten zur Verfügung. LSTMs gelten als „datenhungrig“, da sie für die Analyse hochkomplexer zeitbasierter Daten entwickelt wurden und typischerweise eine große Menge an Logs benötigen. Ein zu kleiner Datensatz könnte daher zu einer Unterforderung des Modells führen, was die Ergebnisse erheblich beeinflussen kann.
 	\\[0.5em]
-	Bei einem Vergleich der Ergebnisse der Modell, welche generierte Daten und echte Daten als Input bekamen, wird erwartete, dass sich die Ergebnisse erheblich unterschieden werden, schon alleine daran, weil die Features anders sind pro Datensatz und auch die die Struktur der normalen Logs.
+	Beim Vergleich der Modellleistungen mit synthetischen und echten Daten als Input wird erwartet, dass sich die Ergebnisse deutlich unterscheiden, da die Feature-Struktur und die logische Beschaffenheit der Logs pro Datensatz variieren.
+	
+	\section{Anforderungsdefinition und Analyse}
+	\subsection{Funktionale Anforderungen}
+	Da in dieser Arbeit mehrere Modelle zur Anomalieerkennung auf Basis von Keycloak-Logdaten untersucht werden, ergeben sich folgende funktionale Anforderungen an das System:
+	\begin{itemize}
+		\item Die Logdaten sollen in einem geeigneten Format (z.,B. JSON) eingelesen und vorverarbeitet werden.
+		
+		\item Es sollen mindestens drei Hybridmodelle angewendet werden.
+		
+		\item Die Verfahren sollen auf den rekonstruierten Fehlerwerten basieren und eine Klassifikation in normal/anomal ermöglichen.
+		
+		\item Die Vorhersagen sollen mit tatsächlichen Anomalien verglichen und quantitativ bewertet werden (Precision, Recall, F1-Score, Balanced Accuracy, MCC).
+		
+	\end{itemize}
 
+	\subsection{Nicht-funktionale Anforderungen}
+	\begin{itemize}
+		\item Das System soll modular aufgebaut sein, sodass einzelne Modelle unabhängig getestet werden können.
+		
+		\item Die Reproduzierbarkeit der Experimente soll durch fixierte Random Seeds gewährleistet sein, wie bspw. bei den Keycloak-Log-Daten.
+		
+		\item Das gesamte Setup soll in einer isolierten Entwicklungsumgebung (z.,B. Jupyter Notebook) lauffähig dokumentiert sein.
+	\end{itemize}
+	
 	\section{Angewandte Technologien}
 	\subsection{\gls{scikit} Learn}
-	Scikit-learn\footnote{Scikit-learn: Machine Learning in Python. Offizielle Dokumentation, verfügbar unter: \url{https://scikit-learn.org/stable/}} ist eine weitverbreitete Open-Source-Bibliothek für maschinelles Lernen in Python. Sie stellt eine Vielzahl von Werkzeugen für klassische Machine-Learning-Aufgaben bereit, wie etwa Klassifikation, Regression, Clustering, Dimensionsreduktion sowie Modellbewertung und -selektion. Die Bibliothek ist besonders wegen ihrer einfachen API, klaren Struktur und umfassenden Dokumentation beliebt und eignet sich sowohl für den Einstieg als auch für komplexe Anwendungen. Scikit Learn bietet vor implementierte Modelle wie Isolation Forest, DBSCAN und One-Class SVM an.
+	Scikit-learn\footnote{Scikit-learn: Machine Learning in Python. Offizielle Dokumentation, verfügbar unter: \url{https://scikit-learn.org/stable/}} ist eine weitverbreitete Open-Source-Bibliothek für maschinelles Lernen in Python. Sie stellt eine Vielzahl von Werkzeugen für klassische Machine-Learning-Aufgaben bereit, darunter Klassifikation, Regression, Clustering, Dimensionsreduktion sowie Modellbewertung und -selektion. Die Bibliothek ist insbesondere aufgrund ihrer einfachen API, klaren Struktur und umfassenden Dokumentation sowohl für Einsteiger als auch für fortgeschrittene Anwendungen geeignet. Scikit-learn bietet eine Reihe vorimplementierter Modelle wie \textit{Isolation Forest}, \textit{DBSCAN} und \textit{One-Class SVM}.
 	
 	\subsection{Deep GPU Xceleration (\gls{dgx})}
-	Eine DGX ist ein Hochleistungsrechner von NVIDIA \footnote{Siehe Definition laut NVIDIA: \url{https://www.nvidia.com/en-us/data-center/dgx-systems/}}. Mit diesem System können rechenintensive maschinelle Lernmodelle, wie beispielsweise LSTM-Netze, effizient trainiert werden. Die DHBW stellt hierfür das Modell DGX H100 zur Verfügung, auf dem die Modelle ausgeführt werden. NVIDIA DGX H100-Systeme sind mit zwei Intel Xeon 8480C-Prozessoren ausgestattet, die zusammen über insgesamt 112 CPU-Kerne verfügen\footnote{Siehe technische Spezifikationen: \url{https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html}}.
-	Diese DGX wird verwendet, weil auf herkömmlichen Rechnern mit GPUs die Rechenkapazität und die Verarbeitungsgeschwindigkeit zu gering ist.
-	Im Laufe der Entwicklung wurde jedoch zunehmend auf der CPU gearbeitet, weshalb die Maschine gewechselt wurde.
+	Eine DGX ist ein Hochleistungsrechnersystem von NVIDIA\footnote{Siehe Definition laut NVIDIA: \url{https://www.nvidia.com/en-us/data-center/dgx-systems/}}. Es eignet sich insbesondere für das effiziente Training rechenintensiver Modelle des maschinellen Lernens, wie beispielsweise LSTM-Netze. Die DHBW stellt hierfür das Modell DGX H100 zur Verfügung, auf dem die Trainingsprozesse ausgeführt wurden. NVIDIA DGX H100-Systeme sind mit zwei Intel Xeon 8480C-Prozessoren ausgestattet, die gemeinsam über insgesamt 112 CPU-Kerne verfügen\footnote{Siehe technische Spezifikationen: \url{https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html}}.
+	\\[0.5em]
+	Der Einsatz der DGX ist erforderlich, da herkömmliche GPU-basierte Systeme nicht über die nötige Rechenkapazität und Verarbeitungsgeschwindigkeit verfügen. Im weiteren Entwicklungsverlauf wurde jedoch vermehrt CPU-basiert gearbeitet, weshalb auf ein alternatives System umgestiegen wurde.
 	
-	\subsection{Saturn Server}
-
 	\section{Angewandte Technologie: Keycloak}
 	Keycloak ist ein IAM-Tool mit SSO-Funktion. Es bietet an, Benutzerdaten und Firmendaten sicher und strukturiert zu speichern. Jedes mal, wenn man sich über Keycloak bei einem Dienstleister anmeldet, so wird durch SSO die Anmelden- und Autorisierungsdaten an diesen weitergegeben.
 	Keycloaks Struktur beinhaltet Bereiche, die auch Realms genannt werden, in denen sogenannte Clients angelegt werden können. Die Clients stellen die jeweiligen Anwendungen dar, die u.A. Benutzerdaten und Daten von Gruppen beinhalten. 
@@ -574,7 +712,7 @@
 	\\[0.5em]
 	
 	\subsection{Event-Logs}
-	Analysiert in dieser Arbeit werden die Event-Logs. Grund hierfür ist, dass diese wichtige Features enthalten, welche das Bneutzerverhalten beschreiben. Server-Logs beziehen sich zu sehr auf Netzbasierte Logs und andere Logs, wie Audit-Logs sind Unterkategorien von Events-Logs. Da keine SPI verwendet wird und nur die einzelne Keycloak-Instanz untersucht wird, fallen Custom Logs ebenfalls weg als Teil der Trainingsdaten und Security Logs werden nur erzeugt, wenn es die dazu gehörigen Komponenten dazu gibt,welche hier auch nicht angewandt werden.
+	Analysiert in dieser Arbeit werden die Event-Logs. Grund hierfür ist, dass diese wichtige Features enthalten, welche das Benutzerverhalten beschreiben. Server-Logs beziehen sich zu sehr auf Netzbasierte Logs und andere Logs, wie Audit-Logs sind Unterkategorien von Events-Logs. Da keine SPI verwendet wird und nur die einzelne Keycloak-Instanz untersucht wird, fallen Custom Logs ebenfalls weg als Teil der Trainingsdaten und Security Logs werden nur erzeugt, wenn es die dazu gehörigen Komponenten dazu gibt,welche hier auch nicht angewandt werden.
 	\\[0.5em]
 	
 	Keycloak unterteilt unter Anderem zwei Arten von Events-Logs:
@@ -627,7 +765,6 @@
 		\item LOGIN ERROR: Fehler beim Login über Keycloak
 		\item CODE TO TOKEN ERROR: Anmeldedaten war falsch, Server lehnt Anmeldedaten von Benutzer ab
 	\end{itemize}
-	
 	In den Admin Logs wiederum sind noch Features enthalten, welche in den normalen User Event Logs nicht vorkommen, u.A. 'operationType': Diese beinhalten typische CRUD-Operationen wie UPDATE, CREATE, DELETE und ACTION \footnote{https://github.com/keycloak/keycloak/blob/main/model/jpa/src/main/java/org/keycloak/events/jpa/JpaAdminEventQuery.java}. 
 	\\[0.5em]
 	
@@ -645,13 +782,14 @@
 	\end{itemize}
 	LSTM jedoch haben auch ihre Kapazitäten und auch hier können längere Sequenzen trotz diesen Gates für Verarbeitungsschwierigkeiten sorgen.
 	Probleme wie das Vergessen weiter zurückliegender Informationen oder eine ineffiziente Nutzung des Speichers können weiterhin auftreten – wenn auch in deutlich abgeschwächter Form im Vergleich zu Standard-RNNs \cite{hochreiter1997long}.
+	LSTM werden in vielen Bereichen, wie z.B: in IoT eingesetzt \cite{wei2022lstm}.
 	
 	\subsection{Autoencoder}
 	Ein Autoencoder ist eine spezielle Form eines neuronalen Netzwerks, das aus zwei Hauptbestandteilen besteht: der Encoder- und der Decoder-Schicht \cite{michelucci2022introduction}.
 	\\[0.5em]
 	Die Encoder-Schicht komprimiert die Eingabedaten und reduziert ihre Dimensionen auf eine kleinere Repräsentation, die sogenannte Bottleneck-Schicht. Diese Bottleneck-Schicht ist der engste Teil des Netzwerks und zwingt das Modell, die wichtigsten Merkmale der Daten in verdichteter Form zu lernen. Dadurch werden irrelevante oder redundante Informationen herausgefiltert, was den Autoencoder befähigt, die Essenz der Eingabedaten zu erfassen.
 	\\[0.5em]
-	Die Decoder-Schicht nimmt diese komprimierte Repräsentation und versucht, die ursprünglichen Daten daraus möglichst genau zu rekonstruieren. Das Netzwerk lernt durch Minimierung des Rekonstruktionsfehlers, also der Differenz zwischen Eingabedaten und rekonstruierten Daten.
+	Die Decoder-Schicht nimmt diese komprimierte Repräsentation und versucht, die ursprünglichen Daten daraus möglichst genau zu rekonstruieren. Das Netzwerk lernt durch Minimierung des Rekonstruktionsfehlers, also der Differenz zwischen Eingabedaten und rekonstruierten Daten. Dieser Fehler ist bedeutend für die spätere Hybridarchitektur.
 	\\[0.5em]
 	Diese Fähigkeit macht Autoencoder besonders nützlich für Aufgaben wie Anomalieerkennung. Wenn die Rekonstruktion schlecht gelingt (hoher Rekonstruktionsfehler), deutet dies darauf hin, dass die Eingabedaten von den gelernten Mustern abweichen und somit potenziell eine Anomalie darstellen.
 	
@@ -661,23 +799,8 @@
 	\paragraph{Varianten und Architekturen}
 	Neben dem klassischen Autoencoder gibt es weitere Varianten, z.B. den Variational Autoencoder (VAE), der probabilistische Modelle nutzt und generative Fähigkeiten besitzt, oder den Denoising Autoencoder, der lernt, verrauschte Eingaben zu bereinigen. Außerdem können Autoencoder aus mehreren Schichten bestehen (deep Autoencoder), um komplexere Merkmale zu extrahieren.
 	
-	\paragraph{Vorteile}
-	
-	Automatische Merkmalsextraktion ohne explizite Label
-	
-	Gut geeignet für unüberwachte Lernaufgaben
-	
-	Effiziente Dimensionsreduktion und Datenkompression
-	
-	\paragraph{Nachteile}
-	
-	Benötigen große Datenmengen zum Trainieren
-	
-	Können bei zu großem Bottleneck trivial werden (Identitätsfunktion lernen)
-	
-	Rekonstruktionsfehler ist nicht immer ein perfekter Indikator für Anomalien, vor allem bei sehr komplexen Daten
-	
-	Training kann rechenintensiv sein
+	\paragraph{Vor- und Nachteile}
+	Autoencoder bieten den Vorteil, dass sie Merkmale automatisch extrahieren können, ohne dass explizite Labels benötigt werden. Dadurch eignen sie sich gut für unüberwachte Lernaufgaben. Zudem ermöglichen sie eine effiziente Dimensionsreduktion und Datenkompression. Allerdings benötigen Autoencoder zum Trainieren große Datenmengen. Bei einem zu stark eingeschränkten Bottleneck besteht zudem die Gefahr, dass sie eine triviale Identitätsfunktion lernen. Weiterhin ist der Rekonstruktionsfehler nicht immer ein perfekter Indikator für Anomalien, insbesondere bei sehr komplexen Daten. Schließlich kann das Training solcher Modelle rechnerisch sehr aufwendig sein.
 	
 	\paragraph{Anwendungsbereiche}
 	Autoencoder finden Anwendung in der Bildkompression, Anomalieerkennung in Netzwerken oder Produktionsprozessen, Feature Learning vor Klassifikationsaufgaben oder generativer Modellierung.
@@ -730,8 +853,8 @@
 	Isolation Forest unterteilt jedoch zufällig die Datenpunkte, wobei man die Sinnhaftigkeit des Algorithmus hinterfragen kann.
 	
 	\subsection{One-Class SVM}
-	One-Class Support Vector Machine ist ein unüberwachter Lernalgorithmus, welcher durch die Erstellung von Ebenen Datenpunkte klassifizieren kann. Oder wie es Kun-Lun Li et Al. zitieren \cite{li2003improving}:
-	"Bei nichtlinear trennbaren Daten können wir sie durch eine nichtlineare Abbildung in einen hochdimensionalen Raum transformieren, so dass die Daten Punkte linear trennbar sind."
+	Mit dem rasanten Wachstum des Internets ist die Sicherheit von Informationssystemen zu einem global wichtigen Thema geworden. Effektive Methoden zur Erkennung von Eindringversuchen sind daher dringend erforderlich. Da viele Angriffe durch die Analyse von System-Logdaten erkennbar sind, wurde ein Ansatz entwickelt, der auf One-Class Support Vector Machines (OC-SVM) basiert und mit abstrahierten Benutzeraudit-Logs aus dem DARPA-Datensatz von 1999 trainiert wurde \cite{li2003improving}. Die Methode nutzt eine nichtlineare Abbildung der Daten in einen höherdimensionalen Raum, um auch nichtlinear trennbare Daten linear trennbar zu machen:
+	„Bei nichtlinear trennbaren Daten können wir sie durch eine nichtlineare Abbildung in einen hochdimensionalen Raum transformieren, so dass die Datenpunkte linear trennbar sind.“
 	\\[0.5em]
 	\begin{figure}
 		\centering
@@ -739,8 +862,7 @@
 		\caption{Visuelle Darstellung  OCSVM. Quelle: https://www.mdpi.com/2076-3417/13/3/1734}
 		\label{fig:screenshot006}
 	\end{figure}
-	
-	\gls{ocsvm} beginnt zuerst eine Hyperebene zu definieren, welche den Nullpunkt im Raum trennt. Die Ebene wird so gebildet,dass auf der einen Seite die Daten und auf der anderen Seite die Zielwerte liegen. Der Nullpunkt,also der Ursprung stellt dabei die andere Seite dar. Dies ist räumlich durch den Gaussian RBF Kernel möglich, welcher alle Daten auf einer Kugel abbildet, wobei der Ursprung dort zentriert ist. Ein Problem,dass sich hie ergibt, ist dass der Ursprung den Raum für die Anomalien abbildet, obwohl das in de Realität so ist \cite{bounsiar2025oneclass}.
+	Ein zentrales Problem bei One-Class Support Vector Machines (\gls{ocsvm}) besteht darin, dass der Ursprung im Merkmalsraum als Repräsentant für Anomalien dient, obwohl dies in der Realität nicht immer zutrifft \cite{bounsiar2025oneclass}. In ihrer Arbeit erklären die Autoren, dass die Trennung der Zielklasse vom Ursprung (also von den Ausreißern) häufig missverstanden wird. Sie schlagen eine geometrische Interpretation vor, bei der die Zielklasse vom übrigen Raum getrennt wird, insbesondere wenn ein Gauß-Kernel verwendet wird.
 	
 	\subsection{DBSCAN}
 	DBSCAN ist ein dichtebasiertes Cluteringverfahren, dass Datenpunkte anhand ihrer Dichte zu anderen Punkten klassifizieren kann.
@@ -757,9 +879,9 @@
 	Man startet von einem bestimmten Punkt p. Daraufhin werden alle Punkte gesucht, welche sich in der Nähe von p befinden. Sobald eine Mindestanzahl von Eps erreicht ist, die auch durch MinPts festgelegt wird, so bildet sich ein Cluster. Danach werden alle Punkte die nun zu einem Cluster gehören, aus einer Liste an verbleibenden Punkten herausgenommen. Daraufhin wird p zufällig an einen weiteren Ort im Raum platziert, wo noch kein Cluster gebildet wurde. Dies geschieht solange, bis keine Punkte in der Liste übrig sind. Die restlichen Punkte, die keinem Cluster zugeordnet sind, heißen Noises. Wenn es zu viele Noises gibt, heisst das, dass nicht effizient klassifiziert wurde \cite{ester1996dbscan}. 
 	
 	\subsection{Alternative Algorithmen}
-	Wie im Forschungsstand bereits erwähnt, wurde auch in Erwägung gezogen, anstelle von DBSCAN das hierarchische Verfahren HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise) zu verwenden. Letztlich wurde jedoch darauf verzichtet, obwohl HDBSCAN im Vergleich zu DBSCAN in vielerlei Hinsicht robuster ist – insbesondere bei der Identifikation von Clustern in hochdimensionalen oder verrauschten Daten. HDBSCAN hat den Vorteil, dass es keine globale Dichte-Schwelle voraussetzt und sich besser an lokale Strukturen anpassen kann. Ein Grund für den Verzicht auf HDBSCAN ist jedoch die derzeit noch begrenzte Anzahl an Studien und Erfahrungswerten in konkreten Anwendungskontexten. Im Gegensatz dazu existiert zu DBSCAN eine Vielzahl an Veröffentlichungen, auf die man sich bei der Modellentwicklung stützen kann. Es wäre durchaus denkbar, HDBSCAN in Kombination mit LSTM-Autoencodern (LSTM-AE) in einer eigenständigen Bachelorarbeit weiterführend zu untersuchen.
+	Wie bereits im Forschungsstand erwähnt, wurde als Alternative zu DBSCAN auch das hierarchische Verfahren HDBSCAN (Hierarchical Density-Based Spatial Clustering of Applications with Noise) in Betracht gezogen. HDBSCAN ist in vielerlei Hinsicht robuster als DBSCAN, insbesondere bei der Identifikation von Clustern in hochdimensionalen oder verrauschten Daten. Ein Vorteil von HDBSCAN ist, dass es keine globale Dichte-Schwelle benötigt und sich besser an lokale Datenstrukturen anpasst. Aufgrund der derzeit noch begrenzten Anzahl an Studien und praktischen Erfahrungswerten zu HDBSCAN im konkreten Anwendungsbereich wurde jedoch auf den Einsatz verzichtet. Für zukünftige Arbeiten wäre es durchaus interessant, HDBSCAN in Kombination mit LSTM-Autoencodern (LSTM-AE) näher zu untersuchen.
 	\\[0.5em]
-	Auch andere Verfahren wie K-Means oder LOF (Local Outlier Factor) wurden in Betracht gezogen. Diese sind grundsätzlich zur Anomalieerkennung geeignet, insbesondere in kleineren oder stärker strukturierten Datensätzen. Jedoch stoßen beide Methoden bei großen, komplexen oder verrauschten Datenmengen schnell an ihre Grenzen: K-Means ist empfindlich gegenüber Ausreißern und setzt eine feste Clusteranzahl voraus, während LOF mit zunehmender Datenmenge schnell ineffizient wird. LOF identifiziert Anomalien, indem es die lokale Dichte eines Punkts mit der seiner Nachbarn vergleicht – weicht sie stark ab, wird der Punkt als potenzieller Ausreißer markiert.
+	Darüber hinaus wurden auch weitere Anomalieerkennungsverfahren wie K-Means und LOF (Local Outlier Factor) evaluiert. Beide Methoden sind grundsätzlich für die Anomalieerkennung geeignet, insbesondere bei kleineren und klar strukturierten Datensätzen. Allerdings stoßen K-Means und LOF bei großen, komplexen oder verrauschten Datenmengen an ihre Grenzen. K-Means ist dabei empfindlich gegenüber Ausreißern und erfordert die Festlegung der Clusteranzahl vorab. LOF erkennt Ausreißer, indem es die lokale Dichte eines Datenpunkts mit der seiner Nachbarn vergleicht und Punkte mit stark abweichender Dichte als potenzielle Anomalien markiert. Allerdings wird LOF mit zunehmender Datenmenge zunehmend ineffizient.
 	
 	\section{Implementierung}
 	\subsection{Hybridmodelle mit LSTM-AE}
@@ -772,7 +894,9 @@
 		\label{fig:screenshot001}
 	\end{figure}
 	
-	Die Logs werden separat je nach Training, Test und Validierung in Dateien gepackt und dann zu Beginn ausgelesen. Zuerst werden diese Daten vorverarbeitet. Die Features werden danach automatisch in numerische, kategorische oder nicht definierte Daten eingeteilt. Es erfolgt dabei nicht sowie üblich Überprüfungen auf NaN oder None- da diese zur Anomalie-Erkennung beitragen und stattdessen als ein Ersatzwert definiert werden statt sie komplett zu entfernen. NaN-Werte können bspw. bei falschen Accounts oder vielleicht bei Bots auftreten, weshalb es wichtig ist, diese in der Analyse beizubehalten. Die eingeteilten und bereinigten Daten werden danach wieder zusammengefügt. Alle drei Dateien, also Evaluierungs-, Test- und Trainingsdateien werden dabei einzeln bereinigt und zusammengefügt. Darauf hin werden alle Daten mit der standardisiert und skaliert. Da der LSTM-AE nur mit sequentiellen Daten arbeiten kann, wurden diese Dateien in Sequenzen aufgeteilt.
+	Die Daten werden zuerst in kategorische oder numerische Daten aufgeteilt. Absichtlich werden NaN-Werte und unklare Werte nicht bereinigt, sondern in eine eigene Kategorie gefasst. Dies ist wichtig, da auch solche Werte Anomalien darstellen und die Bereinigung dieser Daten dafür sorgen würde, dass potenzielle Gefahrquellen unerkannt bleiben. NaN-Werte können außerdem bspw. bei falschen Accounts oder vielleicht bei Bots auftreten, weshalb es wichtig ist, diese in der Analyse beizubehalten. Zudem ist der LSTM-AE sehr gut darin verschieden Daten, sei es kategorisch oder numerisch zu erkennen, weshalb solch eine Vorverarbeitungsweise gewählt wurde.
+	\\[0.5em]
+	Die Logs werden separat je nach Training, Test und Validierung in Dateien gepackt und dann zu Beginn ausgelesen. Zuerst werden diese Daten vorverarbeitet. Die Features werden danach automatisch in numerische, kategorische oder nicht definierte Daten eingeteilt.Die eingeteilten und bereinigten Daten werden danach wieder zusammengefügt. Alle drei Dateien, also Evaluierungs-, Test- und Trainingsdateien werden dabei einzeln bereinigt und zusammengefügt. Darauf hin werden alle Daten mit der standardisiert und skaliert. Da der LSTM-AE nur mit sequentiellen Daten arbeiten kann, wurden diese Dateien in Sequenzen aufgeteilt.
 	\\[0.5em]
 	Es wurden folgende Parameter bestimmt:
 	
@@ -784,8 +908,8 @@
 			\midrule
 			seq\_length             & 15                       \\
 			batch\_size             & 128                      \\
-			encoder\_layers         & [1024, 512, 256]         \\
-			decoder\_layers         & [256, 512, 1024]         \\
+			encoder\_layers         & [256, 128, 64]         \\
+			decoder\_layers         & [64, 128, 256]         \\
 			dropout\_rate           & 0.2                      \\
 			learning\_rate          & 0.0001                   \\
 			\bottomrule
@@ -793,6 +917,9 @@
 		\caption{Bestimmte Parameter der Modellkonfiguration}
 		\label{tab:model_params}
 	\end{table}
+	
+	Die Trainingsfehler, bzw. Rekonstruktionsfehler, also die Daten, welche nicht klar klassifiziert werden konnten, werden danach jeweils mit einem der vorimplementierten Modelle trainiert. Dies ist auch eine Vorangehensweise, welche schon angewandt wurde \cite{malhotra2016lstm}.
+	Die Implementierung erfolgt in Form einer modularen Pipeline. Zunächst wird der LSTM-Autoencoder sequenziell trainiert und die Rekonstruktionsfehler für die Daten berechnet. Anschließend werden diese Fehler unabhängig voneinander als Eingabe für die verschiedenen Anomalieerkennungsmodelle (Isolation Forest, One-Class SVM, DBSCAN) verwendet. Dadurch kann jedes Modell separat trainiert, getestet und evaluiert werden, was eine modulare Struktur gewährleistet, auch wenn die gesamte Umsetzung in einem Jupyter Notebook erfolgt.
 	
 	\subsubsection{Implementierung: Isolation Forest}
 	Die Trainingsfehler, also die Daten, welche nicht klar klassifiziert werden konnten, werden danach jeweils mit einem der vorimplementierten Modelle trainiert. Im Fall des Isolation Forest wird ein auf Entscheidungsbäumen basierender Algorithmus genutzt, der speziell für die Erkennung von Ausreißern in hochdimensionalen Daten entwickelt wurde. Dabei wird das Modell auf den Fehlerwerten der Trainingsdaten fitten, um anschließend auf die Testdaten angewendet zu werden. Die Vorhersage klassifiziert dabei jeden Datenpunkt als normal (1) oder anomal (-1). Diese Ergebnisse werden binär kodiert, um eine einfache Auswertung zu ermöglichen. Da die zugrunde liegenden Daten sequenzbasiert aufgebaut sind – beispielsweise aus Zeitreihen bestehen – wird zusätzlich ein Abgleich mit den tatsächlichen Labeln vorgenommen. Hierzu wird aus den Zielwerten der Testdaten die letzte Klasse jeder Sequenz extrahiert, um sie mit den Vorhersagen vergleichen zu können.
@@ -806,7 +933,7 @@
 	
 	\subsection{Alternative Architekturen}
 	Es bestand die Möglichkeit, vorher eines der Algorithmen zu trainieren und danach die selben Daten nochmals in den LSTM-AE. Es ist also der umgekehrte Weg, welcher auch in einer Masterabeit verwendet wurde, bei dem ein Hybridmodell zwischen IF und LSTM-AE erstellt wurde \cite{hybrid_if_lstm2023}.
-	Desweiteren gibt es auch Architekturen, welche nur DBSCAN und OCSVM benutzen, wobei die Daten zuerts von OCSVM verwendet werden und später durch DBSCAN geclusert werden.
+	Desweiteren gibt es auch Architekturen, welche nur DBSCAN und OCSVM benutzen, wobei die Daten zuerst von OCSVM verwendet werden und später durch DBSCAN geclusert werden \cite{pu2021hybrid}.
 	\\[0.5em]
 	Es gab auch Ideen, für größerer Hybridmodelle. U.A. wurde eine große Kombination aus LSTM-AE, DBSCAN und IF erstellt. Die Daten werden demnach zuerst vom LSTM-AE verarbeitet. Die Fehler daraus werden geclustert durch DBSCAN, falls es auch unterschiedliche Fehlerarten gibt. schlussendlich entschiedet IF, welche Anormal sind und welche nicht.
 	\\[0.5em]
@@ -821,17 +948,16 @@
 	
 	\section{Möglichkeit 1: Generierung der Logs}
 	\subsection{Angriffsfälle}
-	Nach jetzigem Stand gehören zu den häufigsten Insider-Attacken in IT-Systemen u.A. der Missbrauch von hohen Privilegien, Rollen und Recht, Datendiebstahl, sowie der Manipulation wichtiger Daten, wie bspw. dem Löschen von wichtigen Dateien. Brute-Force Angriffe gehören ebenfalls zu den wichtigsten Attacken. Es wurden jene Angriffsmöglichkeiten umgesetzt, welcher auch am wahrscheinlichsten auftreten und auch in den Logs erkennbar sind. Datendiebstahl bspw. lässt sich nicht direkt erkennen in Keycloak, weil in den Log-Dateien wenig zum Upload großer Dateien etwas angegeben wird. Es wird erwartet, dass Angriffe, wie dem Stehlen von Rollen in Keycloak eher auftreten würden, sowie Brute-Force Attacken, weshalb diese Anwendungsfälle umgesetzt werden. Sie sind zudem in den Logs bspw., durch Attribute wie dem Event Typ LOGIN\_ERROR erkennbar. 
+	Nach jetzigem Stand gehören zu den häufigsten Insider-Attacken in IT-Systemen u.A. der Missbrauch von hohen Privilegien, Rollen und Recht, Datendiebstahl, sowie der Manipulation wichtiger Daten, wie bspw. dem Löschen von wichtigen Dateien \cite{singh2022insiderthreats}. Brute-Force Angriffe gehören ebenfalls zu den wichtigsten Attacken. Es wurden jene Angriffsmöglichkeiten umgesetzt, welcher auch am wahrscheinlichsten auftreten und auch in den Logs erkennbar sind. Datendiebstahl bspw. lässt sich nicht direkt erkennen in Keycloak, weil in den Log-Dateien wenig zum Upload großer Dateien etwas angegeben wird. Es wird erwartet, dass Angriffe, wie dem Stehlen von Rollen in Keycloak eher auftreten würden, sowie Brute-Force Attacken, weshalb diese Anwendungsfälle umgesetzt werden. Sie sind zudem in den Logs bspw., durch Attribute wie dem Event Typ LOGIN\_ERROR erkennbar. 
 	\\[0.5em]
 	Da der Fokus dieser Arbeit auf dem Gebiet des anomalen Benutzerverhaltens liegt, werden bewusst Angriffsfälle wie DDoS-Attacken nicht berücksichtigt. Von daher werden nur folgende Angriffsfälle modelliert in den Logs:
 	
 	\begin{itemize}
-		\item Anwendungsfall 1: Brute-Force Attacken bei der Anmeldung
-		\item Anwendungsfall 2: Löschen und Änderungen an wichtigen Clients, Usern, Passwörtern und Realms
-		\item Anwendungsfall 3: Erlangung wichtiger Rollen des Admins, wie bspw. Admin-Rolle, Manage-User, und realm-admin
-		\item Anwendungsfall 4: Häufiges Abfragen derselben Quelle
+		\item \textit{Anwendungsfall 1: }Brute-Force Attacken bei der Anmeldung
+		\item \textit{Anwendungsfall 2: } Löschen und Änderungen an wichtigen Clients, Usern, Passwörtern und Realms
+		\item \textit{Anwendungsfall 3: } Erlangung wichtiger Rollen des Admins, wie bspw. manage-users, und realm-admin
+		\item \textit{Anwendungsfall 4: } Häufiges Abfragen derselben Quelle
 	\end{itemize}
-	
 	Zudem werden bekannte Anomalien wie ungewöhnlichen IP-Adressen und ungewöhnliche Anmeldezeitpunkten bei der Generierung berücksichtigt. Es wird darauf geachtet, hohe Variabilität bei den Angriffen zu gewährleisten.
 	
 	\subsection{Automatische Erstellung der Keycloak-Logs}
@@ -857,7 +983,6 @@
 		\caption{Ausschnitt der generierten Logs}
 		\label{fig:screenshot009}
 	\end{figure}
-	
 	Bei der Generierung der Log-Daten wurde auch beachtet, dass nicht nur Normale und Anormale Benutzer-Sessions erzeugt werden, sondern auch Sessions, welche sich nicht klar zuordnen lassen. Dies wird dann auch \textit{Noise} genannt. Noise tritt des Öfteren in realen Anwendungsfällen auf, weil auch normale Benutzer manchmal bspw. priorisierte Rollen erhalten müssen aus Management-Gründen oder auch zu oft das Passwort ändern aus eigenen Bedenken der Sicherheit. Die Modelle würden dazu tendieren diese als Anormal zu deuten. Dies wird hier verhindert, indem noch im Script mit Absicht Noises erzeugt werden.
 	
 	\subsection{Problematik dieser Lösung}
@@ -871,7 +996,7 @@
 	Da die Generierung der Daten eine hohe Aufwendigkeit benötigt, wird stattdessen der sinnvollere Ansatz verwendet, echte Keycloak-Daten zu beschaffen. Jedoch werden es keine Daten aus Unternehmen, da man keine datenschutzrechtlichen Risiken eingehen will. Stattdessen wurde die Idee angenommen, über eine lokale Keycloak-Instanz selbst Log-Daten zu generieren. Da dieser Weg zeitaufwendig ist, wurde in Betracht gezogen, über sogenannte Selenium-Tests Angriffsszenarien zu inszenieren und ebenfalls durch Selenium-Tests gewöhnliche Keycloak-Daten zu generieren. Was dabei als normale Keycloak-Logs zu verstehen ist, wird dadurch  herausgefundenen, sich an firmeninternen Logs zu orientieren.
 	
 	\subsection{Anbindung der Keycloak-Api}
-	Um Zugriff auf die Keycloak-Logs zu erhalten, war es notwendig, selbst eine Keycloak-Instanz aufzusetzen und selbst als Admin zu navigieren. 
+	Um Zugriff auf die Keycloak-Logs zu erhalten, ist es notwendig, selbst eine Keycloak-Instanz aufzusetzen und selbst als Admin zu navigieren. 
 	Um nun an die Logs aus Keycloak, also die die aus Quarkus hauptsächlich aus generiert werden, zu kommen, muss man zuerst die benötigten Ressourcen finden. Standard gemäß benötigt man Admin-Rollen, um an sensible Informationen wie User Event Logs und den Admin Event Logs selbst zu gelangen. Man benötigt zunächst einmal die korrekten Authentifizierungsmittel, damit man auch Rechte erlangt, um auf die Events zugreifen zu dürfen.
 	\\[0.5em]
 	Der gewählte Grant Typ hierfür ist \textit{Client Credentials}. Hierbei meldet man sich über einen beliebigen Client an. man benötigt noch das Client-Secret und schickt dieses mit den anderen Daten ab.
@@ -887,19 +1012,20 @@
 	Genauere Informationen über die Keycloak API lassen sich in der 
 	Doku finden \footnote{https://www.keycloak.org/docs-api/latest/rest-api/index.html}.
 	
-	\subsection{Selenium-Tests}
-	Selenium ist ein Framework für automatisierte Tests im Webbrowser. Selenium-Tests sind als Paket erhältlich in Python. Bei den Selenium-Tests wird der Webbrowser genau, wie als ob  würde ein echter Mensch ihn benutzen, ausgeführt. Der Anwender sieht klar, wie die UI benutzt wird durch den geschriebenen Test. Selenium-Tests bestehen aus folgenden Komponenten:
+	\subsection{Selenium-Tests zur Erzeugung der Logs}
+	Selenium ist ein Framework zur automatisierten Ausführung von Webbrowser-Aktionen und in Python als Paket verfügbar. Es ermöglicht, Interaktionen mit der Benutzeroberfläche realitätsnah zu simulieren – so, als würde ein Mensch den Browser bedienen. Die wesentlichen Komponenten sind:
+	
 	\begin{itemize}
-		\item Selenium WebDriver: Das Herzstück – steuert den Browser programmgesteuert.
-		\item Selenium Grid: Ermöglicht parallele Tests auf mehreren Maschinen/Browsern.
-		\item Selenium IDE: Ein Recording-Tool im Browser (nicht empfohlen für ernsthafte Tests).
+		\item \textbf{Selenium WebDriver}: Steuert den Browser programmgesteuert – das zentrale Element der Tests.
+		\item \textbf{Selenium Grid}: Ermöglicht die parallele Ausführung von Tests auf verschiedenen Maschinen und Browsern.
+		\item \textbf{Selenium IDE}: Ein Recording-Tool im Browser (nicht empfohlen für produktive oder komplexe Tests).
 	\end{itemize}
-	Generell wird für die Erstellung der Logs nur der Webdriver verwendet. Dieser führt automatisch den Chrome Browser aus. Der Grund für die Wahl von Selenium beruht auf seine unkomplizierte Anbindung an Keycloak und auch der Tatsache, dass Selenium-Tests auch auf Keycloak anwendbar sind. Die Anbindung an sich erfordert keinen hohen Aufwand; man muss den "Driver", also den Browser, definieren, und daraufhin die Tests ausführen auf dem jeweiligen Port, auf dem die lokale Keycloak-Instanz lauscht.
+	
+	Für die Erstellung der Logs wird ausschließlich der WebDriver verwendet, welcher automatisch den Chrome-Browser startet. Die Wahl fiel auf Selenium, da es sich unkompliziert mit Keycloak verbinden lässt und sich gut für automatisierte Tests auf dieser Plattform eignet. Die Einrichtung ist einfach: Man definiert den zu verwendenden Browser ("Driver") und führt die Tests auf dem Port aus, auf dem die lokale Keycloak-Instanz verfügbar ist.
 	\\[0.5em]
-	Ein Nachteil der Tests ist, dass die IP-Adresse gleich bleibt und dies ein Störfaktor darstellt. Die Modelle lernen, dass jede IP-Adresse zu verschiedenen Benutzern gehört, obwohl dies in der Realität nicht der Fall ist und auf Anomalien hinweisen sollte. Zudem gibt es Probleme bezüglich der Zeit: Alle Logs werden in einem Durchlauf in leichten Abständen erstellt. Da der LSTM-AE zeitbasiert lernt, wird dies seine Fähigkeit die Anomalien zu erkennen, eingeschränkt. Es werden auch Tests am Abend durchgeführt, jedoch hat man dann auch nur ein paar Anomale Logs, welche auf eine ungewöhnliche Uhrzeit hinweisen. 
+	Ein Nachteil dieser Methode besteht in der konstanten IP-Adresse – alle Anfragen stammen vom selben Host. Das führt dazu, dass das Modell unter Umständen lernt, dass mehrere Benutzer eine gemeinsame IP nutzen, was in realen Szenarien möglicherweise auf eine Anomalie hindeutet. Zudem erfolgt die Log-Erzeugung in kurzen zeitlichen Abständen, was die zeitliche Streuung reduziert. Da das LSTM-AE-Modell zeitbasierte Muster analysiert, kann dies seine Fähigkeit zur Anomalieerkennung einschränken. Zwar werden auch Tests zu ungewöhnlichen Uhrzeiten durchgeführt (z.B. abends), diese erzeugen jedoch nur wenige auffällige Logs.
 	\\[0.5em]
-	Dennoch besteht der Vorteil, dass die Logs realitätsnah an den echten Keycloak-Logs ist, was wichtiger ist, falls die Erkenntnisse dieser Arbeit wirtschaftliche Vorteile mitbringen soll. Es lassen sich 100000 Events oder sogar mehr erstellen, womit das LSTM-AE genug Daten zur Verarbeitung hat. Zudem werden automatisch reale Logs durch die Aktionen in den definierten Tests erzeugt, woraufhin keine eigenen Logs mehr generiert werden müssen, sondern die Logs automatisch durch die Selenium-Tests erzeugt werden und gespeichert werden. 
-	\\[0.5em]
+	Trotz dieser Einschränkungen überwiegt der Vorteil, dass die erzeugten Logs den realen Keycloak-Logs sehr nahekommen – ein zentraler Aspekt, insbesondere wenn wirtschaftlich verwertbare Erkenntnisse aus dieser Arbeit gewonnen werden sollen. Die Testumgebung ermöglicht die Generierung großer Datenmengen (z.B. über 100.000 Events), wodurch das LSTM-AE-Modell ausreichend Trainingsdaten erhält. Da die Logs direkt durch die definierten Tests erzeugt und gespeichert werden, entfällt die Notwendigkeit einer separaten manuellen Log-Generierung.
 	
 	\begin{figure}[H]
 		\centering
@@ -909,17 +1035,28 @@
 	\end{figure}
 	
 	
-	Es wurde zur Generierung der normalen Trainingsdaten zuvor ein neuer Realm erstellt namens "Ubisoft". In diesem sind 25 generierte nicht lebende Benutzer, wobei alphabetisch generiert wurde beginnt jeder Name mit je einem Buchstaben des Alphabets außer "X". Es wurde in diesem Realm der Client "nintendo" angelegt.  Dieser ist notwendig für den Admin, um auf die User Events zuzugreifen, als auch für die Benutzer selbst, wenn bspw. ein unechter Benutzer sich mit dem Client "nintendo" anmeldet.
+	Es wurde zur Generierung der normalen Trainingsdaten zuvor vier Realms erstellt:
+	
+	\begin{itemize}
+		\item ubisoft
+		\item Nintendo
+		\item Sega
+		\item aws
+	\end{itemize}
+	
+	Pro Realm erfolgt die Benutzeranmeldung über einen jeweils definierten Client.
 	\\[0.5em]
-	Ein Selenium-Test dieser Arbeit, erzeugt automatisch neue Benutzer in Keycloak und setzte zudem ein jeweiliges Passwort. Diese Benutzerdaten mitsamt dem Passwort werden jeweils in einer JSONL-Datei gespeichert und Benutzernamen und Passwort werden jeweils gemeinsam als Wert kombiniert. Damit sich die Benutzer auch über Keycloak über die automatisierten Tests anmelden können, muss in Keycloak eingestellt, dass die Benutzer kein vollständiges Profil mit Vornamen, Nachnamen und E-Mail brauchen, da ansonsten die Anmeldung fehlschlägt.
+	Im Realm \textit{ubisoft} wurden 25 synthetische Benutzer erstellt, deren Namen alphabetisch generiert wurden (jeder Buchstabe des Alphabets außer „X“ ist vertreten). Für diesen Realm wurde der Client \textit{ps3} angelegt. Dieser ist erforderlich, damit sowohl Administratoren Zugriff auf die User-Events erhalten als auch Benutzer sich über diesen Client authentifizieren können. Um sicherzustellen, dass während der Selenium-Tests nicht auf den Master-Realm zugegriffen wird, muss für den Client eine passende Redirect-URL definiert werden.
 	\\[0.5em]
-	Über einer bestimmten Anzahl für die Trainingsdaten, werden die generierten Benutzer im Selenium-Test dazu gebracht, sich anzumelden. "Gewöhnliche" Logs sind u.A. Logs,welche mit der Anmeldung zu tun haben. Inspiriert wurde dies durch echte firmeninternen Logs, welche hauptsächlich aus den Event-Type  LOGIN, CLIENT\_LOGIN und CODE\_TO\_TOKEN bestehen, wie in den firmeninternen Logs.
+	In den weiteren Realms – \textit{Sega}, \textit{Nintendo} und \textit{aws} – wurden jeweils zehn Benutzer angelegt. Die zugehörigen Clients lauten: \textit{megadrive} (Sega), \textit{wii} (Nintendo) und \textit{aws-console} (aws).
 	\\[0.5em]
-	Im Realm „Ubisoft“ benötigt ein Admin-Benutzer, der für einen bestimmten Client Benutzer erstellen möchte, die Rolle „manage-users“. Zusätzlich ist die Rolle „view-events“ erforderlich, um Ereignisse als Logs speichern und einsehen zu können. Wichtig dabei ist, dass diese Rollen nicht direkt dem Benutzer, sondern dem Client zugewiesen werden. Das liegt daran, dass Clients in Keycloak eigene Zugriffsrechte besitzen, die ihnen erlauben, bestimmte Aktionen im System auszuführen. So braucht der Client beispielsweise die Rolle „manage-users“, um programmgesteuert Benutzer im Realm anlegen oder verwalten zu können. Die Rolle „view-events“ ermöglicht es dem Client, Ereignisse und Logs zu überwachen, was für das Monitoring und die Fehleranalyse essenziell ist.
+	Jeder Realm verfügt über mindestens einen Administrator mit der Rolle \textit{realm-admin}. Ein Admin-Benutzer, der für einen bestimmten Client Benutzer anlegen oder verwalten möchte, benötigt darüber hinaus die Rollen \textit{manage-users} und \textit{view-events}. Wichtig ist hierbei, dass diese Rollen nicht direkt dem Benutzer zugewiesen werden, sondern dem jeweiligen Client. Der Grund dafür liegt in der Architektur von Keycloak: Clients besitzen eigene Zugriffsrechte, die ihnen bestimmte Operationen ermöglichen. So erlaubt die Rolle \textit{manage-users} dem Client, Benutzer im Realm programmatisch zu verwalten, während \textit{view-events} erforderlich ist, um Zugriff auf die Ereignisprotokolle zu erhalten – essenziell für Logging und Fehlersuche.
 	\\[0.5em]
-	Darüber hinaus verfügen Clients oft über sogenannte Service Accounts, spezielle Benutzerkonten, die es dem Client ermöglichen, sich selbstständig zu authentifizieren, etwa über das OAuth2 Client Credentials Grant. Die Service Account Rollen bestimmen dabei die Rechte, die diesem Service Account zugewiesen sind. Ohne die passenden Service Account Rollen könnte der Client zwar eine Verbindung herstellen, wäre aber nicht berechtigt, Benutzer zu verwalten oder Logs einzusehen. Somit sind die Service Account Rollen entscheidend dafür, dass ein Client im Hintergrund ohne Benutzerinteraktion die notwendigen Operationen ausführen kann.
+	Im Rahmen dieser Arbeit erzeugt ein Selenium-Test automatisch neue Benutzerkonten in Keycloak und weist ihnen jeweils ein Passwort zu. Diese Daten werden pro Realm einmalig in einer JSONL-Datei gespeichert, wobei Benutzername und Passwort gemeinsam als Schlüssel-Wert-Paar abgelegt werden.
 	\\[0.5em]
-	Kurz gesagt: Der Client braucht die Rollen „manage-users“ und „view-events“, um Benutzerverwaltung und Event-Logging durchzuführen, und die Service Account Rollen, damit er sich eigenständig authentifizieren und diese Rechte nutzen kann.
+	Damit sich die erzeugten Benutzer über die automatisierten Tests in Keycloak anmelden können, muss in der Konfiguration festgelegt werden, dass kein vollständiges Profil (Vorname, Nachname, E-Mail) erforderlich ist – andernfalls würde die Authentifizierung fehlschlagen.
+	\\[0.5em]
+	Darüber hinaus verfügen Clients über sogenannte Service Accounts – spezielle technische Benutzerkonten, die es ihnen ermöglichen, sich selbstständig zu authentifizieren, beispielsweise über den OAuth2 Client Credentials Grant. Die Service-Account-Rollen bestimmen dabei die verfügbaren Rechte. Ohne diese Rollen könnte der Client zwar eine Verbindung herstellen, hätte jedoch keinen Zugriff auf Benutzerverwaltung oder Logdaten. Die korrekte Konfiguration der Service-Account-Rollen ist daher zwingend notwendig, um im Hintergrund automatisiert operieren zu können.
 	\\[0.5em]
 	\begin{figure}[H]
 		\centering
@@ -927,18 +1064,38 @@
 		\caption{Benötigte Rollen für den Client Nintendo}
 		\label{fig:screenshot012}
 	\end{figure}
-	
-	Es werden ca. 5000 Logs erzeugt, welche nur gewöhnliche Los enthalten mit den genannten Event-Typen. Zudem führt ein weitere Selenium-Test Aktionen aus, die auf die Anomalien hindeuten sollen. Es werden ca. 15-25 solcher Logs erzeugt, wobei drei Szenarien ausgeführt werden. Diese Szenarien werden im nächsten Kapitel genau erläutert und unterscheiden sich von den Anwendungsfällen, welche zuvor bei der Generierung der Logs genannt wurden.
+	Ab einer bestimmten Menge an Trainingsdaten werden die generierten Benutzer im Rahmen des Selenium-Tests dazu gebracht, sich regulär anzumelden. Die dabei entstehenden sogenannten „gewöhnlichen“ Logs umfassen unter anderem Anmeldevorgänge und basieren auf realen firmeninternen Protokollen. Diese bestehen typischerweise aus den Event-Typen LOGIN, CLIENT\_LOGIN und CODE\_TO\_TOKEN.
 	\\[0.5em]
+	Folgende Aktivitäten gelten laut interner Log-Analyse als „typisch“:
+	
+	\begin{itemize}
+		\item Anmeldung über Keycloak direkt
+		\item Anmeldung über einen Client
+		\item Token-Aktualisierung (Refresh Token)
+		\item Abmeldung (Logout), auch nach Ablauf einer Session
+		\item Fehlgeschlagene Logins (kommen häufiger vor)
+	\end{itemize}
+	
+	Weitere Aktionen – wie das Anpassen des Benutzerprofils (z.B. E-Mail-Änderung, Passwort-Zurücksetzung), das Löschen eines Clients oder das Zuweisen von Rollen an andere Benutzer bzw. Clients – wurden in der Log-Generierung bewusst nicht automatisiert. Der Grund liegt in der vergleichsweise hohen Komplexität und der geringen Häufigkeit solcher Vorgänge. Da Keycloak primär als SSO-Dienst genutzt wird, wäre eine regelmäßige Durchführung solcher Aktionen im automatisierten Testkontext unrealistisch und würde die Aussagekraft der „normalen“ Logs verzerren.
+	\\[0.5em]
+	Stattdessen werden solche seltenen Aktionen manuell während des Testbetriebs von einzelnen Benutzern durchgeführt. Um dabei in die „Rolle“ eines anderen Benutzers zu schlüpfen, wird der Event-Typ IMPERSONATE verwendet. Die Verwendung von Impersonation während der automatisierten Testausführung wird vermieden, da sie eine potentielle Anomalie darstellt. Ziel ist es, lediglich gelegentlich und gezielt ungewöhnliche Aktionen zu erzeugen – etwa eine Passwort- oder E-Mail-Änderung, das Anlegen oder Löschen eines Benutzers oder das Zuweisen von Rollen. Dies reduziert den manuellen Aufwand bei der Erzeugung seltener Ereignisse, ohne die Gesamtdatenbasis zu verzerren.
+	\\[0.5em]
+	Pro Tag werden insgesamt 15 Sessions durchgeführt, wobei jede Session durch den häufigen Einsatz von Refresh Tokens mindestens zehn Einträge im Log erzeugt. Die Sitzungsdauer wird dabei durch die Konfiguration des jeweiligen Realms bestimmt. Aus praktischer Erfahrung ergibt sich eine durchschnittliche Dauer von etwa 35 Minuten pro Session – realistisch im Rahmen von 10 Minuten bis zu einer Stunde. So können pro Tag zwischen 2.500 und 5.000 Log-Einträge erzeugt werden.
+	\\[0.5em]
+	Zwar ließen sich innerhalb von fünf Tagen theoretisch bis zu 25.000 Log-Ereignisse erzeugen, jedoch ist der zeitliche Abstand zwischen den Sessions begrenzt. Ereignisse, die typischerweise erst nach längerer Zeit auftreten, fehlen somit in der Testbasis. Eine spätere Erweiterung ist möglich, jedoch wurde aufgrund der Bearbeitungsfrist beschlossen, die Generierung auf fünf aufeinanderfolgende Tage zu konzentrieren. Die Sessions werden dabei parallel ausgeführt.
+	\\[0.5em]
+	Da sämtliche Tests auf demselben Rechner stattfinden, ist die Quell-IP-Adresse für alle Benutzer identisch. Dies könnte bei längerem Training als Anomalie erkannt werden. Daher wird die IP-Adresse vor der Weiterverarbeitung aus den Events entfernt. Diese Maßnahme reduziert zwar eine potenzielle Störquelle, verringert aber gleichzeitig auch die Datenvielfalt für das Modell.
+	\\[0.5em]
+	Nichtsdestotrotz stellt dieses Verfahren eine vorteilhafte Methode zur Log-Generierung dar, da die erzeugten Ereignisse den realen Keycloak-Logs sehr nahekommen.
 	
 	\subsection{Mögliche Angriffszenarien nach CVE und CWE}
-	
 	Common Vulnerabilities and Exposures (CVE) stellt eine Auflistung bzw. Datenbank aller bekannten Sicherheitslücken in einem System dar. Für Keycloak existieren ebenfalls zahlreiche dokumentierte Schwachstellen \footnote{\url{https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=keycloak}}.
 	\\[0.5em]
 	CVEs bieten jedoch keine Lösungen an, sondern dienen der transparenten und neutralen Information über die Art, Ursache und mögliche Auswirkungen der jeweiligen Sicherheitslücke. Jede CVE erhält eine eindeutige Identifikationsnummer, eine Kurzbeschreibung sowie (sofern verfügbar) Angaben zur betroffenen Softwareversion. Die Dokumentation erfolgt weltweit durch Organisationen, Forschungseinrichtungen und unabhängige Sicherheitsforscher.
 	\\[0.5em]
 	Common Weakness Enumeration (CWE) hingegen beschreibt systematisch bekannte Schwachstellenmuster (Weaknesses), die potenziell zu Sicherheitslücken führen können. Während CVEs auf bereits konkret ausgenutzte oder gefundene Schwachstellen hinweisen, beschreibt CWE eher abstrakte Klassen von Fehlern, wie z.,B. „unzureichende Rechteprüfung“ oder „unsichere Tokenverarbeitung“. Beide Kataloge sind essentiell, um systematische Sicherheitstests zu entwerfen und zu interpretieren.
 	\\[0.5em]
+	Viele der genannten Probleme wurden zwar schon gelöst, jedoch häufen sich die Probleme von Jahr zu Jahr.
 	Im Rahmen dieser Arbeit wurden mit Hilfe von Selenium gezielt sicherheitsrelevante Szenarien gegen Keycloak getestet und simuliert. Dabei lassen sich die folgenden Fälle konkreten CVE- und CWE-Einträgen zuordnen:
 
 	\begin{itemize}
@@ -949,12 +1106,72 @@
 		\item \textbf{Denial of Service (DoS) Test:}  
 		Mittels zahlreicher, aufeinanderfolgender Anfragen wurde versucht, das System durch Last zu destabilisieren. Diese Art der Schwachstelle fällt unter \textbf{CWE-400: Uncontrolled Resource Consumption}. Eine reale CVE mit Bezug auf Keycloak ist \textbf{CVE-2021-41117}, bei der durch komplexe Gruppenrollenstrukturen ein ressourcenintensiver Zustand ausgelöst werden konnte, was ebenfalls zu einem DoS führen konnte.
 	\end{itemize}
-
+	
 	Diese Tests orientieren sich an bekannten Sicherheitslücken und dienen dazu, die Robustheit des Systems unter realistischen Angriffsbedingungen zu validieren. Da CVE- und CWE-Datenbanken bewusst keine vollständigen Exploitbeschreibungen enthalten, musste im Rahmen der Simulation eine technische Interpretation der Schwachstellen erfolgen.
-		
+	
+	Des weiteren werden noch folgende Angriffsszenarien durchgespielt, welche auch bei den generierten Logs durchgespielt wurden:
+	
+	\begin{itemize}
+		\item \textbf{Session Hijacking:}  Missbrauch einer Session jemand anderes
+		\item \textbf{Account Sabotage:}  Viele,Wichtige Ressourcen werden gelöscht oder verändert oder zugegriffen
+		\item \textbf{Brute Force Attacke} 
+	\end{itemize}
+	
+	\subsection{Selenium-Tests zur Erzeugung der Angriffsszenarien}
+	
+	Auch für die Selenium-Tests wurden die Angriffsszenarien wie in den generierten Logs umgesetzt.
+	Für jeden Test, bzw. Angriffszenario wurde ein Ablauf konstruiert.
+	Für den Fall einer \textbf{"Privilege Escalation"} wurde folgender Fall konstruiert:
+	\\[0.5em]
+	Im Ersten Fall versucht ein Nicht-Admin durch die Admin-Url zur Ansicht des Admins in Keycloak zu gelangen. Die würde schon fehlschlagen, wenn sich der Benutzer mit normalen Daten anmeldet.
+	\\[1.0em]
+	Der zweite Fall ist, dass der Admin selbst einem Benutzer zu viele Rechte gibt, oder bzw. der Benutzer selbst ist, nur eben hat der Benutzer die Admin-Credentials in Erfahrung gebracht:
+	\\[0.5em]
+	1. Man loggt sich in Keycloak direkt als der jeweilige Admin des zugehörigen Realms ein, (z.B. loggt sich Admin Anna in Realm Ubisoft ein).
+	\\[0.5em]
+	2. Admin geht zum Tab "users" und klickt auf den jeweiligen Benutzer, welcher zu viele Rechte erhalten soll
+	\\[0.5em]
+	3. Man klickt auf das Feld "Role Mapping"
+	\\[0.5em]
+	4. Es wird auf den Button 'Assign Role' gedrückt
+	\\[0.5em]
+	5. Sensible Rollen werden dem Benutzer zugefügt (z.B. "realm-admin")
+	\\[0.5em]
+	6. Man klickt auf den Button  'assign'
+	\\[1.0em]
+	Für den Fall \textbf{'Account Sabotage'} wurde folgendes Vorgehen entschieden:
+	\\[0.5em]
+	1. Man meldet sich an als Admin
+	\\[0.5em]
+	2. Als Admin werden viele Instanzen auf einmal gelöscht: Ein Client mit all seinen Benutzern
+	\\[0.5em]
+	Für den letzten Fall versucht ein gewöhnlicher Benutzer ständig Zugriff auf eine Ressource zu ergattern, die er nicht haben dürfte.
+	\\[1.0em]
+	Für den Fall \textbf{’Session Hijacking’} wurde folgendes Vorgehen konstruiert:
+	\\[0.5em]
+	1. Ein Angreifer loggt sich mit gültigen Zugangsdaten eines legitimen Benutzers in das System ein.
+	\\[0.5em]
+	2. Der Angreifer liest die Session-Cookies bzw. die Sitzungstoken des eingeloggten Benutzers aus.
+	\\[0.5em]
+	3. In einem zweiten Browser oder einer neuen Session werden diese Cookies übernommen und gesetzt.
+	\\[0.5em]
+	4. Der Angreifer ruft mit der übernommenen Sitzung eine geschützte Ressource auf, die nur dem legitimen Benutzer zugänglich sein sollte.
+	\\[0.5em]
+	5. Dadurch wird die aktive Benutzersitzung übernommen und unautorisierter Zugriff auf geschützte Bereiche ermöglicht.
+	\\[1.0em]
+	Für den Fall \textbf{"Token Manipulation"} wurde folgendes Vorgehen konstruiert:
+	\\[0.5em]
+	1. Ein Benutzer loggt sich mit gültigen Zugangsdaten im System ein.
+	\\[0.5em]
+	2. Das gültige Access-Token des Benutzers wird ermittelt.
+	\\[0.5em]
+	3. Das Token wird absichtlich verändert (z.B. durch Verfälschung der letzten Zeichen).
+	\\[0.5em]
+	4. Mit dem manipulierten Token wird eine Anfrage an die geschützte Admin-API gesendet.
+	\\[0.5em]
+	5. Das System sollte die Anfrage ablehnen und einen 401 Unauthorized-Status zurückgeben, um die Token-Manipulation zu erkennen.
+	
 	\section{Durchführung des Trainings}
-	\subsubsection{Training und Tests bei den Generierten Logs}
-	\subsubsection{Training und Tests bei den Logs durch Selenium}
 	\section{Ergebnisse}
 	\section{Diskussion}
 	\section{Fazit}

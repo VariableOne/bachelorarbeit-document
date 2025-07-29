@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.20)  24 JUL 2025 14:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.20)  29 JUL 2025 15:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -481,7 +481,7 @@ Package: glossary-tree 2023/09/29 v4.53 (NLCT)
 \openout4 = `bachelorarbeit.glo'.
 
 Package glossaries Info: Writing glossary file bachelorarbeit.glo on input line
- 13.
+ 14.
 
 (/usr/share/texlive/texmf-dist/tex/latex/endnotes/endnotes.sty
 Package: endnotes 2020-01-02 endnotes package
@@ -540,24 +540,24 @@ File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
 (./bachelorarbeit.aux)
 \openout1 = `bachelorarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
-LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -615,7 +615,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 21.
+Package hyperref Info: Link coloring OFF on input line 22.
 
 (./bachelorarbeit.out) (./bachelorarbeit.out)
 \@outlinefile=\write6
@@ -627,7 +627,7 @@ Package hyperref Info: Link coloring OFF on input line 21.
 \openout3 = `bachelorarbeit.ist'.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Overfull \hbox (19.63405pt too wide) in paragraph at lines 54--57
+Overfull \hbox (19.63405pt too wide) in paragraph at lines 55--58
 \OT1/cmr/m/n/12 sind in der Ar-beit an-ge-ge-ben. Die-se Ar-beit wur-de bis-her
  kei-ner an-de-ren Pr[]ufungsbeh[]orde
  []
@@ -669,13 +669,13 @@ Overfull \hbox (48.45866pt too wide) in paragraph at lines 10--10
 \openout9 = `bachelorarbeit.lot'.
 
  [8]
-Overfull \hbox (2.91493pt too wide) in paragraph at lines 70--89
+Overfull \hbox (2.91493pt too wide) in paragraph at lines 71--90
 \OT1/cmr/bx/n/12 MITRE ATT&CK:  \OT1/cmr/m/n/12 MITRE Ad-ver-sa-ri-al Tac-tics,
  Tech-ni-ques, and Com-mon Know-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--89
+Underfull \hbox (badness 10000) in paragraph at lines 71--90
 
  []
 
@@ -731,419 +731,458 @@ Overfull \hbox (3.11151pt too wide) in paragraph at lines 55--55
  []
 
 ) [11]
-Overfull \hbox (22.77614pt too wide) in paragraph at lines 244--250
-\OT1/cmr/m/n/12 Ne-ben sys-tem-wei-ten An-oma-li-en, die bei-spiels-wei-se Netz
--werk-ver-kehr oder Ger[]atezust[]ande
+Overfull \hbox (4.62779pt too wide) in paragraph at lines 247--254
+\OT1/cmr/m/n/12 Ne-ben sys-tem-wei-ten An-oma-li-en { et-wa im Netz-werk-ver-ke
+hr oder bei Ger[]atezust[]anden
  []
 
-
-Overfull \hbox (3.38005pt too wide) in paragraph at lines 244--250
-\OT1/cmr/m/n/12 Be-nut-zere-be-ne [[]2[]]. An-oma-li-en im Be-nut-zer-ver-hal-t
-en las-sen sich nach die-se Ma^^Yst[]aben
+[12]
+Overfull \hbox (5.0752pt too wide) in paragraph at lines 268--269
+[]\OT1/cmr/bx/n/12 Verhaltensbezogene At-tri-bu-te: \OT1/cmr/m/n/12 Be-schrei-b
+en das tats[]achliche Ver-hal-ten oder
  []
 
-[12{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-Overfull \hbox (11.28156pt too wide) in paragraph at lines 263--263
+[13{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [14]
+Overfull \hbox (11.28156pt too wide) in paragraph at lines 292--292
 []\OT1/cmr/bx/n/14.4 Regelbasierte Me-tho-den und wei-te-re Ma^^Y-nah-men in []
 []Key-
  []
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 263.
+(hyperref)                removing `\gls' on input line 292.
 
 \openout5 = `bachelorarbeit.ent'.
 
-[13] [14] [15] [16] [17] [18] [19]
-Overfull \hbox (4.93869pt too wide) in paragraph at lines 367--368
+[15] [16] [17] [18] [19] [20]
+Overfull \hbox (1.02774pt too wide) in paragraph at lines 387--404
+\OT1/cmr/m/n/12 Ins-ge-samt l[]asst sich fest-hal-ten, dass je-des Mo-dell in-d
+i-vi-du-el-le St[]arken und Schw[]achen
+ []
+
+[21] [22]
+Overfull \hbox (4.93869pt too wide) in paragraph at lines 408--409
 \OT1/cmr/m/n/12 (True Po-si-ti-ves, True Ne-ga-ti-ves, Fal-se Po-si-ti-ves, Fal
 -se Ne-ga-ti-ves) ber[]ucksichtigt.
  []
 
-[20]
-Overfull \hbox (30.39516pt too wide) in paragraph at lines 368--369
+
+Overfull \hbox (30.39516pt too wide) in paragraph at lines 409--410
 \OT1/cmr/m/n/12 als po-si-tiv klas-si-fi-ziert wur-den. Sie wird be-rech-net al
 s $[] = []$
  []
 
-[21]
-Overfull \hbox (1.42227pt too wide) in paragraph at lines 391--408
-\OT1/cmr/m/n/12 schen ka-te-go-ri-schen und nu-me-ri-schen Da-ten kann die Er-g
-eb-nis-se er-heb-lich ver[]andern.
+[23] [24]
+Overfull \hbox (0.2959pt too wide) in paragraph at lines 446--447
+\OT1/cmr/m/n/12 Da in die-ser Ar-beit meh-re-re Mo-del-le zur An-oma-li-e-er-ke
+n-nung auf Ba-sis von Keycloak-
  []
 
-
-Overfull \hbox (1.80923pt too wide) in paragraph at lines 391--408
-\OT1/cmr/m/n/12 Zu-dem wer-den die Da-ten je nach Mo-dell in-di-vi-du-ell ver-a
-r-bei-tet. W[]ahrend das LSTM-
- []
-
-[22]
+[25]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 410.
+(hyperref)                removing `\gls' on input line 468.
 
-[23]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 413.
+(hyperref)                removing `\gls' on input line 471.
 
-[24]
-<screenshot007.png, id=534, 952.30782pt x 350.81062pt>
+[26] [27]
+<screenshot007.png, id=573, 952.30782pt x 350.81062pt>
 File: screenshot007.png Graphic file (type png)
 <use screenshot007.png>
-Package pdftex.def Info: screenshot007.png  used on input line 446.
+Package pdftex.def Info: screenshot007.png  used on input line 502.
 (pdftex.def)             Requested size: 384.1096pt x 141.4994pt.
- [25] [26
+ [28
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.470 	\end{itemize}
+l.514 	\end{itemize}
                      <./screenshot007.png>]
-<screenshot013.png, id=546, 1379.1525pt x 565.36218pt>
+<screenshot013.png, id=580, 1379.1525pt x 565.36218pt>
 File: screenshot013.png Graphic file (type png)
 <use screenshot013.png>
-Package pdftex.def Info: screenshot013.png  used on input line 474.
+Package pdftex.def Info: screenshot013.png  used on input line 530.
 (pdftex.def)             Requested size: 384.1096pt x 157.45491pt.
-
-Overfull \hbox (12.83876pt too wide) in paragraph at lines 497--501
-\OT1/cmr/m/n/12 Quar-kus un-terst[]utzt eben-falls JBoss Log-ging, so-dass be-s
-te-hen-de Logging-Mechanismen
- []
-
-[27
+ [29
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.501 	
-        <./screenshot013.png>]
-<screenshot008.png, id=551, 713.66624pt x 201.00093pt>
+l.540 	\textbf{Rollenmodell:}
+                             \\ <./screenshot013.png>]
+Overfull \hbox (12.83876pt too wide) in paragraph at lines 553--557
+\OT1/cmr/m/n/12 Quar-kus un-terst[]utzt eben-falls JBoss Log-ging, so-dass be-s
+te-hen-de Logging-Mechanismen
+ []
+
+<screenshot008.png, id=586, 713.66624pt x 201.00093pt>
 File: screenshot008.png Graphic file (type png)
 <use screenshot008.png>
-Package pdftex.def Info: screenshot008.png  used on input line 504.
+Package pdftex.def Info: screenshot008.png  used on input line 560.
 (pdftex.def)             Requested size: 384.1096pt x 108.1831pt.
 
-Underfull \hbox (badness 2376) in paragraph at lines 505--505
+Underfull \hbox (badness 2376) in paragraph at lines 561--561
 []\OT1/cmr/m/n/12 Abbildung 3: []Beispiel: Ak-ti-vie-rung von Quarkus-Logging i
 n der Keycloak-
  []
 
-[28
+[30]
+<screenshot014.png, id=591, 884.55469pt x 371.88937pt>
+File: screenshot014.png Graphic file (type png)
+<use screenshot014.png>
+Package pdftex.def Info: screenshot014.png  used on input line 589.
+(pdftex.def)             Requested size: 469.47308pt x 197.37848pt.
+
+Overfull \hbox (42.68173pt too wide) in paragraph at lines 589--590
+ [][] 
+ []
+
+[31
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.525 		\item \textbf
-                     {Log4j / Logback:} Mächtig, aber externe Abhängigkeit...
- <./screenshot008.png>]
-<screenshot014.png, id=557, 884.55469pt x 371.88937pt>
-File: screenshot014.png Graphic file (type png)
-<use screenshot014.png>
-Package pdftex.def Info: screenshot014.png  used on input line 533.
-(pdftex.def)             Requested size: 469.47308pt x 197.37848pt.
-
-Overfull \hbox (42.68173pt too wide) in paragraph at lines 533--534
- [][] 
- []
-
-
-Overfull \hbox (1.68445pt too wide) in paragraph at lines 541--542
+l.593 	
+        <./screenshot008.png>]
+Overfull \hbox (1.68445pt too wide) in paragraph at lines 597--598
 []\OT1/cmr/bx/n/12 Nahtlose In-te-gra-ti-on: \OT1/cmr/m/n/12 JBoss Log-ging ist
  di-rekt in Quar-kus und die Keycloak-
  []
 
-[29
+[32
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.559 	
-        <./screenshot014.png>] [30]
-Underfull \hbox (badness 10000) in paragraph at lines 573--579
+l.615 	
+        <./screenshot014.png>] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 629--635
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 581--583
-
- []
-
-[31]
-Overfull \hbox (6.65257pt too wide) in paragraph at lines 607--617
-\OT1/cmr/m/n/12 auch re-gelm[]a^^Yig do-ku-men-tiert. An-de-re Er-eig-ni-s-ty-p
-en sind bspw. TO-KEN[]REFRESH,
- []
-
-[32]
-<screenshot002.png, id=577, 1382.16376pt x 576.65437pt>
-File: screenshot002.png Graphic file (type png)
-<use screenshot002.png>
-Package pdftex.def Info: screenshot002.png  used on input line 620.
-(pdftex.def)             Requested size: 426.79135pt x 178.05708pt.
- [33
-pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.632 		\item C
-               ODE TO TOKEN ERROR: Anmeldedaten war falsch, Server lehnt Anm...
- <./screenshot002.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 635--637
+Underfull \hbox (badness 10000) in paragraph at lines 637--639
 
  []
 
 [34]
-Overfull \hbox (6.84523pt too wide) in paragraph at lines 654--661
+Overfull \hbox (6.65257pt too wide) in paragraph at lines 663--673
+\OT1/cmr/m/n/12 auch re-gelm[]a^^Yig do-ku-men-tiert. An-de-re Er-eig-ni-s-ty-p
+en sind bspw. TO-KEN[]REFRESH,
+ []
+
+<screenshot002.png, id=611, 1382.16376pt x 576.65437pt>
+File: screenshot002.png Graphic file (type png)
+<use screenshot002.png>
+Package pdftex.def Info: screenshot002.png  used on input line 676.
+(pdftex.def)             Requested size: 426.79135pt x 178.05708pt.
+[35]
+Underfull \hbox (badness 10000) in paragraph at lines 690--692
+
+ []
+
+[36
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.700 	\begin{itemize}
+                       <./screenshot002.png>]
+Overfull \hbox (6.84523pt too wide) in paragraph at lines 710--717
 \OT1/cmr/m/n/12 auf ei-ne klei-ne-re Re-pr[]asentation, die so-ge-nann-te Bottl
 eneck-Schicht. Die-se Bottleneck-
  []
 
-[35]
-<screenshot004.png, id=600, 356.83313pt x 171.64125pt>
+[37] [38]
+<screenshot004.png, id=642, 356.83313pt x 171.64125pt>
 File: screenshot004.png Graphic file (type png)
 <use screenshot004.png>
-Package pdftex.def Info: screenshot004.png  used on input line 691.
+Package pdftex.def Info: screenshot004.png  used on input line 732.
 (pdftex.def)             Requested size: 298.75264pt x 143.71146pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 692--692
+Underfull \hbox (badness 10000) in paragraph at lines 733--733
 []\OT1/cmr/m/n/12 Abbildung 6: []Visuelle Dar-stel-lung der Funk-ti-on des AEs,
  Quel-le:
  []
 
-[36
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.704 	
-        <./screenshot004.png (PNG copy)>]
-<screenshot005.png, id=610, 356.83313pt x 282.30469pt>
+<screenshot005.png, id=644, 356.83313pt x 282.30469pt>
 File: screenshot005.png Graphic file (type png)
 <use screenshot005.png>
-Package pdftex.def Info: screenshot005.png  used on input line 710.
+Package pdftex.def Info: screenshot005.png  used on input line 751.
 (pdftex.def)             Requested size: 298.75264pt x 236.36755pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--711
+Underfull \hbox (badness 10000) in paragraph at lines 752--752
 []\OT1/cmr/m/n/12 Abbildung 7: []Visuelle Dar-stel-lung der Funk-ti-on des AEs,
  Quel-le:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 711--711
+Underfull \hbox (badness 10000) in paragraph at lines 752--752
 \OT1/cmr/m/n/12 https://www.researchgate.net/figure/Anomaly-Detection-using-Iso
 lation-Forest-
  []
 
-[37]
-<screenshot006.png, id=619, 356.83313pt x 279.29344pt>
-File: screenshot006.png Graphic file (type png)
-<use screenshot006.png>
-Package pdftex.def Info: screenshot006.png  used on input line 742.
-(pdftex.def)             Requested size: 298.75264pt x 233.84631pt.
- [38
+[39
+pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.755 	
+        <./screenshot004.png (PNG copy)>] [40
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.748 	
-        <./screenshot005.png (PNG copy)>]
-<screenshot015.png, id=628, 1433.355pt x 706.13812pt>
+l.765 	\begin{itemize}
+                       <./screenshot005.png (PNG copy)>]
+<screenshot006.png, id=658, 356.83313pt x 279.29344pt>
+File: screenshot006.png Graphic file (type png)
+<use screenshot006.png>
+Package pdftex.def Info: screenshot006.png  used on input line 783.
+(pdftex.def)             Requested size: 298.75264pt x 233.84631pt.
+ [41]
+<screenshot015.png, id=668, 1433.355pt x 706.13812pt>
 File: screenshot015.png Graphic file (type png)
 <use screenshot015.png>
-Package pdftex.def Info: screenshot015.png  used on input line 755.
+Package pdftex.def Info: screenshot015.png  used on input line 795.
 (pdftex.def)             Requested size: 384.1096pt x 189.22679pt.
- [39
+ [42
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.759 	
-        <./screenshot006.png (PNG copy)>] [40
+l.802 	
+       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.767 	
-        <./screenshot015.png (PNG copy)>]
-<screenshot001.png, id=643, 475.7775pt x 458.46281pt>
+l.802 	
+        <./screenshot006.png (PNG copy)> <./screenshot015.png (PNG copy)>]
+<screenshot001.png, id=678, 475.7775pt x 458.46281pt>
 File: screenshot001.png Graphic file (type png)
 <use screenshot001.png>
-Package pdftex.def Info: screenshot001.png  used on input line 774.
+Package pdftex.def Info: screenshot001.png  used on input line 814.
 (pdftex.def)             Requested size: 298.75264pt x 287.89569pt.
- [41
+
+[43]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[44
 pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.782 	
-        <./screenshot001.png>] [42
+l.845 	
+        <./screenshot001.png>] [45
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.806 	
+l.851 	
        ]
-Overfull \hbox (11.95541pt too wide) in paragraph at lines 812--824
+
+LaTeX Warning: Citation `hybrid_if_lstm2023' on page 46 undefined on input line
+ 857.
+
+
+Overfull \hbox (11.95541pt too wide) in paragraph at lines 857--869
 \OT1/cmr/m/n/12 durch zeit-li-che Mus-ter und Se-quen-zen cha-rak-te-ri-siert s
 ind, was der LSTM-Autoencoder
  []
 
-[43] [44]
-Overfull \hbox (34.44652pt too wide) in paragraph at lines 834--835
-[]\OT1/cmr/m/n/12 Anwendungsfall 2: L[]oschen und []Anderungen an wich-ti-gen C
-li-ents, Usern, Passw[]ortern
+[46] [47]
+Overfull \hbox (0.43939pt too wide) in paragraph at lines 880--881
+[]\OT1/cmr/m/it/12 Anwendungsfall 3:  \OT1/cmr/m/n/12 Er-lan-gung wich-ti-ger R
+ol-len des Ad-mins, wie bspw. manage-
  []
 
-<screenshot009.png, id=663, 896.59969pt x 515.67656pt>
+
+Overfull \hbox (21.61511pt too wide) in paragraph at lines 883--884
+\OT1/cmr/m/n/12 Zudem wer-den be-kann-te An-oma-li-en wie un-gew[]ohnlichen IP-
+Adressen und un-gew[]ohnliche
+ []
+
+<screenshot009.png, id=708, 896.59969pt x 515.67656pt>
 File: screenshot009.png Graphic file (type png)
 <use screenshot009.png>
-Package pdftex.def Info: screenshot009.png  used on input line 860.
+Package pdftex.def Info: screenshot009.png  used on input line 904.
 (pdftex.def)             Requested size: 426.79135pt x 245.46823pt.
 
-Overfull \hbox (2.55553pt too wide) in paragraph at lines 842--863
+Overfull \hbox (2.55553pt too wide) in paragraph at lines 886--907
 \OT1/cmr/m/n/12 F[]ur den zwei-ten An-wen-dungs-fall sind Fea-tu-res, wel-che a
 uf Up-da-tes oder dem L[]oschen
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 842--863
+Underfull \hbox (badness 10000) in paragraph at lines 886--907
 
  []
 
-[45] [46] [47
+[48] [49] [50
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.870 	
+l.916 	
         <./screenshot009.png>]
-<screenshot010.png, id=677, 505.89pt x 97.11281pt>
+<screenshot010.png, id=723, 505.89pt x 97.11281pt>
 File: screenshot010.png Graphic file (type png)
 <use screenshot010.png>
-Package pdftex.def Info: screenshot010.png  used on input line 882.
+Package pdftex.def Info: screenshot010.png  used on input line 928.
 (pdftex.def)             Requested size: 384.1096pt x 73.73685pt.
 
-Overfull \hbox (3.79709pt too wide) in paragraph at lines 875--885
-\OT1/cmr/m/n/12 Um Zu-griff auf die Keycloak-Logs zu er-hal-ten, war es not-wen
--dig, selbst ei-ne Keycloak-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 875--885
+Underfull \hbox (badness 10000) in paragraph at lines 921--931
 
  []
 
-[48]
-Underfull \hbox (badness 10000) in paragraph at lines 898--904
-
+[51]
+Overfull \hbox (13.25964pt too wide) in paragraph at lines 938--939
+\OT1/cmr/m/n/12 Selenium ist ein Fra-me-work zur au-to-ma-ti-sier-ten Ausf[]uhr
+ung von Webbrowser-Aktionen
  []
 
-[49
+[52
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.904 	
+l.951 	
         <./screenshot010.png>]
-<screenshot011.png, id=689, 1379.1525pt x 627.84563pt>
+<screenshot011.png, id=733, 1379.1525pt x 627.84563pt>
 File: screenshot011.png Graphic file (type png)
 <use screenshot011.png>
-Package pdftex.def Info: screenshot011.png  used on input line 907.
+Package pdftex.def Info: screenshot011.png  used on input line 954.
 (pdftex.def)             Requested size: 2068.72371pt x 941.76613pt.
-<screenshot012.png, id=690, 1379.1525pt x 627.84563pt>
-File: screenshot012.png Graphic file (type png)
-<use screenshot012.png>
-Package pdftex.def Info: screenshot012.png  used on input line 927.
-(pdftex.def)             Requested size: 384.1096pt x 174.85672pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 913--930
-
- []
-
-[50
+ [53
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.930 	\end{figure}
-                    <./screenshot011.png>] [51]
-Underfull \hbox (badness 10000) in paragraph at lines 932--934
+l.963 		\item u
+               bisoft <./screenshot011.png>]
+<screenshot012.png, id=739, 1379.1525pt x 627.84563pt>
+File: screenshot012.png Graphic file (type png)
+<use screenshot012.png>
+Package pdftex.def Info: screenshot012.png  used on input line 985.
+(pdftex.def)             Requested size: 384.1096pt x 174.85672pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--988
 
  []
 
-[52
+[54]
+Overfull \hbox (3.3249pt too wide) in paragraph at lines 989--992
+\OT1/cmr/m/n/12 scher-wei-se aus den Event-Typen LO-GIN, CLI-ENT[]LOGIN und CO-
+DE[]TO[]TOKEN. 
+ []
+
+
+Overfull \hbox (0.25702pt too wide) in paragraph at lines 1001--1012
+[]\OT1/cmr/m/n/12 Weitere Ak-tio-nen { wie das An-pas-sen des Be-nut-zer-pro-fi
+ls (z.B. E-Mail-[]Anderung,
+ []
+
+
+Overfull \hbox (8.83609pt too wide) in paragraph at lines 1001--1012
+\OT1/cmr/m/n/12 Nichts-de-sto-trotz stellt die-ses Ver-fah-ren ei-ne vor-teil-h
+af-te Me-tho-de zur Log-Generierung
+ []
+
+[55
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.944 
-       <./screenshot012.png>]
+l.1012 	
+         <./screenshot012.png>] [56] [57]
+Overfull \hbox (6.96751pt too wide) in paragraph at lines 1038--1039
+[]\OT1/cmr/bx/n/12 Account Sa-bo-ta-ge: \OT1/cmr/m/n/12 Vie-le,Wichtige Res-sou
+r-cen wer-den gel[]oscht oder ver[]andert
+ []
+
+
+Overfull \hbox (15.95213pt too wide) in paragraph at lines 1044--1095
+\OT1/cmr/m/n/12 3. In ei-nem zwei-ten Brow-ser oder ei-ner neu-en Ses-si-on wer
+-den die-se Coo-kies []ubernommen
+ []
+
+[58]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 957.
+(hyperref)                than one, level fixed on input line 1097.
 
-[53] [54] (./bachelorarbeit.bbl
+[59] [60] (./bachelorarbeit.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 \OT1/cmtt/m/n/12 Downloads / DE / BSI / Publikationen / Lageberichte / Lageberi
 cht2023 . pdf$[]\OT1/cmr/m/n/12 ,
  []
 
-[55]
-Underfull \hbox (badness 1394) in paragraph at lines 99--103
-\OT1/cmr/m/n/12 ly de-tec-ti-on: A sur-vey.  \OT1/cmr/m/it/12 ar-Xiv pre-print 
-ar-Xiv:1901.03407\OT1/cmr/m/n/12 , 2019.  htt-
+[61] [62] [63]) [64] (./bachelorarbeit.ent
+Overfull \hbox (179.9536pt too wide) in paragraph at lines 75--77
+[][]$\OT1/cmtt/m/n/10 https : / / www . forbes . com / sites / quora / 2017 / 0
+9 / 15 / what-[]are-[]the-[]biggest-[]challenges-[]facing-[]the-[]cybersecurity
+-[]industry$[] 
  []
 
-[56] [57]) [58] (./bachelorarbeit.ent
-Overfull \hbox (5.17871pt too wide) in paragraph at lines 220--226
+
+Overfull \hbox (23.07066pt too wide) in paragraph at lines 79--80
+[]\OT1/cmr/m/n/10 https://medium.com/sciforce/adversarial-attacks-explained-and
+-how-to-defend-ml-models-against-
+ []
+
+
+Overfull \hbox (5.17871pt too wide) in paragraph at lines 221--227
 []\OT1/cmr/m/n/10 Siehe De-fi-ni-ti-on laut NVI-DIA: []$\OT1/cmtt/m/n/10 https 
 : / / www . nvidia . com / en-[]us / data-[]center / dgx-[]systems/$[] 
  []
 
 
-Overfull \hbox (110.23677pt too wide) in paragraph at lines 228--233
+Overfull \hbox (110.23677pt too wide) in paragraph at lines 229--234
 []\OT1/cmr/m/n/10 Siehe tech-ni-sche Spe-zi-fi-ka-tio-nen: []$\OT1/cmtt/m/n/10 
 https : / / docs . nvidia . com / dgx / dgxh100-[]user-[]guide / introduction-[
 ]to-[]dgxh100 .
  []
 
 
-Overfull \hbox (162.62686pt too wide) in paragraph at lines 248--249
+Overfull \hbox (162.62686pt too wide) in paragraph at lines 249--250
 []\OT1/cmr/m/n/10 https://github.com/keycloak/keycloak/blob/main/model/jpa/src/
 main/java/org/keycloak/events/jpa/JpaAdminEventQuery.java 
  []
 
 
-Overfull \hbox (0.73732pt too wide) in paragraph at lines 251--252
+Overfull \hbox (0.73732pt too wide) in paragraph at lines 252--253
 []\OT1/cmr/m/n/10 https://www.iana.org/assignments/iana-ipv4-special-registry/i
 ana-ipv4-special-registry.xhtml 
  []
 
-) [59] (./bachelorarbeit.aux)
+) [65] (./bachelorarbeit.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-22>
  ***********
 
 
-Package rerunfilecheck Warning: File `bachelorarbeit.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
+LaTeX Warning: There were undefined references.
 
-Package rerunfilecheck Info: Checksums for `bachelorarbeit.out':
-(rerunfilecheck)             Before: 4254D52F9A50B9BA15F9DE62C045C1F7;9337
-(rerunfilecheck)             After:  B5947D7B380401B08BEC24965E399B98;9463.
+Package rerunfilecheck Info: File `bachelorarbeit.out' has not changed.
+(rerunfilecheck)             Checksum: 31C2570090107E6E3AFE84BD888A7DDA;11016.
  ) 
 Here is how much of TeX's memory you used:
- 19053 strings out of 476129
- 324367 string characters out of 5793186
+ 19105 strings out of 476129
+ 325105 string characters out of 5793186
  1938975 words of memory out of 5000000
- 40588 multiletter control sequences out of 15000+600000
+ 40626 multiletter control sequences out of 15000+600000
  565732 words of font info for 63 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,9n,93p,2354b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:uba} has been referenced but does not exist, re
+placed by a fixed one
+
 
 pdfTeX warning (dest): name{glo:scikit} has been referenced but does not exist,
  replaced by a fixed one
@@ -1161,10 +1200,10 @@ cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/s
 hare/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on bachelorarbeit.pdf (59 pages, 1181053 bytes).
+Output written on bachelorarbeit.pdf (65 pages, 1199122 bytes).
 PDF statistics:
- 865 PDF objects out of 1000 (max. 8388607)
- 743 compressed objects within 8 object streams
- 197 named destinations out of 1000 (max. 500000)
- 471 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 925 PDF objects out of 1000 (max. 8388607)
+ 797 compressed objects within 8 object streams
+ 211 named destinations out of 1000 (max. 500000)
+ 519 words of extra memory for PDF output out of 10000 (max. 10000000)
 

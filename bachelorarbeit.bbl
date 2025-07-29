@@ -8,35 +8,24 @@
   2024.
 \newblock Abgerufen am 10. Juni 2025.
 
-\bibitem{thomas2021user}
-Jane Thomas and Robert Smith.
-\newblock User behavior analytics for insider threat detection.
-\newblock {\em Journal of Cybersecurity}, 10(2):100--115, 2021.
-
 \bibitem{chandola2009anomaly}
 Varun Chandola, Arindam Banerjee, and Vipin Kumar.
 \newblock Anomaly detection: A survey.
 \newblock {\em ACM Computing Surveys (CSUR)}, 41(3):1--58, 2009.
 
-\bibitem{nobi2022deep}
-Mohammad~Nur Nobi, Ram Krishnan, Yufei Huang, Mehrnoosh Shakarami, and Ravi
-  Sandhu.
-\newblock Toward deep learning based access control.
-\newblock In {\em Proceedings of the 27th ACM Symposium on Access Control
-  Models and Technologies (SACMAT)}, New York, NY, USA, 2022. ACM.
+\bibitem{legg2015visualizing}
+Phil Legg, Oliver Buckley, Michael Goldsmith, and Sadie Creese.
+\newblock Visualizing the insider threat: challenges and tools for identifying
+  malicious user activity.
+\newblock In {\em 2015 IEEE Symposium on Visualization for Cyber Security
+  (VizSec)}, pages 1--8. IEEE, 2015.
 
-\bibitem{Sharma2020}
-B.~Sharma and andere.
-\newblock Detection of insider threats using user behavior analytics.
-\newblock In {\em IAIT 2020, International Conference on Intelligent
-  Applications and Innovations in Technology}, Bangkok, Thailand, July 2020.
-
-\bibitem{croft2021empirical}
-Roland Croft, Dominic Newlands, Ziyu Chen, and M~Ali Babar.
-\newblock An empirical study of rule-based and learning-based approaches for
-  static application security testing.
-\newblock {\em arXiv preprint arXiv:2107.01921}, 2021.
-\newblock Version 2, last revised 16 Jul 2021.
+\bibitem{arnaboldi2020techniques}
+Valerio Arnaboldi and Charles Morisset.
+\newblock Techniques for use in intrusion detection systems.
+\newblock In {\em Proceedings of the International Conference on Industrial
+  Engineering and Operations Management (IEOM)}, Dubai, UAE, March 10--12 2020.
+  IEOM Society International.
 
 \bibitem{jannett2024sso}
 Louis Jannett, Maximilian Westers, Tobias Wich, Christian Mainka, Andreas
@@ -46,11 +35,10 @@ Louis Jannett, Maximilian Westers, Tobias Wich, Christian Mainka, Andreas
 \newblock In {\em 2024 9th IEEE European Symposium on Security and Privacy
   (Euro\&SP)}. IEEE, IEEE, 2024.
 
-\bibitem{comparative_timeseries2021}
-A comparative evaluation of anomaly detection techniques on multivariate time
-  series data.
-\newblock {\em SpringerLink}, 2021.
-\newblock Vergleich von LSTM, OCSVM und IF bei Anomalieerkennung in Zeitreihen.
+\bibitem{pang2021deep}
+Chuan Zhou and Randy~C. Paffenroth.
+\newblock Deep learning for anomaly detection: A review.
+\newblock {\em IEEE Access}, 9:5789--5813, 2021.
 
 \bibitem{arjunan2024}
 S.~Arjunan and Others.
@@ -60,33 +48,11 @@ S.~Arjunan and Others.
   Engineering Technology (IJRASET)}, 2024.
 \newblock Bewertung von AE, LSTM, IF und OCSVM auf Cloud-Daten.
 
-\bibitem{zhou2021deep}
-Chuan Zhou and Randy~C. Paffenroth.
-\newblock Deep learning for anomaly detection: A review.
-\newblock {\em IEEE Access}, 9:5789--5813, 2021.
-
-\bibitem{malhotra2016lstm}
-Pankaj Malhotra, Lovekesh Vig, Gautam Shroff, and Puneet Agarwal.
-\newblock Lstm-based encoder-decoder for multi-sensor anomaly detection.
-\newblock {\em arXiv preprint arXiv:1607.00148}, 2016.
-\newblock Demonstriert, dass LSTM-Autoencoder sehr effektiv zur
-  Anomalieerkennung in multivariaten Zeitreihen sind.
-
-\bibitem{wei2022lstm}
-Xiaoli Wei, Jiawei Liu, and Lei Zhang.
-\newblock Lstm autoencoder-based anomaly detection for indoor air quality data.
-\newblock {\em arXiv preprint arXiv:2204.06701}, 2022.
-
 \bibitem{demir2024comparative}
 Emre Demir and Cenk Karaoğlan.
 \newblock A comparative performance analysis of lstm autoencoder and timegpt
   models in time series anomaly detection.
 \newblock {\em ResearchGate}, 2024.
-
-\bibitem{hybrid_if_lstm2023}
-Combination of isolation forest and lstm autoencoder for anomaly detection.
-\newblock {\em ResearchGate / Springer}, 2023.
-\newblock Hybridmodell IF + LSTM-AE für Netzwerk-Anomalien.
 
 \bibitem{ergen2017unsupervised}
 Tolga Ergen and Suleyman~S Kozat.
@@ -95,17 +61,34 @@ Tolga Ergen and Suleyman~S Kozat.
 \newblock {\em arXiv preprint arXiv:1710.09207}, 2017.
 \newblock LSTM kombiniert mit OCSVM/SVDD für sequentielle Anomalieerkennung.
 
-\bibitem{chalapathy2019deep}
-Raghavendra Chalapathy and Sanjay Chawla.
-\newblock Deep learning for anomaly detection: A survey.
-\newblock {\em arXiv preprint arXiv:1901.03407}, 2019.
-\newblock https://arxiv.org/abs/1901.03407.
+\bibitem{ghrib2020hybrid}
+Zeineb Ghrib, Rakia Jaziri, and Rim Romdhane.
+\newblock Hybrid approach for anomaly detection in time series data.
+\newblock In {\em 2020 IEEE International Conference on Intelligent Systems and
+  Computer Vision (ISCV)}, pages 1--7. IEEE, 2020.
 
-\bibitem{fourure2021anomaly}
-Damien Fourure, Maciej Mazurowski, Juan Amar, and Antoine Derreumaux.
-\newblock Anomaly detection: How to artificially increase your f1-score with a
-  biased evaluation protocol.
-\newblock {\em arXiv preprint arXiv:2106.16020}, 2021.
+\bibitem{chua2024web}
+Wilson Chua, Arsenn Lorette~Diamond Pajas, Crizelle~Shane Castro, Sean~Patrick
+  Panganiban, April~Joy Pasuquin, Merwin~Jan Purganan, Rica Malupeng,
+  Divine~Jessa Pingad, John~Paul Orolfo, Haron~Hakeen Lua, and Lemuel~Clark
+  Velasco.
+\newblock Web traffic anomaly detection using isolation forest.
+\newblock {\em Informatics}, 11(4):83, 2024.
+
+\bibitem{wei2023lstm}
+Yuanyuan Wei, Julian Jang-Jaccard, Wen Xu, Fariza Sabrina, Seyit Camtepe, and
+  Mikael Boulic.
+\newblock Lstm‑autoencoder‑based anomaly detection for indoor air quality
+  time series data.
+\newblock {\em IEEE Sensors Journal}, 23(4), 2023.
+
+\bibitem{tran2020lstm_if}
+P.~H. Tran, C.~Heuchenne, and S.~Thomassey.
+\newblock An anomaly detection approach based on the combination of lstm
+  autoencoder and isolation forest for multivariate time series data.
+\newblock In {\em Developments of Artificial Intelligence Technologies in
+  Computation and Robotics: Proceedings of the 14th International FLINS
+  Conference (FLINS 2020)}, pages 589--596. World Scientific, 2020.
 
 \bibitem{tran2021forecasting}
 Du~Nguyen Tran and Sylvestre Thomassey.
@@ -138,6 +121,12 @@ Umberto Michelucci.
 \newblock Online; accessed 2025-06-12, January 2022.
 \newblock \url{mailto:umberto.michelucci@toelt.ai}.
 
+\bibitem{fourure2021anomaly}
+Damien Fourure, Maciej Mazurowski, Juan Amar, and Antoine Derreumaux.
+\newblock Anomaly detection: How to artificially increase your f1-score with a
+  biased evaluation protocol.
+\newblock {\em arXiv preprint arXiv:2106.16020}, 2021.
+
 \bibitem{davis2006relationship}
 Jesse Davis and Mark Goadrich.
 \newblock The relationship between precision-recall and roc curves.
@@ -169,6 +158,11 @@ Sepp Hochreiter and J{\"u}rgen Schmidhuber.
 \newblock Long short-term memory.
 \newblock {\em Neural Computation}, 9(8):1735--1780, 1997.
 
+\bibitem{wei2022lstm}
+Xiaoli Wei, Jiawei Liu, and Lei Zhang.
+\newblock Lstm autoencoder-based anomaly detection for indoor air quality data.
+\newblock {\em arXiv preprint arXiv:2204.06701}, 2022.
+
 \bibitem{liu2008isolation}
 Fei~Tony Liu, Kai~Ming Ting, and Zhi-Hua Zhou.
 \newblock Isolation forest.
@@ -195,5 +189,21 @@ Martin Ester, Hans-Peter Kriegel, J{\"o}rg Sander, and Xiaowei Xu.
 \newblock A density-based algorithm for discovering clusters in large spatial
   databases with noise.
 \newblock pages 226--231, 1996.
+
+\bibitem{malhotra2016lstm}
+Pankaj Malhotra, Anusha Ramakrishnan, Gaurangi Anand, Lovekesh Vig, Puneet
+  Agarwal, and Gautam Shroff.
+\newblock Lstm-based encoder-decoder for multi-sensor anomaly detection.
+\newblock {\em arXiv preprint arXiv:1607.00148}, 2016.
+
+\bibitem{pu2021hybrid}
+Guo Pu, Lijuan Wang, Jun Shen, and Fang Dong.
+\newblock A hybrid unsupervised clustering-based anomaly detection method.
+\newblock In {\em Proceedings of the 2021 International Conference on Machine
+  Learning and Cybernetics (ICMLC)}. IEEE, 2021.
+
+\bibitem{singh2022insiderthreats}
+Angad~Pal Singh and Ankit Sharma.
+\newblock A systematic literature review on insider threats, 2022.
 
 \end{thebibliography}
