@@ -1,2 +1,20 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Bestimmte Parameter der Modellkonfiguration}}{45}{table.1}%
+\contentsline {table}{\numberline {1}{\ignorespaces Bestimmte Parameter der Modellkonfiguration}}{52}{table.1}%
+\contentsline {table}{\numberline {2}{\ignorespaces Ergebnisse für IsolationForest}}{79}{table.2}%
+\contentsline {table}{\numberline {3}{\ignorespaces Ergebnisse für One-Class SVM}}{80}{table.3}%
+\contentsline {table}{\numberline {4}{\ignorespaces Ergebnisse für DBSCAN}}{80}{table.4}%
+\contentsline {table}{\numberline {5}{\ignorespaces Ergebnisse für IsolationForest}}{80}{table.5}%
+\contentsline {table}{\numberline {6}{\ignorespaces Ergebnisse für One-Class SVM}}{81}{table.6}%
+\contentsline {table}{\numberline {7}{\ignorespaces Ergebnisse für DBSCAN}}{81}{table.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces Ergebnisse für IsolationForest}}{81}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces Ergebnisse für One-Class SVM}}{82}{table.9}%
+\contentsline {table}{\numberline {10}{\ignorespaces Ergebnisse für DBSCAN}}{82}{table.10}%
+\contentsline {table}{\numberline {11}{\ignorespaces Ergebnisse für IsolationForest, Sequenzlänge 25}}{82}{table.11}%
+\contentsline {table}{\numberline {12}{\ignorespaces Ergebnisse für One-Class SVM, Sequenzlänge 25}}{83}{table.12}%
+\contentsline {table}{\numberline {13}{\ignorespaces Ergebnisse für DBSCAN, Sequenzlänge 25}}{83}{table.13}%
+\contentsline {table}{\numberline {14}{\ignorespaces Ergebnisse für IsolationForest, Sequenzlänge 25}}{83}{table.14}%
+\contentsline {table}{\numberline {15}{\ignorespaces Ergebnisse für One-Class SVM, Sequenzlänge 25}}{84}{table.15}%
+\contentsline {table}{\numberline {16}{\ignorespaces Ergebnisse für DBSCAN, Sequenzlänge 25}}{84}{table.16}%
+\contentsline {table}{\numberline {17}{\ignorespaces Ergebnisse für IsolationForest, Sequenzlänge 25}}{84}{table.17}%
+\contentsline {table}{\numberline {18}{\ignorespaces Ergebnisse für One-Class SVM, Sequenzlänge 25}}{85}{table.18}%
+\contentsline {table}{\numberline {19}{\ignorespaces Ergebnisse für DBSCAN, Sequenzlänge 25}}{85}{table.19}%

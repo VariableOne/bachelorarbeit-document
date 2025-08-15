@@ -1,55 +1,83 @@
 This is BibTeX, Version 0.99d (TeX Live 2023/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: bachelorarbeit.aux
-The style file: unsrt.bst
+The style file: IEEEtran.bst
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: quellen.bib
-I was expecting a `,' or a `}'---line 309 of file quellen.bib
+I was expecting a `,' or a `}'---line 130 of file quellen.bib
  :  
- :  url = {https://arxiv.org/abs/2201.03898}
+ :  note         = {Abgerufen am 20. Juni 2025}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "hybrid_if_lstm2023"
+You're missing a field name---line 147 of file quellen.bib
+ :  journal={arXiv preprint arXiv:2301.XXXX}, 
+ :                                            % Falls eine arXiv-ID bekannt ist, hier ergänzen
+I'm skipping whatever remains of this entry
+Warning--I'm ignoring li2003improving's extra "note" field
+--line 290 of file quellen.bib
+Warning--I'm ignoring staudemeyer2019understanding's extra "note" field
+--line 311 of file quellen.bib
+Warning--I'm ignoring budiarto2025unsupervised's extra "note" field
+--line 401 of file quellen.bib
+Warning--I'm ignoring springerlof2023's extra "note" field
+--line 432 of file quellen.bib
+Warning--I'm ignoring michelucci2022introduction's extra "note" field
+--line 456 of file quellen.bib
+Warning--I'm ignoring Golestaneh2021's extra "note" field
+--line 639 of file quellen.bib
+Warning--I'm ignoring Goetz2023's extra "note" field
+--line 650 of file quellen.bib
+-- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
+-- http://www.michaelshell.org/tex/ieeetran/bibtex/
+-- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in provost1998case
 Warning--empty journal in ester1996dbscan
-You've used 32 entries,
-            1791 wiz_defined-function locations,
-            640 strings with 10790 characters,
-and the built_in function-call counts, 7712 in all, are:
-= -- 702
-> -- 368
-< -- 9
-+ -- 134
-- -- 102
-* -- 451
-:= -- 1208
-add.period$ -- 113
-call.type$ -- 32
-change.case$ -- 32
-chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 370
-empty$ -- 740
-format.name$ -- 102
-if$ -- 1777
+Warning--empty year in najafi2023attention
+
+Done.
+You've used 50 entries,
+            4087 wiz_defined-function locations,
+            1146 strings with 21092 characters,
+and the built_in function-call counts, 35324 in all, are:
+= -- 3010
+> -- 831
+< -- 189
++ -- 424
+- -- 160
+* -- 1796
+:= -- 5820
+add.period$ -- 112
+call.type$ -- 50
+change.case$ -- 96
+chr.to.int$ -- 432
+cite$ -- 53
+duplicate$ -- 2602
+empty$ -- 2796
+format.name$ -- 207
+if$ -- 8062
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 29
-newline$ -- 169
-num.names$ -- 32
-pop$ -- 118
+int.to.str$ -- 50
+missing$ -- 495
+newline$ -- 241
+num.names$ -- 50
+pop$ -- 1121
 preamble$ -- 1
 purify$ -- 0
-quote$ -- 0
-skip$ -- 191
+quote$ -- 2
+skip$ -- 2714
 stack$ -- 0
-substring$ -- 378
-swap$ -- 110
-text.length$ -- 9
+substring$ -- 1164
+swap$ -- 1947
+text.length$ -- 45
 text.prefix$ -- 0
-top$ -- 0
-type$ -- 0
-warning$ -- 2
-while$ -- 70
-width$ -- 34
-write$ -- 363
-(There was 1 error message)
+top$ -- 5
+type$ -- 50
+warning$ -- 3
+while$ -- 133
+width$ -- 52
+write$ -- 611
+(There were 2 error messages)

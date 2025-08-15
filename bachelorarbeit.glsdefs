@@ -54,6 +54,62 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{accountsabotage}%
+{%
+name={Account Sabotage},%
+sort={Account Sabotage},%
+type={main},%
+first={Account Sabotage},%
+firstplural={Account Sabotages},%
+text={Account Sabotage},%
+plural={Account Sabotages},%
+description={Ein Szenario, in dem ein Benutzer absichtlich Ressourcen löscht, verändert oder auf sie zugreift, um einem System oder einem anderen Benutzer zu schaden},%
+descriptionplural={Ein Szenario, in dem ein Benutzer absichtlich Ressourcen löscht, verändert oder auf sie zugreift, um einem System oder einem anderen Benutzer zu schaden},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{adam}%
+{%
+name={Adam-Optimierer},%
+sort={Adam-Optimierer},%
+type={main},%
+first={Adam-Optimierer},%
+firstplural={Adam-Optimierers},%
+text={Adam-Optimierer},%
+plural={Adam-Optimierers},%
+description={Ein adaptiver Optimierungsalgorithmus für neuronale Netze, der den Gradientenabstieg beschleunigt. Er kombiniert die Vorteile von AdaGrad und RMSProp, indem er für jeden Parameter individuelle Lernraten unter Berücksichtigung der ersten und zweiten Momentabschätzung berechnet. Besonders geeignet für große Modelle und Datenmengen.},%
+descriptionplural={Ein adaptiver Optimierungsalgorithmus für neuronale Netze, der den Gradientenabstieg beschleunigt. Er kombiniert die Vorteile von AdaGrad und RMSProp, indem er für jeden Parameter individuelle Lernraten unter Berücksichtigung der ersten und zweiten Momentabschätzung berechnet. Besonders geeignet für große Modelle und Datenmengen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{adminlogs}%
 {%
 name={Admin Logs},%
@@ -222,6 +278,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{authType}%
+{%
+name={authType},%
+sort={authType},%
+type={main},%
+first={authType},%
+firstplural={authTypes},%
+text={authType},%
+plural={authTypes},%
+description={Ein Attribut in Keycloak-Logs, das angibt, über welchen Mechanismus sich ein Benutzer authentifiziert hat (z.\,B. password, token)},%
+descriptionplural={Ein Attribut in Keycloak-Logs, das angibt, über welchen Mechanismus sich ein Benutzer authentifiziert hat (z.\,B. password, token)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{Autoencoder}%
 {%
 name={AE},%
@@ -233,6 +317,34 @@ text={AE},%
 plural={AEs},%
 description={Autoencoder – Neuronales Netzwerk zur komprimierten Darstellung und Rekonstruktion von Daten.},%
 descriptionplural={Autoencoder – Neuronales Netzwerk zur komprimierten Darstellung und Rekonstruktion von Daten.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{backpropagation}%
+{%
+name={Backpropagation},%
+sort={Backpropagation},%
+type={main},%
+first={Backpropagation},%
+firstplural={Backpropagations},%
+text={Backpropagation},%
+plural={Backpropagations},%
+description={Ein Trainingsalgorithmus für künstliche neuronale Netze, bei dem die Gewichte durch Rückwärtsausbreitung des Fehlers angepasst werden. Dabei wird der Fehler von der Ausgabeschicht zur Eingabeschicht zurückgeleitet, und die Gewichte werden schrittweise gemäß dem Gradientenabstieg verändert. Grundlage für das Lernen in Deep Learning-Modellen.},%
+descriptionplural={Ein Trainingsalgorithmus für künstliche neuronale Netze, bei dem die Gewichte durch Rückwärtsausbreitung des Fehlers angepasst werden. Dabei wird der Fehler von der Ausgabeschicht zur Eingabeschicht zurückgeleitet, und die Gewichte werden schrittweise gemäß dem Gradientenabstieg verändert. Grundlage für das Lernen in Deep Learning-Modellen.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -485,6 +597,90 @@ text={Client-Scope},%
 plural={Client-Scopes},%
 description={Legt fest, welche Benutzerdaten in ein Token aufgenommen werden, wenn sich ein Benutzer über einen Client authentifiziert.},%
 descriptionplural={Legt fest, welche Benutzerdaten in ein Token aufgenommen werden, wenn sich ein Benutzer über einen Client authentifiziert.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{crud}%
+{%
+name={CRUD},%
+sort={CRUD},%
+type={main},%
+first={CRUD},%
+firstplural={CRUDs},%
+text={CRUD},%
+plural={CRUDs},%
+description={Abkürzung für Create, Read, Update, Delete; beschreibt die grundlegenden Operationen auf Datenbanken oder Entitäten in IT-Systemen},%
+descriptionplural={Abkürzung für Create, Read, Update, Delete; beschreibt die grundlegenden Operationen auf Datenbanken oder Entitäten in IT-Systemen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cve}%
+{%
+name={Common Vulnerabilities and Exposures (CVE)},%
+sort={Common Vulnerabilities and Exposures (CVE)},%
+type={main},%
+first={Common Vulnerabilities and Exposures (CVE)},%
+firstplural={Common Vulnerabilities and Exposures (CVE)s},%
+text={Common Vulnerabilities and Exposures (CVE)},%
+plural={Common Vulnerabilities and Exposures (CVE)s},%
+description={Ein öffentliches Verzeichnis bekannter Sicherheitslücken in Soft- und Hardware, das durch eindeutige Identifikationsnummern, Kurzbeschreibungen und betroffene Versionen strukturiert ist},%
+descriptionplural={Ein öffentliches Verzeichnis bekannter Sicherheitslücken in Soft- und Hardware, das durch eindeutige Identifikationsnummern, Kurzbeschreibungen und betroffene Versionen strukturiert ist},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{cwe}%
+{%
+name={Common Weakness Enumeration (CWE)},%
+sort={Common Weakness Enumeration (CWE)},%
+type={main},%
+first={Common Weakness Enumeration (CWE)},%
+firstplural={Common Weakness Enumeration (CWE)s},%
+text={Common Weakness Enumeration (CWE)},%
+plural={Common Weakness Enumeration (CWE)s},%
+description={Ein Katalog von typischen Schwachstellenmustern (Weaknesses), die potenziell zu Sicherheitslücken führen können, z.\,B. unzureichende Authentifizierung oder unsichere Verarbeitung von Daten},%
+descriptionplural={Ein Katalog von typischen Schwachstellenmustern (Weaknesses), die potenziell zu Sicherheitslücken führen können, z.\,B. unzureichende Authentifizierung oder unsichere Verarbeitung von Daten},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -838,6 +1034,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{fgapv2}%
+{%
+name={FGAPv2},%
+sort={FGAPv2},%
+type={main},%
+first={FGAPv2},%
+firstplural={FGAPv2s},%
+text={FGAPv2},%
+plural={FGAPv2s},%
+description={\textit {Flexible Governance Admin Panel Version 2} – Eine webbasierte Verwaltungsoberfläche, die zur Administration und Steuerung von Benutzerrechten, Systemeinstellungen und sicherheitskritischen Konfigurationsparametern in Unternehmensumgebungen dient. FGAPv2 bietet typischerweise eine REST-API sowie eine grafische Admin-Konsole und wird häufig in Intranet- oder Cloud-Deployments eingesetzt},%
+descriptionplural={\textit {Flexible Governance Admin Panel Version 2} – Eine webbasierte Verwaltungsoberfläche, die zur Administration und Steuerung von Benutzerrechten, Systemeinstellungen und sicherheitskritischen Konfigurationsparametern in Unternehmensumgebungen dient. FGAPv2 bietet typischerweise eine REST-API sowie eine grafische Admin-Konsole und wird häufig in Intranet- oder Cloud-Deployments eingesetzt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{filebeat}%
 {%
 name={Filebeat},%
@@ -1036,15 +1260,15 @@ parent={},%
 
 \glsdefs@newdocentry{idp}%
 {%
-name={Identity Provider (IdP)},%
-sort={Identity Provider (IdP)},%
+name={Identity Provider},%
+sort={Identity Provider},%
 type={main},%
-first={Identity Provider (IdP)},%
-firstplural={Identity Provider (IdP)s},%
-text={Identity Provider (IdP)},%
-plural={Identity Provider (IdP)s},%
-description={Externer Anbieter, der Authentifizierungsdienste bereitstellt (z.\,B. Google, Microsoft).},%
-descriptionplural={Externer Anbieter, der Authentifizierungsdienste bereitstellt (z.\,B. Google, Microsoft).},%
+first={Identity Provider},%
+firstplural={Identity Providers},%
+text={Identity Provider},%
+plural={Identity Providers},%
+description={Externer Anbieter, der Authentifizierungsdienste bereitstellt},%
+descriptionplural={Externer Anbieter, der Authentifizierungsdienste bereitstellt},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1090,17 +1314,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{isolationtree}%
+\glsdefs@newdocentry{impersonate}%
 {%
-name={Isolation Tree},%
-sort={Isolation Tree},%
+name={Impersonate},%
+sort={Impersonate},%
 type={main},%
-first={Isolation Tree},%
-firstplural={Isolation Trees},%
-text={Isolation Tree},%
-plural={Isolation Trees},%
-description={Binärer Baum aus dem Isolation Forest-Verfahren zur Isolierung von Datenpunkten},%
-descriptionplural={Binärer Baum aus dem Isolation Forest-Verfahren zur Isolierung von Datenpunkten},%
+first={Impersonate},%
+firstplural={Impersonates},%
+text={Impersonate},%
+plural={Impersonates},%
+description={Ein Event in Keycloak, bei dem ein Administrator die Rolle eines anderen Benutzers übernimmt; wird zur Fehlersuche oder zu Testzwecken verwendet},%
+descriptionplural={Ein Event in Keycloak, bei dem ein Administrator die Rolle eines anderen Benutzers übernimmt; wird zur Fehlersuche oder zu Testzwecken verwendet},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1127,8 +1351,36 @@ first={Insider Threat},%
 firstplural={Insider Threats},%
 text={Insider Threat},%
 plural={Insider Threats},%
-description={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht, z.\,B. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.},%
-descriptionplural={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht, z.\,B. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.},%
+description={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht,bspw. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.},%
+descriptionplural={Sicherheitsbedrohung, die von Personen innerhalb einer Organisation ausgeht,bspw. durch missbräuchliches Verhalten von Mitarbeitenden mit legitimen Zugriffsrechten.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{isolationtree}%
+{%
+name={Isolation Tree},%
+sort={Isolation Tree},%
+type={main},%
+first={Isolation Tree},%
+firstplural={Isolation Trees},%
+text={Isolation Tree},%
+plural={Isolation Trees},%
+description={Binärer Baum aus dem Isolation Forest-Verfahren zur Isolierung von Datenpunkten},%
+descriptionplural={Binärer Baum aus dem Isolation Forest-Verfahren zur Isolierung von Datenpunkten},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1213,6 +1465,34 @@ text={Kubernetes Logging},%
 plural={Kubernetes Loggings},%
 description={Logging-Ansätze für containerisierte Anwendungen innerhalb von Kubernetes-Umgebungen, oft via Sidecars oder Remote-Stacks.},%
 descriptionplural={Logging-Ansätze für containerisierte Anwendungen innerhalb von Kubernetes-Umgebungen, oft via Sidecars oder Remote-Stacks.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{keras}%
+{%
+name={Keras},%
+sort={Keras},%
+type={main},%
+first={Keras},%
+firstplural={Kerass},%
+text={Keras},%
+plural={Kerass},%
+description={Eine hochgradig abstrahierende Deep-Learning-API in Python, die ursprünglich eigenständig entwickelt wurde und heute als offizieller Bestandteil von TensorFlow dient. Keras ermöglicht eine einfache und modulare Modellierung neuronaler Netzwerke},%
+descriptionplural={Eine hochgradig abstrahierende Deep-Learning-API in Python, die ursprünglich eigenständig entwickelt wurde und heute als offizieller Bestandteil von TensorFlow dient. Keras ermöglicht eine einfache und modulare Modellierung neuronaler Netzwerke},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1323,8 +1603,8 @@ first={Log4j},%
 firstplural={Log4js},%
 text={Log4j},%
 plural={Log4js},%
-description={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (z. B. Log4Shell) kritisch betrachtet.},%
-descriptionplural={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (z. B. Log4Shell) kritisch betrachtet.},%
+description={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (bspw. Log4Shell) kritisch betrachtet.},%
+descriptionplural={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (bspw. Log4Shell) kritisch betrachtet.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1510,6 +1790,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{manageusers}%
+{%
+name={manage-users},%
+sort={manage-users},%
+type={main},%
+first={manage-users},%
+firstplural={manage-userss},%
+text={manage-users},%
+plural={manage-userss},%
+description={Keycloak-Rolle, die es erlaubt, Benutzer in einem Realm zu verwalten (z.\,B. anlegen, bearbeiten, löschen)},%
+descriptionplural={Keycloak-Rolle, die es erlaubt, Benutzer in einem Realm zu verwalten (z.\,B. anlegen, bearbeiten, löschen)},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{mcc}%
 {%
 name={Matthews Correlation Coefficient (MCC)},%
@@ -1605,6 +1913,34 @@ text={ML},%
 plural={MLs},%
 description={Machine Learning – Teilgebiet der KI, bei dem Systeme aus Daten lernen.},%
 descriptionplural={Machine Learning – Teilgebiet der KI, bei dem Systeme aus Daten lernen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{mse}%
+{%
+name={Mean Squared Error (MSE)},%
+sort={Mean Squared Error (MSE)},%
+type={main},%
+first={Mean Squared Error (MSE)},%
+firstplural={Mean Squared Error (MSE)s},%
+text={Mean Squared Error (MSE)},%
+plural={Mean Squared Error (MSE)s},%
+description={Ein gängiges Fehlermaß zur Bewertung der Modellgüte bei kontinuierlichen Werten. Es berechnet die mittlere quadratische Differenz zwischen den vorhergesagten und den tatsächlichen Werten. Größere Abweichungen werden durch das Quadrieren stärker gewichtet, was das Modell zu präziser Vorhersage zwingt.},%
+descriptionplural={Ein gängiges Fehlermaß zur Bewertung der Modellgüte bei kontinuierlichen Werten. Es berechnet die mittlere quadratische Differenz zwischen den vorhergesagten und den tatsächlichen Werten. Größere Abweichungen werden durch das Quadrieren stärker gewichtet, was das Modell zu präziser Vorhersage zwingt.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1790,6 +2126,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{privilegeescalation}%
+{%
+name={Privilege Escalation},%
+sort={Privilege Escalation},%
+type={main},%
+first={Privilege Escalation},%
+firstplural={Privilege Escalations},%
+text={Privilege Escalation},%
+plural={Privilege Escalations},%
+description={Ein Angriffsszenario, bei dem sich ein Benutzer unbefugt höhere Rechte verschafft, z.\,B. um auf administrative Funktionen zuzugreifen},%
+descriptionplural={Ein Angriffsszenario, bei dem sich ein Benutzer unbefugt höhere Rechte verschafft, z.\,B. um auf administrative Funktionen zuzugreifen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{quarkus}%
 {%
 name={Quarkus},%
@@ -1874,6 +2238,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{realmadmin}%
+{%
+name={realm-admin},%
+sort={realm-admin},%
+type={main},%
+first={realm-admin},%
+firstplural={realm-admins},%
+text={realm-admin},%
+plural={realm-admins},%
+description={Eine Administratorrolle in Keycloak, die vollständige administrative Rechte innerhalb eines bestimmten Realms gewährt},%
+descriptionplural={Eine Administratorrolle in Keycloak, die vollständige administrative Rechte innerhalb eines bestimmten Realms gewährt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{realmrole}%
 {%
 name={Realm-Role},%
@@ -1885,6 +2277,34 @@ text={Realm-Role},%
 plural={Realm-Roles},%
 description={Globale Rollen in Keycloak, die auf alle Clients eines Realms angewendet werden können},%
 descriptionplural={Globale Rollen in Keycloak, die auf alle Clients eines Realms angewendet werden können},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{redirecturl}%
+{%
+name={Redirect-URL},%
+sort={Redirect-URL},%
+type={main},%
+first={Redirect-URL},%
+firstplural={Redirect-URLs},%
+text={Redirect-URL},%
+plural={Redirect-URLs},%
+description={Die URL, auf die Benutzer nach erfolgreicher Authentifizierung in Keycloak weitergeleitet werden; wichtig für Sicherheit und Funktionsfähigkeit},%
+descriptionplural={Die URL, auf die Benutzer nach erfolgreicher Authentifizierung in Keycloak weitergeleitet werden; wichtig für Sicherheit und Funktionsfähigkeit},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1986,6 +2406,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{residualblock}%
+{%
+name={Residual Block},%
+sort={Residual Block},%
+type={main},%
+first={Residual Block},%
+firstplural={Residual Blocks},%
+text={Residual Block},%
+plural={Residual Blocks},%
+description={Ein architektonisches Element in tiefen neuronalen Netzwerken, das eine direkte Identitätsverbindung (Shortcut Connection) zwischen Eingabe und Ausgabe eines Layers herstellt. Dadurch lernt das Netzwerk nicht die gesamte Transformation, sondern nur die Differenz (\textit {Residuum}) zur Eingabe. Dies erleichtert die Backpropagation und reduziert das Vanishing-Gradient-Problem, wodurch tiefere Netze stabiler trainiert werden können},%
+descriptionplural={Ein architektonisches Element in tiefen neuronalen Netzwerken, das eine direkte Identitätsverbindung (Shortcut Connection) zwischen Eingabe und Ausgabe eines Layers herstellt. Dadurch lernt das Netzwerk nicht die gesamte Transformation, sondern nur die Differenz (\textit {Residuum}) zur Eingabe. Dies erleichtert die Backpropagation und reduziert das Vanishing-Gradient-Problem, wodurch tiefere Netze stabiler trainiert werden können},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{saml}%
 {%
 name={SAML},%
@@ -2070,6 +2518,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{selenium}%
+{%
+name={Selenium},%
+sort={Selenium},%
+type={main},%
+first={Selenium},%
+firstplural={Seleniums},%
+text={Selenium},%
+plural={Seleniums},%
+description={Ein Framework zur Automatisierung von Webbrowser-Interaktionen, häufig für Testzwecke genutzt},%
+descriptionplural={Ein Framework zur Automatisierung von Webbrowser-Interaktionen, häufig für Testzwecke genutzt},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{serverlogs}%
 {%
 name={Server-Logs},%
@@ -2126,6 +2602,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{sessionhijacking}%
+{%
+name={Session Hijacking},%
+sort={Session Hijacking},%
+type={main},%
+first={Session Hijacking},%
+firstplural={Session Hijackings},%
+text={Session Hijacking},%
+plural={Session Hijackings},%
+description={Ein Angriff, bei dem ein Angreifer die aktive Sitzung eines anderen Benutzers übernimmt, z.\,B. durch Abfangen von Session-Cookies},%
+descriptionplural={Ein Angriff, bei dem ein Angreifer die aktive Sitzung eines anderen Benutzers übernimmt, z.\,B. durch Abfangen von Session-Cookies},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{slf4j}%
 {%
 name={SLF4J},%
@@ -2137,6 +2641,34 @@ text={SLF4J},%
 plural={SLF4Js},%
 description={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j oder logback unterstützt.},%
 descriptionplural={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j oder logback unterstützt.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{spi}%
+{%
+name={SPI},%
+sort={SPI},%
+type={main},%
+first={SPI},%
+firstplural={SPIs},%
+text={SPI},%
+plural={SPIs},%
+description={SPI (Service Provider Interface) ist ein Programmier-Schnittstellenkonzept. },%
+descriptionplural={SPI (Service Provider Interface) ist ein Programmier-Schnittstellenkonzept. },%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2249,6 +2781,34 @@ text={System.out / System.err},%
 plural={System.out / System.errs},%
 description={Standard-Ausgabe-/Fehlerstreams in Java. Nicht strukturiert und für produktive Logs ungeeignet.},%
 descriptionplural={Standard-Ausgabe-/Fehlerstreams in Java. Nicht strukturiert und für produktive Logs ungeeignet.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{tensorflow}%
+{%
+name={TensorFlow},%
+sort={TensorFlow},%
+type={main},%
+first={TensorFlow},%
+firstplural={TensorFlows},%
+text={TensorFlow},%
+plural={TensorFlows},%
+description={Ein Open-Source-Framework für maschinelles Lernen, entwickelt von Google. TensorFlow bietet eine flexible Infrastruktur zur Definition, Optimierung und Ausführung von Rechenmodellen, insbesondere neuronalen Netzwerken},%
+descriptionplural={Ein Open-Source-Framework für maschinelles Lernen, entwickelt von Google. TensorFlow bietet eine flexible Infrastruktur zur Definition, Optimierung und Ausführung von Rechenmodellen, insbesondere neuronalen Netzwerken},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2417,6 +2977,90 @@ text={Variational Autoencoder (VAE)},%
 plural={Variational Autoencoder (VAE)s},%
 description={Autoencoder-Variante, die Wahrscheinlichkeitsverteilungen in der Bottleneck-Schicht modelliert, häufig für generative Modelle},%
 descriptionplural={Autoencoder-Variante, die Wahrscheinlichkeitsverteilungen in der Bottleneck-Schicht modelliert, häufig für generative Modelle},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{vanishing-gradient}%
+{%
+name={Vanishing Gradient},%
+sort={Vanishing Gradient},%
+type={main},%
+first={Vanishing Gradient},%
+firstplural={Vanishing Gradients},%
+text={Vanishing Gradient},%
+plural={Vanishing Gradients},%
+description={Ein Problem beim Backpropagation-Algorithmus, bei dem die Gradienten beim Durchlaufen vieler Schichten oder Zeitschritte exponentiell kleiner werden. Dies führt dazu, dass frühe Schichten kaum lernen, da ihre Gewichtsanpassungen gegen null gehen. Besonders relevant bei rekurrenten Netzen (RNNs). Lösungsansätze umfassen LSTM-Zellen, Residual-Verbindungen oder geeignete Aktivierungsfunktionen.},%
+descriptionplural={Ein Problem beim Backpropagation-Algorithmus, bei dem die Gradienten beim Durchlaufen vieler Schichten oder Zeitschritte exponentiell kleiner werden. Dies führt dazu, dass frühe Schichten kaum lernen, da ihre Gewichtsanpassungen gegen null gehen. Besonders relevant bei rekurrenten Netzen (RNNs). Lösungsansätze umfassen LSTM-Zellen, Residual-Verbindungen oder geeignete Aktivierungsfunktionen.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{viewevents}%
+{%
+name={view-events},%
+sort={view-events},%
+type={main},%
+first={view-events},%
+firstplural={view-eventss},%
+text={view-events},%
+plural={view-eventss},%
+description={Keycloak-Rolle, die es erlaubt, Event-Logs eines Realms einzusehen},%
+descriptionplural={Keycloak-Rolle, die es erlaubt, Event-Logs eines Realms einzusehen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{webdriver}%
+{%
+name={WebDriver},%
+sort={WebDriver},%
+type={main},%
+first={WebDriver},%
+firstplural={WebDrivers},%
+text={WebDriver},%
+plural={WebDrivers},%
+description={Die Komponente von Selenium, die es ermöglicht, Browser programmgesteuert zu steuern},%
+descriptionplural={Die Komponente von Selenium, die es ermöglicht, Browser programmgesteuert zu steuern},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
