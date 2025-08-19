@@ -8,76 +8,74 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: quellen.bib
-I was expecting a `,' or a `}'---line 130 of file quellen.bib
+I was expecting a `,' or a `}'---line 174 of file quellen.bib
+ :  howpublished = {[Online]. Verfügbar: \url{https://arxiv.org/abs/2212.05347}. [Zugriff am: 18. August 2025}
+ :                                                                                                             ]
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 298 of file quellen.bib
  :  
- :  note         = {Abgerufen am 20. Juni 2025}
+ :  note         = {[Online]. Verfügbar: \url{https://ieeexplore.ieee.org/document/10011213}.[Zugriff am: 19. August 2025]}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-You're missing a field name---line 147 of file quellen.bib
- :  journal={arXiv preprint arXiv:2301.XXXX}, 
- :                                            % Falls eine arXiv-ID bekannt ist, hier ergänzen
+I was expecting a `,' or a `}'---line 641 of file quellen.bib
+ :  note    = {[Online]. Verfügbar: \url{https://www.sciencedirect.com/science/article/pii/S026840122031481X}}
+ :                                                                                                             . [Zugriff am 19.August 2025]}
 I'm skipping whatever remains of this entry
-Warning--I'm ignoring li2003improving's extra "note" field
---line 290 of file quellen.bib
-Warning--I'm ignoring staudemeyer2019understanding's extra "note" field
---line 311 of file quellen.bib
-Warning--I'm ignoring budiarto2025unsupervised's extra "note" field
---line 401 of file quellen.bib
-Warning--I'm ignoring springerlof2023's extra "note" field
---line 432 of file quellen.bib
-Warning--I'm ignoring michelucci2022introduction's extra "note" field
---line 456 of file quellen.bib
-Warning--I'm ignoring Golestaneh2021's extra "note" field
---line 639 of file quellen.bib
-Warning--I'm ignoring Goetz2023's extra "note" field
---line 650 of file quellen.bib
+Warning--I didn't find a database entry for "bsi2024lage"
+Warning--I didn't find a database entry for "arjunan2024"
+Warning--I didn't find a database entry for "bounsiar2025oneclass"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in provost1998case
-Warning--empty journal in ester1996dbscan
-Warning--empty year in najafi2023attention
+Name 1 in "P. Legg, O. Buckley, M. Goldsmith, and S. Creese" has a comma at the end for entry legg2015visualizing
+while executing---line 2403 of file IEEEtran.bst
+Name 1 in "B. Waltl, G. Bonczek, and F. Matthes" has a comma at the end for entry waltl2017rulebased
+while executing---line 2403 of file IEEEtran.bst
+Name 1 in "Z. Ghrib, R. Jaziri, and R. Romdhane" has a comma at the end for entry ghrib2020hybrid
+while executing---line 2403 of file IEEEtran.bst
+Name 1 in "X. Wei, J. Liu, and L. Zhang" has a comma at the end for entry wei2022lstm
+while executing---line 2403 of file IEEEtran.bst
 
 Done.
-You've used 50 entries,
+You've used 53 entries,
             4087 wiz_defined-function locations,
-            1146 strings with 21092 characters,
-and the built_in function-call counts, 35324 in all, are:
-= -- 3010
-> -- 831
-< -- 189
-+ -- 424
-- -- 160
-* -- 1796
-:= -- 5820
-add.period$ -- 112
-call.type$ -- 50
-change.case$ -- 96
-chr.to.int$ -- 432
+            1161 strings with 23642 characters,
+and the built_in function-call counts, 37505 in all, are:
+= -- 3128
+> -- 876
+< -- 226
++ -- 452
+- -- 164
+* -- 1777
+:= -- 5829
+add.period$ -- 113
+call.type$ -- 53
+change.case$ -- 101
+chr.to.int$ -- 510
 cite$ -- 53
-duplicate$ -- 2602
-empty$ -- 2796
-format.name$ -- 207
-if$ -- 8062
+duplicate$ -- 2832
+empty$ -- 3089
+format.name$ -- 214
+if$ -- 8717
 int.to.chr$ -- 0
-int.to.str$ -- 50
-missing$ -- 495
-newline$ -- 241
-num.names$ -- 50
-pop$ -- 1121
+int.to.str$ -- 53
+missing$ -- 541
+newline$ -- 182
+num.names$ -- 53
+pop$ -- 1231
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2714
+skip$ -- 2940
 stack$ -- 0
-substring$ -- 1164
-swap$ -- 1947
-text.length$ -- 45
+substring$ -- 1365
+swap$ -- 2133
+text.length$ -- 56
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 50
-warning$ -- 3
-while$ -- 133
-width$ -- 52
-write$ -- 611
-(There were 2 error messages)
+type$ -- 53
+warning$ -- 0
+while$ -- 150
+width$ -- 55
+write$ -- 551
+(There were 7 error messages)

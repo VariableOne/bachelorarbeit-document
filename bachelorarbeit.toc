@@ -8,80 +8,83 @@
 \contentsline {subsection}{\numberline {1.6}User (and Entity) Behavior Analytics (U(E)BA)}{24}{subsection.1.6}%
 \contentsline {section}{\numberline {2}Forschungsstand, Herausforderungen und Hypothesen}{25}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Bisheriger Forschungsstand}{25}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Problematik und Begrenzung von Modellen}{26}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Hypothese}{27}{subsection.2.3}%
-\contentsline {section}{\numberline {3}Methoden und Störfaktoren}{29}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Metriken}{29}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Andere, nicht angewandte Metriken}{31}{subsection.3.2}%
-\contentsline {subsection}{\numberline {3.3}Störfaktoren}{32}{subsection.3.3}%
-\contentsline {section}{\numberline {4}Angewandte Technologien}{33}{section.4}%
-\contentsline {subsection}{\numberline {4.1}\gls {scikit} Learn}{33}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Keras}{33}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}TensorFlow}{34}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Deep GPU Xceleration (\gls {dgx})}{34}{subsection.4.4}%
-\contentsline {section}{\numberline {5}Angewandte Technologie: Keycloak}{34}{section.5}%
-\contentsline {subsection}{\numberline {5.1}Terminologien in Keycloak}{35}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Komponenten der Log-Erzeugung}{37}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Log-Dateien in Keycloak}{40}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Event-Logs}{41}{subsection.5.4}%
-\contentsline {subsection}{\numberline {5.5}Aufbau der Event-Logs}{41}{subsection.5.5}%
-\contentsline {section}{\numberline {6}Theoretischer Hintergrund der Modelle}{43}{section.6}%
-\contentsline {subsection}{\numberline {6.1}LSTM}{43}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Autoencoder}{45}{subsection.6.2}%
-\contentsline {paragraph}{Bottleneck und seine Bedeutung}{45}{section*.11}%
-\contentsline {paragraph}{Varianten und Architekturen}{46}{section*.12}%
-\contentsline {paragraph}{Anwendungsbereiche}{46}{section*.13}%
-\contentsline {paragraph}{Mit dem LSTM kombiniert}{46}{section*.14}%
-\contentsline {subsection}{\numberline {6.3}Isolation Forest}{47}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}One-Class SVM}{48}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}DBSCAN}{49}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Alternative Algorithmen}{50}{subsection.6.6}%
-\contentsline {section}{\numberline {7}Implementierung}{51}{section.7}%
-\contentsline {subsection}{\numberline {7.1}Hybridmodelle mit LSTM-AE}{51}{subsection.7.1}%
-\contentsline {paragraph}{Encoder-Decoder Struktur und Bidirektionales LSTM}{54}{section*.15}%
-\contentsline {paragraph}{Verlustfunktion und Optimierung}{55}{section*.16}%
-\contentsline {paragraph}{Berechnung des Rekonstruktionsfehlers}{55}{section*.17}%
-\contentsline {paragraph}{Ermittlung des Schwellenwertes}{55}{section*.18}%
-\contentsline {subsubsection}{\numberline {7.1.1}Implementierung: Isolation Forest}{56}{subsubsection.7.1.1}%
-\contentsline {subsubsection}{\numberline {7.1.2}Implementierung: OCSVM}{56}{subsubsection.7.1.2}%
-\contentsline {subsubsection}{\numberline {7.1.3}Implementierung: DBSCAN}{57}{subsubsection.7.1.3}%
-\contentsline {subsection}{\numberline {7.2}Alternative Architekturen}{57}{subsection.7.2}%
-\contentsline {section}{\numberline {8}Möglichkeit 1: Generierung der Logs}{59}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Erster Entwurf der Angriffsfälle}{59}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Automatische Erstellung der Keycloak-Logs}{60}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Problematik dieser Lösung}{62}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Möglichkeit 2: Datenbeschaffung als Alternative}{62}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Anbindung der Keycloak-API}{63}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}Selenium-Tests zur Erzeugung der Logs}{64}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}Mögliche Angriffszenarien basierend auf \gls {cve} und \gls {cwe}}{68}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}Angriffsszenarien}{69}{subsection.9.4}%
-\contentsline {subsubsection}{\numberline {9.4.1}Angriffsszenario: Versuch einer Privilege Escalation über die Admin REST API}{70}{subsubsection.9.4.1}%
-\contentsline {paragraph}{Ablauf:}{70}{section*.19}%
-\contentsline {paragraph}{Technische Umsetzung:}{70}{section*.20}%
-\contentsline {paragraph}{Erwartetes Verhalten:}{70}{section*.21}%
-\contentsline {paragraph}{Sicherheitsrelevanz:}{71}{section*.22}%
-\contentsline {subsubsection}{\numberline {9.4.2}Angriffsszenario: Account-Sabotage durch privilegierten Benutzer}{71}{subsubsection.9.4.2}%
-\contentsline {paragraph}{Ablauf:}{71}{section*.23}%
-\contentsline {paragraph}{Technische Umsetzung:}{71}{section*.24}%
-\contentsline {paragraph}{Erwartetes Verhalten:}{72}{section*.25}%
-\contentsline {paragraph}{Sicherheitsrelevanz:}{72}{section*.26}%
-\contentsline {subsubsection}{\numberline {9.4.3}Angriffsszenario: Brute-Force-Angriff über die Web-Oberfläche}{72}{subsubsection.9.4.3}%
-\contentsline {paragraph}{Ablauf:}{72}{section*.27}%
-\contentsline {paragraph}{Technische Umsetzung:}{73}{section*.28}%
-\contentsline {paragraph}{Erwartetes Verhalten:}{73}{section*.29}%
-\contentsline {paragraph}{Sicherheitsrelevanz:}{73}{section*.30}%
-\contentsline {section}{\numberline {10}Durchführung des Trainings}{73}{section.10}%
-\contentsline {subsection}{\numberline {10.1}Änderung der Timestamps durch Unix Timestamp}{76}{subsection.10.1}%
-\contentsline {subsection}{\numberline {10.2}Testfälle}{77}{subsection.10.2}%
-\contentsline {section}{\numberline {11}Ergebnisse}{79}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Ergebnisse mit der Sequenzlänge 10}{79}{subsection.11.1}%
-\contentsline {subsubsection}{\numberline {11.1.1}Testlauf 1}{79}{subsubsection.11.1.1}%
-\contentsline {subsubsection}{\numberline {11.1.2}Testlauf 2}{80}{subsubsection.11.1.2}%
-\contentsline {subsubsection}{\numberline {11.1.3}Testlauf 3}{81}{subsubsection.11.1.3}%
-\contentsline {subsubsection}{\numberline {11.1.4}Ergebnisse mit der Sequenzlänge 25}{82}{subsubsection.11.1.4}%
-\contentsline {subsubsection}{\numberline {11.1.5}Testdurchlauf 1}{82}{subsubsection.11.1.5}%
-\contentsline {subsubsection}{\numberline {11.1.6}Testlauf 2}{83}{subsubsection.11.1.6}%
-\contentsline {subsubsection}{\numberline {11.1.7}Testlauf 3}{84}{subsubsection.11.1.7}%
-\contentsline {section}{\numberline {12}Diskussion}{85}{section.12}%
-\contentsline {section}{\numberline {13}Fazit}{87}{section.13}%
-\contentsline {section}{\numberline {14}Ausblick}{88}{section.14}%
+\contentsline {subsection}{\numberline {2.2}Problematik und Begrenzung von Modellen}{25}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Hypothese}{26}{subsection.2.3}%
+\contentsline {section}{\numberline {3}Methoden und Störfaktoren}{27}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Metriken}{27}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Multivariate Varianzanalyse (MANOVA)}{30}{subsection.3.2}%
+\contentsline {paragraph}{Wichtige Teststatistiken:}{30}{section*.12}%
+\contentsline {subsection}{\numberline {3.3}Störfaktoren}{30}{subsection.3.3}%
+\contentsline {section}{\numberline {4}Angewandte Technologien}{32}{section.4}%
+\contentsline {subsection}{\numberline {4.1}\gls {scikit} Learn}{32}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Keras}{32}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}\gls {tensorflow}}{32}{subsection.4.3}%
+\contentsline {section}{\numberline {5}Angewandte Technologie: Keycloak}{33}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Terminologien in Keycloak}{33}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Komponenten der Log-Erzeugung}{35}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Log-Dateien in Keycloak}{36}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Event-Logs}{37}{subsection.5.4}%
+\contentsline {subsection}{\numberline {5.5}Aufbau der Event-Logs}{37}{subsection.5.5}%
+\contentsline {subsection}{\numberline {5.6}Verworfene Technologie: Deep GPU Xceleration (\gls {dgx})}{39}{subsection.5.6}%
+\contentsline {section}{\numberline {6}Theoretischer Hintergrund der Modelle}{39}{section.6}%
+\contentsline {subsection}{\numberline {6.1}LSTM}{39}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Autoencoder}{40}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Isolation Forest}{41}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}One-Class SVM}{43}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}DBSCAN}{43}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Alternative Algorithmen}{44}{subsection.6.6}%
+\contentsline {section}{\numberline {7}Implementierung}{45}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Hybridmodelle mit LSTM-AE}{45}{subsection.7.1}%
+\contentsline {paragraph}{Encoder-Decoder Struktur und Bidirektionales LSTM}{48}{section*.13}%
+\contentsline {paragraph}{Verlustfunktion und Optimierung}{48}{section*.14}%
+\contentsline {paragraph}{Berechnung des Rekonstruktionsfehlers}{49}{section*.15}%
+\contentsline {paragraph}{Ermittlung des Schwellenwertes}{49}{section*.16}%
+\contentsline {subsubsection}{\numberline {7.1.1}Implementierung: Isolation Forest}{50}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Implementierung: OCSVM}{50}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Implementierung: DBSCAN}{50}{subsubsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.2}Alternative Architekturen}{51}{subsection.7.2}%
+\contentsline {section}{\numberline {8}Möglichkeit 1: Generierung der Logs}{52}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Erster Entwurf der Angriffsfälle}{52}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Automatische Erstellung der Keycloak-Logs}{53}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Problematik dieser Lösung}{54}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Möglichkeit 2: Datenbeschaffung als Alternative}{55}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Anbindung der Keycloak-API}{55}{subsection.9.1}%
+\contentsline {subsection}{\numberline {9.2}Selenium-Tests zur Erzeugung der Logs}{56}{subsection.9.2}%
+\contentsline {subsection}{\numberline {9.3}Mögliche Angriffszenarien basierend auf \gls {cve} und \gls {cwe}}{60}{subsection.9.3}%
+\contentsline {subsection}{\numberline {9.4}Angriffsszenarien}{61}{subsection.9.4}%
+\contentsline {subsubsection}{\numberline {9.4.1}Angriffsszenario: Versuch einer Privilege Escalation über die Admin REST API}{62}{subsubsection.9.4.1}%
+\contentsline {paragraph}{Ablauf:}{63}{section*.17}%
+\contentsline {paragraph}{Technische Umsetzung:}{63}{section*.18}%
+\contentsline {paragraph}{Erwartetes Verhalten:}{63}{section*.19}%
+\contentsline {paragraph}{Sicherheitsrelevanz:}{63}{section*.20}%
+\contentsline {subsubsection}{\numberline {9.4.2}Angriffsszenario: Account-Sabotage durch privilegierten Benutzer}{64}{subsubsection.9.4.2}%
+\contentsline {paragraph}{Ablauf:}{65}{section*.21}%
+\contentsline {paragraph}{Technische Umsetzung:}{65}{section*.22}%
+\contentsline {paragraph}{Erwartetes Verhalten:}{65}{section*.23}%
+\contentsline {paragraph}{Sicherheitsrelevanz:}{65}{section*.24}%
+\contentsline {subsubsection}{\numberline {9.4.3}Angriffsszenario: Brute-Force-Angriff über die Web-Oberfläche}{65}{subsubsection.9.4.3}%
+\contentsline {paragraph}{Ablauf:}{66}{section*.25}%
+\contentsline {paragraph}{Technische Umsetzung:}{66}{section*.26}%
+\contentsline {paragraph}{Erwartetes Verhalten:}{66}{section*.27}%
+\contentsline {paragraph}{Sicherheitsrelevanz:}{67}{section*.28}%
+\contentsline {section}{\numberline {10}Durchführung des Trainings}{67}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Änderung der Timestamps durch Unix Timestamp}{69}{subsection.10.1}%
+\contentsline {subsection}{\numberline {10.2}Testfälle}{70}{subsection.10.2}%
+\contentsline {section}{\numberline {11}Auswertung}{72}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Durchschnitt der Metriken je Testlauf und Sequenzlänge}{72}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Ergebnisse des MANOVA-Tests}{73}{subsection.11.2}%
+\contentsline {section}{\numberline {12}Diskussion}{74}{section.12}%
+\contentsline {section}{\numberline {13}Fazit}{76}{section.13}%
+\contentsline {section}{\numberline {14}Ausblick}{76}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Ergebnisse mit der Sequenzlänge 10}{86}{subsection.14.1}%
+\contentsline {subsubsection}{\numberline {14.1.1}Testlauf 1}{86}{subsubsection.14.1.1}%
+\contentsline {subsubsection}{\numberline {14.1.2}Testlauf 2}{87}{subsubsection.14.1.2}%
+\contentsline {subsubsection}{\numberline {14.1.3}Testlauf 3}{88}{subsubsection.14.1.3}%
+\contentsline {subsubsection}{\numberline {14.1.4}Ergebnisse mit der Sequenzlänge 25}{89}{subsubsection.14.1.4}%
+\contentsline {subsubsection}{\numberline {14.1.5}Testdurchlauf 1}{89}{subsubsection.14.1.5}%
+\contentsline {subsubsection}{\numberline {14.1.6}Testlauf 2}{90}{subsubsection.14.1.6}%
+\contentsline {subsubsection}{\numberline {14.1.7}Testlauf 3}{91}{subsubsection.14.1.7}%
+\contentsline {subsection}{\numberline {14.2}Ergebnisse für Sequenzlänge 50}{92}{subsection.14.2}%
+\contentsline {subsubsection}{\numberline {14.2.1}Testlauf 1}{92}{subsubsection.14.2.1}%
+\contentsline {subsubsection}{\numberline {14.2.2}Testlauf 2}{93}{subsubsection.14.2.2}%
+\contentsline {subsubsection}{\numberline {14.2.3}Testlauf 3}{94}{subsubsection.14.2.3}%

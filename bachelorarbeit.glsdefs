@@ -112,13 +112,13 @@ parent={},%
 
 \glsdefs@newdocentry{adminlogs}%
 {%
-name={Admin Logs},%
-sort={Admin Logs},%
+name={Admin-Logs},%
+sort={Admin-Logs},%
 type={main},%
-first={Admin Logs},%
-firstplural={Admin Logss},%
-text={Admin Logs},%
-plural={Admin Logss},%
+first={Admin-Logs},%
+firstplural={Admin-Logss},%
+text={Admin-Logs},%
+plural={Admin-Logss},%
 description={Logs, die administrative Operationen wie CREATE, UPDATE oder DELETE dokumentieren. Enthalten z.\,B. das Feld \textit {operationType}.},%
 descriptionplural={Logs, die administrative Operationen wie CREATE, UPDATE oder DELETE dokumentieren. Enthalten z.\,B. das Feld \textit {operationType}.},%
 symbol={\relax },%
@@ -373,6 +373,34 @@ text={Balanced Accuracy},%
 plural={Balanced Accuracys},%
 description={Durchschnitt aus Sensitivität (Recall) und Spezifität; besonders geeignet bei unausgeglichenen Klassenverhältnissen},%
 descriptionplural={Durchschnitt aus Sensitivität (Recall) und Spezifität; besonders geeignet bei unausgeglichenen Klassenverhältnissen},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{batchsize}%
+{%
+name={Batch-Size},%
+sort={Batch-Size},%
+type={main},%
+first={Batch-Size},%
+firstplural={Batch-Sizes},%
+text={Batch-Size},%
+plural={Batch-Sizes},%
+description={Die Anzahl an Trainingsbeispielen, die in einem Schritt (Iteration) gleichzeitig durch das neuronale Netz propagiert und zur Gradientenberechnung genutzt werden. Eine kleinere Batch Size führt zu häufigeren Gewichtsanpassungen, während eine größere Batch Size stabilere Gradienten liefert, aber mehr Speicher benötigt},%
+descriptionplural={Die Anzahl an Trainingsbeispielen, die in einem Schritt (Iteration) gleichzeitig durch das neuronale Netz propagiert und zur Gradientenberechnung genutzt werden. Eine kleinere Batch Size führt zu häufigeren Gewichtsanpassungen, während eine größere Batch Size stabilere Gradienten liefert, aber mehr Speicher benötigt},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -728,13 +756,13 @@ parent={},%
 
 \glsdefs@newdocentry{customlogs}%
 {%
-name={Custom Logs},%
-sort={Custom Logs},%
+name={Custom-Logs},%
+sort={Custom-Logs},%
 type={main},%
-first={Custom Logs},%
-firstplural={Custom Logss},%
-text={Custom Logs},%
-plural={Custom Logss},%
+first={Custom-Logs},%
+firstplural={Custom-Logss},%
+text={Custom-Logs},%
+plural={Custom-Logss},%
 description={Benutzerspezifische oder erweiterte Logs, die über Keycloak-Extensions (z.\,B. SPIs) erzeugt werden.},%
 descriptionplural={Benutzerspezifische oder erweiterte Logs, die über Keycloak-Extensions (z.\,B. SPIs) erzeugt werden.},%
 symbol={\relax },%
@@ -894,6 +922,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{dropoutrate}%
+{%
+name={Dropout Rate},%
+sort={Dropout Rate},%
+type={main},%
+first={Dropout Rate},%
+firstplural={Dropout Rates},%
+text={Dropout Rate},%
+plural={Dropout Rates},%
+description={Der Anteil der Neuronen, die während des Trainings eines neuronalen Netzes zufällig deaktiviert (auf 0 gesetzt) werden, um Überanpassung (Overfitting) zu reduzieren. Eine Dropout Rate von 0.1 bedeutet, dass 10\% der Neuronen pro Trainingsschritt deaktiviert werden.},%
+descriptionplural={Der Anteil der Neuronen, die während des Trainings eines neuronalen Netzes zufällig deaktiviert (auf 0 gesetzt) werden, um Überanpassung (Overfitting) zu reduzieren. Eine Dropout Rate von 0.1 bedeutet, dass 10\% der Neuronen pro Trainingsschritt deaktiviert werden.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{encoder}%
 {%
 name={Encoder},%
@@ -905,6 +961,34 @@ text={Encoder},%
 plural={Encoders},%
 description={Teil eines Autoencoders, der Daten in eine niedrigdimensionale Repräsentation komprimiert},%
 descriptionplural={Teil eines Autoencoders, der Daten in eine niedrigdimensionale Repräsentation komprimiert},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{epochen}%
+{%
+name={Epochen},%
+sort={Epochen},%
+type={main},%
+first={Epochen},%
+firstplural={Epochens},%
+text={Epochen},%
+plural={Epochens},%
+description={Ein Begriff aus dem maschinellen Lernen, der die Anzahl der vollständigen Durchläufe über den gesamten Trainingsdatensatz während des Trainings eines neuronalen Netzes bezeichnet. Eine Epoche entspricht einem Zyklus, in dem jedes Trainingsbeispiel einmal verwendet wurde.},%
+descriptionplural={Ein Begriff aus dem maschinellen Lernen, der die Anzahl der vollständigen Durchläufe über den gesamten Trainingsdatensatz während des Trainings eines neuronalen Netzes bezeichnet. Eine Epoche entspricht einem Zyklus, in dem jedes Trainingsbeispiel einmal verwendet wurde.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1034,62 +1118,6 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{fgapv2}%
-{%
-name={FGAPv2},%
-sort={FGAPv2},%
-type={main},%
-first={FGAPv2},%
-firstplural={FGAPv2s},%
-text={FGAPv2},%
-plural={FGAPv2s},%
-description={\textit {Flexible Governance Admin Panel Version 2} – Eine webbasierte Verwaltungsoberfläche, die zur Administration und Steuerung von Benutzerrechten, Systemeinstellungen und sicherheitskritischen Konfigurationsparametern in Unternehmensumgebungen dient. FGAPv2 bietet typischerweise eine REST-API sowie eine grafische Admin-Konsole und wird häufig in Intranet- oder Cloud-Deployments eingesetzt},%
-descriptionplural={\textit {Flexible Governance Admin Panel Version 2} – Eine webbasierte Verwaltungsoberfläche, die zur Administration und Steuerung von Benutzerrechten, Systemeinstellungen und sicherheitskritischen Konfigurationsparametern in Unternehmensumgebungen dient. FGAPv2 bietet typischerweise eine REST-API sowie eine grafische Admin-Konsole und wird häufig in Intranet- oder Cloud-Deployments eingesetzt},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{filebeat}%
-{%
-name={Filebeat},%
-sort={Filebeat},%
-type={main},%
-first={Filebeat},%
-firstplural={Filebeats},%
-text={Filebeat},%
-plural={Filebeats},%
-description={Lightweight-Agent, der Logdateien überwacht und deren Inhalte an zentrale Systeme wie Logstash weiterleitet.},%
-descriptionplural={Lightweight-Agent, der Logdateien überwacht und deren Inhalte an zentrale Systeme wie Logstash weiterleitet.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{gamma}%
 {%
 name={\texttt {gamma}},%
@@ -1120,13 +1148,13 @@ parent={},%
 
 \glsdefs@newdocentry{granttype}%
 {%
-name={Grant Type},%
-sort={Grant Type},%
+name={Grant-Type},%
+sort={Grant-Type},%
 type={main},%
-first={Grant Type},%
-firstplural={Grant Types},%
-text={Grant Type},%
-plural={Grant Types},%
+first={Grant-Type},%
+firstplural={Grant-Types},%
+text={Grant-Type},%
+plural={Grant-Types},%
 description={Verfahren, mit dem ein Client oder Benutzer bei einem Authentifizierungsserver ein Token anfordert.},%
 descriptionplural={Verfahren, mit dem ein Client oder Benutzer bei einem Authentifizierungsserver ein Token anfordert.},%
 symbol={\relax },%
@@ -1426,45 +1454,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{jul}%
+\glsdefs@newdocentry{jupyternotebook}%
 {%
-name={JUL (java.util.logging)},%
-sort={JUL (java.util.logging)},%
+name={Jupyter Notebook},%
+sort={Jupyter Notebook},%
 type={main},%
-first={JUL (java.util.logging)},%
-firstplural={JUL (java.util.logging)s},%
-text={JUL (java.util.logging)},%
-plural={JUL (java.util.logging)s},%
-description={In Java integriertes Logging-Framework. Funktional eingeschränkt und schwer konfigurierbar im Vergleich zu log4j oder logback.},%
-descriptionplural={In Java integriertes Logging-Framework. Funktional eingeschränkt und schwer konfigurierbar im Vergleich zu log4j oder logback.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{k8slogging}%
-{%
-name={Kubernetes Logging},%
-sort={Kubernetes Logging},%
-type={main},%
-first={Kubernetes Logging},%
-firstplural={Kubernetes Loggings},%
-text={Kubernetes Logging},%
-plural={Kubernetes Loggings},%
-description={Logging-Ansätze für containerisierte Anwendungen innerhalb von Kubernetes-Umgebungen, oft via Sidecars oder Remote-Stacks.},%
-descriptionplural={Logging-Ansätze für containerisierte Anwendungen innerhalb von Kubernetes-Umgebungen, oft via Sidecars oder Remote-Stacks.},%
+first={Jupyter Notebook},%
+firstplural={Jupyter Notebooks},%
+text={Jupyter Notebook},%
+plural={Jupyter Notebooks},%
+description={Eine interaktive Web-Anwendung, die es ermöglicht, Python-Code auszuführen, Ergebnisse direkt anzuzeigen, Text, Formeln und Visualisierungen zu kombinieren und somit exploratives Programmieren und dokumentiertes Data Science-Arbeiten zu erleichtern.},%
+descriptionplural={Eine interaktive Web-Anwendung, die es ermöglicht, Python-Code auszuführen, Ergebnisse direkt anzuzeigen, Text, Formeln und Visualisierungen zu kombinieren und somit exploratives Programmieren und dokumentiertes Data Science-Arbeiten zu erleichtern.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1566,6 +1566,34 @@ parent={},%
 %
 }%
 
+\glsdefs@newdocentry{learningrate}%
+{%
+name={Learning Rate},%
+sort={Learning Rate},%
+type={main},%
+first={Learning Rate},%
+firstplural={Learning Rates},%
+text={Learning Rate},%
+plural={Learning Rates},%
+description={Ein Hyperparameter, der die Schrittgröße bei der Anpassung der Gewichte während des Trainings eines neuronalen Netzes bestimmt. Eine kleinere Lernrate führt zu langsameren, aber stabileren Anpassungen, während eine größere Lernrate schneller, aber instabiler sein kann.},%
+descriptionplural={Ein Hyperparameter, der die Schrittgröße bei der Anpassung der Gewichte während des Trainings eines neuronalen Netzes bestimmt. Eine kleinere Lernrate führt zu langsameren, aber stabileren Anpassungen, während eine größere Lernrate schneller, aber instabiler sein kann.},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
 \glsdefs@newdocentry{lof}%
 {%
 name={LOF},%
@@ -1605,34 +1633,6 @@ text={Log4j},%
 plural={Log4js},%
 description={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (bspw. Log4Shell) kritisch betrachtet.},%
 descriptionplural={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (bspw. Log4Shell) kritisch betrachtet.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{logback}%
-{%
-name={Logback},%
-sort={Logback},%
-type={main},%
-first={Logback},%
-firstplural={Logbacks},%
-text={Logback},%
-plural={Logbacks},%
-description={Moderne Logging-Implementierung, die SLF4J unterstützt und als Nachfolger von log4j gilt.},%
-descriptionplural={Moderne Logging-Implementierung, die SLF4J unterstützt und als Nachfolger von log4j gilt.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -1846,34 +1846,6 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{mitreattack}%
-{%
-name={MITRE ATT\&CK},%
-sort={MITRE ATT\&CK},%
-type={main},%
-first={MITRE ATT\&CK},%
-firstplural={MITRE ATT\&CKs},%
-text={MITRE ATT\&CK},%
-plural={MITRE ATT\&CKs},%
-description={MITRE Adversarial Tactics, Techniques, and Common Knowledge – öffentliches Framework zur Kategorisierung von Angriffstechniken.},%
-descriptionplural={MITRE Adversarial Tactics, Techniques, and Common Knowledge – öffentliches Framework zur Kategorisierung von Angriffstechniken.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{minpts}%
 {%
 name={MinPts},%
@@ -2014,34 +1986,6 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{oauth}%
-{%
-name={OAuth 2.0},%
-sort={OAuth 2.0},%
-type={main},%
-first={OAuth 2.0},%
-firstplural={OAuth 2.0s},%
-text={OAuth 2.0},%
-plural={OAuth 2.0s},%
-description={Autorisierungs-Framework, das sicheren Zugriff auf geschützte Ressourcen ermöglicht.},%
-descriptionplural={Autorisierungs-Framework, das sicheren Zugriff auf geschützte Ressourcen ermöglicht.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{ocsvm}%
 {%
 name={OCSVM},%
@@ -2070,17 +2014,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{oidc}%
+\glsdefs@newdocentry{operationtype}%
 {%
-name={OpenID Connect (OIDC)},%
-sort={OpenID Connect (OIDC)},%
+name={operationType},%
+sort={operationType},%
 type={main},%
-first={OpenID Connect (OIDC)},%
-firstplural={OpenID Connect (OIDC)s},%
-text={OpenID Connect (OIDC)},%
-plural={OpenID Connect (OIDC)s},%
-description={Auth-Protokoll, das auf OAuth 2.0 basiert und die Identität von Nutzern sicher überträgt.},%
-descriptionplural={Auth-Protokoll, das auf OAuth 2.0 basiert und die Identität von Nutzern sicher überträgt.},%
+first={operationType},%
+firstplural={operationTypes},%
+text={operationType},%
+plural={operationTypes},%
+description={Feld in Admin-Logs, das die Art der Admin-Aktion angibt, z.\,B. CREATE, UPDATE, DELETE oder ACTION.},%
+descriptionplural={Feld in Admin-Logs, das die Art der Admin-Aktion angibt, z.\,B. CREATE, UPDATE, DELETE oder ACTION.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2098,17 +2042,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{operationtype}%
+\glsdefs@newdocentry{overfitting}%
 {%
-name={operationType},%
-sort={operationType},%
+name={Overfitting},%
+sort={Overfitting},%
 type={main},%
-first={operationType},%
-firstplural={operationTypes},%
-text={operationType},%
-plural={operationTypes},%
-description={Feld in Admin-Logs, das die Art der Admin-Aktion angibt, z.\,B. CREATE, UPDATE, DELETE oder ACTION.},%
-descriptionplural={Feld in Admin-Logs, das die Art der Admin-Aktion angibt, z.\,B. CREATE, UPDATE, DELETE oder ACTION.},%
+first={Overfitting},%
+firstplural={Overfittings},%
+text={Overfitting},%
+plural={Overfittings},%
+description={Überanpassung eines Modells an die Trainingsdaten, sodass die Generalisierungsfähigkeit auf unbekannte Daten stark eingeschränkt ist. Typische Indikatoren sind stark abweichende Trainings- und Validierungsfehler. Overfitting tritt häufig bei komplexen Modellen mit zu vielen Parametern oder bei kleinen, nicht repräsentativen Datensätzen auf.},%
+descriptionplural={Überanpassung eines Modells an die Trainingsdaten, sodass die Generalisierungsfähigkeit auf unbekannte Daten stark eingeschränkt ist. Typische Indikatoren sind stark abweichende Trainings- und Validierungsfehler. Overfitting tritt häufig bei komplexen Modellen mit zu vielen Parametern oder bei kleinen, nicht repräsentativen Datensätzen auf.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2322,17 +2266,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{rekonstruktionsfehler}%
+\glsdefs@newdocentry{regularisierungstechnik}%
 {%
-name={Rekonstruktionsfehler},%
-sort={Rekonstruktionsfehler},%
+name={Regularisierungstechnik},%
+sort={Regularisierungstechnik},%
 type={main},%
-first={Rekonstruktionsfehler},%
-firstplural={Rekonstruktionsfehlers},%
-text={Rekonstruktionsfehler},%
-plural={Rekonstruktionsfehlers},%
-description={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten},%
-descriptionplural={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten},%
+first={Regularisierungstechnik},%
+firstplural={Regularisierungstechniks},%
+text={Regularisierungstechnik},%
+plural={Regularisierungstechniks},%
+description={Methoden zur Vermeidung von Overfitting in maschinellen Lernmodellen. Durch Regularisierung wird die Modellkomplexität gezielt eingeschränkt oder die Lernparameter stabilisiert, beispielsweise durch Gewichtsbeschränkungen (L1- oder L2-Regularisierung) oder Dropout. Ziel ist die Verbesserung der Generalisierungsfähigkeit des Modells auf unbekannte Daten.},%
+descriptionplural={Methoden zur Vermeidung von Overfitting in maschinellen Lernmodellen. Durch Regularisierung wird die Modellkomplexität gezielt eingeschränkt oder die Lernparameter stabilisiert, beispielsweise durch Gewichtsbeschränkungen (L1- oder L2-Regularisierung) oder Dropout. Ziel ist die Verbesserung der Generalisierungsfähigkeit des Modells auf unbekannte Daten.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2350,17 +2294,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{remotelogging}%
+\glsdefs@newdocentry{rekonstruktionsfehler}%
 {%
-name={Remote Logging},%
-sort={Remote Logging},%
+name={Rekonstruktionsfehler},%
+sort={Rekonstruktionsfehler},%
 type={main},%
-first={Remote Logging},%
-firstplural={Remote Loggings},%
-text={Remote Logging},%
-plural={Remote Loggings},%
-description={Versand von Logs an externe Systeme oder Services, z.\,B. über Syslog, HTTP oder Filebeat.},%
-descriptionplural={Versand von Logs an externe Systeme oder Services, z.\,B. über Syslog, HTTP oder Filebeat.},%
+first={Rekonstruktionsfehler},%
+firstplural={Rekonstruktionsfehlers},%
+text={Rekonstruktionsfehler},%
+plural={Rekonstruktionsfehlers},%
+description={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten},%
+descriptionplural={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2415,36 +2359,8 @@ first={Residual Block},%
 firstplural={Residual Blocks},%
 text={Residual Block},%
 plural={Residual Blocks},%
-description={Ein architektonisches Element in tiefen neuronalen Netzwerken, das eine direkte Identitätsverbindung (Shortcut Connection) zwischen Eingabe und Ausgabe eines Layers herstellt. Dadurch lernt das Netzwerk nicht die gesamte Transformation, sondern nur die Differenz (\textit {Residuum}) zur Eingabe. Dies erleichtert die Backpropagation und reduziert das Vanishing-Gradient-Problem, wodurch tiefere Netze stabiler trainiert werden können},%
-descriptionplural={Ein architektonisches Element in tiefen neuronalen Netzwerken, das eine direkte Identitätsverbindung (Shortcut Connection) zwischen Eingabe und Ausgabe eines Layers herstellt. Dadurch lernt das Netzwerk nicht die gesamte Transformation, sondern nur die Differenz (\textit {Residuum}) zur Eingabe. Dies erleichtert die Backpropagation und reduziert das Vanishing-Gradient-Problem, wodurch tiefere Netze stabiler trainiert werden können},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
-\glsdefs@newdocentry{saml}%
-{%
-name={SAML},%
-sort={SAML},%
-type={main},%
-first={SAML},%
-firstplural={SAMLs},%
-text={SAML},%
-plural={SAMLs},%
-description={Security Assertion Markup Language – XML-basiertes Protokoll für Authentifizierung und Autorisierung.},%
-descriptionplural={Security Assertion Markup Language – XML-basiertes Protokoll für Authentifizierung und Autorisierung.},%
+description={Ein architektonisches Element in tiefen neuronalen Netzwerken, das eine direkte Identitätsverbindung (Shortcut Connection) zwischen Eingabe und Ausgabe eines Layers herstellt. Dadurch lernt das Netzwerk nicht die gesamte Transformation, sondern nur die Differenz (\textit {Residuum}) zur Eingabe. Dies erleichtert die \gls {backpropagation} und reduziert das Vanishing-Gradient-Problem, wodurch tiefere Netze stabiler trainiert werden können},%
+descriptionplural={Ein architektonisches Element in tiefen neuronalen Netzwerken, das eine direkte Identitätsverbindung (Shortcut Connection) zwischen Eingabe und Ausgabe eines Layers herstellt. Dadurch lernt das Netzwerk nicht die gesamte Transformation, sondern nur die Differenz (\textit {Residuum}) zur Eingabe. Dies erleichtert die \gls {backpropagation} und reduziert das Vanishing-Gradient-Problem, wodurch tiefere Netze stabiler trainiert werden können},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2602,17 +2518,17 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{sessionhijacking}%
+\glsdefs@newdocentry{sequenzlaenge}%
 {%
-name={Session Hijacking},%
-sort={Session Hijacking},%
+name={Sequenzlänge},%
+sort={Sequenzlänge},%
 type={main},%
-first={Session Hijacking},%
-firstplural={Session Hijackings},%
-text={Session Hijacking},%
-plural={Session Hijackings},%
-description={Ein Angriff, bei dem ein Angreifer die aktive Sitzung eines anderen Benutzers übernimmt, z.\,B. durch Abfangen von Session-Cookies},%
-descriptionplural={Ein Angriff, bei dem ein Angreifer die aktive Sitzung eines anderen Benutzers übernimmt, z.\,B. durch Abfangen von Session-Cookies},%
+first={Sequenzlänge},%
+firstplural={Sequenzlänges},%
+text={Sequenzlänge},%
+plural={Sequenzlänges},%
+description={Die Anzahl aufeinanderfolgender Datenpunkte oder Log-Einträge, die gleichzeitig als Eingabe für ein Modell wie ein LSTM-Autoencoder verwendet werden. Die Wahl der Sequenzlänge beeinflusst, wie viel zeitlicher Kontext das Modell berücksichtigt und kann sich auf die Erkennungsrate von Anomalien auswirken.},%
+descriptionplural={Die Anzahl aufeinanderfolgender Datenpunkte oder Log-Einträge, die gleichzeitig als Eingabe für ein Modell wie ein LSTM-Autoencoder verwendet werden. Die Wahl der Sequenzlänge beeinflusst, wie viel zeitlicher Kontext das Modell berücksichtigt und kann sich auf die Erkennungsrate von Anomalien auswirken.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2639,8 +2555,8 @@ first={SLF4J},%
 firstplural={SLF4Js},%
 text={SLF4J},%
 plural={SLF4Js},%
-description={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j oder logback unterstützt.},%
-descriptionplural={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j oder logback unterstützt.},%
+description={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j unterstützt.},%
+descriptionplural={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j unterstützt.},%
 symbol={\relax },%
 symbolplural={\relax },%
 user1={},%
@@ -2770,34 +2686,6 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{systemout}%
-{%
-name={System.out / System.err},%
-sort={System.out / System.err},%
-type={main},%
-first={System.out / System.err},%
-firstplural={System.out / System.errs},%
-text={System.out / System.err},%
-plural={System.out / System.errs},%
-description={Standard-Ausgabe-/Fehlerstreams in Java. Nicht strukturiert und für produktive Logs ungeeignet.},%
-descriptionplural={Standard-Ausgabe-/Fehlerstreams in Java. Nicht strukturiert und für produktive Logs ungeeignet.},%
-symbol={\relax },%
-symbolplural={\relax },%
-user1={},%
-user2={},%
-user3={},%
-user4={},%
-user5={},%
-user6={},%
-long={},%
-longplural={},%
-short={},%
-shortplural={},%
-counter={page},%
-parent={},%
-%
-}%
-
 \glsdefs@newdocentry{tensorflow}%
 {%
 name={TensorFlow},%
@@ -2854,15 +2742,15 @@ parent={},%
 %
 }%
 
-\glsdefs@newdocentry{tokenrefresh}%
+\glsdefs@newdocentry{refreshtoken}%
 {%
-name={TOKEN\_REFRESH},%
-sort={TOKEN\_REFRESH},%
+name={REFRESH\_TOKEN},%
+sort={REFRESH\_TOKEN},%
 type={main},%
-first={TOKEN\protect \_REFRESH},%
-firstplural={TOKEN\protect \_REFRESHs},%
-text={TOKEN\protect \_REFRESH},%
-plural={TOKEN\protect \_REFRESHs},%
+first={REFRESH\protect \_TOKEN},%
+firstplural={REFRESH\protect \_TOKENs},%
+text={REFRESH\protect \_TOKEN},%
+plural={REFRESH\protect \_TOKENs},%
 description={Keycloak-Event-Typ, der beim Aktualisieren eines Zugriffstokens generiert wird.},%
 descriptionplural={Keycloak-Event-Typ, der beim Aktualisieren eines Zugriffstokens generiert wird.},%
 symbol={\relax },%
@@ -2940,13 +2828,13 @@ parent={},%
 
 \glsdefs@newdocentry{userlogs}%
 {%
-name={User Logs},%
-sort={User Logs},%
+name={User-Logs},%
+sort={User-Logs},%
 type={main},%
-first={User Logs},%
-firstplural={User Logss},%
-text={User Logs},%
-plural={User Logss},%
+first={User-Logs},%
+firstplural={User-Logss},%
+text={User-Logs},%
+plural={User-Logss},%
 description={Logs, die Benutzeraktionen ohne Adminrechte erfassen. Typische Eventtypen sind LOGIN, LOGOUT oder TOKEN-Operationen.},%
 descriptionplural={Logs, die Benutzeraktionen ohne Adminrechte erfassen. Typische Eventtypen sind LOGIN, LOGOUT oder TOKEN-Operationen.},%
 symbol={\relax },%

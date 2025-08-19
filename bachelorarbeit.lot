@@ -1,20 +1,35 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Bestimmte Parameter der Modellkonfiguration}}{52}{table.1}%
-\contentsline {table}{\numberline {2}{\ignorespaces Ergebnisse für IsolationForest}}{79}{table.2}%
-\contentsline {table}{\numberline {3}{\ignorespaces Ergebnisse für One-Class SVM}}{80}{table.3}%
-\contentsline {table}{\numberline {4}{\ignorespaces Ergebnisse für DBSCAN}}{80}{table.4}%
-\contentsline {table}{\numberline {5}{\ignorespaces Ergebnisse für IsolationForest}}{80}{table.5}%
-\contentsline {table}{\numberline {6}{\ignorespaces Ergebnisse für One-Class SVM}}{81}{table.6}%
-\contentsline {table}{\numberline {7}{\ignorespaces Ergebnisse für DBSCAN}}{81}{table.7}%
-\contentsline {table}{\numberline {8}{\ignorespaces Ergebnisse für IsolationForest}}{81}{table.8}%
-\contentsline {table}{\numberline {9}{\ignorespaces Ergebnisse für One-Class SVM}}{82}{table.9}%
-\contentsline {table}{\numberline {10}{\ignorespaces Ergebnisse für DBSCAN}}{82}{table.10}%
-\contentsline {table}{\numberline {11}{\ignorespaces Ergebnisse für IsolationForest, Sequenzlänge 25}}{82}{table.11}%
-\contentsline {table}{\numberline {12}{\ignorespaces Ergebnisse für One-Class SVM, Sequenzlänge 25}}{83}{table.12}%
-\contentsline {table}{\numberline {13}{\ignorespaces Ergebnisse für DBSCAN, Sequenzlänge 25}}{83}{table.13}%
-\contentsline {table}{\numberline {14}{\ignorespaces Ergebnisse für IsolationForest, Sequenzlänge 25}}{83}{table.14}%
-\contentsline {table}{\numberline {15}{\ignorespaces Ergebnisse für One-Class SVM, Sequenzlänge 25}}{84}{table.15}%
-\contentsline {table}{\numberline {16}{\ignorespaces Ergebnisse für DBSCAN, Sequenzlänge 25}}{84}{table.16}%
-\contentsline {table}{\numberline {17}{\ignorespaces Ergebnisse für IsolationForest, Sequenzlänge 25}}{84}{table.17}%
-\contentsline {table}{\numberline {18}{\ignorespaces Ergebnisse für One-Class SVM, Sequenzlänge 25}}{85}{table.18}%
-\contentsline {table}{\numberline {19}{\ignorespaces Ergebnisse für DBSCAN, Sequenzlänge 25}}{85}{table.19}%
+\contentsline {table}{\numberline {1}{\ignorespaces Bestimmte Parameter der Modellkonfiguration}}{46}{table.1}%
+\contentsline {table}{\numberline {2}{\ignorespaces Mittlere Performance-Metriken der drei Algorithmen über alle Sequenzlängen.}}{72}{table.2}%
+\contentsline {table}{\numberline {3}{\ignorespaces MANOVA-Ergebnisse für die drei Algorithmen.}}{73}{table.3}%
+\contentsline {table}{\numberline {4}{\ignorespaces Testlauf 1: Ergebnisse für IsolationForest, Sequenzlänge 10}}{86}{table.4}%
+\contentsline {table}{\numberline {5}{\ignorespaces Testlauf 1: Ergebnisse für One-Class SVM, Sequenzlänge 10}}{86}{table.5}%
+\contentsline {table}{\numberline {6}{\ignorespaces Testlauf 1: Ergebnisse für DBSCAN, Sequenzlänge 10}}{86}{table.6}%
+\contentsline {table}{\numberline {7}{\ignorespaces Testlauf 2: Ergebnisse für IsolationForest, Sequenzlänge 10}}{87}{table.7}%
+\contentsline {table}{\numberline {8}{\ignorespaces Testlauf 2: Ergebnisse für One-Class SVM, Sequenzlänge 10}}{87}{table.8}%
+\contentsline {table}{\numberline {9}{\ignorespaces Testlauf 2: Ergebnisse für DBSCAN, Sequenzlänge 10}}{87}{table.9}%
+\contentsline {table}{\numberline {10}{\ignorespaces Testlauf 3: Ergebnisse für IsolationForest, Sequenzlänge 10}}{88}{table.10}%
+\contentsline {table}{\numberline {11}{\ignorespaces Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 10}}{88}{table.11}%
+\contentsline {table}{\numberline {12}{\ignorespaces Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 10}}{88}{table.12}%
+\contentsline {table}{\numberline {13}{\ignorespaces Testlauf 1: Ergebnisse für IsolationForest, Sequenzlänge 25}}{89}{table.13}%
+\contentsline {table}{\numberline {14}{\ignorespaces Testlauf 1: Ergebnisse für One-Class SVM, Sequenzlänge 25}}{89}{table.14}%
+\contentsline {table}{\numberline {15}{\ignorespaces Testlauf 1: Ergebnisse für DBSCAN, Sequenzlänge 25}}{89}{table.15}%
+\contentsline {table}{\numberline {16}{\ignorespaces Testlauf 2: Ergebnisse für IsolationForest, Sequenzlänge 25}}{90}{table.16}%
+\contentsline {table}{\numberline {17}{\ignorespaces Testlauf 2: Ergebnisse für One-Class SVM, Sequenzlänge 25}}{90}{table.17}%
+\contentsline {table}{\numberline {18}{\ignorespaces Testlauf 2: Ergebnisse für DBSCAN, Sequenzlänge 25}}{90}{table.18}%
+\contentsline {table}{\numberline {19}{\ignorespaces Testlauf 3: Ergebnisse für IsolationForest, Sequenzlänge 25}}{91}{table.19}%
+\contentsline {table}{\numberline {20}{\ignorespaces Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 25}}{91}{table.20}%
+\contentsline {table}{\numberline {21}{\ignorespaces Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 25}}{91}{table.21}%
+\contentsline {table}{\numberline {22}{\ignorespaces IsolationForest: Performance-Metriken}}{92}{table.22}%
+\contentsline {table}{\numberline {23}{\ignorespaces Testlauf 1: Ergebnisse für IF, Sequenzlänge 50}}{92}{table.23}%
+\contentsline {table}{\numberline {24}{\ignorespaces One-Class SVM: Performance-Metriken}}{92}{table.24}%
+\contentsline {table}{\numberline {25}{\ignorespaces Testlauf 1: Performance-Metriken für OCSVM, Sequenzlänge 50}}{92}{table.25}%
+\contentsline {table}{\numberline {26}{\ignorespaces DBSCAN: Performance-Metriken}}{93}{table.26}%
+\contentsline {table}{\numberline {27}{\ignorespaces Testlauf 1: Performance-Metriken für DBSCAN, Sequenzlänge 50}}{93}{table.27}%
+\contentsline {table}{\numberline {28}{\ignorespaces Performance-Metriken für Isolation Forest}}{93}{table.28}%
+\contentsline {table}{\numberline {29}{\ignorespaces Testlauf 2: Ergebnisse für IF, Sequenzlänge 50}}{93}{table.29}%
+\contentsline {table}{\numberline {30}{\ignorespaces Testlauf 2: Performance-Metriken für One-Class SVM, Sequenzlänge 50}}{93}{table.30}%
+\contentsline {table}{\numberline {31}{\ignorespaces Testlauf 2: Performance-Metriken für DBSCAN, Sequenzlänge 50}}{94}{table.31}%
+\contentsline {table}{\numberline {32}{\ignorespaces Testlauf 3: Ergebnisse für IF, Sequenzlänge 50}}{94}{table.32}%
+\contentsline {table}{\numberline {33}{\ignorespaces Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 50}}{94}{table.33}%
+\contentsline {table}{\numberline {34}{\ignorespaces Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 50}}{95}{table.34}%

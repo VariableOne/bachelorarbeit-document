@@ -2,7 +2,9 @@
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}
 \usepackage{geometry}
-\geometry{a4paper, top=3cm, bottom=3cm, left=3.5cm, right=2.5cm}
+\geometry{a4paper, top=2.5cm, bottom=2.5cm, left=2.5cm, right=3cm}
+\usepackage{mathptmx}
+\usepackage{newtxtext,newtxmath}
 \usepackage{setspace}
 \usepackage{graphicx}
 \usepackage{cite}
@@ -17,7 +19,7 @@
 \usepackage{endnotes}
 \usepackage{float} 
 \usepackage{booktabs}
-\usepackage{acronym}
+
 \let\footnote=\endnote
 
 \begin{document}
@@ -58,14 +60,13 @@
 	\end{center}
 	\newpage
 	\section*{Danksagung}
-	Ich will mich hiermit bei meine betrieblichen Betreuer Eric Hämmerle bedanken, sowie meinen Vorgesetzten, dass diese Arbeit ermöglicht wurde. Ebenfalls bedanke ich mich bei meiner Familie und meine Freunden für die seelische Unterstützung und Motivation, die dazu geführt hat, diese Arbeit fertig zu stellen. Ebenfalls bedanke ich mich bei meinem Betreuer der DHBW, Herr Dr. Dietzsch für das Feedback.
+	Ich will mich hiermit bei meinem betrieblichen Betreuer Eric Hämmerle bedanken, sowie meinen Vorgesetzten, dass diese Arbeit ermöglicht wurde. Ebenfalls bedanke ich mich bei meiner Familie und meine Freunden für die seelische Unterstützung und Motivation, die dazu geführt hat, diese Arbeit fertig zu stellen. Ebenfalls bedanke ich mich bei meinem Betreuer der DHBW, Herr Dr. Dietzsch für das Feedback.
 	
 	
 	\newpage
 	\section*{Abstract}
 	This paper examines the detection of insider attacks in Keycloak logs, focusing on anomalies in user behavior. To this end, a hybrid model based on an LSTM autoencoder (LSTM-AE) was developed, which was combined with one of three anomaly detection algorithms: Isolation Forest (IF), One-Class SVM (OCSVM), and DBSCAN. The aim was to compare the performance of the various hybrid models in identifying anomalies. Three different attack scenarios were simulated to represent realistic insider threats. The results show that the LSTM-AE performs particularly well in combination with Isolation Forest, followed by the combination with One-Class SVM. The model with DBSCAN achieved significantly weaker results in comparison. The study underscores the effectiveness of LSTM-AE hybrid models in anomaly detection in authentication logs and provides indications as to which algorithms are particularly suitable for practical use. Autoencoder: Consists of an encoder and a decoder. It is also a neural network. It compresses (in the encoder) and reconstructs (in the decoder) data to discover certain variables or anomalies.
-	
-	Translated with DeepL.com (free version)
+
 	
 	\newpage
 	\section*{Zusammenfassung}
@@ -74,7 +75,11 @@
 	\section*{Eigenständigkeitserklärung}
 	Hiermit erkläre ich, dass ich die vorliegende Arbeit selbstständig und ohne unzulässige fremde Hilfe angefertigt habe.  
 	Alle verwendeten Quellen und Hilfsmittel sind in der Arbeit angegeben.  
-	Diese Arbeit wurde bisher keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht. Für sprachliche Ausbesserungen wir die KI ChatGPT \footnote{https://chatgpt.com/}verwendet.
+	Diese Arbeit wurde bisher keiner anderen Prüfungsbehörde vorgelegt und auch nicht veröffentlicht.
+	\newpage
+	\subsection*{Verwendete Quellen}
+	Ein Teil der zitierten Arbeiten basiert auf Preprints von arXiv, die noch nicht peer-reviewed sind. Diese wurden herangezogen, um aktuelle Entwicklungen im Bereich der Anomalieerkennung und LSTM-Modelle zu berücksichtigen. Wo möglich, wurden peer-reviewed Publikationen ergänzt oder zur Verifizierung herangezogen.
+
 	
 	\vspace{2cm}
 	
@@ -138,7 +143,7 @@
 	}
 	
 	\newglossaryentry{adminlogs}{
-		name={Admin Logs},
+		name={Admin-Logs},
 		description={Logs, die administrative Operationen wie CREATE, UPDATE oder DELETE dokumentieren. Enthalten z.\,B. das Feld \textit{operationType}.}
 	}
 	
@@ -185,6 +190,12 @@
 	\newglossaryentry{balancedaccuracy}{
 		name={Balanced Accuracy},
 		description={Durchschnitt aus Sensitivität (Recall) und Spezifität; besonders geeignet bei unausgeglichenen Klassenverhältnissen}
+	}
+	
+	\newglossaryentry{batchsize}{
+		name=Batch-Size,
+		description={Die Anzahl an Trainingsbeispielen, die in einem Schritt (Iteration) gleichzeitig durch das neuronale Netz propagiert und zur Gradientenberechnung genutzt werden. 
+			Eine kleinere Batch Size führt zu häufigeren Gewichtsanpassungen, während eine größere Batch Size stabilere Gradienten liefert, aber mehr Speicher benötigt}
 	}
 	
 	\newglossaryentry{botnetz}{
@@ -248,7 +259,7 @@
 	}
 	
 	\newglossaryentry{customlogs}{
-		name={Custom Logs},
+		name={Custom-Logs},
 		description={Benutzerspezifische oder erweiterte Logs, die über Keycloak-Extensions (z.\,B. SPIs) erzeugt werden.}
 	}
 	
@@ -276,10 +287,20 @@
 		name={DGX},
 		description={Deep GPU Xceleration – NVIDIA-Hardwareplattform zur KI-Beschleunigung.}
 	}
+	
+	\newglossaryentry{dropoutrate}{
+		name=Dropout Rate,
+		description={Der Anteil der Neuronen, die während des Trainings eines neuronalen Netzes zufällig deaktiviert (auf 0 gesetzt) werden, um Überanpassung (Overfitting) zu reduzieren. Eine Dropout Rate von 0.1 bedeutet, dass 10\% der Neuronen pro Trainingsschritt deaktiviert werden.}
+	}
 		
 	\newglossaryentry{encoder}{
 		name=Encoder,
 		description={Teil eines Autoencoders, der Daten in eine niedrigdimensionale Repräsentation komprimiert}
+	}
+	
+	\newglossaryentry{epochen}{
+		name=Epochen,
+		description={Ein Begriff aus dem maschinellen Lernen, der die Anzahl der vollständigen Durchläufe über den gesamten Trainingsdatensatz während des Trainings eines neuronalen Netzes bezeichnet. Eine Epoche entspricht einem Zyklus, in dem jedes Trainingsbeispiel einmal verwendet wurde.}
 	}
 	
 	\newglossaryentry{eps}{
@@ -302,23 +323,13 @@
 		description={Der Raum, in dem Datenpunkte durch Merkmale abgebildet werden, häufig hochdimensional}
 	}
 	
-	\newglossaryentry{fgapv2}{
-		name=FGAPv2,
-		description={\textit{Flexible Governance Admin Panel Version 2} – Eine webbasierte Verwaltungsoberfläche, die zur Administration und Steuerung von Benutzerrechten, Systemeinstellungen und sicherheitskritischen Konfigurationsparametern in Unternehmensumgebungen dient. FGAPv2 bietet typischerweise eine REST-API sowie eine grafische Admin-Konsole und wird häufig in Intranet- oder Cloud-Deployments eingesetzt}
-	}
-	
-	\newglossaryentry{filebeat}{
-		name={Filebeat},
-		description={Lightweight-Agent, der Logdateien überwacht und deren Inhalte an zentrale Systeme wie Logstash weiterleitet.}
-	}
-	
 	\newglossaryentry{gamma}{
 		name={\texttt{gamma}},
 		description={Parameter der RBF-Kernel-Funktion bei der One-Class SVM; legt fest, wie stark ein einzelner Trainingspunkt die Entscheidungsgrenze beeinflusst}
 	}
 	
 	\newglossaryentry{granttype}{
-		name={Grant Type},
+		name={Grant-Type},
 		description={Verfahren, mit dem ein Client oder Benutzer bei einem Authentifizierungsserver ein Token anfordert.}
 	}
 	
@@ -372,14 +383,9 @@
 		description={Logging-API aus dem JBoss-Ökosystem. Bietet eine Abstraktionsschicht über verschiedene Logging-Backends wie log4j, JUL oder slf4j.}
 	}
 	
-	\newglossaryentry{jul}{
-		name={JUL (java.util.logging)},
-		description={In Java integriertes Logging-Framework. Funktional eingeschränkt und schwer konfigurierbar im Vergleich zu log4j oder logback.}
-	}
-	
-	\newglossaryentry{k8slogging}{
-		name={Kubernetes Logging},
-		description={Logging-Ansätze für containerisierte Anwendungen innerhalb von Kubernetes-Umgebungen, oft via Sidecars oder Remote-Stacks.}
+	\newglossaryentry{jupyternotebook}{
+		name=Jupyter Notebook,
+		description={Eine interaktive Web-Anwendung, die es ermöglicht, Python-Code auszuführen, Ergebnisse direkt anzuzeigen, Text, Formeln und Visualisierungen zu kombinieren und somit exploratives Programmieren und dokumentiertes Data Science-Arbeiten zu erleichtern.}
 	}
 	
 	\newglossaryentry{keras}{
@@ -397,6 +403,11 @@
 		description={Clustering-Verfahren, das Daten in vordefinierte Cluster basierend auf Mittelwerten aufteilt}
 	}
 	
+	\newglossaryentry{learningrate}{
+		name=Learning Rate,
+		description={Ein Hyperparameter, der die Schrittgröße bei der Anpassung der Gewichte während des Trainings eines neuronalen Netzes bestimmt. Eine kleinere Lernrate führt zu langsameren, aber stabileren Anpassungen, während eine größere Lernrate schneller, aber instabiler sein kann.}
+	}
+	
 	\newglossaryentry{lof}{
 		name=LOF,
 		description={Local Outlier Factor, ein Verfahren zur Anomalieerkennung über Vergleich lokaler Dichten}
@@ -405,11 +416,6 @@
 	\newglossaryentry{log4j}{
 		name={Log4j},
 		description={Beliebtes Java-Logging-Framework, bekannt durch seine Flexibilität. Wegen Sicherheitslücken (bspw. Log4Shell) kritisch betrachtet.}
-	}
-	
-	\newglossaryentry{logback}{
-		name={Logback},
-		description={Moderne Logging-Implementierung, die SLF4J unterstützt und als Nachfolger von log4j gilt.}
 	}
 	
 	\newglossaryentry{logcategory}{
@@ -447,11 +453,6 @@
 		description={Eine robuste Metrik, die alle Werte der Konfusionsmatrix berücksichtigt; besonders geeignet bei unausgeglichenen Datensätzen}
 	}
 	
-	\newglossaryentry{mitreattack}{
-		name={MITRE ATT\&CK},
-		description={MITRE Adversarial Tactics, Techniques, and Common Knowledge – öffentliches Framework zur Kategorisierung von Angriffstechniken.}
-	}
-	
 	\newglossaryentry{minpts}{
 		name=MinPts,
 		description={Minimale Anzahl an Punkten innerhalb des Eps-Radius, damit ein Punkt als Kernpunkt eines Clusters gilt}
@@ -477,24 +478,19 @@
 		description={Parameter der One-Class SVM, der den Anteil an erwarteten Ausreißern im Trainingsdatensatz steuert}
 	}
 	
-	\newglossaryentry{oauth}{
-		name={OAuth 2.0},
-		description={Autorisierungs-Framework, das sicheren Zugriff auf geschützte Ressourcen ermöglicht.}
-	}
-	
 	\newglossaryentry{ocsvm}{
 		name={OCSVM},
 		description={One-Class Support Vector Machine – Algorithmus zur Anomalieerkennung mit einseitiger Klassifikation.}
 	}
 	
-	\newglossaryentry{oidc}{
-		name={OpenID Connect (OIDC)},
-		description={Auth-Protokoll, das auf OAuth 2.0 basiert und die Identität von Nutzern sicher überträgt.}
-	}
-	
 	\newglossaryentry{operationtype}{
 		name={operationType},
 		description={Feld in Admin-Logs, das die Art der Admin-Aktion angibt, z.\,B. CREATE, UPDATE, DELETE oder ACTION.}
+	}
+	
+	\newglossaryentry{overfitting}{
+		name=Overfitting,
+		description={Überanpassung eines Modells an die Trainingsdaten, sodass die Generalisierungsfähigkeit auf unbekannte Daten stark eingeschränkt ist. Typische Indikatoren sind stark abweichende Trainings- und Validierungsfehler. Overfitting tritt häufig bei komplexen Modellen mit zu vielen Parametern oder bei kleinen, nicht repräsentativen Datensätzen auf.}
 	}
 	
 	\newglossaryentry{privilegeescalation}{
@@ -532,15 +528,15 @@
 		description={Die URL, auf die Benutzer nach erfolgreicher Authentifizierung in Keycloak weitergeleitet werden; wichtig für Sicherheit und Funktionsfähigkeit}
 	}
 	
-	\newglossaryentry{rekonstruktionsfehler}{
-		name=Rekonstruktionsfehler,
-		description={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten}
+	\newglossaryentry{regularisierungstechnik}{
+		name=Regularisierungstechnik,
+		description={Methoden zur Vermeidung von Overfitting in maschinellen Lernmodellen. Durch Regularisierung wird die Modellkomplexität gezielt eingeschränkt oder die Lernparameter stabilisiert, beispielsweise durch Gewichtsbeschränkungen (L1- oder L2-Regularisierung) oder Dropout. Ziel ist die Verbesserung der Generalisierungsfähigkeit des Modells auf unbekannte Daten.}
 	}
 	
 	
-	\newglossaryentry{remotelogging}{
-		name={Remote Logging},
-		description={Versand von Logs an externe Systeme oder Services, z.\,B. über Syslog, HTTP oder Filebeat.}
+	\newglossaryentry{rekonstruktionsfehler}{
+		name=Rekonstruktionsfehler,
+		description={Differenz zwischen Originaldaten und den durch einen Autoencoder rekonstruierten Daten}
 	}
 	
 	\newglossaryentry{rnn}{
@@ -551,13 +547,7 @@
 	\newglossaryentry{residualblock}{
 		name=Residual Block,
 		plural=Residual Blocks,
-		description={Ein architektonisches Element in tiefen neuronalen Netzwerken, das eine direkte Identitätsverbindung (Shortcut Connection) zwischen Eingabe und Ausgabe eines Layers herstellt. Dadurch lernt das Netzwerk nicht die gesamte Transformation, sondern nur die Differenz (\textit{Residuum}) zur Eingabe. Dies erleichtert die Backpropagation und reduziert das Vanishing-Gradient-Problem, wodurch tiefere Netze stabiler trainiert werden können}
-	}
-	
-	
-	\newglossaryentry{saml}{
-		name={SAML},
-		description={Security Assertion Markup Language – XML-basiertes Protokoll für Authentifizierung und Autorisierung.}
+		description={Ein architektonisches Element in tiefen neuronalen Netzwerken, das eine direkte Identitätsverbindung (Shortcut Connection) zwischen Eingabe und Ausgabe eines Layers herstellt. Dadurch lernt das Netzwerk nicht die gesamte Transformation, sondern nur die Differenz (\textit{Residuum}) zur Eingabe. Dies erleichtert die \gls{backpropagation} und reduziert das Vanishing-Gradient-Problem, wodurch tiefere Netze stabiler trainiert werden können}
 	}
 	
 	\newglossaryentry{scikit}{
@@ -585,14 +575,14 @@
 		description={Konto, das einem Client gehört und ohne Benutzerinteraktion für automatisierte Vorgänge eingesetzt wird.}
 	}
 	
-	\newglossaryentry{sessionhijacking}{
-		name={Session Hijacking},
-		description={Ein Angriff, bei dem ein Angreifer die aktive Sitzung eines anderen Benutzers übernimmt, z.\,B. durch Abfangen von Session-Cookies}
+	\newglossaryentry{sequenzlaenge}{
+		name=Sequenzlänge,
+		description={Die Anzahl aufeinanderfolgender Datenpunkte oder Log-Einträge, die gleichzeitig als Eingabe für ein Modell wie ein LSTM-Autoencoder verwendet werden. Die Wahl der Sequenzlänge beeinflusst, wie viel zeitlicher Kontext das Modell berücksichtigt und kann sich auf die Erkennungsrate von Anomalien auswirken.}
 	}
-	
+
 	\newglossaryentry{slf4j}{
 		name={SLF4J},
-		description={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j oder logback unterstützt.}
+		description={Simple Logging Facade for Java – eine Logging-Fassade, die unterschiedliche Logging-Backends wie log4j unterstützt.}
 	}
 	
 	\newglossaryentry{spi}{
@@ -615,11 +605,6 @@
 		description={Standardprotokoll zur Übertragung von Logmeldungen in Netzwerkumgebungen, z.\,B. an zentrale Logserver.}
 	}
 	
-	\newglossaryentry{systemout}{
-		name={System.out / System.err},
-		description={Standard-Ausgabe-/Fehlerstreams in Java. Nicht strukturiert und für produktive Logs ungeeignet.}
-	}
-	
 	\newglossaryentry{tensorflow}{
 		name=TensorFlow,
 		description={Ein Open-Source-Framework für maschinelles Lernen, entwickelt von Google. TensorFlow bietet eine flexible Infrastruktur zur Definition, Optimierung und Ausführung von Rechenmodellen, insbesondere neuronalen Netzwerken}
@@ -630,8 +615,8 @@
 		description={Zeitmarke, zu der ein Event im Log registriert wurde. Wichtige Information für zeitbasierte Analysen.}
 	}
 	
-	\newglossaryentry{tokenrefresh}{
-		name={TOKEN\_REFRESH},
+	\newglossaryentry{refreshtoken}{
+		name={REFRESH\_TOKEN},
 		description={Keycloak-Event-Typ, der beim Aktualisieren eines Zugriffstokens generiert wird.}
 	}
 	
@@ -647,7 +632,7 @@
 	
 	
 	\newglossaryentry{userlogs}{
-		name={User Logs},
+		name={User-Logs},
 		description={Logs, die Benutzeraktionen ohne Adminrechte erfassen. Typische Eventtypen sind LOGIN, LOGOUT oder TOKEN-Operationen.}
 	}
 	
@@ -685,9 +670,7 @@
 	\newpage
 
 	\section{Einleitung}
-	Laut dem BSI-Lagebericht 2024 ist die Zahl von Cyberangriffen auf Unternehmen weiter gestiegen und seien so hoch wie nie zuvor \cite{bsi2024lage}.
-	Angreifende entwickeln kontinuierlich neue Methoden, um Sicherheitsmechanismen zu umgehen und finanzielle oder strategische Vorteile zu erlangen. Herkömmliche, regelbasierte Schutzmaßnahmen – etwa Firewalls oder Brute-Force-Abwehrsysteme – stoßen dabei zunehmend an ihre Grenzen.
-	Besonders schwer zu erkennen sind interne Angreifer, also etwa eigene Mitarbeitende, sowie koordinierte Attacken über \gls{botnetz}e. Solche Bedrohungen erfordern fortschrittliche Verfahren zur Mustererkennung. Der Einsatz von Künstlicher Intelligenz (KI) in Sicherheitssystemen gewinnt daher zunehmend an Bedeutung. Maschinelle Lernalgorithmen bieten hier ein vielversprechendes Potenzial: Sie können Anomalien identifizieren und das Nutzerverhalten auf Basis theoretischer Modelle analysieren, um Angriffe frühzeitig zu erkennen.
+	Laut dem BSI-Lagebericht 2024 ist die Zahl von Cyberangriffen auf Unternehmen weiter gestiegen und seien so hoch wie nie zuvor \cite{bsi2024lage}. Angreifende entwickeln kontinuierlich neue Methoden, um Sicherheitsmechanismen zu umgehen und finanzielle oder strategische Vorteile zu erlangen. Besonders schwer zu erkennen sind interne Angreifer, also etwa eigene Mitarbeitende, sowie koordinierte Attacken über \gls{botnetz}e. Solche Bedrohungen erfordern fortschrittliche Verfahren zur Mustererkennung. Der Einsatz von Künstlicher Intelligenz (KI) in Sicherheitssystemen gewinnt daher zunehmend an Bedeutung. Maschinelle Lernalgorithmen bieten hier ein vielversprechendes Potenzial: Sie können Anomalien identifizieren und das Nutzerverhalten auf Basis theoretischer Modelle analysieren, um Angriffe frühzeitig zu erkennen.
 	
 	\subsection{Benutzerverhalten und Anomalien}
 	Das Benutzerverhalten umfasst sämtliche Aktionen, Muster und Gewohnheiten, mit denen ein Nutzer ein IT-System verwendet. Die Analyse des Benutzerverhaltens dient dazu, typische Nutzungsmuster zu identifizieren und Abweichungen (sogenannte Anomalien) zu erkennen, die auf Sicherheitsvorfälle oder Missbrauch hindeuten können.
@@ -711,6 +694,7 @@
 		\item \textbf{Kontextuelle Attribute:} Bestimmen den Kontext, z. B. geografische Lage oder Zeitstempel.
 		\item \textbf{Verhaltensbezogene Attribute:} Beschreiben das tatsächliche Verhalten oder die Charakteristik der Dateninstanz, z. B. die gemessene Temperatur oder der Betrag einer Transaktion.
 	\end{enumerate}
+	
 	Obwohl zahlreiche Arbeiten im Bereich der Anomalieerkennung im Nutzerverhalten existieren, fehlt es an einer klaren und systematischen Definition dessen, was genau eine verhaltensbasierte Anomalie konstituiert. Stattdessen werden in der Regel Beispiele genannt, ohne dass diese in ein konsistentes semantisches Modell eingebettet werden. Diese Forschungslücke erschwert die Evaluation und Vergleichbarkeit von Verfahren erheblich – und wird auch in dieser Arbeit als Ausgangspunkt einer kritischen Einordnung aufgegriffen.
 	\\[0.5em]
 	Es wird davon ausgegangen, dass Anomalien welche sich im Benutzerverhalten (Verhaltensbezogene Anomalien) äußern, bspw. unter anderem folgende sein können:
@@ -722,9 +706,9 @@
 		\item unübliche Zugriffsrechte,
 		\item eine Häufung von Anmelde- oder Autorisierungsfehlern.
 	\end{itemize}
-	Ein Benutzer, welcher sich Mitternachts außerhalb der üblichen Geschäftszeit einloggt, ist ungewöhnlich und weicht vom gewöhnlichen Muster ab. Zudem ist es eher so, dass Arbeiter in der Region bleiben, wo sie arbeiten oder im Umkreis. Natürlich muss man hier moderne Szenarien beachten, z.B. tritt es öfter auf, dass Personen im Homeoffice arbeiten und auch weiter weg wohnen und auch manche Entwickler bis um Mitternacht nach einem Bug suchen. Wenn dies in einem Unternehmen der Standardfall ist, würden dies keine Anomalien darstellen sondern den üblichen Standardfall. Unübliche Zugriffsrechte auf sensible Daten können Anomalien sein können, wenn ein bestimmter Benutzer eigentlich auf die Quelle keinen Zugriff haben darf oder auch plötzlich viele Rollen hat, die ihm zu viele Rechte in einem System geben. Anmeldefehler können ebenfalls auf Brute-Force Angriffe, bzw. Intrusionsangriffe hindeuten, sowie auf DoS-Angriffe.
+	Ein Benutzer, welcher sich Mitternachts außerhalb der üblichen Geschäftszeit einloggt, ist ungewöhnlich und weicht vom gewöhnlichen Muster ab. Zudem ist es eher so, dass Arbeiter in der Region bleiben, wo sie arbeiten oder im Umkreis. Natürlich muss man hier moderne Szenarien beachten, z.B. tritt es öfter auf, dass Personen im Homeoffice arbeiten und auch weiter weg wohnen und auch manche Entwickler bis um Mitternacht nach einem Bug suchen. Wenn dies in einem Unternehmen der Standardfall ist, würden dies keine Anomalien darstellen sondern den üblichen Standardfall. Unübliche Zugriffsrechte auf sensible Daten können Anomalien sein können, wenn ein bestimmter Benutzer eigentlich auf die Quelle keinen Zugriff haben darf oder auch plötzlich viele Rollen hat, die ihm zu viele Rechte in einem System geben. Anmeldefehler können ebenfalls auf \gls{bruteforce} Angriffe oder Intrusionsangriffe hindeuten.
 	\\[0.5em]
-	Alle aufgezählten Aspekte sind in \textit{Intrusionsangriffen} und \textit{Insider Threat Attacks} vorhanden. Intrusionsangriffe sind von außen kommende Angriffe,  welche versuchen in das Innere eines Systems zu gelangen, z.B. Brute-Force Angriffe. Insider Threat Attacken können im System selbst schon auftreten,bspw. könnte der Angreifer ein Mitarbeiter im Unternehmen selbst sein.
+	Alle aufgezählten Aspekte sind in \textit{Intrusionsangriffen} und \textit{\gls{insiderthreat} Attacks} vorhanden. Intrusionsangriffe sind von außen kommende Angriffe,  welche versuchen in das Innere eines Systems zu gelangen, z.B. Brute-Force Angriffe. Insider Threat Attacken können im System selbst schon auftreten,bspw. könnte der Angreifer ein Mitarbeiter im Unternehmen selbst sein.
 	Insider-Attacken äußern sich nach Legg et Al. \cite[S.2]{legg2015visualizing} in den genannten Aspekten: Benutzer zeigen abweichendes Verhalten (z.B. loggt er sich viel früher ein als üblich) oder ein Benutzer zeigt ein bestimmtes Verhalten viel zu oft. z.B. viele Dateien auf einmal herunterladen. Auch neue Attribute, die der Benutzer zuvor nicht, deutet auf eine Insider Attacke hin. Alle Beispiele sind den zuvor definierten Anomalien ähnlich.
 	\\[0.5em]
 	In dieser Arbeit wird der Begriff „verhaltensbasierte Anomalien“ mit den Erscheinungsformen von Intrusionsangriffen und Insiderattacken gleichgesetzt, um den Fokus auf sicherheitsrelevante Abweichungen im Nutzerverhalten zu legen. Diese begriffliche Vereinfachung erleichtert die Analyse und Methodik, obwohl Anomalien technisch betrachtet als Indikatoren für verschiedene Angriffstypen verstanden werden sollten.
@@ -738,28 +722,30 @@
 	, ein \gls{iam}-Tool\footnote{IAM steht für \textit{Identity and Access Management} und beschreibt Systeme zur Verwaltung digitaler Identitäten und Zugriffskontrollen. Vgl.\ z.\,B.\ R. Müller: \textit{Identity Management: Konzepte, Technologien, Standards und Praxis}, 2.\ Auflage, Springer Vieweg, 2016., letzter Zugriff: 30. Juli 2025.}
 	, das unter anderem \gls{sso} (Single Sign-On) bietet\footnote{Single Sign-On ermöglicht einem Nutzer den Zugriff auf mehrere Anwendungen mit nur einer Anmeldung. Siehe B.\ G.\ Blakley et al.: \textit{An Introduction to Identity Federation}, IBM Redbooks, 2007. \url{https://www.redbooks.ibm.com/abstracts/sg247208.html}, letzter Zugriff: 30.\ Juli 2025.}.
 	\\[0.5em]
-	Keycloak stellt schon vorgefertigte Sicherheitsmechanismen zur Verfügung, die in größtenteils regelbasiert arbeiten. Solche Maßnahmen definieren explizit, welche Aktivitäten im System erlaubt oder verboten sind. Grundlage dieser Regeln sind meist bekannte Angriffsmuster aus früheren Sicherheitsvorfällen. Zusätzlich bietet Keycloak klassische Zugriffskontrollmechanismen wie \gls{rbac} und \gls{abac}, Brute-Force-Erkennung sowie die Möglichkeit zur Integration externer Netzwerkschutzsysteme wie Firewalls.
+	Keycloak stellt schon vorgefertigte Sicherheitsmechanismen zur Verfügung, die größtenteils regelbasiert arbeiten. Solche Maßnahmen definieren explizit, welche Aktivitäten im System erlaubt oder verboten sind. Grundlage dieser Regeln sind meist bekannte Angriffsmuster aus früheren Sicherheitsvorfällen. Zusätzlich bietet Keycloak klassische Zugriffskontrollmechanismen wie \gls{rbac} und \gls{abac}, Brute-Force-Erkennung sowie die Möglichkeit zur Integration externer Netzwerkschutzsysteme wie Firewalls.
 	
 	\subsection{Probleme: Grenzen der Sicherheitsmaßnahmen in Keycloak}
-	Dennoch stoßen viele Sicherheitsfunktionen von Keycloak praktisch an ihre Grenzen. Regelbasierte Systeme sind statisch und meist nur auf bekannte Muster abgestimmt. Neue, bislang unbekannte Angriffsarten (sogenannte \gls{zerodayangriff}e) entziehen sich dieser Logik, da keine entsprechenden Regeln vorliegen.
+	Zwar bietet Keycloak regelbasierte Sicherheitsmaßnahmen an- diese beruhen jedoch größtenteils auf vordefinierten Bedingungen. Dadurch können sie lediglich bekannte Muster erkennen und sind wenig flexibel gegenüber neuen oder komplexeren Angriffstechniken \cite[S. 3]{waltl2017rulebased}. 
+	Neue, bislang unbekannte Angriffsarten (sogenannte \gls{zerodayangriff}e) entziehen sich dieser Logik, da keine entsprechenden Regeln vorliegen. Angreifende nutzen gezielt sogenannte \textit{Adversarial Attacks},
+	um diese vorhersehbaren Schutzmechanismen zu umgehen. Da die Regeln dieser Systeme häufig offen dokumentiert sind, lassen sich entsprechende Gegenstrategien leicht entwickeln.
+	\\[0.5em]
+	Ein weiteres Beispiel ist der integrierte Brute-Force-Schutz von Keycloak, der jedoch nachweislich umgangen werden kann – etwa durch sogenannte \textit{Timing-Angriffe} \footnote{National Vulnerability Database (NVD), „CVE-2024-4629 Vulnerability Details“, \url{https://nvd.nist.gov/vuln/detail/CVE-2024-4629}, letzter Zugriff: 30. Juli 2025.}. Dabei analysiert ein Angreifer die Antwortzeit des Systems, um Rückschlüsse auf den Authentifizierungsprozess zu ziehen. Wird beispielsweise ein korrekter Benutzername, aber ein (fast) korrektes Passwort eingegeben, kann die Antwortzeit minimal verlängert sein – was auf die sequentielle Überprüfung der Passwortzeichen hindeutet. Solche zeitlichen Unterschiede im Millisekundenbereich lassen sich mit ausreichend vielen Versuchen systematisch auswerten.
 	\\[0.5em]
 	Auch die Zugriffskontrollmodelle zeigen Schwächen: RBAC wird bei wachsender Komplexität und Vielzahl an Rollen schnell unübersichtlich, während ABAC zwar flexibler ist, dafür jedoch hohen Pflegeaufwand verursacht und anfällig für Fehler ist – insbesondere, wenn viele Attribute aktuell gehalten werden müssen.
 	\\[0.5em]
-	Der integrierte Brute-Force-Schutz erkennt typische Fehlversuchs-Muster, ist jedoch bei modernen Angriffen mit verteilten Systemen (z.\,B. Botnetzen) oft ineffektiv. Firewalls bieten zwar eine erste Verteidigungslinie auf Netzwerkebene, können aber weder interne Bedrohungen noch gezielte Phishing-Angriffe zuverlässig abwehren.
+	Obwohl für viele Schwachstellen bereits Gegenmaßnahmen existieren, erfordert deren Erkennung und Behebung stets Zeit. Neue Verwundbarkeiten entstehen kontinuierlich – etwa durch das Umgehen von Zertifikatsprüfungen \footnote{CVEDetails, „CVE-2025-3501 Details“, \url{https://www.cvedetails.com/cve/CVE-2025-3501}, letzter Zugriff: 30. Juli 2025.}, was jedoch primär netzwerkbasierte Sicherheitslücken betrifft und damit außerhalb des Fokus dieser Arbeit liegt. Diese Beispiele verdeutlichen die aktuellen Grenzen der in Keycloak implementierten Schutzmechanismen.
 	\\[0.5em]
 	Diese Schwächen verdeutlichen, dass klassische, regelbasierte Sicherheitsarchitekturen zunehmend an ihre Grenzen stoßen. Um aktuelle Bedrohungen wirksam erkennen und abwehren zu können, bedarf es dynamischer, lernfähiger Systeme, wie sie beispielsweise durch Verfahren des maschinellen Lernens und der \gls{uba} realisiert werden können.
 	
 	\subsection{Motivation: Maschinelle Lernmodelle als zukünftige Sicherheitsmaßnahme}
 	Die Motivation dieser Arbeit besteht darin, geeignete, hybride, maschinelle Lernmodelle zu identifizieren, mit denen verhaltensbasierte Anomalien in Keycloak-Logs erkannt werden können. Maschinelle Lernmodelle stellen heute eine vielversprechende Alternative zu klassischen, regelbasierten Sicherheitsmaßnahmen dar, da sie dynamisch auf neue Bedrohungen reagieren können.
 	\\[0.5em]
-	Im Gegensatz zu statischen Regeln, die lediglich bekannte Muster erfassen, sind ML-Modelle in der Lage, aus großen Datenmengen zu lernen und auch unbekannte Anomalien zu identifizieren, die auf potenzielle Angriffe hindeuten. Dadurch sind sie besonders effektiv im Umgang mit Zero-Day-Angriffen oder komplexen, sich ständig wandelnden Bedrohungsszenarien. Ein weiterer Vorteil ist die Fähigkeit zur kontinuierlichen Anpassung, sodass sich ML-Modelle automatisch auf veränderte Rahmenbedingungen einstellen, ohne dass ein manueller Eingriff notwendig ist.
+	Im Gegensatz zu statischen Regeln, die lediglich bekannte Muster erfassen, sind \gls{ml}-Modelle in der Lage, aus großen Datenmengen zu lernen und auch unbekannte Anomalien zu identifizieren, die auf potenzielle Angriffe hindeuten. Dadurch sind sie besonders effektiv im Umgang mit Zero-Day-Angriffen oder komplexen, sich ständig wandelnden Bedrohungsszenarien. Ein weiterer Vorteil ist die Fähigkeit zur kontinuierlichen Anpassung, sodass sich ML-Modelle automatisch auf veränderte Rahmenbedingungen einstellen, ohne dass ein manueller Eingriff notwendig ist.
 	\\[0.5em]
 	Im Ausblick besteht Interesse daran, das leistungsfähigste Modell in ein Tool zu integrieren, welches von der Intension GmbH genutzt werden kann. Dadurch sollen Kosten eingespart werden, da herkömmliche maschinelle Analysetools häufig mit hohen Lizenzgebühren verbunden sind. Aufgrund datenschutzrechtlicher Vorgaben wurde entschieden, die Keycloak-Logs selbst zu generieren, wie in den entsprechenden Kapitel näher erläutert wird.
 	
 	\subsection{User (and Entity) Behavior Analytics (U(E)BA)}
-	\gls{ueba} ist ein ganzheitlicher Ansatz zur Gewährleistung einer erstklassigen Sicherheit in einem Unternehmen und zur Erkennung von Benutzern, die eine Sicherheitsverletzung im System verursachen könnten. UEBA kann normales und abnormales Verhalten sowohl von Menschen als auch von Computern identifizieren 
-	\footnote{Quora, „What Are the Biggest Challenges Facing the Cybersecurity Industry?“, Forbes, 15. September 2017, \url{https://www.forbes.com/sites/quora/2017/09/15/what-are-the-biggest-challenges-facing-the-cybersecurity-industry}, letzter Zugriff: 30. Juli 2025.}
-	Die Analyse erfolgt dabei häufig unter Einsatz maschineller Lernverfahren.
+	\gls{ueba} ist ein ganzheitlicher Ansatz zur Gewährleistung einer erstklassigen Sicherheit in einem Unternehmen und zur Erkennung von Benutzern, die eine Sicherheitsverletzung im System verursachen könnten. UEBA kann normales und abnormales Verhalten sowohl von Menschen als auch von Computern identifizieren .Die Analyse erfolgt dabei häufig unter Einsatz maschineller Lernverfahren.
 	\\[0.5em]
 	User and Entity Behavior Analytics (UEBA) stellt eine Weiterentwicklung von User Behavior Analytics (UBA) dar. Während UBA sich ausschließlich auf das Verhalten von Benutzern konzentriert, berücksichtigt UEBA zusätzlich auch Entitäten wie Server, Anwendungen oder Geräte sowie deren Interaktionen mit den Nutzern.
 	\\[0.5em]
@@ -769,22 +755,11 @@
 	
 	\section{Forschungsstand, Herausforderungen und Hypothesen}
 	\subsection{Bisheriger Forschungsstand}
-	Zwar bietet Keycloak regelbasierte Sicherheitsmaßnahmen an- diese beruhen jedoch größtenteils auf vordefinierten Bedingungen. Dadurch können sie lediglich bekannte Muster erkennen und sind wenig flexibel gegenüber neuen oder komplexeren Angriffstechniken \cite[S. 3]{waltl2017rulebased}. Angreifende nutzen gezielt sogenannte \textit{Adversarial Attacks} \footnote{Sciforce, „Adversarial Attacks Explained and How to Defend ML Models Against Them“, Medium, veröffentlicht am 20. Januar 2020, \url{https://medium.com/sciforce/adversarial-attacks-explained-and-how-to-defend-ml-models-against-them-d76f7d013b18}, letzter Zugriff: 30. Juli 2025.}
-	,um diese vorhersehbaren Schutzmechanismen zu umgehen. Da die Regeln dieser Systeme häufig offen dokumentiert sind, lassen sich entsprechende Gegenstrategien leicht entwickeln.
-	\\[0.5em]
-	Ein weiteres Beispiel ist der integrierte Brute-Force-Schutz von Keycloak, der jedoch nachweislich umgangen werden kann – etwa durch sogenannte \textit{Timing-Angriffe} \footnote{National Vulnerability Database (NVD), „CVE-2024-4629 Vulnerability Details“, \url{https://nvd.nist.gov/vuln/detail/CVE-2024-4629}, letzter Zugriff: 30. Juli 2025.}
-	. Dabei analysiert ein Angreifer die Antwortzeit des Systems, um Rückschlüsse auf den Authentifizierungsprozess zu ziehen. Wird beispielsweise ein korrekter Benutzername, aber ein (fast) korrektes Passwort eingegeben, kann die Antwortzeit minimal verlängert sein – was auf die sequentielle Überprüfung der Passwortzeichen hindeutet. Solche zeitlichen Unterschiede im Millisekundenbereich lassen sich mit ausreichend vielen Versuchen systematisch auswerten.
-	\\[0.5em]
-	Obwohl für viele Schwachstellen bereits Gegenmaßnahmen existieren, erfordert deren Erkennung und Behebung stets Zeit. Neue Verwundbarkeiten entstehen kontinuierlich – etwa durch das Umgehen von Zertifikatsprüfungen \footnote{CVEDetails, „CVE-2025-3501 Details“, \url{https://www.cvedetails.com/cve/CVE-2025-3501}, letzter Zugriff: 30. Juli 2025.}
-	, was jedoch primär netzwerkbasierte Sicherheitslücken betrifft und damit außerhalb des Fokus dieser Arbeit liegt. Diese Beispiele verdeutlichen die aktuellen Grenzen der in Keycloak implementierten Schutzmechanismen.
-	\\[0.5em]
 	Verhaltensbasierte Anomalien hingegen sind bislang kaum erforscht. Dabei spielen sie eine zunehmende Rolle, insbesondere zur Erkennung von \textit{Insider Threats} durch ML-Techniken, die im Keycloak-Kontext bisher nicht aktiv adressiert oder dokumentiert sind. Die Erforschung dieser Lücken ist sowohl aus wissenschaftlicher als auch wirtschaftlicher Sicht lohnenswert.
-	\\[0.5em]
-	Die obige Darstellung zeigt eine vereinfachte, aber repräsentative Einschätzung des aktuellen Sicherheitsniveaus in Keycloak.
 	\\[0.5em]
 	Nun wird der Stand der Forschung hinsichtlich maschineller Lernverfahren zur Anomalieerkennung im Benutzerverhalten dargelegt:
 	\\[0.5em]
-	Die Literatur legt nahe, dass klassische Verfahren wie One-Class SVM (OC-SVM) und Isolation Forest besonders durch ihre Robustheit und gute Performance auf tabellarischen Daten überzeugen \cite{pang2021deep}, wobei OCSVMs sogar Anomalien präziser erkennen können als Autoencoder \cite{arjunan2024}. Für sequenzielle Daten wie Zeitreihen oder Nutzerinteraktionen zeigen hingegen neuronale Netze wie Long Short-Term Memory (\gls{lstm}) und Autoencoder signifikante Vorteile, da sie zeitliche Abhängigkeiten und komplexe Muster besser erfassen können \cite{demir2024comparative}. Eine Studie von Ergen et Al. \cite{ergen2017unsupervised} zeigt, dass die Kombination von LSTM-basierten Architekturen mit OC-SVM oder SVDD \footnote{Lukas Ruff, „Deep-SVDD-PyTorch“, GitHub Repository, \url{https://github.com/lukasruff/Deep-SVDD-PyTorch}, letzter Zugriff: 30. Juli 2025.}
+	Die Literatur legt nahe, dass klassische Verfahren wie One-Class SVM (OC-SVM) und Isolation Forest besonders durch ihre Robustheit und gute Performance auf tabellarischen Daten überzeugen \cite{pang2021deep}, wobei \gls{ocsvm}s sogar Anomalien präziser erkennen können als \gls{Autoencoder} \cite{arjunan2024}. Für sequenzielle Daten wie Zeitreihen oder Nutzerinteraktionen zeigen hingegen neuronale Netze wie Long Short-Term Memory (\gls{lstm}) und Autoencoder signifikante Vorteile, da sie zeitliche Abhängigkeiten und komplexe Muster besser erfassen können \cite{demir2024comparative}. Eine Studie von Ergen et Al. \cite{ergen2017unsupervised} zeigt, dass die Kombination von LSTM-basierten Architekturen mit OC-SVM oder SVDD \footnote{Lukas Ruff, „Deep-SVDD-PyTorch“, GitHub Repository, \url{https://github.com/lukasruff/Deep-SVDD-PyTorch}, letzter Zugriff: 30. Juli 2025.}
 	zu signifikant verbesserten Erkennungsraten bei der Anomalieerkennung führt – insbesondere bei sequenziellen Daten. Andere Arbeiten wie die von Ghrib et Al. \cite{ghrib2020hybrid} untersuchen ebenfalls hybride Ansätze mit Isolation Forest- die Rechenzeit würde mit Isolation Forest kombiniert die Rechenzeit reduzieren. Auch \gls{dbscan} wird erfolgreich zur Cluster-basierten Anomalieerkennung eingesetzt, insbesondere bei unstrukturierten oder verrauschten Daten. Insgesamt zeigt sich, dass der hybride Ansatz dieser Verfahren vorteilhaft ist, um die Herausforderungen bei der Erkennung verhaltensbasierter Anomalien in realen Anwendungen effizient zu bewältigen.
 	
 	\subsection{Problematik und Begrenzung von Modellen}
@@ -800,11 +775,11 @@
 	\\[0.5em]
 	Daraus wurde folgende Hypothese abgeleitet:
 	\\[0.5em]
-	\textit{Es wird erwartet, dass der LSTM-Autoencoder in Kombination mit Isolation Forest unter unterschiedlichen Sequenzlängen bessere Erkennungsmetriken erzielt als die Kombinationen des LSTM-Autoencoders mit DBSCAN bzw.OCSVM.}
+	\textit{Es wird erwartet, dass der \gls{lstmae} in Kombination mit Isolation Forest unter unterschiedlichen \gls{sequenzlaenge}n bessere Ergebnisse in den Metriken erzielt als die Kombinationen des LSTM-Autoencoders mit DBSCAN bzw.OCSVM.}
 	\\[0.5em]
 	Die zugehörige Nullhypothese lautet:
 	\\[0.5em]
-	\textit{Unter verschiedenen Sequenzlängen zeigt der LSTM-Autoencoder in Kombination mit Isolation Forest keine besseren Erkennungsmetriken als die Kombinationen mit DBSCAN oder OCSVM.}
+	\textit{Unter verschiedenen Sequenzlängen zeigt der LSTM-Autoencoder in Kombination mit Isolation Forest keine besseren Metriken als die Kombinationen mit DBSCAN oder OCSVM.}
 	\\[0.5em]
 	Folgende Hybridmodelle werden implementiert:
 	\begin{itemize}
@@ -812,7 +787,7 @@
 		\item LSTM-AE und One-Class SVM
 		\item LSTM-AE und DBSCAN
 	\end{itemize}
-	Ziel dieser Arbeit ist es, die Leistungsfähigkeit verschiedener unüberwachter Anomalieerkennungsverfahren, insbesondere Hybridmodelle aus LSTM-Autoencodern kombiniert mit klassischen Algorithmen, anhand eines geeigneten Keycloak-Datensatzes zu evaluieren. 
+	Ziel dieser Arbeit ist es, die Leistungsfähigkeit verschiedener unüberwachter Anomalieerkennungsverfahren zu evaluieren, insbesondere von Hybridmodellen, die LSTM-Autoencoder mit klassischen Algorithmen kombinieren. Dabei wird ein geeigneter Keycloak-Datensatz verwendet. Die Sequenzlänge wird als unabhängige Variable untersucht, da sie die Stabilität und Genauigkeit der Modellvorhersagen beeinflussen kann - der Fokus auf dem besten Modell zeigt sich durch seine Stabilität und Genauigkeit.
 	\\[0.5em]
 	Es wird davon ausgegangen, dass LSTM-AE mit IF am besten abschneidet, weil dies in den erwähnten Studien hervorgehoben wird.
 	Zusätzlich wurden die Einzelmodelle Isolation Forest, OCSVM und DBSCAN auf den Keycloak-Daten explorativ angewendet. Diese Evaluation ist nicht Bestandteil der zentralen Vergleichsstudie, dient jedoch als Ergänzung zur Einordnung der Ergebnisse der hybriden Modelle.
@@ -855,29 +830,40 @@
 	Generell ist die Kritik, dass nur ein einfacher Prozentsatz nicht ausschlaggebend für die Fähigkeiten des Modells ist - dennoch werden diese als übliche Metriken angewandt. Zusätzlich aber noch, um die Störfaktoren der üblichen Metriken zu verringern, werden modernere Metriken angewandt:
 	
 	\begin{itemize}
-		\item \textbf{Area Under the ROC Curve (\gls{aucroc})}:Diese Kurve zeigt, wie sich die True-Positive-Rate und False-Positive-Rate bei verschiedenen Schwellenwerten verändern. Für jeden Schwellenwert kann man ablesen, wie viele False Positives bzw. False Negatives entstehen. Die AUC-ROC fasst die Performance über alle Schwellenwerte zusammen.
+		\item \textbf{Area Under the ROC Curve (\gls{aucroc})}:Diese Kurve zeigt, wie sich die True-Positive-Rate und False-Positive-Rate bei verschiedenen Schwellenwerten verändern. Für jeden Schwellenwert kann man ablesen, wie viele False Positives bzw. False Negatives entstehen. Die \gls{aucroc} fasst die Performance über alle Schwellenwerte zusammen.
 		\item \textbf{Area Under the Precision-Recall Curve (\gls{aucpr}:)} Diese Kurve zeigt die Beziehung zwischen Precision und Recall bei verschiedenen Schwellenwerten. Für jeden Schwellenwert misst man neu, wie genau (Precision) und wie vollständig (Recall) die positiven Fälle erkannt werden. So erkennt man, bei welchem Schwellenwert die Balance zwischen Precision und Recall am besten ist.
 		\item \textbf{Matthews Correlation Coefficient (\gls{mcc}):} Eine umfassende Metrik, die alle vier Werte der Verwirrungsmatrix (True Positives, True Negatives, False Positives, False Negatives) berücksichtigt. MCC liefert einen Wert zwischen -1 und 1, wobei 1 perfekte Vorhersage, 0 zufällige Vorhersage und -1 vollständig falsche Vorhersage bedeutet. Besonders geeignet für unausgeglichene Datensätze.
 		\item \textbf{\gls{balancedaccuracy}:} Der Anteil der negativen Beispiele, die fälschlicherweise als positiv klassifiziert wurden. Sie wird berechnet als \(\text{FPR} = \frac{\text{False Positives}}{\text{False Positives} + \text{True Negatives}}\) und ist wichtig, um die Fehlerquote bei der Erkennung negativer Fälle zu bewerten.
 	\end{itemize}
-	Auch wenn diese Metriken  mehr Informationen über die Verarbeitungsweise der Modelle schließen lassen, haben diese ebenfalls Einschränkungen. Davis et Al. haben z.B. erkannt, dass bei kleinen Datensätze die Punkte in der AUC-ROC-Kurve und in der AUC-PR-Kurve die Ergebnisse sich recht ähnlich sind, wes möglicherweise sich darauf zurück zuführen lässt, dass beide Verfahren sich schon im Algorithmus ähnlich sind \cite{davis2006relationship}.
+	Auch wenn diese Metriken  mehr Informationen über die Verarbeitungsweise der Modelle schließen lassen, haben diese ebenfalls Einschränkungen. Davis et Al. haben z.B. erkannt, dass bei kleinen Datensätze die Punkte in der AUC-ROC-Kurve und in der \gls{aucpr}-Kurve die Ergebnisse sich recht ähnlich sind, wes möglicherweise sich darauf zurück zuführen lässt, dass beide Verfahren sich schon im Algorithmus ähnlich sind \cite{davis2006relationship}.
 	\\[0.5em]
-	Im Vergleich, zeigt sich in Studien, dass MCC und Balanced Accuracy in ihrer Methodik wenige Paradoxe oder Schwächen zeigen. Chicco et Al. zeigen z.B. dass MCC für unausgeglichene Klassen besser geeignet ist und Broderesen et Al. zeigen das Gleiche für die Balanced Accuracy und dass es zu einer optimistischen Schätzung, wenn ein verzerrter Klassifikator auf einem unausgewogenen Datensatz getestet wird, führt. \cite{chicco2020advantages, brodersen2010balanced}.
+	Im Vergleich, zeigt sich in Studien, dass MCC und \gls{balancedaccuracy} in ihrer Methodik wenige Paradoxe oder Schwächen zeigen. Chicco et Al. zeigen z.B. dass MCC für unausgeglichene Klassen besser geeignet ist und Broderesen et Al. zeigen das Gleiche für die Balanced Accuracy und dass es zu einer optimistischen Schätzung, wenn ein verzerrter Klassifikator auf einem unausgewogenen Datensatz getestet wird, führt. \cite{chicco2020advantages, brodersen2010balanced}.
 	\\[0.5em]
 	Außer diesen Metriken wurde noch überlegt, einen sogenannten Cross-Validation-Test durchzuführen. Cross-Validation ist keine „Metrik“ wie z.B. der F1-Score, sondern eine Methode zur Modellbewertung. Sie unterteilt dabei den Datensatz in \textit{k} gleich große Teile. Das Modell wird dann k-mal trainiert, jedes mal mit k-1 Teilen als Trainingsdaten. Der übrig gebliebene Teil wird als Testdatensatz und Validierungsdatensatz verwendet. Der Sinn dahinter ist die Traningsdaten so zu verteilen, dass das Modell jedes mal neu trainiert wird. Dies soll Overfitting auf den Daten vermeiden. Zudem soll sie die Ergebnisse nach jedem Training des k-Datensatzes zeigen, damit sich erkennen lässt, ob es an bestimmten Stellen Abweichungen gab
 	(womit sich eben Overfitting erkennen lässt).
 	
-	\subsection{Andere, nicht angewandte Metriken}
-	Im Rahmen der Methodik wurde auch die Durchführung eines ANOVA-Tests (Analysis of Variance) in Betracht gezogen. Der ANOVA-Test prüft, ob sich die Mittelwerte von zwei oder mehr Gruppen signifikant voneinander unterscheiden. 
+	\subsection{Multivariate Varianzanalyse (MANOVA)}
+	Die \textbf{Multivariate Varianzanalyse (MANOVA)} ist eine Erweiterung der univariaten ANOVA, die es ermöglicht, mehrere abhängige Variablen gleichzeitig zu untersuchen. Ziel ist es, zu prüfen, ob sich die Mittelwerte der abhängigen Variablen über Gruppen hinweg signifikant unterscheiden.
 	\\[0.5em]
-	Beispielsweise könnte man untersuchen, ob sich ein bestimmtes Merkmal – wie etwa das Persönlichkeitsmerkmal „Lieblingstier“ – in Abhängigkeit von einer Gruppenzugehörigkeit, etwa der Haarfarbe, signifikant unterscheidet. Dabei zeigt der ANOVA-Test lediglich auf, ob Unterschiede zwischen den Mittelwerten der Gruppen vorliegen, jedoch nicht, wie stark zwei Merkmale miteinander korrelieren.
-	\\[0.5em]
-	Der ANOVA-Test wurde im vorliegenden Kontext nicht angewandt, da das Ziel der Arbeit nicht darin besteht, einzelne Merkmale hinsichtlich ihrer Korrelation zu Anomalien zu analysieren. Stattdessen soll untersucht werden, wie gut verschiedene Modelle Anomalien erkennen können und welches Modell dabei die besten Ergebnisse in Bezug auf die zuvor erläuterten Metriken erzielt. Die Verwendung des ANOVA-Tests würde diesen Fokus verfehlen, da er keine Aussage über die Leistungsfähigkeit der Modelle in der Anomalieerkennung trifft.
+	Angenommen, wir haben $k$ Gruppen und $p$ abhängige Variablen, dann testet MANOVA, ob der Vektor der Mittelwerte aller abhängigen Variablen zwischen den Gruppen gleich ist:
+	\[
+	H_0: \boldsymbol{\mu}_1 = \boldsymbol{\mu}_2 = \dots = \boldsymbol{\mu}_k
+	\]
+	
+	\paragraph{Wichtige Teststatistiken:}
+	\begin{itemize}
+		\item \textbf{Wilks' Lambda ($\Lambda$):} Misst das Verhältnis der Determinanten der Fehler- zur Gesamtsummenquadratmethode. Kleine Werte deuten auf signifikante Unterschiede zwischen den Gruppen hin.
+		\item \textbf{Pillai's Trace ($V$):} Summe der Eigenwerte der Produktmatrix aus Hypothesen- und Fehler-Summenquadraten. Werte nahe 1 deuten auf starke Gruppeneffekte hin.
+		\item \textbf{Hotelling-Lawley Trace ($T$):} Summe der Eigenwerte der Matrix $H E^{-1}$ (Hypothesen- über Fehler-Matrix). Große Werte deuten auf signifikante Gruppeneffekte hin.
+		\item \textbf{Roy's Greatest Root ($\theta_\text{max}$):} Der größte Eigenwert der Matrix $H E^{-1}$. Konzentriert sich auf die Dimension mit maximalem Unterschied zwischen den Gruppen.
+	\end{itemize}
+	
+	Für jede Teststatistik werden üblicherweise der \textbf{F-Wert} und der zugehörige \textbf{p-Wert} angegeben. Ein kleiner p-Wert (z.B. $p < 0.05$) weist darauf hin, dass mindestens eine Gruppe signifikant von den anderen abweicht. Die MANOVA ist besonders nützlich, wenn abhängige Variablen korreliert sind, da sie die gemeinsame Varianz berücksichtigt und das Risiko von Typ-I-Fehlern \footnote{Typ-1-Fehler: Man nimmt an, dass die Nullhypothese korrekt ist, obwohl sie eigentlich widerlegt wurde} reduziert \cite[S.3]{Warne2014}.
 	
 	\subsection{Störfaktoren}
 	Entscheidend für einen „fairen“ Vergleich ist unter anderem die Art und Weise, wie die Daten vorverarbeitet werden. Eine ungenaue Behandlung von kategorischen und numerischen Daten kann die Ergebnisse erheblich verfälschen.
 	\\[0.5em]
-	Ein weiterer Störfaktor ist die Parameterwahl, auf die im Abschnitt zur Umsetzung noch näher eingegangen wird. Parameter wie bspw. die Anzahl der Epochen oder auch besonders die Sequenzlänge beeinflussen das Verhalten und die Ergebnisse der Modelle. Da die Modelle unterschiedlich funktionieren, müssen die Parameter individuell angepasst werden. Dadurch ist ein absolut „fairer“ Vergleich schwierig, da die Parameter naturgemäß variieren.
+	Ein weiterer Störfaktor ist die Parameterwahl, auf die im Abschnitt zur Umsetzung noch näher eingegangen wird. Parameter wie bspw. die Anzahl der \gls{epochen} oder auch besonders die Sequenzlänge beeinflussen das Verhalten und die Ergebnisse der Modelle. Da die Modelle unterschiedlich funktionieren, müssen die Parameter individuell angepasst werden. Dadurch ist ein absolut „fairer“ Vergleich schwierig, da die Parameter naturgemäß variieren.
 	\\[0.5em]
 	Ebenso entscheidend sind die zu verarbeitenden Daten. Da diese teilweise synthetisch generiert werden, bestimmt der Anteil der als anomal gekennzeichneten Zeilen die Bewertung der Modelle. Wie bereits im Abschnitt zu den Metriken erwähnt, führt eine starke Klassenungleichheit häufig zum Accuracy-Paradoxon. In der Regel sind Anomalien in Datensätzen selten, sodass viele Modelle zunächst anomale Daten als normal klassifizieren. Moderne Metriken helfen, diesen Störeffekt abzufedern. Dennoch ist es wichtig, die Ungleichverteilung der Datensätze zu beachten.
 	\\[0.5em]
@@ -887,9 +873,9 @@
 	\\[0.5em]
 	Zudem beeinflusst die verfügbare Rechenleistung die Verarbeitungsgenauigkeit der Modelle. Zu lange oder zu kurze Trainingszeiten sowie hohe Rechenintensität wirken sich auf die Leistungsfähigkeit aus. Deshalb werden in den Modellen Regulierungstechniken implementiert, um eine optimale Balance zu gewährleisten.
 	\\[0.5em]
-	Da die Generierung synthetischer Logs Herausforderungen mit sich bringt, wird ebenfalls in Betracht gezogen, echte Daten zu verwenden. Diese können z. B. durch automatisierte Tests (auf die im weiteren Verlauf der Arbeit eingegangen wird) generiert werden. Auch firmeninterne Daten wurden erwogen.
+	Da die Generierung synthetischer Logs Herausforderungen mit sich bringt, wird ebenfalls in Betracht gezogen, echte Daten zu verwenden. Diese können z. B. durch automatisierte Tests (auf die im weiteren Verlauf der Arbeit eingegangen wird) generiert werden. Auch firmeninterne Daten wurden erwogen. Schlussendlich werden generierte Logs verwendet- da diese nicht direkt dem realen Benutzerverhalten entsprechen hat man schon mal diesbezüglich eine große Herausforderung in der Methodischen Umsetzung der Angriffsszenarien und generell in der Log-Generierung.
 	\\[0.5em]
-	Da solche Daten häufig begrenzt verfügbar sind, stehen meist nur wenige Trainings- und Testdaten zur Verfügung. LSTMs gelten umgangssprachlich als „datenhungrig“, da sie für die Analyse hochkomplexer zeitbasierter Daten entwickelt wurden und typischerweise eine große Menge an Logs benötigen. Ein zu kleiner Datensatz könnte daher zu einer Unterforderung des Modells führen, was die Ergebnisse erheblich beeinflusst.
+	Da solche Daten häufig begrenzt verfügbar sind, stehen meist nur wenige Trainings- und Testdaten zur Verfügung. LSTMs gelten umgangssprachlich als „datenhungrig“, da sie für die Analyse hochkomplexer zeitbasierter Daten entwickelt wurden und typischerweise eine große Menge an Logs benötigen. Ein zu kleiner Datensatz könnte daher zu einer Unterforderung des Modells führen, was die Ergebnisse erheblich beeinflusst. Da auch in dieser Arbeit ein kleiner Datensatz verwendet wird, ist dies zu berücksichtigen.
 	\\[0.5em]
 	Beim Vergleich der Modellleistungen mit synthetischen und echten Daten als Input wird erwartet, dass sich die Ergebnisse deutlich unterscheiden, da die Feature-Struktur und die logische Beschaffenheit der Logs pro Datensatz variieren.
 	\\[0.5em]
@@ -901,16 +887,10 @@
 	ist eine weitverbreitete Open-Source-Bibliothek für maschinelles Lernen\texttt{} in Python. Sie stellt eine Vielzahl von Werkzeugen für klassische Machine-Learning-Aufgaben bereit, darunter Klassifikation, Regression, Clustering, Dimensionsreduktion sowie Modellbewertung und -selektion. Die Bibliothek ist insbesondere aufgrund ihrer klaren Struktur und umfassenden Dokumentation sowohl für Einsteiger als auch für fortgeschrittene Anwendungen geeignet. Scikit-learn bietet eine Reihe vorimplementierter Modelle wie \textit{Isolation Forest}, \textit{DBSCAN} und \textit{One-Class SVM}.
 	
 	\subsection{Keras}
-	Keras\footnote{Keras: The Python Deep Learning API. Offizielle Dokumentation, verfügbar unter: \url{https://keras.io/}, letzter Zugriff: 30. Juli 2025.} ist eine benutzerfreundliche, modulare und erweiterbare Open-Source-Bibliothek für die Entwicklung von Deep-Learning-Modellen in Python. Sie bietet eine einfache und intuitive API, die das schnelle Prototyping, die Implementierung und das Training neuronaler Netze ermöglicht. Keras unterstützt verschiedene neuronale Netzwerkarchitekturen, darunter Convolutional Neural Networks (CNNs), Recurrent Neural Networks (RNNs) und Autoencoder.
+	\gls{keras}\footnote{Keras: The Python Deep Learning API. Offizielle Dokumentation, verfügbar unter: \url{https://keras.io/}, letzter Zugriff: 30. Juli 2025.} ist eine benutzerfreundliche, modulare und erweiterbare Open-Source-Bibliothek für die Entwicklung von Deep-Learning-Modellen in Python. Sie bietet eine einfache und intuitive API, die das schnelle Prototyping, die Implementierung und das Training neuronaler Netze ermöglicht. Keras unterstützt verschiedene neuronale Netzwerkarchitekturen, darunter Convolutional Neural Networks (CNNs), Recurrent Neural Networks (\gls{rnn}s) und Autoencoder.
 	
-	\subsection{TensorFlow}
+	\subsection{\gls{tensorflow}}
 	TensorFlow\footnote{TensorFlow: An End-to-End Open Source Machine Learning Platform. Offizielle Dokumentation, verfügbar unter: \url{https://www.tensorflow.org/}, letzter Zugriff: 30. Juli 2025.} ist ein umfangreiches Open-Source-Framework von Google für maschinelles Lernen und Deep Learning. Es ermöglicht die effiziente Definition, Optimierung und Ausführung von numerischen Berechnungen mit Hilfe von Datenflussgraphen. TensorFlow bietet Skalierbarkeit auf verschiedenen Plattformen von mobilen Geräten bis zu großen verteilten Systemen und unterstützt sowohl CPU- als auch GPU-Beschleunigung. Keras ist in TensorFlow integriert und fungiert als High-Level-API, die den Zugang zu den leistungsfähigen Funktionen von TensorFlow erleichtert.
-	
-	\subsection{Deep GPU Xceleration (\gls{dgx})}
-	Eine DGX ist ein Hochleistungsrechnersystem von NVIDIA\footnote{NVIDIA Corporation, „DGX Systems“, \url{https://www.nvidia.com/en-us/data-center/dgx-systems/}, letzter Zugriff: 30. Juli 2025.}
-	. Es eignet sich insbesondere für das effiziente Training rechenintensiver Modelle des maschinellen Lernens, wie beispielsweise LSTM-Netze. Die DHBW stellt hierfür das Modell DGX H100 zur Verfügung, auf dem die Trainingsprozesse ausgeführt wurden. NVIDIA DGX H100-Systeme sind mit zwei Intel Xeon 8480C-Prozessoren ausgestattet, die gemeinsam über insgesamt 112 CPU-Kerne verfügen\footnote{NVIDIA Corporation, „Introduction to DGX H100 User Guide“, technische Spezifikationen, \url{https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html}, letzter Zugriff: 30. Juli 2025.}.
-	\\[0.5em]
-	Im weiteren Entwicklungsverlauf wurde jedoch vermehrt CPU-basiert gearbeitet, weshalb auf ein alternatives System umgestiegen wurde. Dies liegt daran, weil doch nur wenige Daten zum Trainings und Testen verwendet wurden und eine große GPU dazu nicht mehr benötigt wird.
 	
 	\section{Angewandte Technologie: Keycloak}
 	Keycloak ist ein IAM-Tool mit SSO-Funktion. Es ist ein auf Rollen basiertes Identitäts- und Zugriffsmanagementsystem (RBAC). Es bietet an, Benutzerdaten und Firmendaten sicher und strukturiert zu speichern. Jedes mal, wenn man sich über Keycloak bei einem Dienstleister anmeldet, so wird durch SSO die Anmelden- und Autorisierungsdaten an diesen weitergegeben.
@@ -925,24 +905,6 @@
 	\\[0.5em]
 	Standardmäßig existiert ein sogenannter \textit{Master-Realm}, der übergeordnete Verwaltungsrechte besitzt. In diesem befindet sich der \textit{Admin-User}, der Zugriff auf alle anderen Realms und deren Komponenten hat. Der Admin kann \gls{crud}-Operationen (Create, Read, Update, Delete) auf Benutzer, Gruppen und Clients ausführen. Normale Benutzer hingegen sehen nur den eigenen Realm und haben nur eingeschränkte Rechte, sofern ihnen keine speziellen Rollen zugewiesen wurden.
 	\\[0.5em]
-	\textbf{Authentifizierung über Clients und \gls{idp} (IdP):}\\
-	Benutzer können sich entweder direkt bei Keycloak oder über einen Client anmelden. Die Authentifizierung erfolgt meist über einen externen \textit{Identity Provider} (IdP), wie z.\,B. Google oder Microsoft. Dieses Verfahren ermöglicht \textit{Single Sign-On} (SSO): Der Benutzer meldet sich bei einem Drittanbieter an und ist gleichzeitig auch bei Keycloak und weiteren Diensten authentifiziert.
-	\\[0.5em]
-	Für die Kommunikation zwischen IdPs und Keycloak kommen verschiedene Protokolle zum Einsatz:
-	\begin{itemize}
-		\item \textbf{\gls{oidc} (OIDC):} Modernes Authentifizierungsprotokoll basierend auf \gls{oauth}. Es ermöglicht, Benutzeridentität und Profildaten sicher abzurufen.
-		\item \textbf{\gls{saml}:} XML-basiertes, etabliertes Standardprotokoll für Authentifizierungs- und Autorisierungsdaten.
-		\item \textbf{OAuth 2.0:} Framework zur Autorisierung. Es baut auf dem u.\,a. OIDC auf.
-	\end{itemize}
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.9\linewidth]{Bilder/screenshot007}
-		\caption{Protokolle für IdPs in Keycloak}
-		\label{fig:screenshot007}
-	\end{figure}
-	
-	\vspace{0.5em}
 	\textbf{\gls{granttype}n und Authentifizierungsflüsse:}\\
 	Keycloak unterstützt verschiedene \textit{Grant Types}, die beschreiben, wie sich Benutzer oder Clients authentifizieren:
 	
@@ -966,29 +928,21 @@
 		\caption{Beispielhafte Konfiguration von Authentication Flows in Keycloak}
 		\label{fig:screenshot013}
 	\end{figure}
-	
-	\vspace{0.5em}
-	\textbf{\gls{clientscope}:}\\
-	Der \textit{Client-Scope} definiert, welche Benutzerdaten in das Token aufgenommen werden, wenn sich ein Benutzer über einen Client anmeldet. Typische Informationen sind Name, Nachname und E-Mail. Diese Daten werden verschlüsselt übertragen, jedoch besteht ein gewisses Risiko bei Missbrauch oder Diebstahl des Tokens.
-	
 	\vspace{0.5em}
 	\textbf{Rollenmodell:}\\
 	Keycloak unterscheidet zwei zentrale Rollentypen:
 	
 	\begin{itemize}
-		\item \textbf{Realm-Rollen:} Gelten global innerhalb eines Realms. Sie eignen sich für übergreifende Rechte, z.\,B. „admin“ für alle Clients.
-		\item \textbf{Client-Rollen:} Spezifisch für einen einzelnen Client. Sie erlauben feinere Zugriffskontrolle innerhalb der jeweiligen Anwendung.
+		\item \textbf{\gls{realmrole}s:} Gelten global innerhalb eines Realms. Sie eignen sich für übergreifende Rechte, z.\,B. „admin“ oder \gls{realmadmin} für alle Clients.
+		\item \textbf{\gls{clientrole}a:} Spezifisch für einen einzelnen Client. Sie erlauben feinere Zugriffskontrolle innerhalb der jeweiligen Anwendung.
 	\end{itemize}
-	
-	\vspace{0.5em}
 	\textbf{\gls{serviceaccount} Roles:}\\
 	Clients können sich in Keycloak auch selbst authentifizieren – ohne Benutzerinteraktion. Wird die \textit{Service Account}-Funktion für einen Client aktiviert, erhält dieser ein eigenes Servicekonto. Dieses Konto kann mit Rollen ausgestattet werden, um Rechte auf bestimmte Ressourcen oder Operationen zu erhalten – z.\,B. für automatisierte Backend-Operationen.
 	
 	\subsection{Komponenten der Log-Erzeugung}
 	Keycloak generiert Logs über verschiedenen Frameworks und Komponenten. Eines davon ist das Logging-Framework von JBoss, wobei moderne Versionen von Keycloak zusätzlich auf das \gls{quarkus}-Framework setzen.
-	\vspace{0.5em}
-	\textbf{Von \gls{wildfly} zu Quarkus – Technologiewechsel:}\\
-	Keycloak basierte in früherer Zeit \textbf{WildFly}-Anwendungsserver\footnote{WildFly Project, \url{https://www.wildfly.org/}, letzter Zugriff: 30. Juli 2025.}
+	\\[0.5em]
+	Keycloak basierte in früherer Zeit \textbf{\gls{wildfly}}-Anwendungsserver\footnote{WildFly Project, \url{https://www.wildfly.org/}, letzter Zugriff: 30. Juli 2025.}
 	, der wiederum die \textbf{\gls{jbosslogging}}-Infrastruktur verwendet. Ab der 17. Version von Keycloak wurde WildFly durch das \textbf{Quarkus}-Framework ersetzt. Quarkus unterstützt weiterhin JBoss Logging.
 	
 	\begin{figure}[H]
@@ -997,27 +951,11 @@
 		\caption{Beispiel: Aktivierung von Quarkus-Logging in der Keycloak-Konfiguration}
 		\label{fig:screenshot008}
 	\end{figure}
-	
-	\vspace{0.5em}
-	\textbf{Rolle von JBoss Logging:}\\
-	JBoss Logging dient in Keycloak als zentrale Logging-API. Es abstrahiert verschiedene Logging-Backends (wie \texttt{\gls{log4j}}, \texttt{JUL}, \texttt{\gls{slf4j}}) und ermöglicht die strukturierte Ausgabe sicherheitsrelevanter Informationen – z.\,B.:
-	\begin{itemize}
-		\item \texttt{Realm-ID}
-		\item \texttt{Benutzer-ID}
-		\item \texttt{IP-Adresse}
-		\item \texttt{\gls{eventtype}}
-	\end{itemize}
+
+	JBoss Logging dient in Keycloak als zentrale Logging-API. Es abstrahiert verschiedene Logging-Backends (wie \texttt{\gls{log4j}} und \texttt{\gls{slf4j}}) und ermöglicht die strukturierte Ausgabe sicherheitsrelevanter Informationen.
 	Entwickler müssen sich nicht auf ein spezifisches Logging-Backend festlegen, sondern können über die einheitliche JBoss-API verschiedene Ausgabekanäle konfigurieren (Konsole, Datei, \gls{syslog} etc.).
-	
-	\vspace{0.5em}
-	\textbf{Log4j, Logback oder JUL}\\
-	Obwohl es im Java-Ökosystem viele Logging-Frameworks gibt, verzichtet Keycloak bewusst auf deren direkte Verwendung:
-	\begin{itemize}
-		\item \textbf{Log4j / Logback:} Mächtig, aber externe Abhängigkeiten und teils Sicherheitsrisiken (z.\,B. Log4Shell).
-		\item \textbf{JUL (java.util.logging):} Eingebaut, aber funktional begrenzt.
-		\item \textbf{Slf4j:} Nur eine Fassade – erfordert Backend wie Logback oder Log4j.
-		\item \textbf{\gls{systemout} / System.err:} Nicht strukturiert, ungeeignet für produktive Logs.
-	\end{itemize}
+	\\[0.5em]
+	Zur Orientierung wie die Logs generiert werden können und mit welchen Features, wurden die Logs durch JBoss Logging zunächst ausgegeben über ein Terminal. In späterer Entwicklung wurde dann entschieden, die Keycloak-API zu verwenden, auf welche in den späteren Kapiteln noch eingegangen wird.
 	
 	\begin{figure}[H]
 		\centering
@@ -1026,18 +964,7 @@
 		\label{fig:screenshot014}
 	\end{figure}
 	
-	\vspace{0.5em}
 	Insgesamt stellt JBoss Logging in Kombination mit Quarkus eine erweiterbare Logging-Lösung dar, die sowohl Sicherheitsanforderungen als auch Betriebsanforderungen gerecht wird.
-	\vspace{0.5em}
-	Ein weiterer Baustein ist SLF4J (Simple Logging Facade for Java), das vor allem in vielen externen Bibliotheken der Java-Welt als Logging-Fassade genutzt wird. Quarkus unterstützt SLF4J indirekt, indem es mit einem passenden Backend wie logback oder log4j2 kombiniert werden kann. In Keycloak selbst wird SLF4J jedoch nicht direkt verwendet, da stattdessen vollständig auf JBoss Logging gesetzt wird.
-	\vspace{0.5em}
-	Für erweiterte oder spezielle Logging-Anforderungen lassen sich Frameworks wie Log4j2 oder Logback über Custom Extensions oder SPIs einbinden. Diese sind nicht standardmäßig in Keycloak aktiv, können aber in Eigenentwicklungen verwendet werden – etwa wenn besondere Formatierungen oder externe Integrationen erforderlich sind.
-	\vspace{0.5em}
-	Zudem bietet Keycloak ein eigenes Audit- und Event-Logging-Subsystem, das unabhängig vom allgemeinen Logsystem funktioniert. Mithilfe des EventListener-SPI können verschiedene Ereignisse – etwa Admin-Änderungen oder Benutzeraktionen – gezielt erfasst werden. Die Ausgabe kann dabei in Form einfacher Logs, in Syslog-Formate oder in benutzerdefinierte Kanäle erfolgen.
-	\vspace{0.5em}
-	Abschließend unterstützt Keycloak die Integration in externe Logging-Systeme durch Syslog oder \gls{remotelogging}. So lassen sich Logs über Tools wie \gls{filebeat} an zentrale Systeme weiterleiten (z.B. Logstash oder Cloud-Dienste wie AWS CloudWatch, Google Stackdriver oder Azure Monitor) oder Kubernetes. Dies ist insbesondere in containerisierten oder skalierenden Cloud-Umgebungen entscheidend für Monitoring, Fehleranalyse und Sicherheitsüberwachung.
-	\vspace{0.5em}
-	Obwohl Keycloak über ein umfangreiches Logging-Framework auf Basis von JBoss Logging verfügt, das in Kombination mit Quarkus eine zentrale Rolle im Systembetrieb spielt, nutzt diese Arbeit ausschließlich das Event-Logging-Subsystem, welches über die Keycloak-Admin-API zugänglich ist. Die oben beschriebenen Logging-Komponenten dienen damit in erster Linie dem Verständnis der Gesamtarchitektur, sind jedoch nicht direkt Grundlage der durchgeführten Datenanalysen.
 	
 	\subsection{Log-Dateien in Keycloak}
 	Logging, bzw. Protokollierung ist ein essentieller Bestandteil für die Überwachung von IT-Systemen. Für das IT-Monitoring dienen Logs zur Verhinderung und Detektion von Anomalien, sei es im Netzwerk, in einem IoT-Gerät oder eben in IAM-Tools. 
@@ -1049,7 +976,7 @@
 		\item \gls{auditlogs}: Nachvollziehbarkeit von Änderungen (Admin Events)
 		\item \gls{accesslogs}: Zugriffsversuche und HTTP-Statuscodes (HTTP Layer / Reverse Proxy)
 		\item \gls{securitylogs}: Sicherheitsrelevante Ereignisse und Warnungen
-		\item \gls{customlogs}: Erweiterungen und Plugins können eigene Logs erzeugen (SPI)
+		\item \gls{customlogs}: Erweiterungen und Plugins können eigene Logs erzeugen (\gls{spi})
 	\end{itemize}
 	Die Logs werden dabei von unterschiedlichen Instanzen in Keycloak erzeugt. Die Server-Logs werden  vom Keycloak-Server selbst erzeugt und weisen die Kategorie \textit{org.keycloak.services} auf. Sie werden mit dem Quarkus-Framework erzeugt.
 	\\[0.5em]
@@ -1058,7 +985,7 @@
 	Access Logs werden auf der Anwendungs- und Netzebene erzeugt- hauptsächlich außerhalb Keycloaks und sind gekennzeichnet als \textit{io.quarkus.http}
 	
 	\subsection{Event-Logs}
-	Analysiert in dieser Arbeit werden die Event-Logs und Admin-Logs. Grund hierfür ist, dass diese wichtige Features enthalten, welche das Benutzerverhalten beschreiben. Server-Logs beziehen sich zu sehr auf Netzbasierte Logs und andere Logs, wie Audit-Logs sind Unterkategorien von Events-Logs. Da keine \gls{spi} verwendet wird und nur die einzelne Keycloak-Instanz untersucht wird, fallen Custom Logs ebenfalls weg als Teil der Trainingsdaten und Security Logs werden nur erzeugt, wenn es die dazu gehörigen Komponenten dazu gibt, welche hier auch nicht angewandt werden.
+	Analysiert in dieser Arbeit werden die Event-Logs und \gls{adminlogs}. Grund hierfür ist, dass diese wichtige Features enthalten, welche das Benutzerverhalten beschreiben. Server-Logs beziehen sich zu sehr auf Netzbasierte Logs und andere Logs, wie \gls{auditlogs} sind Unterkategorien von Events-Logs. Da keine \gls{spi} verwendet wird und nur die einzelne Keycloak-Instanz untersucht wird, fallen Custom-Logs ebenfalls weg als Teil der Trainingsdaten und Security Logs werden nur erzeugt, wenn es die dazu gehörigen Komponenten dazu gibt, welche hier auch nicht angewandt werden.
 	\\[0.5em]
 	Keycloak unterteilt unter Anderem zwei Arten von Events-Logs:
 	
@@ -1066,7 +993,7 @@
 		\item \gls{adminlogs}(Audit Logs)
 		\item \gls{userlogs} (Event Logs)
 	\end{itemize}
-	Die Admin Logs enthalten alle Logs bzgl. den Operationen des Admins und die User Logs nur die Logs von Benutzern, die nicht Admin sein.
+	Die \gls{adminlogs} enthalten alle Logs bzgl. den Operationen des Admins und die User Logs nur die Logs von Benutzern, die nicht Admin sein.
 	
 	\subsection{Aufbau der Event-Logs}
 	Folgende Features sind üblicherweise in den User Event Logs enthalten:
@@ -1084,14 +1011,14 @@
 	\end{itemize}
 	Man erkennt, dass wichtige Attribute, wie bspw. der Standort des Clients fehlen. Dies liegt an datenschutzrechtlichen Gründen, jedoch erschwert dies Anomalien in den Logs zu erkennen, weil diese auch anhand eines ungewöhnlichen  Standortes (z.B. Pentagon) erkannt werden. Dies muss noch als Störfaktor genannt werden. Anhand des Standortes können somit schon mal keine Anomalien erkannt werden. Timestamp ist einer der wichtigen Attribute, welche zeigen, zu welchem Zeitpunkt der Log erzeugt wurde. Zur Analyse zeitbasierter Daten eignet sich timestamp als aussagekräftige Information für die LSTM-AE-Hybridmodelle.
 	\\[0.5em]
-	Des weiteren unterteilt Keycloak noch sogenannte Log-Level. Diese zeigen, ob eine bestimmte Operation erfolgreich war oder nicht oder geben andere Informationen bzgl. einer Operation.
+	Des weiteren unterteilt Keycloak noch sogenannte \gls{loglevel}. Diese zeigen, ob eine bestimmte Operation erfolgreich war oder nicht oder geben andere Informationen bzgl. einer Operation.
 	Bekannte Log-Level sind z.B. INFO, FATAL oder ERROR. Alle Arten finden sich in der Dokumentation \footnote{Keycloak Documentation, „Server Logging“, \url{https://www.keycloak.org/server/logging}, letzter Zugriff: 30. Juli 2025.}.
 	Das \gls{loglevel} (z.B. FATAL, ERROR, INFO) bestimmt die Art des Logs, z.B. ob es zum Debugging dient oder eine Warnung erschient, entweder ein Fehler oder eine Info.
 	\\[0.5em]
 	"\gls{logcategory}" beschreibt hier die Art des Logs.
 	\\[0.5em]
 	Des weiteren von Bedeutung in den Logs haben die Ereignis-Typen:
-	Bspw. ist LOGIN ein Ereignis-Typ bei dem der Benutzer sich anmeldet. Dies wird in Keycloak auch regelmäßig dokumentiert. Andere Ereignistypen sind bspw. \gls{tokenrefresh}, bei dem der Benutzer einen neuen Token bekommt. 
+	Bspw. ist LOGIN ein Ereignis-Typ bei dem der Benutzer sich anmeldet. Dies wird in Keycloak auch regelmäßig dokumentiert. Andere Ereignistypen sind bspw. \gls{refreshtoken}, bei dem der Benutzer einen neuen Token bekommt. 
 	
 	\begin{figure}[H]
 		\centering
@@ -1110,46 +1037,32 @@
 	\end{itemize}
 	In den Admin Logs wiederum sind noch Features enthalten, welche in den normalen User Event Logs nicht vorkommen, u.A. '\gls{operationtype}': Diese beinhalten typische CRUD-Operationen wie UPDATE, CREATE, DELETE und ACTION \footnote{Keycloak Community, „JpaAdminEventQuery.java“, GitHub Repository, \url{https://github.com/keycloak/keycloak/blob/main/model/jpa/src/main/java/org/keycloak/events/jpa/JpaAdminEventQuery.java}, letzter Zugriff: 30. Juli 2025.}. 
 	
+	\subsection{Verworfene Technologie: Deep GPU Xceleration (\gls{dgx})}
+	Eine DGX ist ein Hochleistungsrechnersystem von NVIDIA\footnote{NVIDIA Corporation, „DGX Systems“, \url{https://www.nvidia.com/en-us/data-center/dgx-systems/}, letzter Zugriff: 30. Juli 2025.}
+	. Es eignet sich insbesondere für das effiziente Training rechenintensiver Modelle des maschinellen Lernens, wie beispielsweise LSTM-Netze. Die DHBW stellt hierfür das Modell DGX H100 zur Verfügung, auf dem die Trainingsprozesse ausgeführt wurden. NVIDIA DGX H100-Systeme sind mit zwei Intel Xeon 8480C-Prozessoren ausgestattet, die gemeinsam über insgesamt 112 CPU-Kerne verfügen\footnote{NVIDIA Corporation, „Introduction to DGX H100 User Guide“, technische Spezifikationen, \url{https://docs.nvidia.com/dgx/dgxh100-user-guide/introduction-to-dgxh100.html}, letzter Zugriff: 30. Juli 2025.}.
+	\\[0.5em]
+	Im weiteren Entwicklungsverlauf wurde jedoch vermehrt CPU-basiert gearbeitet, weshalb auf ein alternatives System umgestiegen wurde. Dies liegt daran, weil doch nur wenige Daten zum Trainings und Testen verwendet wurden und eine große GPU dazu nicht mehr benötigt wird.
+	
 	\section{Theoretischer Hintergrund der Modelle}
 	\subsection{LSTM}
-	Ein LSTM ist ein spezieller Typ von rekurrentem neuronalen Netzwerk (\gls{rnn}), der entwickelt wurde, um Informationen über längere Zeiträume hinweg zu speichern und verarbeiten \cite{hochreiter1997long}.
+	Ein LSTM ist ein spezieller Typ rekurrenter neuronaler Netzwerke (\gls{rnn}), der entwickelt wurde, um Informationen über längere Zeiträume hinweg zu speichern und zu verarbeiten \cite{hochreiter1997long}. RNNs verarbeiten sequentielle Daten, bei denen die Reihenfolge der Eingaben eine zentrale Rolle spielt, und speichern frühere Informationen in einem sogenannten \gls{hiddenstate}.  
 	\\[0.5em]
-	RNNs gehören zu einer Klasse neuronaler Netzwerke, die sich durch ihre Fähigkeit auszeichnen, sequentielle Daten zu verarbeiten – also Daten, bei denen die Reihenfolge eine zentrale Rolle spielt. Dadurch eignen sie sich insbesondere für die Analyse von Zeitreihen. RNNs speichern frühere Informationen in einem sogenannten \gls{hiddenstate}, der bei jedem Zeitschritt aktualisiert wird. So kann der Kontext vorheriger Eingaben bei der Verarbeitung aktueller Daten berücksichtigt werden.
+	Klassische RNNs haben jedoch Schwierigkeiten mit langen Sequenzen, da der Gradient beim Zurückpropagieren über viele Zeitschritte sehr klein werden kann (\gls{vanishing-gradient}), wodurch frühere Informationen verloren gehen. LSTMs lösen dieses Problem durch eine spezielle Zellstruktur, die relevante Informationen über längere Zeiträume hinweg speichert \cite[S.19]{staudemeyer2019understanding}.  
 	\\[0.5em]
-	Ein zentrales Problem klassischer RNNs besteht jedoch darin, dass sie bei längeren Sequenzen dazu neigen, frühere Informationen „zu vergessen“. Der Gradient, also der Vektor, welcher anzeigt, in welche "Richtung" sich das Modell verbessern soll, kann beim Zurück-propagieren über viele Zeitschritte hinweg sehr klein werden (sogenannter „Vanishing Gradient“), wodurch der Lerneffekt früherer Daten verloren geht.
+	LSTMs werden in vielen Anwendungsbereichen eingesetzt, z.B. in der Sprachverarbeitung, bei Vorhersagemodellen oder im Internet der Dinge (IoT) \cite{wei2022lstm}. Die Wahl der Sequenzlänge beeinflusst dabei maßgeblich die Lernfähigkeit: Sehr lange Sequenzen erschweren das Training, während kürzere Sequenzen das Modell auf lokale Muster fokussieren und die Erkennung von Anomalien verbessern.  
 	\\[0.5em]
-	LSTM-Netzwerke wurden entwickelt, um genau dieses Problem zu lösen \cite[S.19]{staudemeyer2019understanding}. Sie verfügen über eine spezielle Zellstruktur, die es ermöglicht, relevante Informationen über längere Zeiträume hinweg zu speichern. Dies wird durch drei zentrale Steuermechanismen („Gates“) innerhalb der LSTM-Zelle erreicht:
-	\begin{itemize}
-		\item \textbf{Forget Gate:} Entscheidet, welche Informationen aus dem Zellzustand verworfen werden sollen.
-		\item \textbf{Input Gate:} Bestimmt, welche neuen Informationen in den Zellzustand aufgenommen werden.
-		\item \textbf{Output Gate:} Regelt, welche Informationen aus dem Zellzustand als Ausgabe weitergegeben werden.
-	\end{itemize}
-	LSTM-Netzwerke finden in zahlreichen Anwendungsbereichen Verwendung, etwa in der Sprachverarbeitung, bei Vorhersage-Modellen oder im Kontext des Internets der Dinge (IoT) \cite{wei2022lstm}.
+	Hierarchisch-multiskalige LSTM-Modelle können dynamisch lernen, auf welchen Zeitskalen Informationen aktualisiert oder zusammengefasst werden sollen. Dadurch lassen sich sehr lange Sequenzen effizienter verarbeiten, da das Modell zeitliche Abhängigkeiten auf mehreren Skalen gleichzeitig berücksichtigt \cite{chung2017hierarchical}.  
 	\\[0.5em]
-	Die Wahl der Sequenzlänge in einem LSTM beeinflusst maßgeblich die Lern- und Analysefähigkeit. Sehr lange Sequenzen erschweren das Training und können die Erkennung relevanter Muster verringern, da das Modell über viele Zeitschritte hinweg Informationen behalten muss. Kürzere Sequenzen helfen dem Modell, fokussierter auf lokale Muster zu lernen, wodurch sich die Erkennungsgenauigkeit für Anomalien verbessern kann. Eine Herausforderung bei LSTMs ist die Festlegung der passenden Sequenzlänge. Hierarchische multiskalige LSTM-Modelle können dynamisch lernen, auf welchen Zeitskalen Informationen aktualisiert oder zusammengefasst werden sollen, was die flexible Handhabung langer Sequenzen ermöglicht \cite{chung2017hierarchical}.
-	Das hierarchisch multiskalige LSTM kann auf verschiedenen Ebenen gleichzeitig lernen, wie weit es „zurückblicken“ oder „zusammenfassen“ muss, um relevante Informationen zu behalten — und so auch sehr lange Sequenzen besser zu verarbeiten. Die Hierarchie sorgt dafür, dass Daten in Ebene gegliedert werden und Multiskalig bedeutet, dass das Modell zeitliche Abhängigkeiten auf mehreren Zeitskalen gleichzeitig betrachtet— also zum Beispiel kurze, mittlere und lange Zeiträume innerhalb der Sequenz.
+	Sequenzlänge, Netzwerkgröße und Batch-Größe stehen in engem Zusammenhang: Größere oder tiefere Netzwerke können komplexere Muster erkennen, erhöhen aber Rechenaufwand und Speicherbedarf. Zu große Batch-Größen können das Training instabil machen. Daher ist ein ausgewogenes Verhältnis entscheidend, insbesondere bei längeren Sequenzen \cite{bengio1994learning}.  
 	\\[0.5em]
-	Die Wahl der Sequenzlänge steht oft in engem Zusammenhang mit weiteren Modell- und Trainingsparametern wie der Batch-Größe sowie der Tiefe und Breite des Netzwerks. Eine größere Netzwerktiefe oder -breite kann theoretisch komplexere Muster erkennen, führt aber auch zu höherem Rechenaufwand und größerem Speicherbedarf, was bei langen Sequenzen schnell problematisch wird. Ähnlich kann eine zu große Batch-Größe das Training instabil machen oder den Speicher überfordern, besonders bei tiefen Modellen mit langen Sequenzen. Daher ist das Finden eines guten Gleichgewichts zwischen Sequenzlänge, Netzwerkgröße und Batch-Größe entscheidend, um effizientes Lernen und eine gute Generalisierung zu ermöglichen. Insbesondere bei längeren Sequenzen kann es sinnvoll sein, die Modellkomplexität zu reduzieren oder hierarchisch-multiskalige Architekturen zu nutzen, um die Verarbeitung effizienter zu gestalten \cite{bengio1994learning}.
-	\\[0.5em]
-	Da aber in dieser Arbeit nicht mit Millionen von Dateneinträgen gearbeitet wird, liegt der Fokus darauf, die Sequenzlänge gering zu halten, weil LSTMs darin scheitern, korrektes Zählverhalten auf deutlich längeren Sequenzen zu generalisieren, selbst wenn sie dies auf kürzeren Sequenzen während des Trainings scheinbar gelernt haben. \cite{elnaggar2022counting}.
-	
+	Da in dieser Arbeit keine Millionen von Dateneinträgen verwendet werden, liegt der Fokus auf kurzen Sequenzen. LSTMs generalisieren Zählverhalten auf deutlich längeren Sequenzen oft nicht zuverlässig, selbst wenn sie es auf kürzeren Sequenzen scheinbar gelernt haben \cite{elnaggar2022counting}.
+		
 	\subsection{Autoencoder}
-	Ein Autoencoder ist ein spezieller Typ neuronalen Netzwerks, das aus zwei Hauptkomponenten besteht: einer \gls{encoder}- und einer \gls{decoder}-Schicht \cite[S.3]{michelucci2022introduction}.
+	Ein Autoencoder ist ein neuronales Netzwerk, das aus einer \gls{encoder}- und einer \gls{decoder}-Schicht besteht \cite[S.3]{michelucci2022introduction}. Der Encoder komprimiert die Eingabedaten in eine kompakte \gls{bottleneck}-Repräsentation, wodurch wesentliche Merkmale verdichtet und redundante Informationen herausgefiltert werden. Der Decoder rekonstruiert daraus die ursprünglichen Daten, wobei der \gls{rekonstruktionsfehler} – die Differenz zwischen Eingabe und Ausgabe – minimiert wird.  
 	\\[0.5em]
-	Die Encoder-Schicht komprimiert die Eingabedaten, indem sie deren Dimension reduziert und sie auf eine kompakte Repräsentation abbildet – die sogenannte \gls{bottleneck}-Schicht. Diese Engstelle zwingt das Modell dazu, die wesentlichen Merkmale der Daten in verdichteter Form zu erfassen. Dabei werden redundante oder irrelevante Informationen herausgefiltert, was es dem Autoencoder ermöglicht, die „Essenz“ der Daten zu lernen.
+	Autoencoder eignen sich besonders für die Anomalieerkennung: Signifikante Abweichungen von gelernten Mustern führen zu höheren Rekonstruktionsfehlern und markieren potenzielle Anomalien. Die Größe des Bottlenecks ist entscheidend: Ein zu kleiner Bottleneck verliert wichtige Informationen, ein zu großer erlaubt es dem Netzwerk, Daten „durchzuschleusen“. Um redundante Merkmale zu vermeiden, kann die Verlustfunktion angepasst werden, sodass das Modell vielfältige und wenig überlappende Merkmale lernt \cite{laakom2022reducing}.  
 	\\[0.5em]
-	Die Decoder-Schicht nimmt diese komprimierte Repräsentation und rekonstruiert daraus die ursprünglichen Eingabedaten. Das Ziel des Netzwerks ist es, durch Minimierung des \gls{rekonstruktionsfehler}s – also der Differenz zwischen Eingabe und Ausgabe – eine möglichst originalgetreue Rekonstruktion zu erreichen. Der Rekonstruktionsfehler ist auch in der später vorgestellten Hybridarchitektur von zentraler Bedeutung.
-	\\[0.5em]
-	Durch diese Eigenschaften eignen sich Autoencoder besonders gut für Aufgaben wie die Anomalieerkennung. Weicht eine Eingabe signifikant von den zuvor gelernten Mustern ab, gelingt die Rekonstruktion schlechter – der Rekonstruktionsfehler steigt. Dies kann als Indikator für potenzielle Anomalien genutzt werden.
-	
-	\paragraph{Bottleneck und seine Bedeutung}
-	Der Bottleneck ist entscheidend, da er die Kapazität des Autoencoders steuert. Ein zu kleiner Bottleneck kann dazu führen, dass wichtige Informationen verloren gehen und die Rekonstruktion schlecht wird. Ein zu großer Bottleneck hingegen erlaubt es dem Netzwerk, einfach Daten "durchzuschleusen". Um zu verhindern, dass das Modell im Bottleneck redundante Merkmale lernt, wird die Verlustfunktion erweitert. Dadurch wird das Netzwerk dazu angeleitet, möglichst vielfältige und wenig überlappende Merkmale zu lernen \cite{laakom2022reducing}.
-	
-	\paragraph{Varianten und Architekturen}
-	Neben dem klassischen Autoencoder gibt es weitere Varianten, z.B. den \gls{vae} (VAE), der probabilistische Modelle nutzt und generative Fähigkeiten besitzt, oder den \gls{denoising}, der lernt, verrauschte Eingaben zu bereinigen. Außerdem können Autoencoder aus mehreren Schichten bestehen (deep Autoencoder), um komplexere Merkmale zu extrahieren. Da für diese Arbeit keine zu großen, aufwendigen Daten erstmals analysiert werden können, aufgrund mangelnder Trainingsdaten- wird ein Deep Autoencoder auch nicht zum Einsatz kommen.
-	
-	\paragraph{Anwendungsbereiche}
-	Autoencoder finden Anwendung in der Bildkompression, Anomalieerkennung in Netzwerken oder Produktionsprozessen, Feature Learning vor Klassifikationsaufgaben oder generativer Modellierung. 
+	Erweiterte Varianten sind z.B. der \gls{vae}, der probabilistische und generative Fähigkeiten besitzt, oder der \gls{denoising}-Autoencoder, der verrauschte Eingaben bereinigt. Mehrschichtige Autoencoder ermöglichen die Extraktion komplexerer Merkmale.
 	
 	\begin{figure}[H]
 		\centering
@@ -1158,8 +1071,7 @@
 		\label{fig:screenshot004}
 	\end{figure}
 	
-	\paragraph{Mit dem LSTM kombiniert}
-	Autoencoder lassen sich besonders gut mit Long Short-Term Memory (LSTM)-Netzwerken kombinieren, wenn es um sequenzielle oder zeitabhängige Daten geht. Während der klassische Autoencoder oft für statische Daten verwendet wird, können LSTM-Autoencoder zeitliche Abhängigkeiten erfassen und lernen, wie sich Daten über Zeit entwickeln.
+	Autoencoder lassen sich besonders gut mit Long Short-Term Memory (LSTM)-Netzwerken kombinieren, wenn es um sequenzielle oder zeitabhängige Daten geht. 
 	\\[0.5em]
 	Ein LSTM-Autoencoder nutzt LSTM-Zellen im Encoder und Decoder, um komplexe zeitliche Muster zu erfassen und zu rekonstruieren. Diese Kombination ist besonders nützlich bei Anomalieerkennung in Zeitreihen, wie etwa in der Überwachung von Maschinenzuständen, Finanzdaten oder Netzwerksicherheit. Anomalien fallen hier oft durch signifikant erhöhte Rekonstruktionsfehler auf, da die zeitlichen Muster nicht gut rekonstruiert werden können.
 	\\[0.5em]
@@ -1249,24 +1161,24 @@
 			\toprule
 			\textbf{Parameter}       & \textbf{Wert}            \\
 			\midrule
-			batch\_size             & 32                      \\
-			dropout\_rate            & 0.1                      \\
+			\gls{batchsize}            	  & 32                      \\
+			\gls{dropoutrate}            & 0.1                      \\
 			encoder\_layers         & [128, 64]         \\
 			decoder\_layers         & [64, 128]         \\
-			learning\_rate          & 0.001                   \\
+			\gls{learningrate}          & 0.001                   \\
+			epochs          			& 50                  \\
 			\bottomrule
 		\end{tabular}
 		\caption{Bestimmte Parameter der Modellkonfiguration}
 		\label{tab:model_params}
 	\end{table}
-	Man entschied sich für eine Architektur mit zwei Schichten im Encoder und Decoder (Tiefe) sowie 128 (Breite), um einen ausgewogenen Kompromiss zwischen Informationsreduktion zu erzielen.
-	Diese Dimensionierung ermöglicht es dem Modell, komplexe zeitliche Muster in den Daten ausreichend zu komprimieren, ohne wesentliche Strukturen zu verlieren. Eine geringere Breite hätte hingegen das Risiko erhöht, dass relevante Informationen verloren gehen. Es muss schon hier erwähnt werden, dass die Reliabilität dieser Arbeit durch die Regularisierungstechniken beeinflusst wird, was aber notwendig ist, da dies übliche Techniken sind, um Overfittung zu vermeiden.
+	Man entschied sich für eine Architektur mit zwei Schichten im Encoder und Decoder (Tiefe) sowie 128 und 64 (Breite), um einen ausgewogenen Kompromiss zwischen Informationsreduktion zu erzielen. Diese Dimensionierung ermöglicht es dem Modell, komplexe zeitliche Muster in den Daten ausreichend zu komprimieren, ohne wesentliche Strukturen zu verlieren. Eine geringere Breite hätte hingegen das Risiko erhöht, dass relevante Informationen verloren gehen. Die Inspiration für die Parameterauswahl basiert auf einer Studie, in welcher ebenfalls eine Bidirektionales LSTM-AE gebaut wurde und  \cite{Toor2022}. Eine Lernrate von 0.001 zeigt sich ebenfalls als stabil und üblich und besser als 0.0001 \cite{Santoso2022}. Die Wahl der Batch-Size beruht auf den Ergebnissen von Masters und Luschi \cite{masters2018revisiting}, die zeigen konnten, dass kleine Batch-Sizes (z.\,B. 32) eine gute Generalisierungsleistung erzielen, während größere Batches zwar schneller trainieren, jedoch oft eine schlechtere Testgenauigkeit aufweisen.
 	\\[0.5em]
-	Zudem wird die sogenannte Dropoutrate eingesetzt, eine Regularisierungstechnik, die Overfitting verhindert. Dabei werden während des Trainings zufällig einzelne Neuronen deaktiviert. Die Dropoutrate wurde relativ gering gewählt, um die Testläufe nicht zu stark zu randomisieren und die Reliabilität der Ergebnisse zu verbessern. Aufgrund der durch diese Technik entstehenden Schwankungen ist es wichtig, beim Training und Testen der Modelle mehrere Läufe durchzuführen, um die Verteilung der Ergebnisse zu analysieren und Unterschiede zu erkennen.
+	Zudem wird die sogenannte Dropout-Rate eingesetzt, eine \gls{regularisierungstechnik}, die \gls{overfitting} verhindert. Dabei werden während des Trainings zufällig einzelne Neuronen deaktiviert. Die Dropout-Rate wurde relativ gering gewählt, um die Testläufe nicht zu stark zu randomisieren und die Reliabilität der Ergebnisse zu verbessern. Aufgrund der durch diese Technik entstehenden Schwankungen ist es wichtig, beim Training und Testen der Modelle mehrere Läufe durchzuführen, um die Verteilung der Ergebnisse zu analysieren und Unterschiede zu erkennen. Die Dropout-Rate macht die Modelle robuster und erhöht die Zuverlässigkeit der Vorhersagen auf neuen Daten \cite{Salehin2023}.
 	\\[0.5em]
-	Die Daten werden zuerst in numerische Daten umgewandelt- wenn sie noch nicht numerisch sind. Absichtlich werden NaN-Werte und unklare Werte nicht bereinigt, sondern in eine eigene Kategorie gefasst, die auch ins numerische umgewandelt wird. Dies ist wichtig, da auch solche Werte Anomalien darstellen und die Bereinigung dieser Daten dafür sorgen würde, dass potenzielle Gefahrenquellen unerkannt bleiben. NaN-Werte können außerdem bspw. bei falschen Accounts oder vielleicht bei Bots auftreten, weshalb es wichtig ist, diese in der Analyse beizubehalten. Die numerischen Daten werden durch den LabelEncoder \footnote{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html} erzeugt. Die Daten werden danach skaliert mit dem StandardScaler \footnote{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}.
+	Die Daten werden zuerst in numerische Daten umgewandelt- wenn sie noch nicht numerisch sind. Absichtlich werden NaN-Werte und unklare Werte nicht bereinigt, sondern in eine eigene Kategorie gefasst, die auch ins numerische umgewandelt wird. Dies ist wichtig, da auch solche Werte Anomalien darstellen und die Bereinigung dieser Daten dafür sorgen würde, dass potenzielle Gefahrenquellen unerkannt bleiben. NaN-Werte können außerdem bspw. bei falschen Accounts oder vielleicht bei Bots auftreten, weshalb es wichtig ist, diese in der Analyse beizubehalten. Die numerischen Daten werden durch den LabelEncoder \footnote{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html} erzeugt. 
 	\\[0.5em]
-	Der LSTM-AE wird dabei nur auf normalen Daten trainiert. Dies liegt an der Natur des Autoencoders- denn dieser rekonstruiert Daten nur wieder. Wenn er lange genug trainiert wird, "lernt" er nur "normale" Daten zu konstruieren. In Testdaten, wo sich dann die Anomalien befinden, kann er schlechter rekonstruieren. Daraus entsteht dann der sogenannte Rekonstruktionsfehler.
+	Die Daten werden danach skaliert mit dem StandardScaler \footnote{https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html}.
 	\\[0.5em]
 	\begin{figure}[H]
 		\centering
@@ -1274,18 +1186,15 @@
 		\caption{Gesamtarchitektur LSTM-AE}
 		\label{fig:screenshot-lstm}
 	\end{figure}
-	Dieser Trainingsfehler, bzw. Rekonstruktionsfehler, also die Daten, welche nicht klar klassifiziert werden konnten, werden danach jeweils mit einem der Anomalieerkennungs-Algorithmen(IF, OCSVM, DBSCAN) trainiert. Dies ist auch eine Vorangehensweise, welche bspw. in der Studie von Malhotra bekannt ist \cite{malhotra2016lstm}.
+	Dieser Trainingsfehler, bzw. Rekonstruktionsfehler, also die Daten, welche nicht klar klassifiziert werden konnten, werden danach jeweils mit einem der Anomalieerkennungs-Algorithmen trainiert. Dies ist auch eine Vorangehensweise, welche bspw. in der Studie von Malhotra bekannt ist \cite{malhotra2016lstm}.
 	\\[0.5em]
-	Dadurch kann jedes Modell separat trainiert, getestet und evaluiert werden, was eine modulare Struktur gewährleistet, auch wenn die gesamte Umsetzung in einem Jupyter Notebook erfolgt.
-	\\[0.5em]
-	Die Sequenzlänge wird gering gehalten, um nicht zu viele Daten zu generieren, da eine zu hohe Sequenzlänge kontraproduktiv ist. Auch die Batch-Size wird gering gehalten, damit sie mit der Sequenzlänge harmoniert. Die Sequenzlänge gibt an, wie viele Logs gleichzeitig analysiert werden und deren Zusammenhänge erkannt werden. Die Batch-Size gibt an, wie groß die Eingabe dieser Sequenzen sein darf (weshalb sie proportional zueinander sein müssen). Für die Sequenzlängen wird in den letzten Abschnitten Testfälle angewandt.
-	
-	
+	Dadurch kann jedes Modell separat trainiert, getestet und evaluiert werden, was eine modulare Struktur gewährleistet, auch wenn die gesamte Umsetzung in einem \gls{jupyternotebook} erfolgt.
+
 	\paragraph{Encoder-Decoder Struktur und Bidirektionales LSTM}  
 	Die Architektur folgt dem Prinzip eines Encoder-Decoder-Systems, bei dem der Encoder die Aufgabe übernimmt, die wesentlichen Merkmale der Eingabesequenzen in einem kompakten, latenten Raum zu repräsentieren. Dieser latente Raum fasst die zeitlichen Muster und Strukturen zusammen, wodurch eine effizientere Repräsentation ermöglicht wird. Das bidirektionale LSTM im Encoder erlaubt es, Informationen nicht nur aus der Vergangenheit, sondern auch aus der Zukunft innerhalb der Sequenz zu erfassen, was besonders bei zeitlich stark korrelierten Daten von Vorteil ist. Der Decoder hingegen nutzt diese latente Repräsentation, um die ursprüngliche Sequenz zu rekonstruieren, wodurch eine präzise Nachbildung der Eingabedaten sichergestellt wird.
 	
 	\paragraph{Verlustfunktion und Optimierung}  
-	Zur Bewertung der Modellgüte wird die mittlere quadratische Abweichung (\textit{Mean Squared Error}, MSE \footnote{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean\_squared\_error.html}) herangezogen, welche die Differenz zwischen Eingabe- und Ausgabesequenzen quantifiziert. MSE eignet sich zur Messung der Rekonstruktionsqualität bei kontinuierlichen Werten, da größere Fehler durch die Quadratisierung stärker gewichtet werden, was eine präzise Anpassung des Modells erzwingt. Die Optimierung erfolgt mittels des Adam-Optimierers \footnote{https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html}, welcher durch Lernraten für jeden Parameter besticht und somit eine schnelle und stabile Konvergenz auch bei komplexen Modellen gewährleistet. Die Lernrate stellt dabei einen wesentlichen Hyperparameter dar, der das Tempo der Gewichtsaktualisierungen steuert und einen Balanceakt zwischen schnellem Lernen und stabiler Anpassung darstellt.
+	Zur Bewertung der Modellgüte wird die mittlere quadratische Abweichung (\textit{Mean Squared Error}, \gls{mse} \footnote{https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean\_squared\_error.html}) herangezogen, welche die Differenz zwischen Eingabe- und Ausgabesequenzen quantifiziert. MSE eignet sich zur Messung der Rekonstruktionsqualität bei kontinuierlichen Werten, da größere Fehler durch die Quadratisierung stärker gewichtet werden, was eine präzise Anpassung des Modells erzwingt. Die Optimierung erfolgt mittels des \gls{adam}-Optimierers \footnote{https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html}, welcher durch Lernraten für jeden Parameter besticht und somit eine schnelle und stabile Konvergenz auch bei komplexen Modellen gewährleistet. Die Lernrate stellt dabei einen wesentlichen Hyperparameter dar, der das Tempo der Gewichtsaktualisierungen steuert und einen Balanceakt zwischen schnellem Lernen und stabiler Anpassung darstellt.
 	
 	\paragraph{Berechnung des Rekonstruktionsfehlers}
 	Die Idee, durch den Mean Square Error den Rekonstruktionsfehler zu berechnen stammt von Torabi et Al. \cite[S. 5]{torabi2023practical}. Die allgemein Formel zur Berechnung des Fehlers lautet wie folgt:
@@ -1296,9 +1205,11 @@
 	Im Grunde genommen wird hier jeder Fehler als Zeitpunkt dargestellt. Jeder Zeitpunkt (I) und jedes Feature F stellt hier eine Abhängigkeit dar. Alle rekonstruierbaren Werte werden von den nicht-rekonstruierbaren über jedes Logs hinweg berechnet – und anschließend der Durchschnitt berechnet wird. Dies ist dann der gesamte Rekonstruktionsfehler.
 	
 	\paragraph{Ermittlung des Schwellenwertes}
-	Ab wann soll das Modell eine Anomalie erkennen? Soll es schon bei einer kleinen Abweichung eines Features es als Anomalie deuten oder erst ab großen Unterschieden? Jablonski et Al. \cite{jablonski2023automatic} haben dies untersucht und sind zu folgendem Algorithmus gekommen:
-	Man extrahiert einfach alle Rekonstruktionsfehler aus den Daten und sortiert sie zuerst. Der optimale Schwellenwert ist genau die Mitte zwischen zwei Werten, wo der größte Abstand im sortierten Fehlervektor gefunden wurde.
-	Nach den Autoren sei dies ein optimaler Weg, um den Schwellenwert zu erkennen. Dieser wurde jedoch in dieser Arbeit später verworfen, weil man mit diesem Ansatz schlechtere Ergebnisse in Precision und Recall für alle Hybridmodelle erhielt. Ursache dafür ist wahrscheinlich, dass die Anomalien im verhältnis zu Anzahl normaler Logs zu gering ist. Um Anomalien in Zeitreihen zuverlässig zu erkennen, ist es notwendig, die Rohwerte der Anomalie-Score-Funktion (die Rekonstruktionsfehler, die von Modellen wie Isolation Forest oder OCSVM berechnet werden) in binäre Entscheidungen zu übersetzen. Hierzu wird ein Threshold festgelegt: Werte oberhalb des Thresholds werden als Anomalien klassifiziert, Werte darunter als normal. Die Wahl des Thresholds hat direkten Einfluss auf die Balance zwischen Precision (wie viele als Anomalien erkannten Punkte tatsächlich Anomalien sind) und Recall (wie viele der echten Anomalien erkannt werden). Um diese Balance optimal zu berücksichtigen, verwenden wir den F1-Score, der Precision und Recall kombiniert. Der Threshold wird so gewählt, dass der F1-Score maximiert wird. Dieser Ansatz erwies sich als effektiver und es ist auch bewiesen, dass dies ein guter Ansatz ist, um den Schwellenwert zu berechnen, auch besonders bei Halb-Überwachten Lernmodellen \cite{wilkinghoff2024f1ev}.
+	Die Frage, ab welchem Punkt ein Modell eine Anomalie identifizieren sollte, ist entscheidend für die Güte der Detektion: Soll bereits eine geringe Abweichung eines Features als Anomalie gelten, oder erst größere Diskrepanzen? Jablonski et al. \cite{jablonski2023automatic} schlagen hierfür einen algorithmischen Ansatz vor: Zunächst werden alle Rekonstruktionsfehler aus den Daten extrahiert und sortiert. Der optimale Schwellenwert wird dann als die Mitte zwischen den beiden Werten mit dem größten Abstand im sortierten Fehlervektor definiert.
+	\\[0.5em]
+	In dieser Arbeit wurde dieser Ansatz jedoch verworfen, da er zu geringeren Precision- und Recall-Werten in allen Hybridmodellen führte. Vermutlich liegt dies daran, dass Anomalien im Verhältnis zur Gesamtanzahl normaler Logs sehr selten auftreten. Für eine zuverlässige Anomalieerkennung in Zeitreihen ist es daher notwendig, die Rohwerte der Anomalie-Scores (also die vom Modell berechneten Rekonstruktionsfehler) in binäre Entscheidungen zu überführen. Hierzu wird ein Schwellenwert festgelegt: Werte oberhalb des Schwellenwerts werden als Anomalien klassifiziert, Werte darunter als normal.
+	\\[0.5em]
+	Die Wahl des Schwellenwerts beeinflusst direkt das Verhältnis zwischen Precision (Anteil korrekt erkannter Anomalien unter allen als anomal klassifizierten Punkten) und Recall (Anteil erkannter Anomalien unter allen tatsächlichen Anomalien). Um dieses Verhältnis optimal zu berücksichtigen, wird der F1-Score als kombinierte Kennzahl verwendet. Der Schwellenwert wird so gewählt, dass der F1-Score maximiert wird. Dieser Ansatz hat sich insbesondere bei halbüberwachten Lernmodellen als effektiv erwiesen und ist auch in der Literatur als verlässliche Methode zur Bestimmung von Schwellenwerten etabliert \cite{wilkinghoff2024f1ev}.
 	
 	\subsubsection{Implementierung: Isolation Forest}
 	Im Fall des Isolation Forest wird ein auf Entscheidungsbäumen basierender Algorithmus genutzt, der speziell für die Erkennung von Ausreißern in hochdimensionalen Daten entwickelt wurde. Das Modell wird auf den Fehlerwerten der Trainingsdaten trainiert und anschließend auf die Testdaten angewendet.
@@ -1324,7 +1235,7 @@
 	\\[0.5em]
 	Darüber hinaus ermöglichen einfachere hybride Modelle eine bessere Interpretierbarkeit und Wartbarkeit, was in produktiven Systemen von großer Bedeutung ist. Komplexe Modelle bringen häufig einen erheblichen Mehraufwand bei der Parametrisierung und dem Training mit sich, der in Bezug auf den Erkenntnisgewinn und die praktische Anwendung nicht immer gerechtfertigt ist.
 	\\[0.5em]
-	Zudem ist zu beachten, dass verhaltensbasierte Anomalien in Event-Logs oftmals durch zeitliche Muster und Sequenzen charakterisiert sind, was der LSTM-Autoencoder durch seine Fähigkeit zur Modellierung von Zeitreihen besonders gut abdeckt. Die ergänzenden klassischen Algorithmen dienen hier vor allem zur Unterstützung bei der Erkennung von Ausreißern oder Clustern, wodurch eine effiziente und dennoch aussagekräftige Erkennung gewährleistet wird.
+	Die ergänzenden klassischen Algorithmen dienen hier vor allem zur Unterstützung bei der Erkennung von Ausreißern oder Clustern, wodurch eine effiziente und dennoch aussagekräftige Erkennung gewährleistet wird.
 	\\[0.5em]
 	Durch die klare Trennung der Methoden in der gewählten Architektur lassen sich zudem die jeweiligen Stärken und Schwächen besser analysieren und bewerten, was den wissenschaftlichen Vergleich und die spätere Optimierung erleichtert.
 	\\[0.5em]
@@ -1338,8 +1249,6 @@
 	\subsection{Erster Entwurf der Angriffsfälle}
 	Zu den häufigsten \gls{insiderthreat}-Angriffen in IT-Systemen zählen laut aktuellem Forschungsstand unter anderem der Missbrauch privilegierter Rollen und Rechte, Datendiebstahl sowie die Manipulation kritischer Daten, wie etwa das Löschen wichtiger Dateien \cite[S.6]{singh2022insiderthreats}. Auch Brute-Force-Angriffe gehören zu den zentralen Bedrohungen.
 	\\[0.5em]
-	Für diese Arbeit wurden Angriffsszenarien ausgewählt, die in den Log-Dateien identifizierbar sind. Beispielsweise lässt sich ein Datendiebstahl in Keycloak nur schwer direkt erkennen, da Log-Dateien keine spezifischen Hinweise auf große Dateiübertragungen enthalten. Wahrscheinlicher und gleichzeitig nachvollziehbarer in den Logs sind dagegen Angriffe wie das unbefugte Erlangen von Administrator-Rollen oder Brute-Force-Angriffe. Letztere lassen sich etwa über das Event-Attribut LOGIN\_ERROR identifizieren.
-	\\[0.5em]
 	Die folgenden Angriffsszenarien wurden daher modelliert und in die Log-Daten integriert:
 	
 	\begin{itemize}
@@ -1352,9 +1261,9 @@
 	\subsection{Automatische Erstellung der Keycloak-Logs}
 	Die Log-Daten werden mithilfe eines Python-Skripts automatisiert generiert.
 	\\[0.5em]
-	Der erste Anwendungsfall simuliert Brute-Force-Angriffe, indem eine Abfolge mehrerer Log-Einträge mit dem Event-Typ LOGIN\_ERROR erzeugt wird. Diese Einträge können ungewöhnliche Zeitstempel oder IP-Adressen enthalten, was jedoch nicht zwingend notwendig ist – bereits die Häufung von LOGIN\_ERROR-Ereignissen deutet auf ein anomales Verhalten hin. Da Keycloak die Sperrung einer IP-Adresse nach einer konfigurierbaren Anzahl fehlgeschlagener Anmeldeversuche ermöglicht, wird dieser Parameter bei der Log-Erzeugung berücksichtigt. Die Anzahl der erzeugten fehlerhaften Logins variiert zufällig zwischen drei und fünfzehn Einträgen. Diese Auswahl basiert auf praktischer Erfahrung: Bereits ab drei gescheiterten Versuchen wird das Verhalten oft als verdächtig eingestuft – auch wenn es sich nicht immer um einen Angriff handelt. Ab etwa fünfzehn Fehlversuchen hingegen liegt mit hoher Wahrscheinlichkeit eine Anomalie vor. Die Zahl wird bewusst niedrig gehalten, um die Log-Sequenzen möglichst kurz und realistisch zu halten.
+	Der erste Anwendungsfall simuliert Brute-Force-Angriffe, indem eine Abfolge mehrerer Log-Einträge mit dem Event-Typ LOGIN\_ERROR erzeugt wird. Diese Einträge können ungewöhnliche Zeitstempel oder IP-Adressen enthalten, was jedoch nicht zwingend notwendig ist – bereits die Häufung von LOGIN\_ERROR-Ereignissen deutet auf ein anomales Verhalten hin. Da Keycloak die Sperrung einer IP-Adresse nach einer konfigurierbaren Anzahl fehlgeschlagener Anmeldeversuche ermöglicht, wird dieser Parameter bei der Log-Erzeugung berücksichtigt. Die Anzahl der erzeugten fehlerhaften Logins variiert zufällig zwischen drei und fünfzehn Einträgen. Diese Auswahl basiert auf praktischer Erfahrung: Bereits ab drei gescheiterten Versuchen wird das Verhalten oft als verdächtig eingestuft – auch wenn es sich nicht immer um einen Angriff handelt.
 	\\[0.5em]
-	Im zweiten Anwendungsfall werden Log-Einträge erzeugt, die auf das Löschen oder Modifizieren von Entitäten hinweisen. Hierzu gehören beispielsweise Event-Typen wie DELETE, UPDATE\_PASSWORD oder UPDATE\_PROFILE. Es werden mindestens fünf solcher Einträge pro Sequenz erzeugt, wobei auf ausreichend Variabilität geachtet wird. Die Ereignisse werden in zufälligen Kombinationen generiert, um zu vermeiden, dass das Modell nur eine festgelegte Angriffssignatur erlernt. Würde beispielsweise das Feature authType ständig zusammen mit dem Event-Typ UPDATE auftreten, bestünde die Gefahr des Overfittings: Das Modell würde dann nur dieses konkrete Muster als Anomalie erkennen und andere Formen übersehen.
+	Im zweiten Anwendungsfall werden Log-Einträge erzeugt, die auf das Löschen oder Modifizieren von Entitäten hinweisen. Hierzu gehören beispielsweise Event-Typen wie DELETE, UPDATE\_PASSWORD oder UPDATE\_PROFILE. Es werden mindestens fünf solcher Einträge pro Sequenz erzeugt, wobei auf ausreichend Variabilität geachtet wird. Die Ereignisse werden in zufälligen Kombinationen generiert, um zu vermeiden, dass das Modell nur eine festgelegte Angriffssignatur erlernt. Würde beispielsweise das Feature \gls{authType} ständig zusammen mit dem Event-Typ UPDATE auftreten, bestünde die Gefahr des Overfittings: Das Modell würde dann nur dieses konkrete Muster als Anomalie erkennen und andere Formen übersehen.
 	\\[0.5em]
 	Im dritten Anwendungsfall wird überprüft, ob ein Nutzer, der ursprünglich keine privilegierten Rollen hatte, plötzlich Administratorrechte erhält. Bei der Generierung wird sichergestellt, dass die betreffende Session einen Benutzer enthält, der zu Beginn keine Admin-Rollen besitzt und später Rollen wie admin, realm-admin oder manage-users zugewiesen bekommt – gegebenenfalls sogar die Admin-ID selbst.
 	\\[0.5em]
@@ -1404,7 +1313,7 @@
 	Selenium ist ein Framework zur automatisierten Ausführung von Webbrowser-Aktionen und als Python-Paket verfügbar. Es ermöglicht, Interaktionen mit der Benutzeroberfläche realitätsnah zu simulieren, sodass der Eindruck entsteht, ein Mensch bediene den Browser. Die wesentlichen Komponenten sind:
 	
 	\begin{itemize}
-		\item \textbf{Selenium WebDriver}: Steuert den Browser programmgesteuert und stellt das zentrale Element der Tests dar.
+		\item \textbf{Selenium \gls{webdriver}}: Steuert den Browser programmgesteuert und stellt das zentrale Element der Tests dar.
 		\item \textbf{Selenium Grid}: Ermöglicht die parallele Ausführung von Tests auf verschiedenen Maschinen und Browsern.
 		\item \textbf{Selenium IDE}: Ein Recording-Tool im Browser, das jedoch für produktive oder komplexe Tests nicht empfohlen wird.
 	\end{itemize}
@@ -1412,9 +1321,9 @@
 	\\[0.5em]
 	Ein Nachteil dieser Methode liegt in der konstanten IP-Adresse, da alle Anfragen vom selben Host ausgehen. Dies kann dazu führen, dass das Modell lernt, mehrere Benutzer mit einer gemeinsamen IP-Adresse zu assoziieren, was in realen Szenarien als Anomalie interpretiert werden könnte. Daher wird die IP-Adresse vor der Weiterverarbeitung aus den Events entfernt. Diese Maßnahme reduziert zwar eine potenzielle Störquelle, verringert jedoch auch die Datenvielfalt für das Modell-besonders deshalb, weil die IP-Adresse als Feature gilt, welche mit Anomalien assoziiert sein kann.
 	\\[0.5em]
-	Außerdem erfolgt die Log-Erzeugung in kurzen zeitlichen Abständen, wodurch die zeitliche Streuung reduziert wird. Da das verwendete LSTM-Autoencoder-Modell zeitbasierte Muster analysiert, kann dies die Fähigkeit zur Anomalieerkennung einschränken. Zwar werden auch Tests zu ungewöhnlichen Uhrzeiten durchgeführt (z. B. abends), diese erzeugen jedoch nur wenige auffällige Logs.
+	Außerdem erfolgt die Log-Erzeugung in kurzen zeitlichen Abständen, wodurch die zeitliche Streuung reduziert wird. Dies kann die Fähigkeit der Modelle zur Anomalieerkennung einschränken. Zwar werden auch Tests zu ungewöhnlichen Uhrzeiten durchgeführt (z. B. abends), diese erzeugen jedoch nur wenige auffällige Logs.
 	\\[0.5em]
-	Trotz dieser Einschränkungen überwiegt der Vorteil, dass die erzeugten Logs den realen Keycloak-Logs sehr nahekommen – ein zentraler Aspekt, insbesondere wenn wirtschaftlich verwertbare Erkenntnisse aus dieser Arbeit gewonnen werden sollen. Die Testumgebung ermöglicht jedoch die Generierung geringerer Datenmengen (z. B. über 10.000 Events), was jedoch für das LSTM-Autoencoder-Modell ausreichend ist für das Training. Da die Logs direkt durch die definierten Tests erzeugt und gespeichert werden, entfällt die Notwendigkeit einer separaten manuellen Log-Generierung.
+	Trotz dieser Einschränkungen überwiegt der Vorteil, dass die erzeugten Logs den realen Keycloak-Logs sehr nahekommen – ein zentraler Aspekt, insbesondere wenn wirtschaftlich verwertbare Erkenntnisse aus dieser Arbeit gewonnen werden sollen. Da die Logs direkt durch die definierten Tests erzeugt und gespeichert werden, entfällt die Notwendigkeit einer separaten manuellen Log-Generierung größtenteils.
 	
 	\begin{figure}[H]
 		\centering
@@ -1430,7 +1339,7 @@
 		\item Sega
 		\item aws
 	\end{itemize}
-	Pro Realm erfolgt die Benutzeranmeldung über einen jeweils definierten Client.
+	Pro Realm erfolgt die Benutzeranmeldung über einen jeweils definierten Client. Absichtlich wurde nichts im Master-Realm erzeugt, da dieses standardmäßig andere Admins aus den unetren Realms darauf nicht zugreifen können. Durch das Weglassen des Master-Realm bei der Generierung normaler Benutzerlogs wurde sichergestellt, dass die aufgezeichneten Logs ausschließlich reale Benutzeraktivitäten aus den einzelnen Realms widerspiegeln, ohne dass administrative Operationen oder systeminterne Aktionen die Analyse verfälschen. Dies erhöht die Klarheit und Vergleichbarkeit der Anomalieerkennung, da nur typische Nutzerinteraktionen untersucht werden- und auch nur die internen Admins in den einzelnen Realms.
 	\\[0.5em]
 	Im Realm \textit{ubisoft} wurden 25 synthetische Benutzer erstellt, deren Namen alphabetisch generiert wurden (jeder Buchstabe des Alphabets außer „X“ ist vertreten). Für diesen Realm wurde der Client \textit{ps3} angelegt. Dieser ist erforderlich, damit sowohl Administratoren Zugriff auf die User-Events erhalten als auch Benutzer sich über diesen Client authentifizieren können. Um sicherzustellen, dass während der Selenium-Tests nicht auf den Master-Realm zugegriffen wird, muss für den Client eine passende \gls{redirecturl} definiert werden.
 	\\[0.5em]
@@ -1470,7 +1379,6 @@
 	Ereignisse, die typischerweise erst nach längerer Zeit auftreten, fehlen somit in der Testbasis. Eine spätere Erweiterung ist möglich, jedoch wurde aufgrund der Bearbeitungsfrist beschlossen, die Generierung auf 10 aufeinanderfolgende Tage zu konzentrieren, ausgeschlossen ist dabei das Wochenende. Die Sessions werden dabei nacheinander mit variablen Abstand ausgeführt.
 	\\[0.5em]
 	Nichtsdestotrotz stellt dieses Verfahren eine vorteilhafte Methode zur Log-Generierung dar, da die erzeugten Ereignisse die realen Keycloak-Logs darstellen.
-	
 		
 	\subsection{Mögliche Angriffszenarien basierend auf \gls{cve} und \gls{cwe}}
 	Common Vulnerabilities and Exposures (CVE) stellt eine umfassende Datenbank bekannter Sicherheitslücken dar, die in verschiedenen Softwaresystemen dokumentiert sind. Für Keycloak existieren ebenfalls zahlreiche veröffentlichte Schwachstellen\footnote{MITRE Corporation, „CVE Search Results for Keycloak“, \url{https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=keycloak}, letzter Zugriff: 30. Juli 2025.}
@@ -1496,11 +1404,21 @@
 	\subsection{Angriffsszenarien}                         
 	Die im vorherigen Abschnitt beschriebenen Angriffsszenarien wurden im Rahmen dieser Arbeit mithilfe von Selenium-Tests implementiert und in den generierten Logs dokumentiert. Für jedes Szenario wurde ein konkreter Ablauf definiert, um die jeweilige Sicherheitslücke zu simulieren.
 	\\[0.5em]
+	Grund für genau diese Angriffe sind unter anderem Ihre hohe Relevanz. Wie bereits erwähnt gehören zu den häufigsten Intrusions- oder Insider-Angriffen Datendiebstahl oder auch das Stehlen von persönlichen Informationen. Weitere sind die genannten Angriffsszenarien, also Brute-Force-Angriff, Privilege Escalation und Account Sabotage. Zudem sind diese einfach zu implementieren und es wurde darauf geachtet, dass Angriffe umgesetzt werden, bei denen sich in den Logs auch wirklich das Angriffspotenzial durch die Event-Typen z.B. (DELETE, LOGIN\_ERROR) feststellen lässt. Dies ist daher notwendig, weil es zu wenige Angriffslogs gibt in und auch nur wenig generierte Logs. Daher wurde darauf geachtet, dass die Angriffe hervorstechen aus den normal erzeugten Logs.
+	\\[0.5em]
 	Hier werden die Angriffsfälle aufgelistet welche direkt in der Keycloak-Konsole ausgeführt wurden, also nicht als Selenium-Test- außer das erste Szenario des Testfalls \textit{Privilege Escalation}, dieses wird auch als Selenium-Test ausgeführt.
 	
 	\subsubsection{Angriffsszenario: Versuch einer Privilege Escalation über die Admin REST API}
 	
 	In diesem Szenario wird untersucht, ob ein technisch privilegierter, aber nicht vollständig administrativer Benutzer in Keycloak durch gezielte API-Aufrufe seine eigenen Berechtigungen ausweiten kann. Ziel ist es, das Verhalten von Keycloak bei einer möglichen Rechteausweitung über die REST-Schnittstelle zu evaluieren.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{Bilder/priv_esc_ad}
+		\caption{Aktivitätsdiagramm Privilege Escalation}
+		\label{fig:privescad}
+	\end{figure}
+	
 	
 	\begin{description}
 		\item[Ziel:] Unautorisierte Erweiterung der Benutzerrechte durch Ausnutzung der REST API
@@ -1534,6 +1452,14 @@
 	\subsubsection{Angriffsszenario: Account-Sabotage durch privilegierten Benutzer}
 	In diesem Szenario wird untersucht, inwieweit ein privilegierter Benutzer (z.\,B. ein Administrator) absichtlich oder versehentlich Schaden an Benutzerkonten anrichten kann. Ziel ist es, das Verhalten von Keycloak bei kritischen administrativen Operationen zu beobachten und zu analysieren, welche Aktionen protokolliert werden.
 	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{Bilder/acc_sab_ad}
+		\caption{Aktivitätsdiagramm von Account-Sabotage}
+		\label{fig:accsabad}
+	\end{figure}
+	
+	
 	\begin{description}
 		\item[Ziel:] Simulierte Account-Sabotage durch einen legitimen Admin im Realm
 		\item[Betroffener Realm:] \texttt{Sega}
@@ -1566,6 +1492,13 @@
 	\subsubsection{Angriffsszenario: Brute-Force-Angriff über die Web-Oberfläche}
 	In diesem Szenario wird ein klassischer Brute-Force-Angriff simuliert, bei dem ein Benutzername fest vorgegeben ist und systematisch unterschiedliche Passwörter ausprobiert werden. Ziel ist es zu prüfen, ob ein erfolgreiches Login durch mehrfaches Raten von Passwörtern möglich ist und ob Keycloak entsprechende Fehlversuche protokolliert.
 	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.5\linewidth]{Bilder/bf_ad}
+		\caption{Aktivitätsdiagramm von Brute Force}
+		\label{fig:bfad}
+	\end{figure}
+	
 	\begin{description}
 		\item[Ziel:] Test der Account-Sicherheit gegenüber einfachen Brute-Force-Angriffen über das Login-Formular
 		\item[Betroffener Benutzer:] \texttt{admin}
@@ -1590,7 +1523,7 @@
 		\item Keycloak sollte nach mehreren Fehlversuchen Gegenmaßnahmen ergreifen (z.\,B. Account-Sperrung, Rate Limiting).
 		\item Im Event-Log sollten die fehlgeschlagenen Login-Versuche als \texttt{LOGIN\_ERROR} mit dem jeweiligen Benutzer verzeichnet sein.
 	\end{itemize}
-	Brute Force und Privilege Escalation sind Angriffe, die fehlschlagen. Nur Account Sabotage ist erfolgreich. Dies ligt an der Umsetzung (Brute Force durch Selenium-Tests) und daran, dass der erwähnte CVE Fall für neuere Keycloak Versionen nicht mehr funktioniert durch neue Sicherheitsfunktionen- dennoch stellen sie erkennbare, anomale Logs dar.
+	Brute Force und Privilege Escalation sind Angriffe, die fehlschlagen. Nur \gls{accountsabotage} ist erfolgreich. Dies liegt an der Umsetzung (Brute Force durch Selenium-Tests) und daran, dass der erwähnte CVE Fall für neuere Keycloak Versionen nicht mehr funktioniert durch neue Sicherheitsfunktionen- dennoch stellen sie erkennbare, anomale Logs dar.
 	
 	\paragraph{Sicherheitsrelevanz:}
 	Ein solcher Angriff simuliert reale Angriffsvektoren durch Bots oder Skripte. Das Vorhandensein und die Konfiguration von Mechanismen wie \textit{Brute Force Detection}, Lockout Policies oder IP-Rate-Limits sind für die Sicherheit von zentraler Bedeutung.
@@ -1608,7 +1541,9 @@
 	\\[0.5em]
 	Abschließend wurde die finale Datei in zwei Hälften aufgeteilt; in eine Validierung- und einer Testdatei.
 	\\[0.5em]
-	Das LSTM-AE wird dabei nur mit normalen Daten trainiert. Wie viele Trainingsdaten an sich auch nötig sind, ist ein weitgehend offenes Problem. Es gibt nur wenige Studien, die sich systematisch mit der Frage beschäftigt haben, welche Datenmenge „angemessen“ ist, um ein neuronales Netzwerk zuverlässig zu trainieren.
+	Das LSTM-AE wird dabei nur mit normalen Daten trainiert.Dies liegt an der Natur des Autoencoders- denn dieser rekonstruiert Daten nur wieder. Wenn er lange genug trainiert wird, "lernt" er nur "normale" Daten zu konstruieren. In Testdaten, wo sich dann die Anomalien befinden, kann er schlechter rekonstruieren. Daraus entsteht dann der sogenannte Rekonstruktionsfehler.
+	\\[0.5em]
+	Wie viele Trainingsdaten an sich auch nötig sind, ist ein weitgehend offenes Problem. Es gibt nur wenige Studien, die sich systematisch mit der Frage beschäftigt haben, welche Datenmenge „angemessen“ ist, um ein neuronales Netzwerk zuverlässig zu trainieren. 
 	\\[0.5em]
 	Nach der Studie von Golestaneh et al. \cite{Golestaneh2021} wurde eine theoretische Fehlerabschätzung für bestimmte Netzwerke abgeleitet. Demnach skaliert der Fehler $\varepsilon$ eines solchen Netzwerks nicht mit der klassischen „parametrischen“ Rate von $\varepsilon \sim 1/n$, sondern mit einer langsameren, linearen Rate:
 	
@@ -1630,9 +1565,9 @@
 	\\[0.5em]
 	Die Studie stützt damit ebenfalls die Annahme, dass in vielen praktischen Szenarien bereits Datensätze im Bereich von 10.000 bis 50.000 Einträgen als ausreichend gelten können, um eine robuste Anomalieerkennung durchzuführen-wobei man natürlich beachten muss, dass in jeder Studie der Fokus auf einem anderen Netzwerk lag. Bspw. basiert Golestanehs Formel auf ReLU-basierte Netzwerke. Dennoch will man diese Studien als Hinweis dafür wahrnehemn, möglichst viele Daten zu generieren, auch wenn es im Rahmen dieser Arbeit die Anzahl der wahrscheinlich nur im fünf-stelligen Bereich liegen wird.
 	\\[0.5em]
-	Auf Grundlage dieser Erkenntnisse wird ein Testfall mit ca. 39000 Logs erstellt.
+	Auf Grundlage dieser Erkenntnisse wird ein Testfall mit ca. 39.000 Logs erstellt.
 	\\[0.5em]
-	Für den Testfall wurde mit 50 und 100 Epochen trainiert. Für den Test befinden sich in den Test - und Validierungsdaten befinden sich ca. 31 Log-Einträge, welche durch je eines der fünf Angriffsszenarien entsteht.
+	 Für den Test befinden sich in den Testdaten ca. 31 Log-Einträge, welche durch je eines der fünf Angriffsszenarien entsteht.
 
 	\subsection{Änderung der Timestamps durch Unix Timestamp}
 	Da die Timestamps manuell geändert werden müssen, muss gewährleistet sein, dass diese zufällig vom 22.07,ca. 14 Uhr bis zum 08.08, 17 Uhr erzeugt wurden- und demnach verändert werden. Es wurden folgende Zeitpunkte pro Angriffsszenario modelliert:
@@ -1646,7 +1581,7 @@
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.9\linewidth]{Bilder/screenshot019}
-		\caption{Aktuelle Uhrzeit nach dem Unix-System}
+		\caption{Aktuelle Uhrzeit nach dem Unix-System \textit{[Online]. Verfügbar unter:} \url{https://www.unixtimestamp.com/}, abgerufen am 18. August 2025.}
 		\label{fig:screenshot019}
 	\end{figure}
 	Die erste Attacke dauert ca. 1-2 Minuten, die zweite ca. 5-10 Minuten und die letzte im ca. 20 Minuten. Dies Zeit wurde so bestimmt,dass sie sich für den jeweiligen Angriff eignen. Die Angriffe werden mit Absicht an Zeitpunkte durchgeführt, welche zwischen den normalen Logs mit Abstand sind, damit das LSTM-AE auch seinen Einsatz daran zeigen kann. Denn bei zu kurzen Sequenzen und auch plötzlichen, würde das LSTM-AE nur bei einer viel zu kurzen Sequenzlänge an Aussagekraft verlieren.
@@ -1659,405 +1594,105 @@
 		\item Sequenzlänge 25
 		\item Sequenzlänge 50
 	\end{itemize}
+	
+	Die Sequenzlänge wird bewusst klein gehalten, um nicht unnötig viele Daten zu generieren und gleichzeitig eine ausreichende Anzahl an Trainingssequenzen zu erhalten. Eine zu hohe Sequenzlänge wäre bei einem kleinen Datensatz kontraproduktiv, da dadurch die Zahl der verfügbaren Sequenzen stark reduziert würde. Zudem zeigt auch eine Studie, dass eine kleine Sequenzlänge von 24-48 eine sehr effektive Parameterwahl ist \cite{Toor2022}. 
+	\\[0.5em]
+	Bei sehr großen Datensätzen mit beispielsweise einer Million Log-Einträgen ist eine Sequenzlänge von 100 nachvollziehbar: Hier liegen viele Ereignisse dicht beieinander, und Anomalien können sich über mehrere Log-Einträge hinweg erstrecken. In einem kleineren Datensatz hingegen ist es notwendig, die Sequenzlänge zu verkürzen, um sowohl genügend Trainingsbeispiele zu erzeugen als auch relevante Muster erfassen zu können.
+	\\[0.5em]
+	Auch die Batch-Size wird gering gehalten, damit sie mit der Sequenzlänge harmoniert. Die Sequenzlänge gibt an, wie viele Logs gleichzeitig analysiert werden und deren Zusammenhänge erkannt werden. Die Batch-Size gibt an, wie groß die Eingabe dieser Sequenzen sein darf (weshalb sie proportional zueinander sein müssen). Für die Sequenzlängen wird in den letzten Abschnitten Testfälle angewandt.
+	\\[0.5em]
 	Die Wahl der unterschiedlichen Sequenzlängen dient dazu, die Sensitivität des Modells auf verschiedene zeitliche Zusammenhänge zu testen. Kürzere Sequenzen erfassen lokale Muster, während längere Sequenzen komplexere zeitliche Abhängigkeiten abbilden können. Dadurch kann das Modell besser an die unterschiedlichen Charakteristika der Log-Daten angepasst werden.
-	\\[0.5em]
-	Die Labels kennzeichnet jeden Log-Eintrag als Anomalie (1) oder normal (0). Alle weiteren Log-Merkmale wie Eventtyp oder Zeitstempel werden als unabhängige Variablen in das Modell eingespeist.
-	\\[0.5em]
-	Die Architektur selbst beinhaltet schon Störfaktoren. Tiefe, Breite und auch die Batch-Size beeinflussen viel von dem, wie die Modelle insgesamt arbeiten.
 	\\[0.5em]
 	Zur Übersicht wurden Tabellen erstellt,welche das Verhältnis zu den abhängigen und unabhängigen Variablen zeigen soll:
 	\\[0.5em]
-	Variablen der Hybridmodelle:
 	
-	\begin{figure}
+	\begin{figure}[H]
 		\centering
-		\includegraphics[width=1.1\linewidth]{Bilder/variablen-architektur}
+		\includegraphics[width=0.7\linewidth]{Bilder/variablen-architektur}
 		\caption{Überblick der Konstanten Werte und der unabhängigen Variable}
 		\label{fig:variablen-architektur}
 	\end{figure}
 
-	Die Architektur des LSTM-Autoencoders wird bewusst minimal gehalten. Die Sequenzlänge wird auf 10 Log-Einträge gesetzt, um lokale zeitliche Muster effizient zu erfassen, ohne die Netzwerkkomplexität unnötig zu erhöhen. Die Batch-Size wird konstant auf 32 gehalten, da sie einen guten Kompromiss zwischen stabiler Gradientenberechnung und Trainingsgeschwindigkeit bietet und bei der Gesamtzahl von 39.000 Logeinträgen ausreichend robuste Updates ermöglicht.
+	Die Sequenzlänge wird auf 10 Log-Einträge gesetzt, um lokale zeitliche Muster effizient zu erfassen, ohne die Netzwerkkomplexität unnötig zu erhöhen.
 	\\[0.5em]
-	Die Encoder- und Decoder-Layer sind jeweils mit [128, 64] bzw. [64, 128] Neuronen konfiguriert, wodurch das Modell leichtgewichtig bleibt und Overfitting vermieden wird, während gleichzeitig die typischen Muster in den Log-Sequenzen zuverlässig erfasst werden können. Dropout wird deaktiviert, um die Reproduzierbarkeit der Ergebnisse zu gewährleisten, sodass jeder Trainingsdurchlauf unter identischen Bedingungen erfolgt. Die Lernrate wird auf 0,001 gesetzt, ein bewährter Startwert, der stabile Konvergenz in Kombination mit der gewählten Architektur und Batch-Size erlaubt.
+	Alle genannten Konstanten wie die Breite, Tiefe und Batch-Size bleiben dabei konstant. Weitere Faktoren wie die Berechnung des Rekonstruktionsfehlers, der Schwellenwert, die Skalierung (StandardScaler), die Anzahl von 50 der Trainings-Epochen, der Optimierer (Adam) und die Verlustfunktion (MSE) werden konstant gehalten, um einen fairen Vergleich der Modelle zu gewährleisten. Die gewählten Konstanten können zwar die erzielbaren Höchstwerte im Vergleich zu anderen Studien begrenzen, gewährleisten jedoch, dass die Analyse zuverlässig und nachvollziehbar bleibt.
+	
+	\section{Auswertung}
+	\subsection{Durchschnitt der Metriken je Testlauf und Sequenzlänge}
+	Die einzelnen Ergebnisse sind im Anhang zu finden. Hier wird nun der Durchschnitt aller Läufe zusammengerechnet.
+	
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{lccc}
+			\hline
+			\textbf{Algorithm} & \textbf{F1 (mean)} & \textbf{MCC (mean)} & \textbf{Balanced Acc (mean)} \\
+			\hline
+			IsolationForest & 0.729 & 0.733 & 0.796 \\
+			OCSVM           & 0.730 & 0.730 & 0.794 \\
+			DBSCAN          & 0.192 & 0.260 & 0.544 \\
+			\hline
+		\end{tabular}
+		\caption{Mittlere Performance-Metriken der drei Algorithmen über alle Sequenzlängen.}
+		\label{tab:algorithm_performance}
+	\end{table}
+	
+	Die Ergebnisse zeigen, dass Isolation Forest im MCC und Balanced Accuracy die höchsten Durchschnitt erzielten und OCSVM dafür den höchsten F1-Score hatte.
+	
+	\subsection{Ergebnisse des MANOVA-Tests}
+	\begin{table}[H]
+		\centering
+		\begin{tabular}{l l r r r}
+			\hline
+			Algorithm & Test & Value & F & p \\
+			\hline
+			IsolationForest & Wilks' lambda & 0.002 & 32.981 & 0.0000 \\
+			IsolationForest & Pillai's trace & 1.529 & 5.403 & 0.0099 \\
+			IsolationForest & Hotelling-Lawley trace & 310.272 & 206.848 & 0.0001 \\
+			IsolationForest & Roy's greatest root & 309.137 & 515.228 & 0.0000 \\
+			\hline
+			OCSVM & Wilks' lambda & 0.000 & 72.133 & 0.0000 \\
+			OCSVM & Pillai's trace & 1.479 & 4.729 & 0.0155 \\
+			OCSVM & Hotelling-Lawley trace & 1580.386 & 1053.591 & 0.0000 \\
+			OCSVM & Roy's greatest root & 1579.465 & 2632.441 & 0.0000 \\
+			\hline
+			DBSCAN & Wilks' lambda & 0.000 & 211.409 & 0.0000 \\
+			DBSCAN & Pillai's trace & 1.970 & 109.829 & 0.0000 \\
+			DBSCAN & Hotelling-Lawley trace & 759.117 & 506.078 & 0.0000 \\
+			DBSCAN & Roy's greatest root & 725.053 & 1208.422 & 0.0000 \\
+			\hline
+		\end{tabular}
+		\caption{MANOVA-Ergebnisse für die drei Algorithmen.}
+		\label{tab:manova_results}
+	\end{table}
+	
+	Die durchgeführte MANOVA hat die abhängigen Variablen F1-Score, MCC und Balanced Accuracy auf Unterschiede zwischen den Sequenzlängen untersucht. Grund für die Auswahl dieser Metriken beruht darauf, wie bereits diskutiert in der Methodik, dass diese zuverlässige Metriken sind.
 	\\[0.5em]
-	Weitere Faktoren wie die Berechnung des Rekonstruktionsfehlers, der Schwellenwert, die Skalierung (StandardScaler), die Anzahl der Trainings-Epochen (50), der Optimierer (Adam) und die Verlustfunktion (MSE) werden konstant gehalten, um einen fairen Vergleich der Modelle zu gewährleisten. Die gewählten Konstanten können zwar die erzielbaren Höchstwerte im Vergleich zu anderen Studien begrenzen, gewährleisten jedoch, dass die Analyse zuverlässig und nachvollziehbar bleibt.
+	Die Ergebnisse zeigen, dass alle drei Algorithmen (IsolationForest, OCSVM, DBSCAN) signifikante Unterschiede aufweisen, wie die sehr niedrigen p-Werte in allen Tests (Wilks’ Lambda, Pillai’s Trace, Hotelling-Lawley Trace, Roy’s Greatest Root) belegen. Dies bedeutet, dass die Wahl der Sequenzlänge einen statistisch nachweisbaren Einfluss auf die Modellmetriken hat.
 	\\[0.5em]
-	Kurz gesagt: Die abhängige Variable hier stellen die Metriken dar in den Logs dar, die unabhängige die Sequenzlänge.
-	
-	\section{Ergebnisse}
-	\subsection{Ergebnisse mit der Sequenzlänge 10}
-	\subsubsection{Testlauf 1}
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{lc}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 0.1861 \\
-			Precision & 0.9519 \\
-			Recall & 0.7734 \\
-			F1 & 0.8534 \\
-			ROC-AUC & 0.9630 \\
-			AUC-PR & 0.7412 \\
-			Matthews Correlation Coefficient (MCC) & 0.8553 \\
-			Balanced Accuracy & 0.8863 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für IsolationForest}
-	\end{table}
-	
-	% Tabelle für One-Class SVM
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 4999.3471 \\
-			Precision & 0.9364 \\
-			Recall & 0.8047 \\
-			F1 & 0.8655 \\
-			ROC-AUC & 0.9109 \\
-			AUC-PR & 0.7577 \\
-			Matthews Correlation Coefficient (MCC) & 0.8654 \\
-			Balanced Accuracy & 0.9017 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für One-Class SVM}
-	\end{table}
-	
-	% Tabelle für DBSCAN
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 2.0099 \\
-			Precision & 1.0000 \\
-			Recall & 0.1484 \\
-			F1 & 0.2585 \\
-			ROC-AUC & 0.5742 \\
-			AUC-PR & 0.1670 \\
-			Matthews Correlation Coefficient (MCC) & 0.3817 \\
-			Balanced Accuracy & 0.5742 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für DBSCAN}
-	\end{table}
-	\subsubsection{Testlauf 2}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 0.1850 \\
-			Precision & 0.9903 \\
-			Recall & 0.7969 \\
-			F1 & 0.8831 \\
-			ROC-AUC & 0.9638 \\
-			AUC-PR & 0.7936 \\
-			Matthews Correlation Coefficient (MCC) & 0.8862 \\
-			Balanced Accuracy & 0.8984 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für IsolationForest}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 5444.4513 \\
-			Precision & 0.9903 \\
-			Recall & 0.7969 \\
-			F1 & 0.8831 \\
-			ROC-AUC & 0.9184 \\
-			AUC-PR & 0.7936 \\
-			Matthews Correlation Coefficient (MCC) & 0.8862 \\
-			Balanced Accuracy & 0.8984 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für One-Class SVM}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 2.0995 \\
-			Precision & 1.0000 \\
-			Recall & 0.1250 \\
-			F1 & 0.2222 \\
-			ROC-AUC & 0.5625 \\
-			AUC-PR & 0.1441 \\
-			Matthews Correlation Coefficient (MCC) & 0.3502 \\
-			Balanced Accuracy & 0.5625 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für DBSCAN}
-	\end{table}
-	
-	\subsubsection{Testlauf 3}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 0.1934 \\
-			Precision & 0.9196 \\
-			Recall & 0.8047 \\
-			F1 & 0.8583 \\
-			ROC-AUC & 0.9584 \\
-			AUC-PR & 0.7443 \\
-			Matthews Correlation Coefficient (MCC) & 0.8574 \\
-			Balanced Accuracy & 0.9016 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für IsolationForest}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 4082.3180 \\
-			Precision & 0.9043 \\
-			Recall & 0.8125 \\
-			F1 & 0.8560 \\
-			ROC-AUC & 0.9168 \\
-			AUC-PR & 0.7389 \\
-			Matthews Correlation Coefficient (MCC) & 0.8542 \\
-			Balanced Accuracy & 0.9053 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für One-Class SVM}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 2.0106 \\
-			Precision & 1.0000 \\
-			Recall & 0.2188 \\
-			F1 & 0.3590 \\
-			ROC-AUC & 0.6094 \\
-			AUC-PR & 0.2358 \\
-			Matthews Correlation Coefficient (MCC) & 0.4637 \\
-			Balanced Accuracy & 0.6094 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für DBSCAN}
-	\end{table}
-	
-		
-	\subsubsection{Ergebnisse mit der Sequenzlänge 25}
-	\subsubsection{Testdurchlauf 1}
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 0.1764 \\
-			Precision & 0.9290 \\
-			Recall & 0.6305 \\
-			F1 & 0.7512 \\
-			ROC-AUC & 0.9408 \\
-			AUC-PR & 0.6015 \\
-			Matthews Correlation Coefficient (MCC) & 0.7574 \\
-			Balanced Accuracy & 0.8142 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für IsolationForest, Sequenzlänge 25}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 6275.1389 \\
-			Precision & 0.9401 \\
-			Recall & 0.6305 \\
-			F1 & 0.7548 \\
-			ROC-AUC & 0.8532 \\
-			AUC-PR & 0.6085 \\
-			Matthews Correlation Coefficient (MCC) & 0.7622 \\
-			Balanced Accuracy & 0.8144 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für One-Class SVM, Sequenzlänge 25}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 2.2846 \\
-			Precision & 1.0000 \\
-			Recall & 0.0442 \\
-			F1 & 0.0846 \\
-			ROC-AUC & 0.5221 \\
-			AUC-PR & 0.0848 \\
-			Matthews Correlation Coefficient (MCC) & 0.2059 \\
-			Balanced Accuracy & 0.5221 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für DBSCAN, Sequenzlänge 25}
-	\end{table}
-	
-	\subsubsection{Testlauf 2}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 0.1735 \\
-			Precision & 0.9811 \\
-			Recall & 0.6265 \\
-			F1 & 0.7647 \\
-			ROC-AUC & 0.9410 \\
-			AUC-PR & 0.6306 \\
-			Matthews Correlation Coefficient (MCC) & 0.7771 \\
-			Balanced Accuracy & 0.8130 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für IsolationForest, Sequenzlänge 25}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 5370.7273 \\
-			Precision & 0.9634 \\
-			Recall & 0.6345 \\
-			F1 & 0.7651 \\
-			ROC-AUC & 0.8549 \\
-			AUC-PR & 0.6269 \\
-			Matthews Correlation Coefficient (MCC) & 0.7747 \\
-			Balanced Accuracy & 0.8167 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für One-Class SVM, Sequenzlänge 25}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 2.1895 \\
-			Precision & 1.0000 \\
-			Recall & 0.0442 \\
-			F1 & 0.0846 \\
-			ROC-AUC & 0.5221 \\
-			AUC-PR & 0.0848 \\
-			Matthews Correlation Coefficient (MCC) & 0.2059 \\
-			Balanced Accuracy & 0.5221 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für DBSCAN, Sequenzlänge 25}
-	\end{table}
-	
-	\subsubsection{Testlauf 3}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 0.1793 \\
-			Precision & 0.9634 \\
-			Recall & 0.6345 \\
-			F1 & 0.7651 \\
-			ROC-AUC & 0.9362 \\
-			AUC-PR & 0.6269 \\
-			Matthews Correlation Coefficient (MCC) & 0.7747 \\
-			Balanced Accuracy & 0.8167 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für IsolationForest, Sequenzlänge 25}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 5983.1203 \\
-			Precision & 0.9467 \\
-			Recall & 0.6426 \\
-			F1 & 0.7656 \\
-			ROC-AUC & 0.8553 \\
-			AUC-PR & 0.6235 \\
-			Matthews Correlation Coefficient (MCC) & 0.7725 \\
-			Balanced Accuracy & 0.8205 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für One-Class SVM, Sequenzlänge 25}
-	\end{table}
-	
-	\begin{table}[H]
-		\centering
-		\begin{tabular}{l c}
-			\hline
-			Metrik & Wert \\
-			\hline
-			Best Threshold (F1) & 2.1376 \\
-			Precision & 1.0000 \\
-			Recall & 0.0482 \\
-			F1 & 0.0920 \\
-			ROC-AUC & 0.5241 \\
-			AUC-PR & 0.0887 \\
-			Matthews Correlation Coefficient (MCC) & 0.2150 \\
-			Balanced Accuracy & 0.5241 \\
-			\hline
-		\end{tabular}
-		\caption{Ergebnisse für DBSCAN, Sequenzlänge 25}
-	\end{table}
-	
+	DBSCAN zeigt die extremsten Unterschiede, insbesondere durch die sehr niedrigen Wilks’ Lambda-Werte und hohen Pillai-Trace-Werte. Dies deutet darauf hin, dass die Performance von DBSCAN stark von der Sequenzlänge abhängt. Allerdings sind die absoluten Leistungswerte (F1 ca. 0.19, MCC ca. 0.26, Balanced Accuracy ca. 0.54) deutlich schlechter als bei den anderen Modellen. Das bedeutet, dass DBSCAN zwar stark sensitiv auf die Sequenzlänge reagiert, aber insgesamt keine konkurrenzfähigen Ergebnisse liefert.
+	\\[0.5em]
+	IsolationForest und OCSVM zeigen ebenfalls signifikante Unterschiede zwischen den Sequenzlängen, allerdings auf einem moderateren Niveau. Ihre mittleren Scores (F1 ca. 0.73, MCC ca. 0.73–0.73, Balanced Accuracy ca. 0.79–0.80) sind deutlich besser, was auf eine stabilere und zuverlässigere Performance hindeutet. Zwischen diesen beiden Modellen sind die Unterschiede in den Scores minimal, wobei IsolationForest leicht bessere Balanced Accuracy-Werte zeigt.
+	\\[0.5em]
+	Allgemein lässt sich feststellen: Die Sequenzlänge beeinflusst alle Algorithmen signifikant. DBSCAN reagiert am stärksten, liefert aber schlechte Ergebnisse. IsolationForest und OCSVM sind in der Praxis die leistungsfähigeren Algorithmen, wobei IsolationForest in einigen Metriken leicht überlegen ist.
+	\\[0.5em]
+	Diese Ergebnisse legen nahe, dass bei der Auswahl des Anomalieerkennungsmodells nicht nur die statistische Sensitivität auf die Eingabedaten berücksichtigt werden sollte, sondern vor allem die absolute Modellperformance.
 	
 	\section{Diskussion}
-	Die Ergebnisse zeigen deutliche Unterschiede in der Klassifikationsleistung zwischen den drei getesteten Verfahren und den beiden Sequenzlängen. Die Sequenzlänge beeinflusst die Feature-Repräsentation der Daten, was sich direkt auf die Trennbarkeit der Klassen auswirkt. Eine kürzere Sequenzlänge (10) kann feinere Anomaliesignale erfassen, führt jedoch auch zu einer höheren Varianz und potenziellen Fehlklassifikationen. Längere Sequenzen (25) glätten die Daten stärker, wodurch kurzzeitige Abweichungen schwerer erkennbar sind, stabile Muster jedoch konsistenter erfasst werden. Dieser Effekt könnte erklären, warum die Werte bei längerer Sequenzlänge leicht abfallen.
+	Die Ergebnisse zeigen deutliche Unterschiede in der Klassifikationsleistung zwischen den drei getesteten Verfahren und den beiden Sequenzlängen. Die Sequenzlänge beeinflusst die Feature-Repräsentation der Daten, was sich direkt auf die Trennbarkeit der Klassen auswirkt. Eine kürzere Sequenzlänge (10) kann feinere Signale in den Logs erfassen, führt jedoch auch zu einer höheren Varianz und potenziellen Fehlklassifikationen. Längere Sequenzen (25) glätten die Daten stärker, wodurch kurzzeitige Abweichungen schwerer erkennbar sind, stabile Muster jedoch konsistenter erfasst werden. Dieser Effekt könnte erklären, warum die Werte bei längerer Sequenzlänge leicht abfallen.
 	\\[0.5em]
-	Die Ergebnisse der Tests für die Sequenzlänge 10 und 25 zeigen deutliche Unterschiede zwischen den drei untersuchten Modellen. Sowohl IsolationForest als auch die One-Class SVM liefern insgesamt gute Ergebnisse, während DBSCAN deutlich schlechter abschneidet.
+	Die Ergebnisse der Tests für die Sequenzlänge 10 und 25 zeigen deutliche Unterschiede zwischen den drei untersuchten Modellen. Sowohl Isolation Forest als auch die One-Class SVM liefern insgesamt gute Ergebnisse, während DBSCAN deutlich schlechter abschneidet.
 	\\[0.5em]
-	Bei IsolationForest und OCSVM liegen die Werte für F1, Precision und Recall konstant hoch. Das bedeutet, dass das Modell die meisten Anomalien richtig erkennt, gleichzeitig aber nur wenige normale Werte fälschlicherweise als Anomalien einstuft. Die ROC-AUC-Werte, die anzeigen, wie gut das Modell zwischen normalen und ungewöhnlichen Daten unterscheiden kann, sind ebenfalls sehr hoch. Auch der Matthews-Koeffizient bestätigt die gute Leistung dieses Modells.
+	Bei Isolation Forest und OCSVM liegen die Werte für F1, Precision und Recall konstant hoch. Das bedeutet, dass das Modell die meisten Anomalien richtig erkennt, gleichzeitig aber nur wenige normale Werte fälschlicherweise als Anomalien einstuft. Die ROC-AUC-Werte, die anzeigen, wie gut das Modell zwischen normalen und ungewöhnlichen Daten unterscheiden kann, sind ebenfalls sehr hoch. Auch der MCC bestätigt die gute Leistung dieses Modells.
 	\\[0.5em]
 	Die One-Class SVM zeigt ein ähnliches Bild: Die Präzision ist sehr hoch und der Recall leicht besser als bei IsolationForest. Das heißt, dieses Modell erkennt etwas mehr Anomalien, hat dafür aber etwas niedrigere Werte bei der Gesamttrennschärfe (ROC-AUC).
 	\\[0.5em]
-	DBSCAN hingegen zeigt deutlich schwächere Ergebnisse. Die Präzision ist zwar perfekt, doch der Recall ist sehr niedrig. Das bedeutet, dass DBSCAN fast keine Anomalien erkennt, weshalb das Modell für diese Daten und die gegebene Sequenzlänge nur bedingt geeignet ist.
+	DBSCAN schneidet in beiden Szenarien deutlich schlechter ab. Da das Verfahren  auf Dichteclustering basiert setzt es voraus, dass Anomalien in dünn besiedelten Regionen des Feature-Raums liegen. Bei hochdimensionalen Sequenzdaten verschwimmen diese Dichteunterschiede, wodurch die Clusterstruktur schwer erkennbar ist. Eventuell wurden zu wenige "Noises" eingebaut, wodurch es zu starke "normale" Logs gibt. Jedoch muss zudem erwähnt werden, dass es zu wenige Anomalien gibt,welche möglicherweise nicht erkannt werden konnten und daher nicht geclustert werden und nur ein Cluster entsteht. Dies deutet aber eher darauf hin, dass sich die Anomalien sogar in der Hinsicht den normalen Daten ähnlich sind. Ein weiterer Test wurde auch durchgeführt, jedoch nicht dokumentiert, bei dem DBSCAN mit den Parametern eps= 0.05 und min\_samples= 2 schon mal eine Precision von über 70 Prozent erzielte, jedoch wurde dies nicht verwendet, da man gezielt ohne Parameter pro Algorithmus arbeiten wollte. Es wurde darauf geachtet, dass für jeden Algorithmus der gleiche Ansatz benutzt wurde, um den Schwellenwert zu messen (durch Maximierung des F1-Scores) und dass so durch ein fairer Vergleich ermöglicht wurde. Mit einem anderen Verfahren hätte DBSCAN aber möglicherweise besser abgeschnitten- wurde jedoch nicht evaluiert und getestet, da man fair vergleichen wollte und bei keinem der drei Algorithmen Parameter setzen wollte, damit die Standardwerte eingesetzt werden. Eine bewusste Manipulation hätte zwar das Ergebnis verbessert, jedoch müsste man dies bei jedem Algorithmus ebenfalls machen.
 	\\[0.5em]
-	Insgesamt lässt sich festhalten, dass für Sequenzlänge 10 und 25 derzeit IsolationForest und OCSVM die stabilsten und zuverlässigsten Modelle sind, wobei OCSVM in den Metriken MCC, F1-Score und Balanced Accuracy im Schnitt die höchsten Werte erzielte- Insgesamt erzielte IF jedoch im Gesamtschnitt die höchsten Werte unter allen Metriken- die Hypothese wurde also widerlegt. DBSCAN ist für diese Konfiguration nicht geeignet. Je nach Zielsetzung – ob man eher Wert auf das Erkennen möglichst vieler Anomalien (Recall) legt oder auf die Gesamtgenauigkeit – kann zwischen IsolationForest und One-Class SVM gewählt werden.
+	Weitere Gründe könnten unter anderem darin liegen, dass die Tiefe und Breite des Modells möglicherweise zu gering war und das Training zudem nur über 50 Epochen erfolgte. Außerdem wurde das Verhältnis der Features nur unzureichend berücksichtigt. Die abhängige Variable stellt zwar das Label dar, welches den Log als anomal oder normal klassifiziert. Die IP-Adresse wurde jedoch entfernt, ebenso wie Features, die stärker auf Anomalien hinweisen könnten, wie etwa der Standort (in den Logs nicht angegeben) und die Zeit. Die Angriffsszenarien mussten daher innerhalb normaler, unauffälliger Zeiträume, beispielsweise mittags, stattfinden, um die Fähigkeiten des LSTM-Autoencoders wirklich testen zu können. Zu viele aufeinanderfolgende Anomalie-Punkte würden es dem LSTM-AE zu leicht machen. Daher spielen diese Features nur noch eine untergeordnete Rolle bei der Erkennung von Anomalien. Stattdessen beeinflussen Features wie der Name, der Eventtyp und besonders die anderen unabhängigen Variablen das Ergebnis. Es wurde jedoch nicht untersucht, in welchem Ausmaß einzelne Features dazu führen, dass die Modelle einen Log als anomal oder normal klassifizieren.
 	\\[0.5em]
-	DBSCAN schneidet in beiden Szenarien deutlich schlechter ab. Da das Verfahren  auf Dichteclustering basiert setzt es voraus, dass Anomalien in dünn besiedelten Regionen des Feature-Raums liegen. Bei hochdimensionalen Sequenzdaten verschwimmen diese Dichteunterschiede, wodurch die Clusterstruktur schwer erkennbar ist. Eventuell wurden zu wenige "Noises" eingebaut, wodurch es zu starke "normale" Logs gibt. Jedoch muss zudem erwähnt werden, dass es zu wenige Anomalien gibt,welche möglicherweise nicht erkannt werden konnten und daher nicht geclustert werden und nur ein Cluster entsteht. Dies deutet aber eher darauf hin, dass sich die Anomalien sogar in der Hinsicht den normalen Daten ähnlich sind. Ein weiterer Test wurde auch durchgeführt, jedoch nicht dokumentiert, bei dem DBSCAN mit den Parametern eps= 0.05 und min\_samples= 2 schon mal eine Precision von über 70 Prozent erzielte, jedoch wurde dies nicht verwendet, da man gezielt ohne Parameter pro Algorithmus arbeiten wollte. Es wurde darauf geachtet, dass für jeden Algorithmus der gleiche Ansatz benutzt wurde, um den Schwellenwert zu messen (durch Maximierung des F1-Scores) und dass so durch ein fairer Vergleich ermöglicht wurde. Mit einem anderen Verfahren hätte DBSCAN aber möglicherweise besser abgeschnitten- wurde jedoch nicht evaluiert und getestet.
+	Ein weiteres Problem, das im Kontext des maschinellen Lernens beachtet werden sollte, ist die eingeschränkte Reproduzierbarkeit mancher Tests. Wie zuvor erwähnt, kann die Wahl der Dropout-Rate die Reliabilität der Ergebnisse beeinflussen, wenn auch nur in geringem Maße. In anderen Versuchen könnte das Verfahren Isolation Forest daher in bestimmten Bereichen zu besseren Resultaten führen. Dieses Problem der eingeschränkten Reproduzierbarkeit ist in der Forschung nach wie vor nicht vollständig gelöst. Auch wenn Dropout nicht deterministisch ist, zeigen Reimers und Gurevych \cite{reimers2017score}, dass der gewählte Seed keinen dominanten Einflussfaktor für die Reproduzierbarkeit darstellt und dass mehrere unabhängige Testläufe aussagekräftiger sind als die bloße Festlegung eines deterministischen Startwertes. Zudem wird Variabilität in dieser Arbeit so durch gewährleistet.
 	\\[0.5em]
-	Weitere Gründe könnten unter anderem darin liegen, dass die Tiefe und Breite des Modells möglicherweise zu gering war und das Training zudem nur über 50 Epochen erfolgte. Außerdem wurde das Verhältnis der Features nur unzureichend berücksichtigt. Die abhängige Variable stellt zwar das Label dar, welches den Log als anomal oder normal klassifiziert. Die IP-Adresse wurde jedoch entfernt, ebenso wie Features, die stärker auf Anomalien hinweisen könnten, wie etwa der Standort (in den Logs nicht angegeben) und die Zeit. Die Angriffsszenarien mussten daher innerhalb normaler, unauffälliger Zeiträume, beispielsweise mittags, stattfinden, um die Fähigkeiten des LSTM-Autoencoders wirklich testen zu können. Zu viele aufeinanderfolgende Anomalie-Punkte würden es dem LSTM-AE zu leicht machen. Daher spielen diese Features nur noch eine untergeordnete Rolle bei der Erkennung von Anomalien. Stattdessen beeinflussen Features wie der Name, der Eventtyp und besonders die anderen unabhängigen Variablen das Ergebnis. Es wurde jedoch nicht untersucht, in welchem Ausmaß einzelne Features dazu führen, dass die Modelle einen Log als anomal oder normal klassifizieren. Eventuell hätte zusätzlich ein ANOVA-Test durchgeführt werden sollen.
+	Insgesamt lässt sich festhalten, dass für Sequenzlänge 10, 25 und 50 derzeit IsolationForest und OCSVM die stabilsten und zuverlässigsten Modelle sind, wobei OCSVM beim F1-Score im Schnitt die höchsten Werte erzielte- Insgesamt erzielte IF jedoch im Gesamtschnitt die höchsten Werte unter allen Metriken- die Hypothese wurde verifiziert. DBSCAN ist für diese Konfiguration nicht geeignet.
 	
 	\section{Fazit}
 	Insgesamt zeigen die Ergebnisse, dass Hybridmodelle in der Lage sind, Anomalien in Keycloak-Logs zuverlässig zu erkennen. Beim direkten Vergleich der Kombinationen mit DBSCAN, OCSVM und Isolation Forest erzielte das Hybridmodell mit OCSVM die besten Ergebnisse in den untersuchten Metriken. Dabei spielen sowohl die Architektur des LSTM-Autoencoders als auch die gewählte Sequenzlänge eine entscheidende Rolle für die Erkennungsleistung, insbesondere angesichts des stark unbalancierten Datensatzes.
@@ -2067,18 +1702,562 @@
 	\section{Ausblick}
 	In Zukunft könnten weitere Algorithmen oder alternative Architekturen in die Untersuchung aufgenommen werden. Mit einer größeren Menge an Trainings- und Testdaten ließe sich die Architektur weiter optimieren und verallgemeinern. Auf Basis der gewonnenen Erkenntnisse wäre es denkbar, ein praxistaugliches Anomalie-Erkennungstool zu entwickeln. Die konkrete Leistungsfähigkeit hängt jedoch stark vom jeweiligen Testszenario ab.  
 	\\[0.5em]
-	In dieser Arbeit wurde mit rund 39{,}000 Logeinträgen gearbeitet, wobei zwei feste Sequenzlängen und eine spezifische Architektur verwendet wurden. Unter anderen Bedingungen könnten sich die Erkennungsergebnisse deutlich unterscheiden. So hätte beispielsweise ein LSTM-AE mit Isolation Forest in einem anderen Szenario möglicherweise bessere Ergebnisse erzielt als OCSVM oder DBSCAN.  
+	In dieser Arbeit wurde mit rund 39.000 Logeinträgen gearbeitet, wobei zwei feste Sequenzlängen und eine spezifische Architektur verwendet wurden. Unter anderen Bedingungen könnten sich die Erkennungsergebnisse deutlich unterscheiden. So hätte beispielsweise ein LSTM-AE mit Isolation Forest in einem anderen Szenario möglicherweise bessere Ergebnisse erzielt als OCSVM oder DBSCAN.  
 	\\[0.5em]
 	Daher erscheint es sinnvoll, weitere Tests mit komplexeren Angriffsszenarien, zusätzlichen Trainingsdaten und alternativen Methoden zur Schwellenwertbestimmung durchzuführen.
 	\\[0.5em]
+	Zudem wurden die Angriffsszenarien zu "gnädig" gehalten. Es wurden keine Angriffe wie bspw. über einen Drittanbieter in SSO durchgeführt (z.B. Attacke auf das Google-Konto und dadurch Kontakt zu Keycloak) oder auch über das Netzwerk. In Zukunft können die Angriffsszenarien kreativer gestaltet werden ebenfalls wie die generierten Logs normaler Mitarbeiter, welche sich über einen Identity Provider einloggen. Zertifikatsfälschungen in Keycloak und ähnliche Angriffe sollten für zukünftige Testzwecke beachtet werden und könnten die Features unterschiedlich gewichten, womit das Modell lernt mit neuen Herausforderungen umzugehen.
+	\\[0.5em]
+	Das Unternehmen Intension kann mit weiteren Tests in naher Zukunft und mit mehr Forschung ein Anomalie-Erkennungstool entwickeln. Mit weiteren kombinierten Produkten wie z.B. ELK \footnote{https://www.elastic.co/elastic-stack/} würde das Anomalie-Erkennungstool Insider-Angriffe und Intrusionsangriffe und generelle Anomalien erkennen. Es ist wichtig, dass das Produkt dabei richtig integriert wird und getestet wird, mit welchen Produkten nun Schnittstellen integrierbar sind und welche nicht. Dies erfordert aber weiterhin Zeit und Forschung, so wie ein größeres Team um so etwas umzusetzen.
+	\\[0.5em]
 	Bis dahin jedoch würden schon genug Studien veröffentlicht werden, welche ein ähnliches Thema schon behandeln.
 	
-\newpage	
+\newpage
 \bibliography{quellen} 
 \newpage 
 \renewcommand{\notesname}{Fußnotenverzeichnis}
 \renewcommand{\enoteformat}{\rightskip0pt\leftskip0pt\vspace{0.5em}\noindent\makebox[2em][l]{\theenmark}}
 \theendnotes
 \newpage
+\section*{Anhang}
+\subsection{Ergebnisse mit der Sequenzlänge 10}
+\subsubsection{Testlauf 1}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{lc}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 0.1861 \\
+		Precision & 0.9519 \\
+		Recall & 0.7734 \\
+		F1 & 0.8534 \\
+		ROC-AUC & 0.9630 \\
+		AUC-PR & 0.7412 \\
+		Matthews Correlation Coefficient (MCC) & 0.8553 \\
+		Balanced Accuracy & 0.8863 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Ergebnisse für IsolationForest, Sequenzlänge 10}
+\end{table}
+
+% Tabelle für One-Class SVM
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 4999.3471 \\
+		Precision & 0.9364 \\
+		Recall & 0.8047 \\
+		F1 & 0.8655 \\
+		ROC-AUC & 0.9109 \\
+		AUC-PR & 0.7577 \\
+		Matthews Correlation Coefficient (MCC) & 0.8654 \\
+		Balanced Accuracy & 0.9017 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Ergebnisse für One-Class SVM, Sequenzlänge 10}
+\end{table}
+
+% Tabelle für DBSCAN
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 2.0099 \\
+		Precision & 1.0000 \\
+		Recall & 0.1484 \\
+		F1 & 0.2585 \\
+		ROC-AUC & 0.5742 \\
+		AUC-PR & 0.1670 \\
+		Matthews Correlation Coefficient (MCC) & 0.3817 \\
+		Balanced Accuracy & 0.5742 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Ergebnisse für DBSCAN, Sequenzlänge 10}
+\end{table}
+
+\subsubsection{Testlauf 2}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 0.1850 \\
+		Precision & 0.9903 \\
+		Recall & 0.7969 \\
+		F1 & 0.8831 \\
+		ROC-AUC & 0.9638 \\
+		AUC-PR & 0.7936 \\
+		Matthews Correlation Coefficient (MCC) & 0.8862 \\
+		Balanced Accuracy & 0.8984 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 2: Ergebnisse für IsolationForest, Sequenzlänge 10}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 5444.4513 \\
+		Precision & 0.9903 \\
+		Recall & 0.7969 \\
+		F1 & 0.8831 \\
+		ROC-AUC & 0.9184 \\
+		AUC-PR & 0.7936 \\
+		Matthews Correlation Coefficient (MCC) & 0.8862 \\
+		Balanced Accuracy & 0.8984 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 2: Ergebnisse für One-Class SVM, Sequenzlänge 10}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 2.0995 \\
+		Precision & 1.0000 \\
+		Recall & 0.1250 \\
+		F1 & 0.2222 \\
+		ROC-AUC & 0.5625 \\
+		AUC-PR & 0.1441 \\
+		Matthews Correlation Coefficient (MCC) & 0.3502 \\
+		Balanced Accuracy & 0.5625 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 2: Ergebnisse für DBSCAN, Sequenzlänge 10}
+\end{table}
+
+\subsubsection{Testlauf 3}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 0.1934 \\
+		Precision & 0.9196 \\
+		Recall & 0.8047 \\
+		F1 & 0.8583 \\
+		ROC-AUC & 0.9584 \\
+		AUC-PR & 0.7443 \\
+		Matthews Correlation Coefficient (MCC) & 0.8574 \\
+		Balanced Accuracy & 0.9016 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für IsolationForest, Sequenzlänge 10}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 4082.3180 \\
+		Precision & 0.9043 \\
+		Recall & 0.8125 \\
+		F1 & 0.8560 \\
+		ROC-AUC & 0.9168 \\
+		AUC-PR & 0.7389 \\
+		Matthews Correlation Coefficient (MCC) & 0.8542 \\
+		Balanced Accuracy & 0.9053 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 10}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 2.0106 \\
+		Precision & 1.0000 \\
+		Recall & 0.2188 \\
+		F1 & 0.3590 \\
+		ROC-AUC & 0.6094 \\
+		AUC-PR & 0.2358 \\
+		Matthews Correlation Coefficient (MCC) & 0.4637 \\
+		Balanced Accuracy & 0.6094 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 10}
+\end{table}
+
+
+\subsubsection{Ergebnisse mit der Sequenzlänge 25}
+\subsubsection{Testdurchlauf 1}
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 0.1764 \\
+		Precision & 0.9290 \\
+		Recall & 0.6305 \\
+		F1 & 0.7512 \\
+		ROC-AUC & 0.9408 \\
+		AUC-PR & 0.6015 \\
+		Matthews Correlation Coefficient (MCC) & 0.7574 \\
+		Balanced Accuracy & 0.8142 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Ergebnisse für IsolationForest, Sequenzlänge 25}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 6275.1389 \\
+		Precision & 0.9401 \\
+		Recall & 0.6305 \\
+		F1 & 0.7548 \\
+		ROC-AUC & 0.8532 \\
+		AUC-PR & 0.6085 \\
+		Matthews Correlation Coefficient (MCC) & 0.7622 \\
+		Balanced Accuracy & 0.8144 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Ergebnisse für One-Class SVM, Sequenzlänge 25}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 2.2846 \\
+		Precision & 1.0000 \\
+		Recall & 0.0442 \\
+		F1 & 0.0846 \\
+		ROC-AUC & 0.5221 \\
+		AUC-PR & 0.0848 \\
+		Matthews Correlation Coefficient (MCC) & 0.2059 \\
+		Balanced Accuracy & 0.5221 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Ergebnisse für DBSCAN, Sequenzlänge 25}
+\end{table}
+
+\subsubsection{Testlauf 2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 0.1735 \\
+		Precision & 0.9811 \\
+		Recall & 0.6265 \\
+		F1 & 0.7647 \\
+		ROC-AUC & 0.9410 \\
+		AUC-PR & 0.6306 \\
+		Matthews Correlation Coefficient (MCC) & 0.7771 \\
+		Balanced Accuracy & 0.8130 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 2: Ergebnisse für IsolationForest, Sequenzlänge 25}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 5370.7273 \\
+		Precision & 0.9634 \\
+		Recall & 0.6345 \\
+		F1 & 0.7651 \\
+		ROC-AUC & 0.8549 \\
+		AUC-PR & 0.6269 \\
+		Matthews Correlation Coefficient (MCC) & 0.7747 \\
+		Balanced Accuracy & 0.8167 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 2: Ergebnisse für One-Class SVM, Sequenzlänge 25}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 2.1895 \\
+		Precision & 1.0000 \\
+		Recall & 0.0442 \\
+		F1 & 0.0846 \\
+		ROC-AUC & 0.5221 \\
+		AUC-PR & 0.0848 \\
+		Matthews Correlation Coefficient (MCC) & 0.2059 \\
+		Balanced Accuracy & 0.5221 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 2: Ergebnisse für DBSCAN, Sequenzlänge 25}
+\end{table}
+
+\subsubsection{Testlauf 3}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 0.1793 \\
+		Precision & 0.9634 \\
+		Recall & 0.6345 \\
+		F1 & 0.7651 \\
+		ROC-AUC & 0.9362 \\
+		AUC-PR & 0.6269 \\
+		Matthews Correlation Coefficient (MCC) & 0.7747 \\
+		Balanced Accuracy & 0.8167 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für IsolationForest, Sequenzlänge 25}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 5983.1203 \\
+		Precision & 0.9467 \\
+		Recall & 0.6426 \\
+		F1 & 0.7656 \\
+		ROC-AUC & 0.8553 \\
+		AUC-PR & 0.6235 \\
+		Matthews Correlation Coefficient (MCC) & 0.7725 \\
+		Balanced Accuracy & 0.8205 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 25}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 2.1376 \\
+		Precision & 1.0000 \\
+		Recall & 0.0482 \\
+		F1 & 0.0920 \\
+		ROC-AUC & 0.5241 \\
+		AUC-PR & 0.0887 \\
+		Matthews Correlation Coefficient (MCC) & 0.2150 \\
+		Balanced Accuracy & 0.5241 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 25}
+\end{table}
+
+\subsection{Ergebnisse für Sequenzlänge 50}
+\subsubsection{Testlauf 1}
+\begin{table}[H]
+	\centering
+	\caption{IsolationForest: Performance-Metriken}
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 0.0797 \\
+		Precision & 0.8649 \\
+		Recall & 0.4528 \\
+		F1-Score & 0.5944 \\
+		ROC-AUC & 0.7921 \\
+		AUC-PR & 0.4314 \\
+		Matthews Correlation Coefficient (MCC) & 0.6069 \\
+		Balanced Accuracy & 0.7236 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Ergebnisse für IF, Sequenzlänge 50}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{One-Class SVM: Performance-Metriken}
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 2615.3358 \\
+		Precision & 0.5754 \\
+		Recall & 0.6297 \\
+		F1-Score & 0.6014 \\
+		ROC-AUC & 0.7277 \\
+		AUC-PR & 0.3893 \\
+		Matthews Correlation Coefficient (MCC) & 0.5692 \\
+		Balanced Accuracy & 0.7966 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Performance-Metriken für OCSVM, Sequenzlänge 50}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{DBSCAN: Performance-Metriken}
+	\begin{tabular}{l c}
+		\hline
+		Metrik & Wert \\
+		\hline
+		Best Threshold (F1) & 1.5884 \\
+		Precision & 1.0000 \\
+		Recall & 0.0259 \\
+		F1-Score & 0.0506 \\
+		ROC-AUC & 0.5130 \\
+		AUC-PR & 0.0968 \\
+		Matthews Correlation Coefficient (MCC) & 0.1553 \\
+		Balanced Accuracy & 0.5130 \\
+		\hline
+	\end{tabular}
+	\caption{Testlauf 1: Performance-Metriken für DBSCAN, Sequenzlänge 50}
+\end{table}
+
+\subsubsection{Testlauf 2}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\toprule
+		\textbf{Metrik} & \textbf{Wert} \\
+		\midrule
+		Best Threshold (F1) & 0.0851 \\
+		Precision & 0.5306 \\
+		Recall & 0.5519 \\
+		F1-Score & 0.5410 \\
+		ROC-AUC & 0.8675 \\
+		AUC-PR & 0.3254 \\
+		Matthews Correlation Coefficient & 0.5044 \\
+		Balanced Accuracy & 0.7568 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Performance-Metriken für Isolation Forest}
+	\caption{Testlauf 2: Ergebnisse für IF, Sequenzlänge 50}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\toprule
+		\textbf{Metrik} & \textbf{Wert} \\
+		\midrule
+		Best Threshold (F1) & 2892.5356 \\
+		Precision & 0.5551 \\
+		Recall & 0.6297 \\
+		F1-Score & 0.5901 \\
+		ROC-AUC & 0.7209 \\
+		AUC-PR & 0.3765 \\
+		Matthews Correlation Coefficient & 0.5570 \\
+		Balanced Accuracy & 0.7951 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Testlauf 2: Performance-Metriken für One-Class SVM, Sequenzlänge 50}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l c}
+		\toprule
+		\textbf{Metrik} & \textbf{Wert} \\
+		\midrule
+		Best Threshold (F1) & 1.5483 \\
+		Precision & 1.0000 \\
+		Recall & 0.0259 \\
+		F1-Score & 0.0506 \\
+		ROC-AUC & 0.5130 \\
+		AUC-PR & 0.0968 \\
+		Matthews Correlation Coefficient & 0.1553 \\
+		Balanced Accuracy & 0.5130 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Testlauf 2: Performance-Metriken für DBSCAN, Sequenzlänge 50}
+\end{table}
+
+\subsubsection{Testlauf 3}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Metrik} & \textbf{Wert} \\
+		\midrule
+		Best Threshold by F1 & 0.1053 \\
+		Precision & 0.8204 \\
+		Recall & 0.4741 \\
+		F1-Score & 0.6009 \\
+		ROC-AUC & 0.6950 \\
+		AUC-PR & 0.4272 \\
+		Matthews Correlation Coefficient (MCC) & 0.6030 \\
+		Balanced Accuracy & 0.7330 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für IF, Sequenzlänge 50}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Metrik} & \textbf{Wert} \\
+		\midrule
+		Best Threshold by F1 & 4703.5301 \\
+		Precision & 0.8204 \\
+		Recall & 0.4741 \\
+		F1-Score & 0.6009 \\
+		ROC-AUC & 0.7976 \\
+		AUC-PR & 0.4272 \\
+		Matthews Correlation Coefficient (MCC) & 0.6030 \\
+		Balanced Accuracy & 0.7330 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 50}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{ll}
+		\toprule
+		\textbf{Metrik} & \textbf{Wert} \\
+		\midrule
+		Best Threshold by F1 & 1.9825 \\
+		Precision & 1.0000 \\
+		Recall & 0.0259 \\
+		F1-Score & 0.0506 \\
+		ROC-AUC & 0.5130 \\
+		AUC-PR & 0.0968 \\
+		Matthews Correlation Coefficient (MCC) & 0.1553 \\
+		Balanced Accuracy & 0.5130 \\
+		\bottomrule
+	\end{tabular}
+	\caption{Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 50}
+\end{table}
+
+
+\newpage	
 
 \end{document}

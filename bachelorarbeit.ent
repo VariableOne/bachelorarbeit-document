@@ -1,7 +1,4 @@
 \@doanenote {1}
-macro:->https://chatgpt.com/
-\@endanenote 
-\@doanenote {2}
 macro:->Keycloak
 Project:
 \textit
@@ -19,7 +16,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {3}
+\@doanenote {2}
 macro:->IAM
 steht
 für
@@ -60,7 +57,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {4}
+\@doanenote {3}
 macro:->Single
 Sign-On
 ermöglicht
@@ -98,57 +95,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {5}
-macro:->Quora,
-„What
-Are
-the
-Biggest
-Challenges
-Facing
-the
-Cybersecurity
-Industry?“,
-Forbes,
-15.
-September
-2017,
-\url
-{https://www.forbes.com/sites/quora/2017/09/15/what-are-the-biggest-challenges-facing-the-cybersecurity-industry},
-letzter
-Zugriff:
-30.
-Juli
-2025.
-\@endanenote 
-\@doanenote {6}
-macro:->Sciforce,
-„Adversarial
-Attacks
-Explained
-and
-How
-to
-Defend
-ML
-Models
-Against
-Them“,
-Medium,
-veröffentlicht
-am
-20.
-Januar
-2020,
-\url
-{https://medium.com/sciforce/adversarial-attacks-explained-and-how-to-defend-ml-models-against-them-d76f7d013b18},
-letzter
-Zugriff:
-30.
-Juli
-2025.
-\@endanenote 
-\@doanenote {7}
+\@doanenote {4}
 macro:->National
 Vulnerability
 Database
@@ -164,7 +111,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {8}
+\@doanenote {5}
 macro:->CVEDetails,
 „CVE-2025-3501
 Details“,
@@ -176,7 +123,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {9}
+\@doanenote {6}
 macro:->Lukas
 Ruff,
 „Deep-SVDD-PyTorch“,
@@ -190,7 +137,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {10}
+\@doanenote {7}
 macro:->Definitionen
 der
 Metriken:
@@ -290,7 +237,23 @@ und
 False
 Negatives.
 \@endanenote 
-\@doanenote {11}
+\@doanenote {8}
+macro:->Typ-1-Fehler:
+Man
+nimmt
+an,
+dass
+die
+Nullhypothese
+korrekt
+ist,
+obwohl
+sie
+eigentlich
+widerlegt
+wurde
+\@endanenote 
+\@doanenote {9}
 macro:->Überanpassung
 des
 Modells
@@ -305,7 +268,7 @@ neue
 Daten
 leidet.
 \@endanenote 
-\@doanenote {12}
+\@doanenote {10}
 macro:->Scikit-learn:
 Machine
 Learning
@@ -323,7 +286,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {13}
+\@doanenote {11}
 macro:->Keras:
 The
 Python
@@ -342,7 +305,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {14}
+\@doanenote {12}
 macro:->TensorFlow:
 An
 End-to-End
@@ -363,7 +326,45 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
+\@doanenote {13}
+macro:->WildFly
+Project,
+\url
+{https://www.wildfly.org/},
+letzter
+Zugriff:
+30.
+Juli
+2025.
+\@endanenote 
+\@doanenote {14}
+macro:->Keycloak
+Documentation,
+„Server
+Logging“,
+\url
+{https://www.keycloak.org/server/logging},
+letzter
+Zugriff:
+30.
+Juli
+2025.
+\@endanenote 
 \@doanenote {15}
+macro:->Keycloak
+Community,
+„JpaAdminEventQuery.java“,
+GitHub
+Repository,
+\url
+{https://github.com/keycloak/keycloak/blob/main/model/jpa/src/main/java/org/keycloak/events/jpa/JpaAdminEventQuery.java},
+letzter
+Zugriff:
+30.
+Juli
+2025.
+\@endanenote 
+\@doanenote {16}
 macro:->NVIDIA
 Corporation,
 „DGX
@@ -376,7 +377,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {16}
+\@doanenote {17}
 macro:->NVIDIA
 Corporation,
 „Introduction
@@ -395,57 +396,19 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {17}
-macro:->WildFly
-Project,
-\url
-{https://www.wildfly.org/},
-letzter
-Zugriff:
-30.
-Juli
-2025.
-\@endanenote 
 \@doanenote {18}
-macro:->Keycloak
-Documentation,
-„Server
-Logging“,
-\url
-{https://www.keycloak.org/server/logging},
-letzter
-Zugriff:
-30.
-Juli
-2025.
-\@endanenote 
-\@doanenote {19}
-macro:->Keycloak
-Community,
-„JpaAdminEventQuery.java“,
-GitHub
-Repository,
-\url
-{https://github.com/keycloak/keycloak/blob/main/model/jpa/src/main/java/org/keycloak/events/jpa/JpaAdminEventQuery.java},
-letzter
-Zugriff:
-30.
-Juli
-2025.
-\@endanenote 
-\@doanenote {20}
 macro:->https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.LabelEncoder.html
 \@endanenote 
-\@doanenote {21}
+\@doanenote {19}
 macro:->https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html
 \@endanenote 
-\@doanenote {22}
+\@doanenote {20}
 macro:->https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean\_squared\_error.html
 \@endanenote 
-\@doanenote {23}
+\@doanenote {21}
 macro:->https://docs.pytorch.org/docs/stable/generated/torch.optim.Adam.html
 \@endanenote 
-\@doanenote {24}
+\@doanenote {22}
 macro:->Internet
 Assigned
 Numbers
@@ -463,7 +426,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {25}
+\@doanenote {23}
 macro:->Keycloak
 Documentation,
 „REST
@@ -477,7 +440,7 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {26}
+\@doanenote {24}
 macro:->MITRE
 Corporation,
 „CVE
@@ -493,9 +456,12 @@ Zugriff:
 Juli
 2025.
 \@endanenote 
-\@doanenote {27}
+\@doanenote {25}
 macro:->https://www.cve.news/cve-2024-3656/
 \@endanenote 
-\@doanenote {28}
+\@doanenote {26}
 macro:->https://www.unixtimestamp.com/
+\@endanenote 
+\@doanenote {27}
+macro:->https://www.elastic.co/elastic-stack/
 \@endanenote 

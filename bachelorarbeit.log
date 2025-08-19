@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.20)  15 AUG 2025 18:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.1.20)  19 AUG 2025 11:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -77,7 +77,334 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutvoffset=\dimen149
 \Gm@dimlist=\toks20
 )
-(/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2020/03/25 PSNFSS-v9.3 Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxtext.sty
+Package: newtxtext 2024/01/11 v1.737(Michael Sharpe) latex and unicode latex su
+pport for TeXGyreTermesX
+
+`newtxtext' v1.737, 2024/01/11 Text macros taking advantage of TeXGyre Termes a
+nd its extensions (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count266
+\l__pdf_internal_box=\box51
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count267
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
+)
+\XKV@depth=\count268
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count269
+\xs_countb=\count270
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+LaTeX Font Info:    Setting ntxLF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 24.
+
+(/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
+\ntx@tmpcnta=\count271
+\ntx@cnt=\count272
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+\tx@sixem=\dimen150
+\tx@y=\dimen151
+\tx@x=\dimen152
+\tx@tmpdima=\dimen153
+\tx@tmpdimb=\dimen154
+\tx@tmpdimc=\dimen155
+\tx@tmpdimd=\dimen156
+\tx@tmpdime=\dimen157
+\tx@tmpdimf=\dimen158
+\tx@dimA=\dimen159
+\tx@dimAA=\dimen160
+\tx@dimB=\dimen161
+\tx@dimBB=\dimen162
+\tx@dimC=\dimen163
+LaTeX Info: Redefining \oldstylenums on input line 893.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxmath.sty
+Package: newtxmath 2023/11/05 v1.732
+
+`newtxmath' v1.732, 2023/11/05 Math macros based originally on txfonts (msharpe
+) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks23
+\ex@=\dimen164
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen165
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count273
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count274
+\leftroot@=\count275
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count276
+\DOTSCASE@=\count277
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen166
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count278
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count279
+\dotsspace@=\muskip16
+\c@parentequation=\count280
+\dspbrk@lvl=\count281
+\tag@help=\toks24
+\row@=\count282
+\column@=\count283
+\maxfields@=\count284
+\andhelp@=\toks25
+\eqnshift@=\dimen167
+\alignsep@=\dimen168
+\tagshift@=\dimen169
+\tagwidth@=\dimen170
+\totwidth@=\dimen171
+\lineht@=\dimen172
+\@envbody=\toks26
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks27
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/centernot.sty
+Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
+)
+\tx@cntz=\count285
+
+(/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
+\tx@Isdigit=\count286
+\tx@IsAlNum=\count287
+\tx@tA=\toks28
+\tx@tB=\toks29
+\tx@su=\read3
+
+amsthm NOT loaded
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 390.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/ztmcm/m/n --> OT1/minntx/m/n on input line 390.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/ztmcm/m/n --> OT1/minntx/m/n on input line 390.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/minntx/m/n --> OT1/minntx/b/n on input line 391.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 397.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/qhv/m/n on input line 397.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/qhv/m/n on input line 397.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 398.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/ptm/m/it --> OT1/minntx/m/it on input line 398.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/ptm/m/it --> OT1/minntx/m/it on input line 398.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 399.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/ntxtt/m/n on input line 399.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/ntxtt/m/n on input line 399.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 401.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/ptm/bx/n --> OT1/minntx/b/n on input line 401.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/ptm/bx/n --> OT1/minntx/b/n on input line 401.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/minntx/m/it --> OT1/minntx/b/it on input line 402.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/qhv/m/n --> OT1/qhv/b/n on input line 403.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/ntxtt/m/n --> OT1/ntxtt/b/n on input line 404.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 506.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/ztmcm/m/it --> OML/ntxmi/m/it on input line 506.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ztmcm/m/it --> OML/ntxmi/m/it on input line 506.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 507.
+\symlettersA=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 562.
+Now handling font encoding LMS ...
+... no UTF-8 mapping file for font encoding LMS
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 583.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 583.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/ztmcm/m/n --> LMS/ntxsy/m/n on input line 583.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 583.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/ztmcm/m/n --> LMS/ntxsy/m/n on input line 583.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 584.
+\symAMSm=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
+(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 609.
+\symsymbolsC=\mathgroup8
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 630.
+Now handling font encoding LMX ...
+... no UTF-8 mapping file for font encoding LMX
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 643.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 6
+43.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/ztmcm/m/n --> LMX/ntxexx/m/n on input line 643.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 643
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/ztmcm/m/n --> LMX/ntxexx/m/n on input line 643.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 644.
+\symlargesymbolsTXA=\mathgroup9
+LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
+
+(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 658.
+\tx@sbptoks=\toks30
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 881.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 882.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 883.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 884.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 889.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 890.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 892.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 894.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 898.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 899.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 970.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 971.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 2044.
+LaTeX Info: Redefining \Bbbk on input line 2834.
+LaTeX Info: Redefining \not on input line 2982.
+) (/usr/share/texlive/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -93,12 +420,9 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
-
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
-))
-\Gin@req@height=\dimen150
-\Gin@req@width=\dimen151
+)
+\Gin@req@height=\dimen173
+\Gin@req@width=\dimen174
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
@@ -149,15 +473,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (/usr/share/texlive/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count266
+\c@section@level=\count288
 )
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count267
-)
-\@linkdim=\dimen152
-\Hy@linkcounter=\count268
-\Hy@pagecounter=\count269
+\@linkdim=\dimen175
+\Hy@linkcounter=\count289
+\Hy@pagecounter=\count290
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2024-01-20 v7.01h Hyperref: PDFDocEncoding definition (HO)
@@ -167,7 +487,7 @@ Now handling font encoding PD1 ...
 (/usr/share/texlive/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count270
+\Hy@SavedSpaceFactor=\count291
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2024-01-20 v7.01h Hyperref: PDF Unicode definition (HO)
@@ -181,14 +501,14 @@ Package hyperref Info: Plain pages OFF on input line 4194.
 Package hyperref Info: Backreferencing OFF on input line 4199.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4446.
-\c@Hy@tempcnt=\count271
+\c@Hy@tempcnt=\count292
 
 (/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip16
+\Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4784.
-\XeTeXLinkMargin=\dimen153
+\XeTeXLinkMargin=\dimen176
 
 (/usr/share/texlive/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -197,9 +517,9 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count272
-\Field@Width=\dimen154
-\Fld@charsize=\dimen155
+\Fld@menulength=\count293
+\Field@Width=\dimen177
+\Fld@charsize=\dimen178
 Package hyperref Info: Hyper figures OFF on input line 6063.
 Package hyperref Info: Link nesting OFF on input line 6068.
 Package hyperref Info: Hyper index ON on input line 6071.
@@ -212,9 +532,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6093.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count273
-\c@Item=\count274
-\c@Hfootnote=\count275
+\Hy@abspage=\count294
+\c@Item=\count295
+\c@Hfootnote=\count296
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -226,8 +546,8 @@ Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count276
-\c@bookmark@seq@number=\count277
+\Fld@listcount=\count297
+\c@bookmark@seq@number=\count298
 
 (/usr/share/texlive/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
@@ -238,29 +558,15 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
-\Hy@SectionHShift=\skip50
+\Hy@SectionHShift=\skip53
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2023/09/29 v4.53 (NLCT)
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks21
-\XKV@tempa@toks=\toks22
-)
-\XKV@depth=\count278
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-))
 (/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2022/10/14 v2.08 (NLCT)
-\@glsmfirst=\toks23
-\@glsmrest=\toks24
+\@glsmfirst=\toks31
+\@glsmrest=\toks32
 )
 (/usr/share/texlive/texmf-dist/tex/latex/xfor/xfor.sty
 Package: xfor 2009/02/05 v1.05 (NLCT)
@@ -268,77 +574,9 @@ Package: xfor 2009/02/05 v1.05 (NLCT)
 (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-base.sty
 Package: datatool-base 2019/09/27 v2.32 (NLCT)
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2023/05/13 v2.17o AMS math features
-\@mathmargin=\skip51
-
-For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2021/08/26 v2.01 AMS text
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
-File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks25
-\ex@=\dimen156
-))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
-Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen157
-)
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
-)
-\inf@bad=\count279
-LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count280
-\leftroot@=\count281
-LaTeX Info: Redefining \overline on input line 399.
-LaTeX Info: Redefining \colon on input line 410.
-\classnum@=\count282
-\DOTSCASE@=\count283
-LaTeX Info: Redefining \ldots on input line 496.
-LaTeX Info: Redefining \dots on input line 499.
-LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box51
-\strutbox@=\box52
-LaTeX Info: Redefining \big on input line 722.
-LaTeX Info: Redefining \Big on input line 723.
-LaTeX Info: Redefining \bigg on input line 724.
-LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen158
-LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count284
-LaTeX Info: Redefining \bmod on input line 905.
-LaTeX Info: Redefining \pmod on input line 910.
-LaTeX Info: Redefining \smash on input line 940.
-LaTeX Info: Redefining \relbar on input line 970.
-LaTeX Info: Redefining \Relbar on input line 971.
-\c@MaxMatrixCols=\count285
-\dotsspace@=\muskip17
-\c@parentequation=\count286
-\dspbrk@lvl=\count287
-\tag@help=\toks26
-\row@=\count288
-\column@=\count289
-\maxfields@=\count290
-\andhelp@=\toks27
-\eqnshift@=\dimen159
-\alignsep@=\dimen160
-\tagshift@=\dimen161
-\tagwidth@=\dimen162
-\totwidth@=\dimen163
-\lineht@=\dimen164
-\@envbody=\toks28
-\multlinegap=\skip52
-\multlinetaggap=\skip53
-\mathdisplay@stack=\toks29
-LaTeX Info: Redefining \[ on input line 2953.
-LaTeX Info: Redefining \] on input line 2954.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count291
+\c@su@anzahl=\count299
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2019/09/27 v2.32 (NLCT)
@@ -349,19 +587,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count292
+\actioncount=\count300
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count293
-\FP@xia=\count294
-\FP@xib=\count295
-\FP@xfa=\count296
-\FP@xfb=\count297
-\FP@rega=\count298
-\FP@regb=\count299
-\FP@regs=\count300
-\FP@times=\count301
+\FP@xs=\count301
+\FP@xia=\count302
+\FP@xib=\count303
+\FP@xfa=\count304
+\FP@xfb=\count305
+\FP@rega=\count306
+\FP@regb=\count307
+\FP@regs=\count308
+\FP@times=\count309
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -380,7 +618,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count302
+\FPseed=\count310
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -391,15 +629,15 @@ Package: fp-upn 1996/10/21
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks30
-\@dtl@tmpcount=\count303
+\@dtl@toks=\toks33
+\@dtl@tmpcount=\count311
 \dtl@tmplength=\skip54
-\dtl@sortresult=\count304
-\@dtl@numgrpsepcount=\count305
-\@dtl@datatype=\count306
-\dtl@codeA=\count307
-\dtl@codeB=\count308
-\@dtl@foreach@level=\count309
+\dtl@sortresult=\count312
+\@dtl@numgrpsepcount=\count313
+\@dtl@datatype=\count314
+\dtl@codeA=\count315
+\dtl@codeB=\count316
+\@dtl@foreach@level=\count317
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tracklang/tracklang.sty
 Package: tracklang 2022/12/13 v1.6.1 (NLCT) Track Languages
@@ -412,13 +650,13 @@ Package: translator 2021-05-31 v1.12d Easy translation of strings in LaTeX
 f
 File: glossaries-german.ldf 2014/11/23 v1.0
 )
-\gls@level=\count310
-\@gls@tmpb=\toks31
+\gls@level=\count318
+\@gls@tmpb=\toks34
 \gls@tmplen=\skip55
-\glskeylisttok=\toks32
-\glslabeltok=\toks33
-\glsshorttok=\toks34
-\glslongtok=\toks35
+\glskeylisttok=\toks35
+\glslabeltok=\toks36
+\glsshorttok=\toks37
+\glslongtok=\toks38
 
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
 y
@@ -435,18 +673,18 @@ Package: longtable 2023-11-01 v4.19 Multi-page Table package (DPC)
 \LTright=\skip58
 \LTpre=\skip59
 \LTpost=\skip60
-\LTchunksize=\count311
-\LTcapwidth=\dimen165
-\LT@head=\box53
-\LT@firsthead=\box54
-\LT@foot=\box55
-\LT@lastfoot=\box56
-\LT@gbox=\box57
-\LT@cols=\count312
-\LT@rows=\count313
-\c@LT@tables=\count314
-\c@LT@chunks=\count315
-\LT@p@ftn=\toks36
+\LTchunksize=\count319
+\LTcapwidth=\dimen179
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@gbox=\box58
+\LT@cols=\count320
+\LT@rows=\count321
+\c@LT@tables=\count322
+\c@LT@chunks=\count323
+\LT@p@ftn=\toks39
 )
 \glsdescwidth=\skip61
 \glspagelistwidth=\skip62
@@ -456,21 +694,21 @@ Package: glossary-super 2023/09/29 v4.53 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
 Package: supertabular 2020/02/02 v4.1g the supertabular environment
-\c@tracingst=\count316
-\ST@wd=\dimen166
+\c@tracingst=\count324
+\ST@wd=\dimen180
 \ST@rightskip=\skip63
 \ST@leftskip=\skip64
 \ST@parfillskip=\skip65
-\ST@pageleft=\dimen167
-\ST@headht=\dimen168
-\ST@tailht=\dimen169
-\ST@pagesofar=\dimen170
-\ST@pboxht=\dimen171
-\ST@lineht=\dimen172
-\ST@prevht=\dimen173
-\ST@toadd=\dimen174
-\ST@dimen=\dimen175
-\ST@pbox=\box58
+\ST@pageleft=\dimen181
+\ST@headht=\dimen182
+\ST@tailht=\dimen183
+\ST@pagesofar=\dimen184
+\ST@pboxht=\dimen185
+\ST@lineht=\dimen186
+\ST@prevht=\dimen187
+\ST@toadd=\dimen188
+\ST@dimen=\dimen189
+\ST@pbox=\box59
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2023/09/29 v4.53 (NLCT)
@@ -481,88 +719,105 @@ Package: glossary-tree 2023/09/29 v4.53 (NLCT)
 \openout4 = `bachelorarbeit.glo'.
 
 Package glossaries Info: Writing glossary file bachelorarbeit.glo on input line
- 15.
+ 17.
 \glo@acronym@file=\write5
 \openout5 = `bachelorarbeit.acn'.
 
 Package glossaries Info: Writing glossary file bachelorarbeit.acn on input line
- 15.
+ 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/endnotes/endnotes.sty
 Package: endnotes 2020-01-02 endnotes package
-\c@endnote=\count317
-\endnotesep=\dimen176
+\c@endnote=\count325
+\endnotesep=\dimen190
 \@enotes=\write6
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count318
-\float@exts=\toks37
-\float@box=\box59
-\@float@everytoks=\toks38
-\@floatcapt=\box60
+\c@float@type=\count326
+\float@exts=\toks40
+\float@box=\box60
+\@float@everytoks=\toks41
+\@floatcapt=\box61
 )
 (/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen177
-\lightrulewidth=\dimen178
-\cmidrulewidth=\dimen179
-\belowrulesep=\dimen180
-\belowbottomsep=\dimen181
-\aboverulesep=\dimen182
-\abovetopsep=\dimen183
-\cmidrulesep=\dimen184
-\cmidrulekern=\dimen185
-\defaultaddspace=\dimen186
-\@cmidla=\count319
-\@cmidlb=\count320
-\@aboverulesep=\dimen187
-\@belowrulesep=\dimen188
-\@thisruleclass=\count321
-\@lastruleclass=\count322
-\@thisrulewidth=\dimen189
+\heavyrulewidth=\dimen191
+\lightrulewidth=\dimen192
+\cmidrulewidth=\dimen193
+\belowrulesep=\dimen194
+\belowbottomsep=\dimen195
+\aboverulesep=\dimen196
+\abovetopsep=\dimen197
+\cmidrulesep=\dimen198
+\cmidrulekern=\dimen199
+\defaultaddspace=\dimen256
+\@cmidla=\count327
+\@cmidlb=\count328
+\@aboverulesep=\dimen257
+\@belowrulesep=\dimen258
+\@thisruleclass=\count329
+\@lastruleclass=\count330
+\@thisrulewidth=\dimen259
 )
-(/usr/share/texlive/texmf-dist/tex/latex/acronym/acronym.sty
-Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
+LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
+e 25.
 
-(/usr/share/texlive/texmf-dist/tex/latex/bigfoot/suffix.sty
-Package: suffix 2006/07/15 1.5a Variant command support
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
-(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
-\xs_counta=\count323
-\xs_countb=\count324
-)
-Package: xstring 2023/08/22 v1.86 String manipulations (CT)
-)
-\AC@clearlist=\toks39
-)
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count325
-\l__pdf_internal_box=\box61
-)
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 25.
+
 (./bachelorarbeit.aux)
 \openout1 = `bachelorarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 25.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
+ 25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/omlntxmi.fd
+File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
+)
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 25.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
+25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 25.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
+ 25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/lmsntxsy.fd
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 25.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
+e 25.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/lmxntxexx.fd
+File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
+)
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 25.
+LaTeX Font Info:    ... okay on input line 25.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -572,15 +827,15 @@ LaTeX Font Info:    ... okay on input line 23.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* h-part:(L,W,R)=(71.13188pt, 441.01773pt, 85.35826pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=426.79135pt
-* \textheight=674.33032pt
-* \oddsidemargin=27.31465pt
-* \evensidemargin=27.31465pt
-* \topmargin=-23.91173pt
+* \textwidth=441.01773pt
+* \textheight=702.78308pt
+* \oddsidemargin=-1.1381pt
+* \evensidemargin=-1.1381pt
+* \topmargin=-38.1381pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=12.0pt
@@ -600,17 +855,17 @@ LaTeX Font Info:    ... okay on input line 23.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count326
-\scratchdimen=\dimen190
+\scratchcounter=\count331
+\scratchdimen=\dimen260
 \scratchbox=\box62
-\nofMPsegments=\count327
-\nofMParguments=\count328
-\everyMPshowfont=\toks40
-\MPscratchCnt=\count329
-\MPscratchDim=\dimen191
-\MPnumerator=\count330
-\makeMPintoPDFobject=\count331
-\everyMPtoPDFconversion=\toks41
+\nofMPsegments=\count332
+\nofMParguments=\count333
+\everyMPshowfont=\toks42
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen261
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
+\everyMPtoPDFconversion=\toks43
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -620,980 +875,1350 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 23.
+\c@mv@tabular=\count337
+\c@mv@boldtabular=\count338
+LaTeX Info: Command `\dddot' is already robust on input line 25.
+LaTeX Info: Command `\ddddot' is already robust on input line 25.
+Package hyperref Info: Link coloring OFF on input line 25.
 
 (./bachelorarbeit.out) (./bachelorarbeit.out)
 \@outlinefile=\write7
 \openout7 = `bachelorarbeit.out'.
 
  (./bachelorarbeit.glsdefs)
-<Bilder/screenshot017.png, id=269, 356.83313pt x 71.51718pt>
+<Bilder/screenshot017.png, id=293, 356.83313pt x 71.51718pt>
 File: Bilder/screenshot017.png Graphic file (type png)
 <use Bilder/screenshot017.png>
-Package pdftex.def Info: Bilder/screenshot017.png  used on input line 31.
-(pdftex.def)             Requested size: 128.0387pt x 25.66104pt.
-<Bilder/screenshot018.png, id=270, 356.83313pt x 73.02281pt>
+Package pdftex.def Info: Bilder/screenshot017.png  used on input line 33.
+(pdftex.def)             Requested size: 132.30666pt x 26.51659pt.
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
+e 35.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1minntx.fd
+File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
+)
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 3
+5.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8.8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6.6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 35.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
+35.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
+35.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
+35.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+<Bilder/screenshot018.png, id=294, 356.83313pt x 73.02281pt>
 File: Bilder/screenshot018.png Graphic file (type png)
 <use Bilder/screenshot018.png>
-Package pdftex.def Info: Bilder/screenshot018.png  used on input line 37.
-(pdftex.def)             Requested size: 128.0387pt x 26.20126pt.
-
-[1
+Package pdftex.def Info: Bilder/screenshot018.png  used on input line 39.
+(pdftex.def)             Requested size: 132.30666pt x 27.07483pt.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 24.88pt on input line 44.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 24.88pt on input line 44.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 48.
+ [1
 
 \openout3 = `bachelorarbeit.ist'.
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Bilder/screenshot017.png
- (PNG copy)> <./Bilder/screenshot018.png (PNG copy)>] [2] [3] [4]
-\openout6 = `bachelorarbeit.ent'.
-
-
-Overfull \hbox (19.63405pt too wide) in paragraph at lines 75--78
-\OT1/cmr/m/n/12 sind in der Ar-beit an-ge-ge-ben. Die-se Ar-beit wur-de bis-her
- kei-ner an-de-ren Pr[]ufungsbeh[]orde
- []
-
-[5] (./bachelorarbeit.toc [6] [7])
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} <./Bilder/screenshot017.png (PNG copy
+)> <./Bilder/screenshot018.png (PNG copy)>]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 17.28pt on input line 62.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 62.
+ [2] [3] [4] [5]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 80.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 80.
+ [6] (./bachelorarbeit.toc [7]
+[8])
 \tf@toc=\write8
 \openout8 = `bachelorarbeit.toc'.
 
- [8] (./bachelorarbeit.lof
-Overfull \hbox (10.22615pt too wide) in paragraph at lines 4--4
- [][] [][]\OT1/cmr/m/n/12 Beispiel: Ak-ti-vie-rung von Quarkus-Logging in der K
-eycloak-Konfiguration[] []  
+ [9] (./bachelorarbeit.lof
+Overfull \hbox (98.25464pt too wide) in paragraph at lines 6--6
+ [][] [][]\OT1/minntx/m/n/12 Visuelle Dar-stel-lung der Funk-ti-on des AEs, Que
+l-le: https://www.researchgate.net/figure/Structure- 
  []
 
 
-Overfull \hbox (150.67323pt too wide) in paragraph at lines 7--7
- [][] [][]\OT1/cmr/m/n/12 Visuelle Dar-stel-lung der Funk-ti-on des AEs, Quel-l
-e: https://www.researchgate.net/figure/Structure- 
+Overfull \hbox (98.32663pt too wide) in paragraph at lines 7--7
+ [][] [][]\OT1/minntx/m/n/12 Visuelle Dar-stel-lung der Funk-ti-on des AEs, Que
+l-le: https://www.researchgate.net/figure/Anomaly- 
  []
 
 
-Overfull \hbox (148.71075pt too wide) in paragraph at lines 8--8
- [][] [][]\OT1/cmr/m/n/12 Visuelle Dar-stel-lung der Funk-ti-on des AEs, Quel-l
-e: https://www.researchgate.net/figure/Anomaly- 
+Overfull \hbox (27.13087pt too wide) in paragraph at lines 7--7
+ \OT1/minntx/m/n/12 Detection-using-Isolation-Forest-18[]fig3[]350551253, Letz-
+ter Zu-griff am: 15.07.2025[] [][]  
  []
 
 
-Overfull \hbox (7.82108pt too wide) in paragraph at lines 8--8
- \OT1/cmr/m/n/12 Detection-using-Isolation-Forest-18[]fig3[]350551253, Letz-ter
- Zu-griff am: 
+Overfull \hbox (38.82964pt too wide) in paragraph at lines 8--8
+ [][] [][]\OT1/minntx/m/n/12 Visuelle Dar-stel-lung OCSVM. Quel-le: https://www
+.mdpi.com/2076-3417/13/3/1734, 
+ []
+
+LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
+ 9.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ot1ntxtt.fd
+File: ot1ntxtt.fd 2012/04/20 v3.1
+)
+LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
+(Font)              scaled to size 12.0pt on input line 9.
+
+Overfull \hbox (31.92647pt too wide) in paragraph at lines 9--9
+ [][] [][]\OT1/minntx/m/n/12 Beispiel DBSCAN-Cluster, Quel-le: []$\OT1/ntxtt/m/
+n/12 https : / / www . baeldung . com / wp-[]content / 
  []
 
 
-Overfull \hbox (48.45866pt too wide) in paragraph at lines 10--10
- [][] [][]\OT1/cmr/m/n/12 Beispiel DBSCAN-Cluster, Quel-le: []$\OT1/cmtt/m/n/12
- https : / / www . baeldung . com / wp-[]content / 
+Overfull \hbox (0.39442pt too wide) in paragraph at lines 9--9
+ \OT1/ntxtt/m/n/12 uploads / sites / 4 / 2023 / 04 / clusters . png$[]\OT1/minn
+tx/m/n/12 , Letz-ter Zu-griff am: 15.07.2025[] [][]  
  []
 
-
-Overfull \hbox (15.52843pt too wide) in paragraph at lines 10--10
- \OT1/cmtt/m/n/12 uploads / sites / 4 / 2023 / 04 / clusters . png$[]\OT1/cmr/m
-/n/12 , Letz-ter Zu-griff am: 15.07.2025[] []  
- []
-
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 19.
 )
 \tf@lof=\write9
 \openout9 = `bachelorarbeit.lof'.
 
- [9] (./bachelorarbeit.lot)
+ [10] (./bachelorarbeit.lot)
 \tf@lot=\write10
 \openout10 = `bachelorarbeit.lot'.
 
- [10]
-Overfull \hbox (2.91493pt too wide) in paragraph at lines 92--117
-\OT1/cmr/bx/n/12 MITRE ATT&CK:  \OT1/cmr/m/n/12 MITRE Ad-ver-sa-ri-al Tac-tics,
- Tech-ni-ques, and Com-mon Know-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 92--117
+ [11]
+Underfull \hbox (badness 10000) in paragraph at lines 97--122
 
  []
 
-[11] [12]
+[12] [13]
 \@gls@deffile=\write11
 \openout11 = `bachelorarbeit.glsdefs'.
 
  (./bachelorarbeit.gls
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `OT1/ntxtt/b/n' will be
+(Font)              scaled to size 12.0pt on input line 7.
 
-Overfull \hbox (6.74269pt too wide) in paragraph at lines 14--16
-[]\OT1/cmr/m/n/12 Ein Sze-na-rio, in dem ein Be-nut-zer ab-sicht-lich Res-sour-
-cen l[]oscht,
+Overfull \hbox (1.08783pt too wide) in paragraph at lines 12--14
+[]\OT1/minntx/m/n/12 Protokolle von HTTP-Zugriffen und Sta-tus-co-des. Wer-den 
+h[]aufig auf Webserver-
  []
 
 
-Overfull \hbox (4.15297pt too wide) in paragraph at lines 26--28
-[]\OT1/cmr/m/n/12 OAuth2-Grant-Typ, bei dem der Be-nut-zer []uber einen
- []
-
-[13]
-Overfull \hbox (9.54834pt too wide) in paragraph at lines 37--37
-[]\OT1/cmr/m/n/12 Angriffsmethode, bei der Passw[]orter oder Zu-gangs-da-ten du
-rch
- []
-
-
-Overfull \hbox (27.31187pt too wide) in paragraph at lines 46--48
-[]\OT1/cmr/m/n/12 Event-Typ in Key-cloak, der bei An-mel-dung []uber einen Drit
-tanbieter-
- []
-
-
-Overfull \hbox (4.10672pt too wide) in paragraph at lines 56--58
-[]\OT1/cmr/m/n/12 Ein Ka-ta-log von ty-pi-schen Schwach-
- []
-
-
-Overfull \hbox (3.44716pt too wide) in paragraph at lines 56--58
-\OT1/cmr/m/n/12 stel-len-mus-tern (Weak-nes-ses), die po-ten-zi-ell zu Si-cher-
-heitsl[]ucken f[]uhren k[]onnen,
- []
-
-
-Overfull \hbox (15.52289pt too wide) in paragraph at lines 60--60
-[]\OT1/cmr/m/n/12 Benutzerspezifische oder er-wei-ter-te Logs, die []uber Keycl
-oak-Extensions
- []
-
-
-Overfull \hbox (7.5284pt too wide) in paragraph at lines 63--65
-[]\OT1/cmr/m/n/12 Density-Based Spa-ti-al Clus-te-ring of Ap-p-li-ca-ti-ons wit
-h Noi-se { Clustering-
+Overfull \hbox (5.94295pt too wide) in paragraph at lines 14--16
+[]\OT1/minntx/m/n/12 Ein Sze-na-rio, in dem ein Be-nut-zer ab-sicht-lich Res-so
+ur-cen l[]oscht, ver[]andert
  []
 
 [14]
-Overfull \hbox (14.48915pt too wide) in paragraph at lines 65--67
-[]\OT1/cmr/m/n/12 Teil ei-nes Au-to-en-co-ders, der ver-sucht, aus der kom-pri-
-mier-ten Re-pr[]asentation
+Overfull \hbox (2.34088pt too wide) in paragraph at lines 53--56
+[]\OT1/minntx/m/n/12 Ein []offentliches Ver-zeich-nis be-kann-ter Si-
  []
 
 
-Overfull \hbox (7.5421pt too wide) in paragraph at lines 70--70
-[]\OT1/cmr/m/n/12 Deep GPU Xce-le-ra-ti-on { NVIDIA-Hardwareplattform zur KI-Be
-schleunigung..
+Overfull \hbox (0.56236pt too wide) in paragraph at lines 60--60
+[]\OT1/minntx/m/n/12 Benutzerspezifische oder er-wei-ter-te Logs, die ^^?uber K
+eycloak-Extensions (z.B.
  []
 
 
-Overfull \hbox (22.59749pt too wide) in paragraph at lines 73--75
-[]\OT1/cmr/m/n/12 Teil ei-nes Au-to-en-co-ders, der Da-ten in ei-ne nied-rig-di
--men-sio-na-le Re-pr[]asentation
- []
-
-
-Overfull \hbox (3.3677pt too wide) in paragraph at lines 79--79
-[]\OT1/cmr/m/n/12 Bezeichnet die Art des aus-gel[]osten Er-eig-nis-ses, z.B. LO
--GIN, LO-GOUT,
+Overfull \hbox (9.12062pt too wide) in paragraph at lines 63--65
+[]\OT1/minntx/m/n/12 Density-Based Spa-ti-al Clus-te-ring of Ap-p-li-ca-ti-ons 
+with Noi-se { Clustering-Verfahren
  []
 
 [15]
-Overfull \hbox (17.32545pt too wide) in paragraph at lines 114--114
-[]\OT1/cmr/m/n/12 Open-Source Identity-Management-L[]osung mit Funk-tio-nen wie
- SSO, RBAC
- []
+
+Package glossaries Warning: Glossary entry `filebeat' has not been defined on i
+nput line 84.
+
+
+Package glossaries Warning: Glossary entry `filebeat' has not been defined on i
+nput line 84.
+
+
+Package glossaries Warning: Glossary entry `filebeat' has not been defined on i
+nput line 84.
 
 [16]
-Overfull \hbox (3.88936pt too wide) in paragraph at lines 150--150
-[]\OT1/cmr/m/n/12 Modernes Java-Framework, op-ti-miert f[]ur con-tai-ne-ri-sier
--te und cloud-native
+Overfull \hbox (2.9899pt too wide) in paragraph at lines 123--125
+[]\OT1/minntx/m/n/12 Event-Typ, der bei ei-nem fehl-ge-schla-ge-nen Benutzer-Lo
+gin ge-ne-riert wird..
  []
+
+
+Package glossaries Warning: Glossary entry `oauth' has not been defined on inpu
+t line 138.
+
+
+Package glossaries Warning: Glossary entry `oauth' has not been defined on inpu
+t line 138.
+
+
+Package glossaries Warning: Glossary entry `oauth' has not been defined on inpu
+t line 138.
+
+
+Package glossaries Warning: Glossary entry `oidc' has not been defined on input
+ line 142.
+
+
+Package glossaries Warning: Glossary entry `oidc' has not been defined on input
+ line 142.
+
+
+Package glossaries Warning: Glossary entry `oidc' has not been defined on input
+ line 142.
 
 [17]
-Overfull \hbox (3.11151pt too wide) in paragraph at lines 165--165
-[]\OT1/cmr/m/n/12 Recurrent Neural Net-work { Neu-ro-na-les Netz zur Ver-ar-bei
--tung zeitabh[]angiger
- []
+
+Package glossaries Warning: Glossary entry `remotelogging' has not been defined
+ on input line 163.
 
 
-Overfull \hbox (13.33372pt too wide) in paragraph at lines 175--177
-[]\OT1/cmr/m/n/12 Ein Fra-me-work zur Au-to-ma-ti-sie-rung von Webbrowser-Inter
-aktionen, h[]aufig
- []
+Package glossaries Warning: Glossary entry `remotelogging' has not been defined
+ on input line 163.
 
 
-Overfull \hbox (4.20935pt too wide) in paragraph at lines 191--191
-[]\OT1/cmr/m/n/12 Standard-Ausgabe-/Fehlerstreams in Ja-va. Nicht struk-
+Package glossaries Warning: Glossary entry `remotelogging' has not been defined
+ on input line 163.
+
+
+Package glossaries Warning: Glossary entry `saml' has not been defined on input
+ line 168.
+
+
+Package glossaries Warning: Glossary entry `saml' has not been defined on input
+ line 168.
+
+
+Package glossaries Warning: Glossary entry `saml' has not been defined on input
+ line 168.
+
+
+Package glossaries Warning: Glossary entry `sessionhijacking' has not been defi
+ned on input line 181.
+
+
+Package glossaries Warning: Glossary entry `sessionhijacking' has not been defi
+ned on input line 181.
+
+
+Package glossaries Warning: Glossary entry `sessionhijacking' has not been defi
+ned on input line 181.
+
+
+Overfull \hbox (8.12569pt too wide) in paragraph at lines 183--185
+[]\OT1/minntx/m/n/12 Simple Log-ging Fa-ca-de for Ja-va { ei-ne Logging-Fassade
+, die un-ter-schied-li-che Logging-
  []
 
 [18]
-Overfull \hbox (0.60428pt too wide) in paragraph at lines 203--203
-[]\OT1/cmr/m/n/12 Logs, die Be-nut-zerak-tio-nen oh-ne Ad-min-rech-te er-fas-se
-n. Ty-pi-sche Event-
- []
+
+Package glossaries Warning: Glossary entry `systemout' has not been defined on 
+input line 191.
 
 
-Overfull \hbox (8.37407pt too wide) in paragraph at lines 206--208
-[]\OT1/cmr/m/n/12 Autoencoder-Variante, die Wahr-schein-lich-keits-
- []
+Package glossaries Warning: Glossary entry `systemout' has not been defined on 
+input line 191.
+
+
+Package glossaries Warning: Glossary entry `systemout' has not been defined on 
+input line 191.
+
+
+Package glossaries Warning: Glossary entry `tokenrefresh' has not been defined 
+on input line 196.
+
+
+Package glossaries Warning: Glossary entry `tokenrefresh' has not been defined 
+on input line 196.
+
+
+Package glossaries Warning: Glossary entry `tokenrefresh' has not been defined 
+on input line 196.
 
 ) (./bachelorarbeit.acr) [19]
-Overfull \hbox (4.62779pt too wide) in paragraph at lines 693--699
-\OT1/cmr/m/n/12 Ne-ben sys-tem-wei-ten An-oma-li-en { et-wa im Netz-werk-ver-ke
-hr oder bei Ger[]atezust[]anden
+
+LaTeX Warning: Citation `bsi2024lage' on page 20 undefined on input line 673.
+
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 687.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 687.
+ [20{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [21]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 720.
+
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 8.8pt on input line 721.
+\openout6 = `bachelorarbeit.ent'.
+
+[22]
+Overfull \hbox (12.41364pt too wide) in paragraph at lines 728--739
+\OT1/minntx/m/n/12 Zwar bie-tet Key-cloak re-gel-ba-sier-te Si-cher-heits-ma^^Y
+-nah-men an- die-se be-ru-hen je-doch gr[]o^^Ytenteils
  []
 
-[20]
-Overfull \hbox (5.0752pt too wide) in paragraph at lines 712--713
-[]\OT1/cmr/bx/n/12 Verhaltensbezogene At-tri-bu-te: \OT1/cmr/m/n/12 Be-schrei-b
-en das tats[]achliche Ver-hal-ten oder
+[23] [24]
+
+LaTeX Warning: Citation `arjunan2024' on page 25 undefined on input line 762.
+
+[25] [26]
+Overfull \hbox (3.90056pt too wide) in paragraph at lines 809--831
+\OT1/minntx/m/n/12 F[]ahigkeiten des Mo-dells ist - den-noch wer-den die-se als
+ ^^?ubliche Me-tri-ken an-ge-wandt. Zus[]atzlich
  []
 
-[21{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}] [22]
-Overfull \hbox (11.28156pt too wide) in paragraph at lines 736--736
-[]\OT1/cmr/bx/n/14.4 Regelbasierte Me-tho-den und wei-te-re Ma^^Y-nah-men in []
-[]Key-
- []
+[27] [28]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 6.6pt on input line 836.
+ [29]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 8.8pt on input line 858.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 6.6pt on input line 858.
+ [30] [31]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 885.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 736.
+(hyperref)                removing `\gls' on input line 892.
 
-[23] [24] [25] [26] [27]
-Overfull \hbox (1.02774pt too wide) in paragraph at lines 834--856
-\OT1/cmr/m/n/12 Ins-ge-samt l[]asst sich fest-hal-ten, dass je-des Mo-dell in-d
-i-vi-du-el-le St[]arken und Schw[]achen
- []
-
-[28] [29]
-Overfull \hbox (4.93869pt too wide) in paragraph at lines 860--861
-\OT1/cmr/m/n/12 (True Po-si-ti-ves, True Ne-ga-ti-ves, Fal-se Po-si-ti-ves, Fal
--se Ne-ga-ti-ves) ber[]ucksichtigt.
- []
-
-
-Overfull \hbox (30.39516pt too wide) in paragraph at lines 861--862
-\OT1/cmr/m/n/12 als po-si-tiv klas-si-fi-ziert wur-den. Sie wird be-rech-net al
-s $[] = []$
- []
-
-[30] [31] [32]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 899.
-
-
-Overfull \hbox (19.52777pt too wide) in paragraph at lines 904--905
-\OT1/cmr/m/n/12 Keras[] ist ei-ne be-nut-zer-freund-li-che, mo-du-la-re und er-
-weiter-ba-re Open-Source-Bibliothek
- []
-
-[33]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 909.
-
-[34]
-<Bilder/screenshot007.png, id=870, 952.30782pt x 350.81062pt>
-File: Bilder/screenshot007.png Graphic file (type png)
-<use Bilder/screenshot007.png>
-Package pdftex.def Info: Bilder/screenshot007.png  used on input line 940.
-(pdftex.def)             Requested size: 384.1096pt x 141.4994pt.
- [35]
-Overfull \hbox (58.74382pt too wide) in paragraph at lines 953--956
-\OT1/cmr/m/n/12 der Grant-Typ die Art der An-mel-dung be-stimmt, de-fi-niert di
-e Client-Authentifizierungsmethode
- []
-
-<Bilder/screenshot013.png, id=879, 1379.1525pt x 565.36218pt>
+[32] [33]
+<Bilder/screenshot013.png, id=953, 1379.1525pt x 565.36218pt>
 File: Bilder/screenshot013.png Graphic file (type png)
 <use Bilder/screenshot013.png>
-Package pdftex.def Info: Bilder/screenshot013.png  used on input line 965.
-(pdftex.def)             Requested size: 384.1096pt x 157.45491pt.
-[36
+Package pdftex.def Info: Bilder/screenshot013.png  used on input line 927.
+(pdftex.def)             Requested size: 396.91325pt x 162.70857pt.
+ [34
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.969 	
-        <./Bilder/screenshot007.png>] [37
+l.947 	
+        <./Bilder/screenshot013.png>]
+<Bilder/screenshot008.png, id=968, 713.66624pt x 201.00093pt>
+File: Bilder/screenshot008.png Graphic file (type png)
+<use Bilder/screenshot008.png>
+Package pdftex.def Info: Bilder/screenshot008.png  used on input line 950.
+(pdftex.def)             Requested size: 396.91325pt x 111.78992pt.
+<Bilder/screenshot014.png, id=972, 884.55469pt x 371.88937pt>
+File: Bilder/screenshot014.png Graphic file (type png)
+<use Bilder/screenshot014.png>
+Package pdftex.def Info: Bilder/screenshot014.png  used on input line 962.
+(pdftex.def)             Requested size: 485.1222pt x 203.96097pt.
+
+Overfull \hbox (44.10446pt too wide) in paragraph at lines 962--963
+ [][] 
+ []
+
+[35
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.993 	
-        <./Bilder/screenshot013.png>]
-<Bilder/screenshot008.png, id=894, 713.66624pt x 201.00093pt>
-File: Bilder/screenshot008.png Graphic file (type png)
-<use Bilder/screenshot008.png>
-Package pdftex.def Info: Bilder/screenshot008.png  used on input line 996.
-(pdftex.def)             Requested size: 384.1096pt x 108.1831pt.
-
-Underfull \hbox (badness 2376) in paragraph at lines 997--997
-[]\OT1/cmr/m/n/12 Abbildung 3: []Beispiel: Ak-ti-vie-rung von Quarkus-Logging i
-n der Keycloak-
- []
-
-[38
+l.966 	
+        <./Bilder/screenshot008.png>] [36
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1020 	\end{itemize}
-                      <./Bilder/screenshot008.png>]
-<Bilder/screenshot014.png, id=904, 884.55469pt x 371.88937pt>
-File: Bilder/screenshot014.png Graphic file (type png)
-<use Bilder/screenshot014.png>
-Package pdftex.def Info: Bilder/screenshot014.png  used on input line 1024.
-(pdftex.def)             Requested size: 469.47308pt x 197.37848pt.
-
-Overfull \hbox (42.68173pt too wide) in paragraph at lines 1024--1025
- [][] 
- []
-
-[39
+l.986 	
+        <./Bilder/screenshot014.png>] [37]
+<Bilder/screenshot002.png, id=1006, 1382.16376pt x 576.65437pt>
+File: Bilder/screenshot002.png Graphic file (type png)
+<use Bilder/screenshot002.png>
+Package pdftex.def Info: Bilder/screenshot002.png  used on input line 1025.
+(pdftex.def)             Requested size: 441.01773pt x 183.99641pt.
+ [38
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1041 	
-         <./Bilder/screenshot014.png>] [40]
-Overfull \hbox (6.65257pt too wide) in paragraph at lines 1085--1095
-\OT1/cmr/m/n/12 auch re-gelm[]a^^Yig do-ku-men-tiert. An-de-re Er-eig-ni-s-ty-p
-en sind bspw. [][]TO-KEN[]REFRESH[],
+l.1034 		\item \gls
+                   {clientlogin}: Log, der generiert wird, sobald sich der B...
+ <./Bilder/screenshot002.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 1040.
+
+[39]
+<Bilder/screenshot004.png, id=1040, 356.83313pt x 171.64125pt>
+File: Bilder/screenshot004.png Graphic file (type png)
+<use Bilder/screenshot004.png>
+Package pdftex.def Info: Bilder/screenshot004.png  used on input line 1069.
+(pdftex.def)             Requested size: 308.71106pt x 148.50166pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1070--1070
+[]\OT1/minntx/m/n/12 Abbildung 5: []Visuelle Dar-stel-lung der Funk-ti-on des A
+Es, Quel-le:
  []
 
-[41]
-<Bilder/screenshot002.png, id=932, 1382.16376pt x 576.65437pt>
-File: Bilder/screenshot002.png Graphic file (type png)
-<use Bilder/screenshot002.png>
-Package pdftex.def Info: Bilder/screenshot002.png  used on input line 1098.
-(pdftex.def)             Requested size: 426.79135pt x 178.05708pt.
- [42
+
+Underfull \hbox (badness 2538) in paragraph at lines 1070--1070
+\OT1/minntx/m/n/12 https://www.researchgate.net/figure/Structure-of-the-autoenc
+oder[]fig1[]365074431, Letz-ter
+ []
+
+[40]
+Overfull \hbox (4.69443pt too wide) in paragraph at lines 1074--1079
+[]\OT1/minntx/m/n/12 Autoencoder las-sen sich be-son-ders gut mit Long Short-Te
+rm Me-mo-ry (LSTM)-Netzwerken
+ []
+
+<Bilder/screenshot005.png, id=1053, 356.83313pt x 282.30469pt>
+File: Bilder/screenshot005.png Graphic file (type png)
+<use Bilder/screenshot005.png>
+Package pdftex.def Info: Bilder/screenshot005.png  used on input line 1085.
+(pdftex.def)             Requested size: 308.71106pt x 244.24619pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1086
+[]\OT1/minntx/m/n/12 Abbildung 6: []Visuelle Dar-stel-lung der Funk-ti-on des A
+Es, Quel-le:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1086--1086
+\OT1/minntx/m/n/12 https://www.researchgate.net/figure/Anomaly-Detection-using-
+Isolation-Forest-
+ []
+
+[41
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1107 		\item \gls
-                   {clientlogin}: Log, der generiert wird, sobald sich der B...
- <./Bilder/screenshot002.png>] [43] [44] [45]
-<Bilder/screenshot004.png, id=981, 356.83313pt x 171.64125pt>
-File: Bilder/screenshot004.png Graphic file (type png)
-<use Bilder/screenshot004.png>
-Package pdftex.def Info: Bilder/screenshot004.png  used on input line 1156.
-(pdftex.def)             Requested size: 298.75264pt x 143.71146pt.
+l.1098 	\begin{itemize}
+                        <./Bilder/screenshot004.png (PNG copy)>]
+<Bilder/screenshot006.png, id=1061, 356.83313pt x 279.29344pt>
+File: Bilder/screenshot006.png Graphic file (type png)
+<use Bilder/screenshot006.png>
+Package pdftex.def Info: Bilder/screenshot006.png  used on input line 1115.
+(pdftex.def)             Requested size: 308.71106pt x 241.6409pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1157
-[]\OT1/cmr/m/n/12 Abbildung 6: []Visuelle Dar-stel-lung der Funk-ti-on des AEs,
- Quel-le:
+Underfull \hbox (badness 3068) in paragraph at lines 1116--1116
+[]\OT1/minntx/m/n/12 Abbildung 7: []Visuelle Dar-stel-lung OCSVM. Quel-le: http
+s://www.mdpi.com/2076-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1157--1157
-\OT1/cmr/m/n/12 https://www.researchgate.net/figure/Structure-of-the-autoencode
-r[]fig1[]365074431,
- []
+LaTeX Warning: Citation `bounsiar2025oneclass' on page 42 undefined on input li
+ne 1119.
 
-[46
+[42
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1167 	
-         <./Bilder/screenshot004.png (PNG copy)>]
-<Bilder/screenshot005.png, id=990, 356.83313pt x 282.30469pt>
-File: Bilder/screenshot005.png Graphic file (type png)
-<use Bilder/screenshot005.png>
-Package pdftex.def Info: Bilder/screenshot005.png  used on input line 1173.
-(pdftex.def)             Requested size: 298.75264pt x 236.36755pt.
+l.1120 	
+         <./Bilder/screenshot005.png (PNG copy)>]
+<Bilder/screenshot015.png, id=1068, 1433.355pt x 706.13812pt>
+File: Bilder/screenshot015.png Graphic file (type png)
+<use Bilder/screenshot015.png>
+Package pdftex.def Info: Bilder/screenshot015.png  used on input line 1127.
+(pdftex.def)             Requested size: 396.91325pt x 195.53004pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
-[]\OT1/cmr/m/n/12 Abbildung 7: []Visuelle Dar-stel-lung der Funk-ti-on des AEs,
- Quel-le:
+Underfull \hbox (badness 4913) in paragraph at lines 1128--1128
+[]\OT1/minntx/m/n/12 Abbildung 8: []Beispiel DBSCAN-Cluster, Quel-le: []$\OT1/n
+txtt/m/n/12 https : / / www . baeldung . com /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1174--1174
-\OT1/cmr/m/n/12 https://www.researchgate.net/figure/Anomaly-Detection-using-Iso
-lation-Forest-
+Underfull \hbox (badness 10000) in paragraph at lines 1128--1128
+\OT1/ntxtt/m/n/12 wp-[]content / uploads / sites / 4 / 2023 / 04 / clusters . p
+ng$[]\OT1/minntx/m/n/12 , Letz-ter Zu-griff am:
  []
 
-[47
+[43
 pdfTeX warning (ext4): destination with the same identifier (name{figure.7}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1186 	\begin{itemize}
-                        <./Bilder/screenshot005.png (PNG copy)>]
-<Bilder/screenshot006.png, id=998, 356.83313pt x 279.29344pt>
-File: Bilder/screenshot006.png Graphic file (type png)
-<use Bilder/screenshot006.png>
-Package pdftex.def Info: Bilder/screenshot006.png  used on input line 1203.
-(pdftex.def)             Requested size: 298.75264pt x 233.84631pt.
- [48]
-<Bilder/screenshot015.png, id=1008, 1433.355pt x 706.13812pt>
-File: Bilder/screenshot015.png Graphic file (type png)
-<use Bilder/screenshot015.png>
-Package pdftex.def Info: Bilder/screenshot015.png  used on input line 1215.
-(pdftex.def)             Requested size: 384.1096pt x 189.22679pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1216--1216
-\OT1/cmtt/m/n/12 wp-[]content / uploads / sites / 4 / 2023 / 04 / clusters . pn
-g$[]\OT1/cmr/m/n/12 , Letz-ter Zu-griff am:
- []
-
-[49
+l.1131 	D
+         er Algorithmus l√§uft folgenderma√üen ab: <./Bilder/screenshot006.png 
+(PNG copy)>] [44
 pdfTeX warning (ext4): destination with the same identifier (name{figure.8}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1221 	
-        
-pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
-s been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.1221 	
-         <./Bilder/screenshot006.png (PNG copy)> <./Bilder/screenshot015.png (P
-NG copy)>]
-Overfull \hbox (7.02446pt too wide) in paragraph at lines 1223--1233
-\OT1/cmr/m/n/12 wur-den da-her sich []ahnelnde Al-go-rith-men be-wusst aus-ge-s
-chlos-sen. Ein wei-te-rer Grund-
- []
-
-[50]
-<Bilder/screenshot001.png, id=1038, 475.7775pt x 458.46281pt>
+l.1145 	
+         <./Bilder/screenshot015.png (PNG copy)>]
+<Bilder/screenshot001.png, id=1096, 475.7775pt x 458.46281pt>
 File: Bilder/screenshot001.png Graphic file (type png)
 <use Bilder/screenshot001.png>
-Package pdftex.def Info: Bilder/screenshot001.png  used on input line 1240.
-(pdftex.def)             Requested size: 384.1096pt x 370.1496pt.
- [51]
-<Bilder/screenshot-lstm.png, id=1045, 760.34062pt x 377.15906pt>
+Package pdftex.def Info: Bilder/screenshot001.png  used on input line 1152.
+(pdftex.def)             Requested size: 396.91325pt x 382.48979pt.
+ [45]
+<Bilder/screenshot-lstm.png, id=1116, 760.34062pt x 377.15906pt>
 File: Bilder/screenshot-lstm.png Graphic file (type png)
 <use Bilder/screenshot-lstm.png>
-Package pdftex.def Info: Bilder/screenshot-lstm.png  used on input line 1273.
-(pdftex.def)             Requested size: 512.14832pt x 254.05344pt.
+Package pdftex.def Info: Bilder/screenshot-lstm.png  used on input line 1185.
+(pdftex.def)             Requested size: 529.21992pt x 262.519pt.
 
-Overfull \hbox (85.35696pt too wide) in paragraph at lines 1273--1274
+Overfull \hbox (88.2022pt too wide) in paragraph at lines 1185--1186
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1276
+Underfull \hbox (badness 10000) in paragraph at lines 1157--1188
 
  []
 
-[52
-pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
-as been already used, duplicate ignored
+[46
+pdfTeX warning (ext4): destination with the same identifier (name{figure.9}) ha
+s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1276 	\end{figure}
+l.1188 	\end{figure}
                     
 pdfTeX warning (ext4): destination with the same identifier (name{table.1}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1276 	\end{figure}
-                     <./Bilder/screenshot001.png>] [53]
-Overfull \hbox (36.28154pt too wide) in paragraph at lines 1277--1282
-\OT1/cmr/m/n/12 klar klas-si-fi-ziert wer-den konn-ten, wer-den da-nach je-weil
-s mit ei-nem der Anomalieerkennungs-
+l.1188 	\end{figure}
+                     <./Bilder/screenshot001.png>] [47] [48
+pdfTeX warning (ext4): destination with the same identifier (name{figure.10}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1198 	
+         <./Bilder/screenshot-lstm.png>] [49] [50] [51] [52]
+<Bilder/screenshot009.png, id=1189, 896.59969pt x 515.67656pt>
+File: Bilder/screenshot009.png Graphic file (type png)
+<use Bilder/screenshot009.png>
+Package pdftex.def Info: Bilder/screenshot009.png  used on input line 1276.
+(pdftex.def)             Requested size: 441.01773pt x 253.64369pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1262--1279
+
  []
 
-
-Overfull \hbox (4.40471pt too wide) in paragraph at lines 1285--1286
- []\OT1/cmr/bx/n/12 Encoder-Decoder Struk-tur und Bi-di-rek-tio-na-les LSTM[] \
-OT1/cmr/m/n/12 Die Ar-chi-tek-tur folgt
- []
-
-[54
+[53] [54
 pdfTeX warning (ext4): destination with the same identifier (name{figure.11}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1286 	
-         <./Bilder/screenshot-lstm.png>] [55] [56]
-Overfull \hbox (11.95541pt too wide) in paragraph at lines 1317--1336
-\OT1/cmr/m/n/12 durch zeit-li-che Mus-ter und Se-quen-zen cha-rak-te-ri-siert s
-ind, was der LSTM-Autoencoder
- []
-
-[57] [58]
-Overfull \hbox (27.56082pt too wide) in paragraph at lines 1339--1344
-\OT1/cmr/m/n/12 di-rekt er-ken-nen, da Log-Dateien kei-ne spe-zi-fi-schen Hin-w
-ei-se auf gro^^Ye Da-tei[]ubertragungen
- []
-
-
-Overfull \hbox (2.75015pt too wide) in paragraph at lines 1348--1349
-[]\OT1/cmr/m/it/12 Anwendungsfall 3: \OT1/cmr/m/n/12 Er-lan-gen pri-vi-le-gier-
-ter Rol-len, z.B. [][]manage-users[] und [][]realm-
- []
-
-[59]
-<Bilder/screenshot009.png, id=1109, 896.59969pt x 515.67656pt>
-File: Bilder/screenshot009.png Graphic file (type png)
-<use Bilder/screenshot009.png>
-Package pdftex.def Info: Bilder/screenshot009.png  used on input line 1367.
-(pdftex.def)             Requested size: 426.79135pt x 245.46823pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1353--1370
-
- []
-
-[60] [61
+l.1290 	
+         <./Bilder/screenshot009.png>] [55]
+<Bilder/screenshot010.png, id=1204, 505.89pt x 97.11281pt>
+File: Bilder/screenshot010.png Graphic file (type png)
+<use Bilder/screenshot010.png>
+Package pdftex.def Info: Bilder/screenshot010.png  used on input line 1303.
+(pdftex.def)             Requested size: 396.91325pt x 76.19519pt.
+ [56
 pdfTeX warning (ext4): destination with the same identifier (name{figure.12}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1381 	
-         <./Bilder/screenshot009.png>] [62]
-Overfull \hbox (6.01651pt too wide) in paragraph at lines 1386--1391
-\OT1/cmr/m/n/12 Um Zu-griff auf die Keycloak-Logs zu er-hal-ten, ist es er-for-
-der-lich, ei-ne ei-ge-ne Keycloak-
- []
-
-
-Overfull \hbox (11.54901pt too wide) in paragraph at lines 1386--1391
-\OT1/cmr/m/n/12 F[]ur die Au-then-ti-fi-zie-rung wur-de der so-ge-nann-te \OT1/
-cmr/m/it/12 Cli-ent Cre-den-ti-als \OT1/cmr/m/n/12 Grant-Typ gew[]ahlt.
- []
-
-<Bilder/screenshot010.png, id=1126, 505.89pt x 97.11281pt>
-File: Bilder/screenshot010.png Graphic file (type png)
-<use Bilder/screenshot010.png>
-Package pdftex.def Info: Bilder/screenshot010.png  used on input line 1394.
-(pdftex.def)             Requested size: 384.1096pt x 73.73685pt.
-
-Overfull \hbox (13.25964pt too wide) in paragraph at lines 1404--1405
-\OT1/cmr/m/n/12 Selenium ist ein Fra-me-work zur au-to-ma-ti-sier-ten Ausf[]uhr
-ung von Webbrowser-Aktionen
- []
-
-[63
+l.1327 	
+         <./Bilder/screenshot010.png>]
+<Bilder/screenshot011.png, id=1212, 1379.1525pt x 627.84563pt>
+File: Bilder/screenshot011.png Graphic file (type png)
+<use Bilder/screenshot011.png>
+Package pdftex.def Info: Bilder/screenshot011.png  used on input line 1330.
+(pdftex.def)             Requested size: 2068.72371pt x 941.76613pt.
+ [57
 pdfTeX warning (ext4): destination with the same identifier (name{figure.13}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1405 	
-         <./Bilder/screenshot010.png>] [64]
-<Bilder/screenshot011.png, id=1136, 1379.1525pt x 627.84563pt>
-File: Bilder/screenshot011.png Graphic file (type png)
-<use Bilder/screenshot011.png>
-Package pdftex.def Info: Bilder/screenshot011.png  used on input line 1421.
-(pdftex.def)             Requested size: 2068.72371pt x 941.76613pt.
- [65
+l.1341 	\end{itemize}
+                      <./Bilder/screenshot011.png>]
+<Bilder/screenshot012.png, id=1219, 1379.1525pt x 627.84563pt>
+File: Bilder/screenshot012.png Graphic file (type png)
+<use Bilder/screenshot012.png>
+Package pdftex.def Info: Bilder/screenshot012.png  used on input line 1358.
+(pdftex.def)             Requested size: 396.91325pt x 180.69102pt.
+ [58] [59
 pdfTeX warning (ext4): destination with the same identifier (name{figure.14}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1446 	
-         <./Bilder/screenshot011.png>]
-<Bilder/screenshot012.png, id=1144, 1379.1525pt x 627.84563pt>
-File: Bilder/screenshot012.png Graphic file (type png)
-<use Bilder/screenshot012.png>
-Package pdftex.def Info: Bilder/screenshot012.png  used on input line 1449.
-(pdftex.def)             Requested size: 384.1096pt x 174.85672pt.
-
-Overfull \hbox (3.3249pt too wide) in paragraph at lines 1453--1456
-\OT1/cmr/m/n/12 scher-wei-se aus den Event-Typen LO-GIN, CLI-ENT[]LOGIN und CO-
-DE[]TO[]TOKEN. 
+l.1382 		
+          <./Bilder/screenshot012.png>]
+Overfull \hbox (0.57008pt too wide) in paragraph at lines 1383--1383
+\OT1/ntxtlf/b/n/14.4 and Ex-pos-ures (CVE)[] und [][]Com-mon Weak-ness Enu-me-r
+a-ti-on (CWE)[] 
  []
 
-[66
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 1383.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\gls' on input line 1383.
+
+[60] [61]
+<Bilder/priv_esc_ad.png, id=1243, 269.50688pt x 487.06969pt>
+File: Bilder/priv_esc_ad.png Graphic file (type png)
+<use Bilder/priv_esc_ad.png>
+Package pdftex.def Info: Bilder/priv_esc_ad.png  used on input line 1417.
+(pdftex.def)             Requested size: 220.50887pt x 398.52274pt.
+ [62
 pdfTeX warning (ext4): destination with the same identifier (name{figure.15}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1456 	
-         <./Bilder/screenshot012.png>]
-Overfull \hbox (8.83609pt too wide) in paragraph at lines 1464--1473
-\OT1/cmr/m/n/12 Nichts-de-sto-trotz stellt die-ses Ver-fah-ren ei-ne vor-teil-h
-af-te Me-tho-de zur Log-Generierung
- []
+l.1425 		\item[Betroffener Realm:]
+                                   \texttt{Ubisoft} <./Bilder/priv_esc_ad.png>]
+LaTeX Font Info:    Trying to load font information for OMS+ntxtt on input line
+ 1435.
+LaTeX Font Info:    No file OMSntxtt.fd. on input line 1435.
 
-[67]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 1475.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\gls' on input line 1475.
-
-
-Overfull \hbox (22.43733pt too wide) in paragraph at lines 1476--1490
-\OT1/cmr/m/n/12 zu-rei-chen-de Be-rech-ti-gungs-pr[]ufungen es ei-nem Nut-zer m
-it nied-ri-gen Rech-ten erm[]oglichen,
- []
-
-[68]
-Overfull \hbox (17.3525pt too wide) in paragraph at lines 1503--1504
-\OT1/cmr/m/n/12 In die-sem Sze-na-rio wird un-ter-sucht, ob ein tech-nisch pri-
-vi-le-gier-ter, aber nicht vollst[]andig
- []
-
-[69]
-Overfull \hbox (17.1012pt too wide) in paragraph at lines 1515--1516
-[]\OT1/cmr/m/n/12 Mit die-sem To-ken f[]uhrt er einen \OT1/cmtt/m/n/12 GET\OT1/
-cmr/m/n/12 -Request auf \OT1/cmtt/m/n/12 /admin/realms/ubisoft/users
- []
-
-LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 
-1517.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 1517.
-
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+LaTeX Font Warning: Font shape `OMS/ntxtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 1517.
+(Font)              for symbol `textbraceleft' on input line 1435.
 
 
-Overfull \hbox (196.4393pt too wide) in paragraph at lines 1517--1518
-[]\OT1/cmr/m/n/12 Anschlie^^Yend ver-sucht er []uber einen \OT1/cmtt/m/n/12 POS
-T\OT1/cmr/m/n/12 -Request an \OT1/cmtt/m/n/12 /admin/realms/ubisoft/users/\OMS/
-cmtt/m/n/12 f\OT1/cmtt/m/n/12 id\OMS/cmtt/m/n/12 g\OT1/cmtt/m/n/12 /role-mappin
-gs/realm\OT1/cmr/m/n/12 ,
+Overfull \hbox (172.04782pt too wide) in paragraph at lines 1435--1436
+[]\OT1/minntx/m/n/12 Anschlie^^Yend ver-sucht er ^^?uber einen \OT1/ntxtt/m/n/1
+2 POST\OT1/minntx/m/n/12 -Request an \OT1/ntxtt/m/n/12 /admin/realms/ubisoft/us
+ers/\OMS/ntxtt/m/n/12 f\OT1/ntxtt/m/n/12 id\OMS/ntxtt/m/n/12 g\OT1/ntxtt/m/n/12
+ /role-mappings/realm\OT1/minntx/m/n/12 ,
  []
 
-[70]
-Overfull \hbox (49.33713pt too wide) in paragraph at lines 1540--1541
-[]\OT1/cmr/m/n/12 Benutzer mit Ad-mi-nis-tra-tor-rech-ten (z.B. \OT1/cmtt/m/n/1
-2 realm-admin \OT1/cmr/m/n/12 oder \OT1/cmtt/m/n/12 manage-users\OT1/cmr/m/n/12
- ) 
- []
+[63]
+<Bilder/acc_sab_ad.png, id=1263, 249.93375pt x 512.66531pt>
+File: Bilder/acc_sab_ad.png Graphic file (type png)
+<use Bilder/acc_sab_ad.png>
+Package pdftex.def Info: Bilder/acc_sab_ad.png  used on input line 1457.
+(pdftex.def)             Requested size: 220.50887pt x 452.32808pt.
 
-
-Overfull \hbox (40.1272pt too wide) in paragraph at lines 1557--1558
-[]\OT1/cmr/m/n/12 Die Pro-fil[]anderungen und das Zur[]ucksetzen des Pass-worts
- soll-ten als \OT1/cmtt/m/n/12 UPDATE[]PASSWORD
- []
-
-[71]
-Overfull \hbox (2.83171pt too wide) in paragraph at lines 1564--1565
- []\OT1/cmr/bx/n/12 Sicherheitsrelevanz:[] \OT1/cmr/m/n/12 Die-ses Sze-na-rio d
-e-mons-triert, wie gef[]ahrlich ein miss-brauch-
- []
-
-[72]
-Overfull \hbox (14.46086pt too wide) in paragraph at lines 1586--1587
- []\OT1/cmr/bx/n/12 Technische Um-set-zung:[] \OT1/cmr/m/n/12 Die Au-to-ma-ti-s
-ie-rung er-folgt mit-tels \OT1/cmtt/m/n/12 Selenium WebDriver
+Overfull \hbox (9.4289pt too wide) in paragraph at lines 1466--1467
+[]\OT1/minntx/m/n/12 Benutzer mit Ad-mi-nis-tra-tor-rech-ten (z.B. \OT1/ntxtt/m
+/n/12 realm-admin \OT1/minntx/m/n/12 oder \OT1/ntxtt/m/n/12 manage-users\OT1/mi
+nntx/m/n/12 ) 
  []
 
 
-Overfull \hbox (2.6088pt too wide) in paragraph at lines 1590--1591
-[]\OT1/cmr/m/n/12 Keycloak soll-te nach meh-re-ren Fehl-ver-su-chen Ge-gen-ma^^
-Y-nah-men er-grei-fen (z.B.
+Overfull \hbox (29.97662pt too wide) in paragraph at lines 1467--1468
+[]\OT1/ntxtt/m/n/12 Admin in Sega \OT1/minntx/m/n/12 (Pro-fil[]anderung) so-wie
+ drei zuf[]allige Be-nut-zer (L[]oschung) 
  []
 
-
-Overfull \hbox (4.06795pt too wide) in paragraph at lines 1599--1614
-\OT1/cmr/m/n/12 je-weils 15% zu Test- und Va-li-die-rungs-da-ten auf-ge-teilt. 
-Die An-oma-li-en wur-den zuf[]allig
- []
-
-[73] [74] [75]
-<Bilder/screenshot019.png, id=1227, 829.59938pt x 412.54124pt>
-File: Bilder/screenshot019.png Graphic file (type png)
-<use Bilder/screenshot019.png>
-Package pdftex.def Info: Bilder/screenshot019.png  used on input line 1648.
-(pdftex.def)             Requested size: 384.1096pt x 191.00507pt.
- [76
+[64
 pdfTeX warning (ext4): destination with the same identifier (name{figure.16}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1657 	\begin{itemize}
-                        <./Bilder/screenshot019.png>]
-<Bilder/variablen-architektur.png, id=1233, 368.1253pt x 411.03563pt>
-File: Bilder/variablen-architektur.png Graphic file (type png)
-<use Bilder/variablen-architektur.png>
-Package pdftex.def Info: Bilder/variablen-architektur.png  used on input line 1
-674.
-(pdftex.def)             Requested size: 469.47308pt x 524.23596pt.
-
-Overfull \hbox (42.68173pt too wide) in paragraph at lines 1674--1675
- [][] 
+l.1472 		\item E
+                in Angreifer kennt die Credentials des Admins im Realm \text...
+ <./Bilder/acc_sab_ad.png>]
+Overfull \hbox (4.37215pt too wide) in paragraph at lines 1483--1484
+[]\OT1/minntx/m/n/12 Die Pro-fil[]anderungen und das Zur^^?ucksetzen des Pass-w
+orts soll-ten als \OT1/ntxtt/m/n/12 UPDATE[]PASSWORD
  []
 
-[77] [78
+
+Overfull \hbox (8.69495pt too wide) in paragraph at lines 1490--1491
+ []\OT1/minntx/b/n/12 Sicherheitsrelevanz:[] \OT1/minntx/m/n/12 Die-ses Sze-na-
+rio de-mons-triert, wie gef[]ahrlich ein miss-brauch-ter Admin-
+ []
+
+<Bilder/bf_ad.png, id=1269, 427.5975pt x 524.71031pt>
+File: Bilder/bf_ad.png Graphic file (type png)
+<use Bilder/bf_ad.png>
+Package pdftex.def Info: Bilder/bf_ad.png  used on input line 1497.
+(pdftex.def)             Requested size: 220.50887pt x 270.5851pt.
+
+Overfull \hbox (13.04318pt too wide) in paragraph at lines 1506--1507
+[]\OT1/minntx/m/n/12 Eine Lis-te g[]angiger schwa-cher Passw[]orter (z.B. \OT1/
+ntxtt/m/n/12 admin123\OT1/minntx/m/n/12 , \OT1/ntxtt/m/n/12 123456\OT1/minntx/m
+/n/12 , \OT1/ntxtt/m/n/12 password\OT1/minntx/m/n/12 ,
+ []
+
+[65]
+Overfull \hbox (12.42084pt too wide) in paragraph at lines 1523--1524
+[]\OT1/minntx/m/n/12 Keycloak soll-te nach meh-re-ren Fehl-ver-su-chen Ge-gen-m
+a^^Y-nah-men er-grei-fen (z.B. Account-
+ []
+
+[66
 pdfTeX warning (ext4): destination with the same identifier (name{figure.17}) h
 as been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1686 	
-         <./Bilder/variablen-architektur.png>] [79
+l.1527 	
+         <./Bilder/bf_ad.png>] [67] [68]
+<Bilder/screenshot019.png, id=1310, 829.59938pt x 412.54124pt>
+File: Bilder/screenshot019.png Graphic file (type png)
+<use Bilder/screenshot019.png>
+Package pdftex.def Info: Bilder/screenshot019.png  used on input line 1583.
+(pdftex.def)             Requested size: 396.91325pt x 197.37547pt.
+ [69]
+Underfull \hbox (badness 10000) in paragraph at lines 1598--1608
+
+ []
+
+[70
+pdfTeX warning (ext4): destination with the same identifier (name{figure.18}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1608 	
+         <./Bilder/screenshot019.png>]
+<Bilder/variablen-architektur.png, id=1324, 368.1253pt x 411.03563pt>
+File: Bilder/variablen-architektur.png Graphic file (type png)
+<use Bilder/variablen-architektur.png>
+Package pdftex.def Info: Bilder/variablen-architektur.png  used on input line 1
+611.
+(pdftex.def)             Requested size: 308.71106pt x 344.72191pt.
+ [71
+pdfTeX warning (ext4): destination with the same identifier (name{figure.19}) h
+as been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.1619 	
+         <./Bilder/variablen-architektur.png>] [72
 pdfTeX warning (ext4): destination with the same identifier (name{table.2}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1728 	
-        ] [80
+l.1667 	
+        ] [73
 pdfTeX warning (ext4): destination with the same identifier (name{table.3}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1787 	
-        
+l.1679 	
+        ] [74] [75] [76] [77] (./bachelorarbeit.bbl
+Underfull \hbox (badness 1721) in paragraph at lines 25--29
+[]\OT1/minntx/m/n/12 V. Chan-do-la, A. Ba-ner-jee, and V. Ku-mar, ``An-oma-ly d
+e-tec-ti-on: A sur-vey,''
+ []
+
+
+Underfull \hbox (badness 1661) in paragraph at lines 31--36
+[]\OT1/minntx/m/n/12 M. G. P. Legg, O. Buck-ley and S. Cree-se, ``Vi-sua-li-zin
+g the in-si-der thre-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+\OT1/minntx/m/n/12 www . researchgate . net / publication / 385301485[]A[]Compa
+rative[]Performance[]Analysis[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--54
+\OT1/minntx/m/n/12 of[]LSTM[]Autoencoder[]and[]TimeGPT[]Models[]in[]Time[]Serie
+s[]Anomaly[]Detection$[].
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 75--79
+[]\OT1/minntx/m/n/12 Y. Wei, J. J. Jac-card, W. Xu, F. Sa-bri-na, S. Cam-te-pe,
+ and M. Bou-lic,
+ []
+
+[78]
+Underfull \hbox (badness 6001) in paragraph at lines 98--105
+[]\OT1/minntx/m/n/12 G. Yan, Y. Zheng, and C. Lin, ``De-tec-ting an-oma-lous us
+er be-ha-vi-or
+ []
+
+
+Underfull \hbox (badness 3977) in paragraph at lines 98--105
+\OT1/minntx/m/n/12 using an ex-ten-ded iso-la-ti-on fo-rest al-go-rithm: An en-
+ter-pri-se ca-se stu-dy,''
+ []
+
+
+Underfull \hbox (badness 3919) in paragraph at lines 98--105
+\OT1/minntx/m/n/12 in \OT1/ntxtlf/m/it/12 2021 In-ter-na-tio-nal Con-fe-rence o
+n Com-pu-ter En-gi-nee-ring and Ar-ti-fi-ci-
+ []
+
+
+Underfull \hbox (badness 1454) in paragraph at lines 98--105
+\OT1/ntxtlf/m/it/12 al In-tel-li-gence (IC-CEAI)\OT1/minntx/m/n/12 . IE-EE, 202
+1, pp. 115--121, [On-li-ne]. Verf^^?ugbar:
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
+[]$\OT1/minntx/m/n/12 https : / / www . researchgate . net / publication / 3084
+09790[]Detecting[]Anomalous[]User[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--105
+\OT1/minntx/m/n/12 Behavior[]Using[]an[]Extended[]Isolation[]Forest[]Algorithm[
+]An[]Enterprise[]Case[]Study$[].
+ []
+
+
+Underfull \hbox (badness 4391) in paragraph at lines 107--114
+\OT1/minntx/m/n/12 The[]Case[]Against[]Accuracy[]Estimation[]for[]Comparing[]In
+duction[]Algorithms$[]. [Zu-
+ []
+
+[79]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.153 ...w.researchgate.net/publication/286916848_
+                                                  A_primer_on_multivariate_a...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Double subscript.
+l.153 ...researchgate.net/publication/286916848_A_
+                                                  primer_on_multivariate_ana...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.155 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.155 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
+[]\OT1/minntx/m/n/12 R. War-ne, ``A pri-mer on mul-ti-va-ria-te ana-ly-sis of v
+a-rian-ce (ma-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
+\OT1/minntx/m/n/12 no-va) for be-ha-vi-oral scien-tists,'' \OT1/ntxtlf/m/it/12 
+Prac-ti-cal As-sess-ment, Re-se-arch,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--155
+\OT1/ntxtlf/m/it/12 and Eva-lua-ti-on\OT1/minntx/m/n/12 , vol. 19, no. 1, p. 17
+, 2014, [On-li-ne]. Verf^^?ugbar:
+ []
+
+
+Overfull \hbox (301.67526pt too wide) in paragraph at lines 150--155
+\OT1/minntx/m/n/12 https://www.researchgate.net/publication/286916848$[][]\OML/
+ntxmi/m/it/12 rimer[]n[]ultivariate[]nalysis[]f[]ariance[]ANOVA[]or[]ehavioral[
+]cientists:\LMS/ntxsy/m/n/12 ª\OML/ntxmi/m/it/12 Zugriffam \OT1/minntx/m/n/12 :
+
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.155 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[80] [81]
+Underfull \hbox (badness 1184) in paragraph at lines 265--270
+[]\OT1/minntx/m/n/12 R. Mussa-bayev and R. Mussa-bayev, ``Com-pa-ra-ti-ve ana-l
+y-sis of op-ti-mi-za-ti-on stra-te-
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.290 ...w.researchgate.net/publication/361525909_
+                                                  RNN-Autoencoder_Approach_f...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.292 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.292 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 1147) in paragraph at lines 286--292
+[]\OT1/minntx/m/n/12 B. San-to-so, W. Ang-grae-ni, H. Pa-ria-man, and M. H. Pur
+-no-mo, ``Rnn-autoencoder
+ []
+
+
+Underfull \hbox (badness 5446) in paragraph at lines 286--292
+\OT1/minntx/m/n/12 ap-proach for an-oma-ly de-tec-ti-on in power plant pre-dic-
+ti-ve main-te-nance sys-
+ []
+
+
+Underfull \hbox (badness 3803) in paragraph at lines 286--292
+\OT1/minntx/m/n/12 tems,'' \OT1/ntxtlf/m/it/12 Int. J. In-tell. Eng. Syst.\OT1/
+minntx/m/n/12 , vol. 15, no. 4, pp. 422--433, 2022, [On-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--292
+\OT1/minntx/m/n/12 li-ne]. Verf^^?ugbar: https://www.researchgate.net/publicati
+on/361525909$[]\OML/ntxmi/m/it/12 NN \LMS/ntxsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (94.95497pt too wide) in paragraph at lines 286--292
+\OML/ntxmi/m/it/12 Autoencoder[]pproach[]or[]nomaly[]etection[]n[]ower[]lant[]r
+edictive[]aintenance[]ystems:\LMS/ntxsy/m/n/12 ª\OML/ntxmi/m/it/12 Zugriffam \O
+T1/minntx/m/n/12 :
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.292 
+      
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 312--317
+[]\OT1/minntx/m/n/12 H. To-ra-bi, S. L. Mir-ta-he-ri, and S. Gre-co, ``Prac-ti-
+cal au-to-en-co-der ba-sed an-oma-
+ []
+
+[82]) [83]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 1720.
+ (./bachelorarbeit.ent
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 10.
+LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
+(Font)              scaled to size 10.0pt on input line 12.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.3> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5.5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 12.
+
+Overfull \hbox (50.63434pt too wide) in paragraph at lines 127--139
+[]\OT1/minntx/m/n/10 Lukas Ruff, []Deep-SVDD-PyTorch\, GitHub Re-po-si-to-ry, [
+]$\OT1/ntxtt/m/n/10 https : / / github . com / lukasruff / Deep-[]SVDD-[]PyTorc
+h$[]\OT1/minntx/m/n/10 ,
+ []
+
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 145.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 214.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 214.
+
+Overfull \hbox (26.71437pt too wide) in paragraph at lines 272--288
+[]\OT1/minntx/m/n/10 Scikit-learn: Ma-chi-ne Lear-ning in Py-thon. Of-fi-zi-el-
+le Do-ku-men-ta-ti-on, verf^^?ugbar un-ter: []$\OT1/ntxtt/m/n/10 https : / / sc
+ikit-[]learn .
+ []
+
+
+Overfull \hbox (1.14162pt too wide) in paragraph at lines 309--328
+[]\OT1/minntx/m/n/10 TensorFlow: An End-to-End Open Sour-ce Ma-chi-ne Lear-ning
+ Plat-form. Of-fi-zi-el-le Do-ku-men-ta-ti-on, verf^^?ugbar
+ []
+
+
+Overfull \hbox (14.10458pt too wide) in paragraph at lines 354--366
+[]\OT1/minntx/m/n/10 Keycloak Com-mu-ni-ty, []JpaAd-mi-nE-vent-Que-ry.java\, Gi
+tHub Re-po-si-to-ry, []$\OT1/ntxtt/m/n/10 https : / / github . com / keycloak /
+
+ []
+
+
+Overfull \hbox (10.48096pt too wide) in paragraph at lines 354--366
+\OT1/ntxtt/m/n/10 keycloak / blob / main / model / jpa / src / main / java / or
+g / keycloak / events / jpa / JpaAdminEventQuery .
+ []
+
+
+Overfull \hbox (19.4313pt too wide) in paragraph at lines 368--379
+[]\OT1/minntx/m/n/10 NVIDIA Cor-po-ra-ti-on, []DGX Sys-tems\, []$\OT1/ntxtt/m/n
+/10 https : / / www . nvidia . com / en-[]us / data-[]center / dgx-[]systems/$[
+]\OT1/minntx/m/n/10 ,
+ []
+
+[84]
+Overfull \hbox (2.39134pt too wide) in paragraph at lines 444--458
+[]\OT1/minntx/m/n/10 MITRE Cor-po-ra-ti-on, []CVE Search Re-sults for Key-cloak
+\, []$\OT1/ntxtt/m/n/10 https : / / cve . mitre . org / cgi-[]bin / cvekey .
+ []
+
+) [85] [86
 pdfTeX warning (ext4): destination with the same identifier (name{table.4}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1787 	
-        
+l.1803 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.5}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1787 	
-        ] [81
+l.1803 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.6}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1846 	
-        
+l.1803 
+       ] [87
 pdfTeX warning (ext4): destination with the same identifier (name{table.7}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1846 	
-        
+l.1862 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.8}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1846 	
-        ] [82
+l.1862 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.9}) has
  been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1906 	
-        
+l.1862 
+       ] [88
 pdfTeX warning (ext4): destination with the same identifier (name{table.10}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1906 	
-        
+l.1922 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.11}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1906 	
-        ] [83
+l.1922 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.12}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1965 	
-        
+l.1922 
+       ] [89
 pdfTeX warning (ext4): destination with the same identifier (name{table.13}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1965 	
-        
+l.1981 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.14}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.1965 	
-        ] [84
+l.1981 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.15}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2024 	
-        
+l.1981 
+       ] [90
 pdfTeX warning (ext4): destination with the same identifier (name{table.16}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2024 	
-        
+l.2040 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.17}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2024 	
-        ] [85
+l.2040 
+       
 pdfTeX warning (ext4): destination with the same identifier (name{table.18}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2061 	
-        
+l.2040 
+       ] [91
 pdfTeX warning (ext4): destination with the same identifier (name{table.19}) ha
 s been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.2061 	
-        ] [86]
-Overfull \hbox (18.61601pt too wide) in paragraph at lines 2063--2066
-\OT1/cmr/m/n/12 wer-den. Ins-ge-samt un-ter-strei-chen die Er-geb-nis-se das Po
--ten-zi-al von LSTM-Autoencodern
- []
-
-
-Overfull \hbox (22.34412pt too wide) in paragraph at lines 2068--2075
-\OT1/cmr/m/n/12 Da-her er-scheint es sinn-voll, wei-te-re Tests mit kom-ple-xe-
-ren An-griffss-ze-na-ri-en, zus[]atzlichen
- []
-
-[87] [88] (./bachelorarbeit.bbl
-Underfull \hbox (badness 2181) in paragraph at lines 25--29
-\OT1/cmr/m/n/12 it-sicherheit in deutsch-land 2023,'' []$https : / / www . bsi 
-. bund . de / SharedDocs /
- []
-
-
-Underfull \hbox (badness 4531) in paragraph at lines 25--29
-\OT1/cmr/m/n/12 Downloads / DE / BSI / Publikationen / Lageberichte / Lageberic
-ht2023 . pdf$[], 2024,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--70
-[]$\OT1/cmr/m/n/12 https : / / www . researchgate . net / publication / 3784034
-23[]A[]Comparative[]Study[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 64--70
-\OT1/cmr/m/n/12 of[]Deep[]Neural[]Networks[]and[]Support[]Vector[]Machines[]for
-[]Unsupervised[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 73--78
-\OT1/cmr/m/n/12 385301485[]A[]Comparative[]Performance[]Analysis[]of[]LSTM[]Aut
-oencoder[]and[]
- []
-
-[89]
-Underfull \hbox (badness 10000) in paragraph at lines 127--134
-\OT1/cmr/m/n/12 308409790[]Detecting[]Anomalous[]User[]Behavior[]Using[]an[]Ext
-ended[]Isolation[]
- []
-
-[90] [91]
-Underfull \hbox (badness 10000) in paragraph at lines 247--253
-\OT1/cmr/m/n/12 publication / 224384174[]Isolation[]Forest / links / 5bbd5c0ca6
-fdcc9552dd04f0 /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 247--253
-\OT1/cmr/m/n/12 Isolation-[]Forest . pdf ? origin = publication[]detail & []tp 
-=
- []
-
-
-Overfull \hbox (483.75632pt too wide) in paragraph at lines 247--253
-\OT1/cmr/m/n/12 eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InB1YmxpY2F0aW9uIiwicGFnZSI6InB
-1YmxpY2F0aW9uRG93bmxvYWQiLCJwcmV2aW91c1BhZ2UiOiJwdWJsaWNhdGlvbiJ9fQ$[] 
- []
-
-[92] [93] [94]) [95] (./bachelorarbeit.ent
-Overfull \hbox (236.09372pt too wide) in paragraph at lines 102--123
-\OT1/cmr/m/n/10 Sep-tem-ber 2017, []$\OT1/cmtt/m/n/10 https : / / www . forbes 
-. com / sites / quora / 2017 / 09 / 15 / what-[]are-[]the-[]biggest-[]challenge
-s-[]facing-[]the-[]cybersecurity-[]industry$[]\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (338.04613pt too wide) in paragraph at lines 125--150
-\OT1/cmr/m/n/10 di-um, ver[]offentlicht am 20. Ja-nu-ar 2020, []$\OT1/cmtt/m/n/
-10 https : / / medium . com / sciforce / adversarial-[]attacks-[]explained-[]an
-d-[]how-[]to-[]defend-[]ml-[]models-[]against-[]them-[]d76f7d013b18$[]\OT1/cmr/
-m/n/10 ,
- []
-
-
-Overfull \hbox (0.47595pt too wide) in paragraph at lines 168--178
-[]\OT1/cmr/m/n/10 CVEDetails, []CVE-2025-3501 De-tails\, []$\OT1/cmtt/m/n/10 ht
-tps : / / www . cvedetails . com / cve / CVE-[]2025-[]3501$[]\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (48.62613pt too wide) in paragraph at lines 367--378
-[]\OT1/cmr/m/n/10 NVIDIA Cor-po-ra-ti-on, []DGX Sys-tems\, []$\OT1/cmtt/m/n/10 
-https : / / www . nvidia . com / en-[]us / data-[]center / dgx-[]systems/$[]\OT
-1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (1.76192pt too wide) in paragraph at lines 380--397
-[]$\OT1/cmtt/m/n/10 https : / / docs . nvidia . com / dgx / dgxh100-[]user-[]gu
-ide / introduction-[]to-[]dgxh100 . html$[]\OT1/cmr/m/n/10 , letz-ter
- []
-
-[96]
-Overfull \hbox (92.95412pt too wide) in paragraph at lines 423--435
-\OT1/cmtt/m/n/10 com / keycloak / keycloak / blob / main / model / jpa / src / 
-main / java / org / keycloak / events / jpa / JpaAdminEventQuery .
- []
-
-
-Overfull \hbox (1.59846pt too wide) in paragraph at lines 440--441
-[]\OT1/cmr/m/n/10 https://scikit-learn.org/stable/modules/generated/sklearn.pre
-processing.StandardScaler.html 
- []
-
-
-Overfull \hbox (20.095pt too wide) in paragraph at lines 449--465
-\OT1/cmtt/m/n/10 iana . org / assignments / iana-[]ipv4-[]special-[]registry / 
-iana-[]ipv4-[]special-[]registry . xhtml$[]\OT1/cmr/m/n/10 , letz-
- []
-
-
-Overfull \hbox (3.25229pt too wide) in paragraph at lines 481--495
-[]\OT1/cmr/m/n/10 MITRE Cor-po-ra-ti-on, []CVE Search Re-sults for Key-cloak\, 
-[]$\OT1/cmtt/m/n/10 https : / / cve . mitre . org / cgi-[]bin /
- []
-
-) [97] (./bachelorarbeit.aux)
+l.2100 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.20}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2100 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.21}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2100 
+       ] [92
+pdfTeX warning (ext4): destination with the same identifier (name{table.22}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2140 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.23}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2140 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.24}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2140 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.25}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2140 
+       ] [93
+pdfTeX warning (ext4): destination with the same identifier (name{table.26}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2200 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.27}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2200 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.28}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2200 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.29}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2200 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.30}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2200 
+       ] [94
+pdfTeX warning (ext4): destination with the same identifier (name{table.31}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2259 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.32}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2259 
+       
+pdfTeX warning (ext4): destination with the same identifier (name{table.33}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2259 
+       ] [95
+pdfTeX warning (ext4): destination with the same identifier (name{table.34}) ha
+s been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.2261 \newpage
+               	] (./bachelorarbeit.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-22>
+L3 programming layer <2020/03/25>
  ***********
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `bachelorarbeit.out' has not changed.
-(rerunfilecheck)             Checksum: 984DA47B7DBEA4AB0F62C0F4D3CA00A8;12865.
+(rerunfilecheck)             Checksum: C21AF1366B2FFC4AFA239866F18D3992;14155.
  ) 
 Here is how much of TeX's memory you used:
- 21904 strings out of 476129
- 381691 string characters out of 5793186
- 1941975 words of memory out of 5000000
- 43241 multiletter control sequences out of 15000+600000
- 565732 words of font info for 63 fonts, out of 8000000 for 9000
+ 25559 strings out of 476129
+ 431314 string characters out of 5793186
+ 1943975 words of memory out of 5000000
+ 46720 multiletter control sequences out of 15000+600000
+ 627358 words of font info for 176 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 94i,10n,93p,2348b,785s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 94i,10n,93p,2348b,757s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{glo:webdriver} has been referenced but does not exi
+st, replaced by a fixed one
+
 
 pdfTeX warning (dest): name{glo:residualblock} has been referenced but does not
  exist, replaced by a fixed one
 
 
+pdfTeX warning (dest): name{glo:adam} has been referenced but does not exist, r
+eplaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:mse} has been referenced but does not exist, re
+placed by a fixed one
+
+
+pdfTeX warning (dest): name{glo:jupyternotebook} has been referenced but does n
+ot exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:overfitting} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:regularisierungstechnik} has been referenced bu
+t does not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:learningrate} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:dropoutrate} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:batchsize} has been referenced but does not exi
+st, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:vanishing-gradient} has been referenced but doe
+s not exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:refreshtoken} has been referenced but does not 
+exist, replaced by a fixed one
+
+
 pdfTeX warning (dest): name{glo:spi} has been referenced but does not exist, re
 placed by a fixed one
 
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/ty
-pe1/public/cm-super/sfrm1200.pfb>
-Output written on bachelorarbeit.pdf (97 pages, 1480138 bytes).
+
+pdfTeX warning (dest): name{glo:clientrole} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:realmrole} has been referenced but does not exi
+st, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:keras} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:epochen} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:sequenzlaenge} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:lstmae} has been referenced but does not exist,
+ replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:Autoencoder} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:ml} has been referenced but does not exist, rep
+laced by a fixed one
+
+
+pdfTeX warning (dest): name{glo:tensorflow} has been referenced but does not ex
+ist, replaced by a fixed one
+
+</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXBMI.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf/fonts/type1/public/
+tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txb
+tt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/txfonts/txtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/z
+tmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on bachelorarbeit.pdf (95 pages, 1470861 bytes).
 PDF statistics:
- 1573 PDF objects out of 1728 (max. 8388607)
- 1393 compressed objects within 14 object streams
- 391 named destinations out of 1000 (max. 500000)
- 624 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1685 PDF objects out of 1728 (max. 8388607)
+ 1508 compressed objects within 16 object streams
+ 434 named destinations out of 1000 (max. 500000)
+ 682 words of extra memory for PDF output out of 10000 (max. 10000000)
 
