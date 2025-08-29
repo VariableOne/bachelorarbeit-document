@@ -1,35 +1,47 @@
 \babel@toc {ngerman}{}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Bestimmte Parameter der Modellkonfiguration}}{46}{table.1}%
-\contentsline {table}{\numberline {2}{\ignorespaces Mittlere Performance-Metriken der drei Algorithmen über alle Sequenzlängen.}}{72}{table.2}%
-\contentsline {table}{\numberline {3}{\ignorespaces MANOVA-Ergebnisse für die drei Algorithmen.}}{73}{table.3}%
-\contentsline {table}{\numberline {4}{\ignorespaces Testlauf 1: Ergebnisse für IsolationForest, Sequenzlänge 10}}{86}{table.4}%
-\contentsline {table}{\numberline {5}{\ignorespaces Testlauf 1: Ergebnisse für One-Class SVM, Sequenzlänge 10}}{86}{table.5}%
-\contentsline {table}{\numberline {6}{\ignorespaces Testlauf 1: Ergebnisse für DBSCAN, Sequenzlänge 10}}{86}{table.6}%
-\contentsline {table}{\numberline {7}{\ignorespaces Testlauf 2: Ergebnisse für IsolationForest, Sequenzlänge 10}}{87}{table.7}%
-\contentsline {table}{\numberline {8}{\ignorespaces Testlauf 2: Ergebnisse für One-Class SVM, Sequenzlänge 10}}{87}{table.8}%
-\contentsline {table}{\numberline {9}{\ignorespaces Testlauf 2: Ergebnisse für DBSCAN, Sequenzlänge 10}}{87}{table.9}%
-\contentsline {table}{\numberline {10}{\ignorespaces Testlauf 3: Ergebnisse für IsolationForest, Sequenzlänge 10}}{88}{table.10}%
-\contentsline {table}{\numberline {11}{\ignorespaces Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 10}}{88}{table.11}%
-\contentsline {table}{\numberline {12}{\ignorespaces Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 10}}{88}{table.12}%
-\contentsline {table}{\numberline {13}{\ignorespaces Testlauf 1: Ergebnisse für IsolationForest, Sequenzlänge 25}}{89}{table.13}%
-\contentsline {table}{\numberline {14}{\ignorespaces Testlauf 1: Ergebnisse für One-Class SVM, Sequenzlänge 25}}{89}{table.14}%
-\contentsline {table}{\numberline {15}{\ignorespaces Testlauf 1: Ergebnisse für DBSCAN, Sequenzlänge 25}}{89}{table.15}%
-\contentsline {table}{\numberline {16}{\ignorespaces Testlauf 2: Ergebnisse für IsolationForest, Sequenzlänge 25}}{90}{table.16}%
-\contentsline {table}{\numberline {17}{\ignorespaces Testlauf 2: Ergebnisse für One-Class SVM, Sequenzlänge 25}}{90}{table.17}%
-\contentsline {table}{\numberline {18}{\ignorespaces Testlauf 2: Ergebnisse für DBSCAN, Sequenzlänge 25}}{90}{table.18}%
-\contentsline {table}{\numberline {19}{\ignorespaces Testlauf 3: Ergebnisse für IsolationForest, Sequenzlänge 25}}{91}{table.19}%
-\contentsline {table}{\numberline {20}{\ignorespaces Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 25}}{91}{table.20}%
-\contentsline {table}{\numberline {21}{\ignorespaces Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 25}}{91}{table.21}%
-\contentsline {table}{\numberline {22}{\ignorespaces IsolationForest: Performance-Metriken}}{92}{table.22}%
-\contentsline {table}{\numberline {23}{\ignorespaces Testlauf 1: Ergebnisse für IF, Sequenzlänge 50}}{92}{table.23}%
-\contentsline {table}{\numberline {24}{\ignorespaces One-Class SVM: Performance-Metriken}}{92}{table.24}%
-\contentsline {table}{\numberline {25}{\ignorespaces Testlauf 1: Performance-Metriken für OCSVM, Sequenzlänge 50}}{92}{table.25}%
-\contentsline {table}{\numberline {26}{\ignorespaces DBSCAN: Performance-Metriken}}{93}{table.26}%
-\contentsline {table}{\numberline {27}{\ignorespaces Testlauf 1: Performance-Metriken für DBSCAN, Sequenzlänge 50}}{93}{table.27}%
-\contentsline {table}{\numberline {28}{\ignorespaces Performance-Metriken für Isolation Forest}}{93}{table.28}%
-\contentsline {table}{\numberline {29}{\ignorespaces Testlauf 2: Ergebnisse für IF, Sequenzlänge 50}}{93}{table.29}%
-\contentsline {table}{\numberline {30}{\ignorespaces Testlauf 2: Performance-Metriken für One-Class SVM, Sequenzlänge 50}}{93}{table.30}%
-\contentsline {table}{\numberline {31}{\ignorespaces Testlauf 2: Performance-Metriken für DBSCAN, Sequenzlänge 50}}{94}{table.31}%
-\contentsline {table}{\numberline {32}{\ignorespaces Testlauf 3: Ergebnisse für IF, Sequenzlänge 50}}{94}{table.32}%
-\contentsline {table}{\numberline {33}{\ignorespaces Testlauf 3: Ergebnisse für One-Class SVM, Sequenzlänge 50}}{94}{table.33}%
-\contentsline {table}{\numberline {34}{\ignorespaces Testlauf 3: Ergebnisse für DBSCAN, Sequenzlänge 50}}{95}{table.34}%
+\contentsline {table}{\numberline {1}{\ignorespaces Ausgewählte Parameter der Modellkonfiguration}}{28}{table.66}%
+\contentsline {table}{\numberline {2}{\ignorespaces Vergleich der Modelle bei Sequenzlänge 25}}{53}{table.136}%
+\contentsline {table}{\numberline {3}{\ignorespaces Übersicht der Ergebnisse für Sequenzlänge 45}}{53}{table.138}%
+\contentsline {table}{\numberline {4}{\ignorespaces Übersicht der Ergebnisse}}{54}{table.140}%
+\contentsline {table}{\numberline {5}{\ignorespaces Varianz der Modelle bei Sequenzlänge 25}}{54}{table.143}%
+\contentsline {table}{\numberline {6}{\ignorespaces Varianz der Modelle bei Sequenzlänge 45}}{54}{table.145}%
+\contentsline {table}{\numberline {7}{\ignorespaces Standardabweichung der Modelle bei Sequenzlänge 25}}{54}{table.147}%
+\contentsline {table}{\numberline {8}{\ignorespaces Standardabweichung der Modelle bei Sequenzlänge 45}}{55}{table.149}%
+\contentsline {table}{\numberline {9}{\ignorespaces Friedman-Test Ergebnisse (seq. 25)}}{56}{table.152}%
+\contentsline {table}{\numberline {10}{\ignorespaces Friedman-Test Ergebnisse (seq. 45)}}{56}{table.154}%
+\contentsline {table}{\numberline {11}{\ignorespaces Nemenyi Post-hoc Test: F1-Score, Sequenzlänge 25}}{57}{table.157}%
+\contentsline {table}{\numberline {12}{\ignorespaces Nemenyi Post-hoc Test: MCC, Sequenzlänge 25}}{58}{table.159}%
+\contentsline {table}{\numberline {13}{\ignorespaces Nemenyi Post-hoc Test: Balanced Accuracy, Sequenzlänge 25}}{58}{table.161}%
+\contentsline {table}{\numberline {14}{\ignorespaces Nemenyi Post-hoc Test: F1-Score, Sequenzlänge 45}}{58}{table.163}%
+\contentsline {table}{\numberline {15}{\ignorespaces Nemenyi Post-hoc Test: MCC, Sequenzlänge 45}}{58}{table.165}%
+\contentsline {table}{\numberline {16}{\ignorespaces Nemenyi Post-hoc Test: Balanced Accuracy, Sequenzlänge 45}}{58}{table.167}%
+\contentsline {table}{\numberline {17}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 25, Testlauf 1)}}{74}{table.180}%
+\contentsline {table}{\numberline {18}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 25, Testlauf 1)}}{74}{table.182}%
+\contentsline {table}{\numberline {19}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN(Sequenzlänge 25, Testlauf 1)}}{75}{table.184}%
+\contentsline {table}{\numberline {20}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 25, Testlauf 2)}}{75}{table.187}%
+\contentsline {table}{\numberline {21}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 25, Testlauf 2)}}{75}{table.189}%
+\contentsline {table}{\numberline {22}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 25, Testlauf 2)}}{76}{table.191}%
+\contentsline {table}{\numberline {23}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 25, Testlauf 3)}}{76}{table.194}%
+\contentsline {table}{\numberline {24}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 25, Testlauf 3)}}{76}{table.196}%
+\contentsline {table}{\numberline {25}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 25, Testlauf 3)}}{77}{table.198}%
+\contentsline {table}{\numberline {26}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 25, Testlauf 4)}}{77}{table.201}%
+\contentsline {table}{\numberline {27}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 25, Testlauf 4)}}{77}{table.203}%
+\contentsline {table}{\numberline {28}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 25, Testlauf 4)}}{78}{table.205}%
+\contentsline {table}{\numberline {29}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 25, Testlauf 5)}}{78}{table.208}%
+\contentsline {table}{\numberline {30}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 25, Testlauf 5)}}{78}{table.210}%
+\contentsline {table}{\numberline {31}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 25, Testlauf 5)}}{79}{table.212}%
+\contentsline {table}{\numberline {32}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 45, Testlauf 1)}}{80}{table.216}%
+\contentsline {table}{\numberline {33}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 45, Testlauf 1)}}{80}{table.218}%
+\contentsline {table}{\numberline {34}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 45, Testlauf 1)}}{81}{table.220}%
+\contentsline {table}{\numberline {35}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 45, Testlauf 2)}}{81}{table.223}%
+\contentsline {table}{\numberline {36}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 45, Testlauf 2)}}{81}{table.225}%
+\contentsline {table}{\numberline {37}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 45, Testlauf 2)}}{82}{table.227}%
+\contentsline {table}{\numberline {38}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 45, Testlauf 3)}}{82}{table.230}%
+\contentsline {table}{\numberline {39}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 45, Testlauf 3)}}{82}{table.232}%
+\contentsline {table}{\numberline {40}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 45, Testlauf 3)}}{83}{table.234}%
+\contentsline {table}{\numberline {41}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 45, Testlauf 4)}}{83}{table.237}%
+\contentsline {table}{\numberline {42}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 45, Testlauf 4)}}{83}{table.239}%
+\contentsline {table}{\numberline {43}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 45, Testlauf 4)}}{84}{table.241}%
+\contentsline {table}{\numberline {44}{\ignorespaces Ergebnisse von LSTM-AE-IF (Sequenzlänge 45, Testlauf 5)}}{84}{table.244}%
+\contentsline {table}{\numberline {45}{\ignorespaces Ergebnisse von LSTM-AE-OCSVM (Sequenzlänge 45, Testlauf 5)}}{84}{table.246}%
+\contentsline {table}{\numberline {46}{\ignorespaces Ergebnisse von LSTM-AE-DBSCAN (Sequenzlänge 45, Testlauf 5)}}{85}{table.248}%

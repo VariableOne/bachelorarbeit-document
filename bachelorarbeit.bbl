@@ -21,28 +21,69 @@
 \providecommand{\BIBdecl}{\relax}
 \BIBdecl
 
+\bibitem{bsi2023}
+{Bundesamt für Sicherheit in der Informationstechnik (BSI)}, ``Lagebericht
+  2023,'' 2023, [Online]. Verfügbar:
+  \url{https://www.bsi.bund.de/SharedDocs/Downloads/DE/BSI/Publikationen/Lageberichte/Lagebericht2023.pdf}.
+  [Zugriff am: Jun. 10, 2025].
+
 \bibitem{chandola2009anomaly}
 V.~Chandola, A.~Banerjee, and V.~Kumar, ``Anomaly detection: A survey,''
   \emph{ACM Comput. Surv.}, vol.~41, no.~3, pp. 1--58, 2009, [Online].
-  Verfügbar: https://dl.acm.org/doi/10.1145/1541880.1541882 .[Zugriff am: 19.
-  August 2025].
+  Verfügbar: \url{https://dl.acm.org/doi/10.1145/1541880.1541882}.[Zugriff am:
+  19. August 2025].
+
+\bibitem{foorthuis2021anomalies}
+R.~Foorthuis, ``On the nature and types of anomalies: A review of deviations in
+  data,'' \emph{International Journal of Data Science and Analytics}, vol.~11,
+  no.~2, pp. 127--157, 2021, [Online]. Verfügbar:
+  \url{https://www.researchgate.net/publication/353701611_On_the_nature_and_types_of_anomalies_a_review_of_deviations_in_data}.
+  Zugriff am 21. August 2025.
+
+\bibitem{Sanni2024}
+\BIBentryALTinterwordspacing
+B.~Sanni, ``Anomaly detection and user frustration prediction using machine
+  learning in mobile app ux,'' ResearchGate Preprint, Dec. 2024. [Online].
+  Available:
+  \url{https://www.researchgate.net/publication/386375210_Anomaly_Detection_and_User_Frustration_Prediction_Using_Machine_Learning_in_Mobile_App_UX}
+\BIBentrySTDinterwordspacing
 
 \bibitem{legg2015visualizing}
 M.~G. P.~Legg, O.~Buckley and S.~Creese, ``Visualizing the insider threat:
   challenges and tools for identifying malicious user activity,'' in
   \emph{Proc. IEEE Symp. Vis. Cyber Secur. (VizSec)}, 2015, pp. 1--8, [Online].
-  Verfügbar: https://ieeexplore.ieee.org/document/7312772.[Zugriff am: 19.
-  August 2025].
+  Verfügbar: \url{https://ieeexplore.ieee.org/document/7312772}.[Zugriff am:
+  19. August 2025].
 
-\bibitem{waltl2017rulebased}
-G.~B. B.~Waltl and F.~Matthes, ``Rule-based information extraction: Advantages,
-  limitations, and perspectives,'' in \emph{Proc. Int. Conf. Legal Knowledge
-  Inf. Syst. (JURIX)}, 2017.
+\bibitem{dahal2025}
+A.~Dahal, P.~Bajgai, and N.~Rahimi, ``Analysis of zero day attack detection
+  using mlp and xai,'' \emph{Communications in Computer and Information
+  Science}, vol. 2254, pp. 53--66, 2024, [Online]. Verfügbar:
+  \url{https://arxiv.org/abs/2501.16638}. [Zugriff am: 19. August 2025].
 
-\bibitem{pang2021deep}
-C.~Zhou and R.~C. Paffenroth, ``Deep learning for anomaly detection: A
-  review,'' \emph{ACM DL}, vol.~9, pp. 5789--5813, 2021, [Online]. Verfügbar:
-  \url{https://dl.acm.org/doi/abs/10.1145/3439950}.[Zugriff am: 19. August
+\bibitem{yan2021extended}
+G.~Yan, Y.~Zheng, and C.~Lin, ``Detecting anomalous user behavior using an
+  extended isolation forest algorithm: An enterprise case study,'' in
+  \emph{2021 International Conference on Computer Engineering and Artificial
+  Intelligence (ICCEAI)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2021,
+  pp. 115--121, [Online]. Verfügbar:
+  \url{https://www.researchgate.net/publication/308409790_Detecting_Anomalous_User_Behavior_Using_an_Extended_Isolation_Forest_Algorithm_An_Enterprise_Case_Study}.
+  [Zugriff am 19.August 2025].
+
+\bibitem{arjunan2024comparative}
+T.~Arjunan, ``A comparative study of deep neural networks and support vector
+  machines for unsupervised anomaly detection in cloud computing
+  environments,'' \emph{Int. J. Res. Appl. Sci. Eng. Technol.}, vol.~12, p.~9,
+  2024, [Online]. Verfügbar:
+  \url{https://www.researchgate.net/publication/378403423_A_Comparative_Study_of_Deep_Neural_Networks_and_Support_Vector_Machines_for_Unsupervised_Anomaly_Detection_in_Cloud_Computing_Environments}.[Zugriff
+  am: 19. August 2025].
+
+\bibitem{thang2011dbscan}
+T.~M. Thang and J.~Kim, ``The anomaly detection by using dbscan clustering with
+  multiple parameters,'' in \emph{2011 International Conference on Information
+  Science and Applications}.\hskip 1em plus 0.5em minus 0.4em\relax Jeju, Korea
+  (South): IEEE, 26-29 April 2011, pp. 1--6, [Online]. Verfügbar:
+  \url{https://ieeexplore.ieee.org/document/5772437}. [Zugriff am: 19. August
   2025].
 
 \bibitem{demir2024comparative}
@@ -52,24 +93,12 @@ E.~Demir and C.~Karao{\u{g}}lan, ``A comparative performance analysis of lstm
   \url{https://www.researchgate.net/publication/385301485_A_Comparative_Performance_Analysis_of_LSTM_Autoencoder_and_TimeGPT_Models_in_Time_Series_Anomaly_Detection}.
   [Zugriff am: 13. Juni 2025], 2024.
 
-\bibitem{ergen2017unsupervised}
-T.~Ergen and S.~S. Kozat, ``Unsupervised and semi-supervised anomaly detection
-  with lstm neural networks,'' [Online]. Verfügbar:
-  \url{https://arxiv.org/abs/1710.09207}. [Zugriff am: 20. Juni 2025], 2017.
-
-\bibitem{ghrib2020hybrid}
-R.~J. Z.~Ghrib and R.~Romdhane, ``Hybrid approach for anomaly detection in time
-  series data,'' in \emph{2020 IEEE Int. Conf. Intell. Syst. Comput. Vis.
-  (ISCV)}, 2020, pp. 1--7, [Online]. Verfügbar:
-  https://ieeexplore.ieee.org/document/9207013.[Zugriff am: 19. August 2025].
-
-\bibitem{chua2024web}
-W.~Chua, A.~L.~D. Pajas, C.~S. Castro, S.~P. Panganiban, A.~J. Pasuquin, M.~J.
-  Purganan, R.~Malupeng, D.~J. Pingad, J.~P. Orolfo, H.~H. Lua, and L.~C.
-  Velasco, ``Web traffic anomaly detection using isolation forest,''
-  \emph{Informatics}, vol.~11, no.~4, p.~83, 2024, [Online]. Verfügbar:
-  \url{https://www.researchgate.net/publication/385531295_Web_Traffic_Anomaly_Detection_Using_Isolation_Forest}.[Zugriff
-  am: 19. August 2025].
+\bibitem{Iseed2025}
+S.~Iseed and M.~M.~N. Hamarsheh, ``Performance evaluation of lstm autoencoder
+  for behavioral-based insider threat detection,'' in \emph{2025 International
+  Conference on Smart Applications, Communications and Networking
+  (SmartNets)}.\hskip 1em plus 0.5em minus 0.4em\relax Istanbul, Turkiye: IEEE,
+  July 22-24 2025.
 
 \bibitem{wei2023lstm}
 Y.~Wei, J.~J. Jaccard, W.~Xu, F.~Sabrina, S.~Camtepe, and M.~Boulic,
@@ -87,21 +116,94 @@ P.~H. Tran, C.~Heuchenne, and S.~Thomassey, ``An anomaly detection approach
   \url{https://www.worldscientific.com/doi/10.1142/9789811223334_0071}.[Zugriff
   am: 19. August 2025].
 
+\bibitem{ghrib2020hybrid}
+R.~J. Z.~Ghrib and R.~Romdhane, ``Hybrid approach for anomaly detection in time
+  series data,'' in \emph{2020 IEEE Int. Conf. Intell. Syst. Comput. Vis.
+  (ISCV)}, 2020, pp. 1--7, [Online]. Verfügbar:
+  \url{https://ieeexplore.ieee.org/document/9207013}.[Zugriff am: 19. August
+  2025].
+
+\bibitem{marteau2017hif}
+P.-F. Marteau, S.~Soheily-Khah, and N.~B{\'e}chet, ``Hybrid isolation forest -
+  application to intrusion detection,'' \emph{arXiv preprint arXiv:1705.03800},
+  pp. 1--24, 2017, [Online]. Verfügbar:
+  \url{https://arxiv.org/abs/1705.03800}. Zugriff am 21. August 2025.
+
+\bibitem{ergen2017unsupervised}
+T.~Ergen and S.~S. Kozat, ``Unsupervised and semi-supervised anomaly detection
+  with lstm neural networks,'' [Online]. Verfügbar:
+  \url{https://arxiv.org/abs/1710.09207}. [Zugriff am: 20. Juni 2025], 2017.
+
+\bibitem{ha2022explainable}
+\BIBentryALTinterwordspacing
+D.~T. Ha, N.~X. Hoang, N.~V. Hoang, N.~H. Du, T.~T. Huong, and K.~P. Tran,
+  ``Explainable anomaly detection for industrial control system
+  cybersecurity,'' \emph{Computers in Industry}, vol. 135, p. 103736, 2022.
+  [Online]. Available: \url{https://doi.org/10.1016/j.compind.2022.103736}
+\BIBentrySTDinterwordspacing
+
+\bibitem{zhou2024improved}
+J.~Zhou, S.~Zhou, and P.~Wang, ``Improved lstm-ae-dbscan motor controller
+  temperature abnormality label recognition based method,'' \emph{Proceedings
+  of the Institution of Mechanical Engineers, Part I: Journal of Systems and
+  Control Engineering}, 2024, [Online]. Verfügbar:
+  \url{https://journals.sagepub.com/doi/abs/10.1177/09544070241308017}. Zugriff
+  am 21. August 2025.
+
+\bibitem{prabu2024dbscan}
+K.~Prabu, S.~Periyasamy, M.~Periyasamy, and A.~Alagarsamy, ``Harnessing dbscan
+  and auto-encoder for hyper intrusion detection in cloud computing,''
+  \emph{Bulletin of Electrical Engineering and Informatics}, vol.~13, no.~5,
+  pp. 3345--3354, 2024, [Online]. Verfügbar:
+  \url{https://www.beei.org/index.php/EEI/article/viewFile/8135/3880}. Zugriff
+  am 21. August 2025.
+
+\bibitem{liu2019ensemble}
+F.~Liu, M.~Cai, L.~Wang, and Y.~Lu, ``An ensemble model based on adaptive noise
+  reducer and over-fitting prevention lstm for multivariate time series
+  forecasting,'' \emph{IEEE Access}, vol.~7, pp. 26\,102--26\,115, 2019,
+  [Online]. Verfügbar: \url{https://ieeexplore.ieee.org/document/8648338}.
+  Zugriff am 21. August 2025.
+
+\bibitem{chua2024web}
+W.~Chua, A.~L.~D. Pajas, C.~S. Castro, S.~P. Panganiban, A.~J. Pasuquin, M.~J.
+  Purganan, R.~Malupeng, D.~J. Pingad, J.~P. Orolfo, H.~H. Lua, and L.~C.
+  Velasco, ``Web traffic anomaly detection using isolation forest,''
+  \emph{Informatics}, vol.~11, no.~4, p.~83, 2024, [Online]. Verfügbar:
+  \url{https://www.researchgate.net/publication/385531295_Web_Traffic_Anomaly_Detection_Using_Isolation_Forest}.[Zugriff
+  am: 19. August 2025].
+
+\bibitem{ahmadzadeh2025graphdbscan}
+\BIBentryALTinterwordspacing
+D.~Ahmadzadeh, M.~Jalali, R.~Ghaemi, and M.~Kheirabadi, ``Graphdbscan:
+  Optimized dbscan for noise-resistant community detection in graph
+  clustering,'' \emph{Future Internet}, vol.~17, no.~4, p. 150, 2025, [Online].
+  Verfügbar:
+  \url{https://www.thefreelibrary.com/GraphDBSCAN%3a+Optimized+DBSCAN+for+Noise-Resistant+Community+Detection...-a0838235929}.
+  Zugriff am 21. August 2025. [Online]. Available:
+  \url{https://doi.org/10.3390/fi17040150}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Moussaoui2025}
+J.-E. Moussaoui, M.~Kmiti, K.~E. Gholami, and Y.~Maleh, ``A systematic review
+  on hybrid ai models integrating machine learning and federated learning,''
+  \emph{J. Cybersecur. Priv.}, vol.~5, no.~3, p.~41, 2025, [Online].
+  Verfügbar: \url{https://www.mdpi.com/2624-800X/5/3/41}. [Zugriff am: 19.
+  August 2025].
+
+\bibitem{Lu2025}
+H.~Lu, ``Evaluating the performance of {SVM}, isolation forest, and {DBSCAN}
+  for anomaly detection,'' \emph{ITM Web of Conferences}, vol.~70, p. 04012,
+  2025, [Online]. Verfügbar:
+  \url{https://www.researchgate.net/publication/388323510_Evaluating_the_Performance_of_SVM_Isolation_Forest_and_DBSCAN_for_Anomaly_Detection}.
+  Zugriff am 21. August 2025.
+
 \bibitem{tran2021forecasting}
 D.~N. Tran and S.~Thomassey, ``Forecasting and anomaly detection approaches
   using lstm and lstm autoencoder techniques with the applications in supply
   chain management,'' \emph{International Journal of Information Management},
   vol.~57, p. 102282, 2021, [Online]. Verfügbar:
   \url{https://www.sciencedirect.com/science/article/pii/S026840122031481X}.
-
-\bibitem{yan2021extended}
-G.~Yan, Y.~Zheng, and C.~Lin, ``Detecting anomalous user behavior using an
-  extended isolation forest algorithm: An enterprise case study,'' in
-  \emph{2021 International Conference on Computer Engineering and Artificial
-  Intelligence (ICCEAI)}.\hskip 1em plus 0.5em minus 0.4em\relax IEEE, 2021,
-  pp. 115--121, [Online]. Verfügbar:
-  \url{https://www.researchgate.net/publication/308409790_Detecting_Anomalous_User_Behavior_Using_an_Extended_Isolation_Forest_Algorithm_An_Enterprise_Case_Study}.
-  [Zugriff am 19.August 2025].
 
 \bibitem{provost1998case}
 F.~Provost, T.~Fawcett, and R.~Kohavi, ``The case against accuracy estimation
@@ -146,12 +248,15 @@ K.~H. Brodersen, C.~S. Ong, K.~E. Stephan, and J.~M. Buhmann, ``The balanced
   Verfügbar: \url{https://ieeexplore.ieee.org/document/5597285}. [Zugriff am
   28. Juni 2025].
 
-\bibitem{Warne2014}
-R.~Warne, ``A primer on multivariate analysis of variance (manova) for
-  behavioral scientists,'' \emph{Practical Assessment, Research, and
-  Evaluation}, vol.~19, no.~1, p.~17, 2014, [Online]. Verfügbar:
-  https://www.researchgate.net/publication/286916848_A_primer_on_multivariate_analysis_of_variance_MANOVA_for_behavioral_scientists.[Zugriff
-  am: 19. August 2025].
+\bibitem{Acikmese2019}
+\BIBentryALTinterwordspacing
+Y.~Acikmese and S.~E. Alptekin, ``Prediction of stress levels with lstm and
+  passive mobile sensors,'' \emph{Procedia Computer Science}, vol. 158, pp.
+  221--228, 2019, [Online]. Verfügbar:
+  \url{https://www.sciencedirect.com/science/article/pii/S187705091931405X}.
+  Zugriff am 21. August 2025. [Online]. Available:
+  \url{https://doi.org/10.1016/j.procs.2019.09.221}
+\BIBentrySTDinterwordspacing
 
 \bibitem{hochreiter1997long}
 S.~Hochreiter and J.~Schmidhuber, ``Long short-term memory,'' \emph{Neural
@@ -168,12 +273,7 @@ R.~C. Staudemeyer and E.~R. Morris, ``Understanding lstm -- a tutorial into
 \bibitem{wei2022lstm}
 J.~L. X.~Wei and L.~Zhang, ``Lstm autoencoder-based anomaly detection for
   indoor air quality data,'' arXiv preprint arXiv:2204.06701, 2022, [Online].
-  Verfügbar: https://arxiv.org/abs/2204.06701. [Zugriff am: 13. Juni 2025].
-
-\bibitem{chung2017hierarchical}
-J.~Chung, S.~Ahn, and Y.~Bengio, ``Hierarchical multiscale recurrent neural
-  networks,'' \emph{arXiv preprint arXiv:1609.01704}, 2017, [Online].
-  Verfügbar: \url{https://arxiv.org/abs/1609.01704}. [Zugriff am 28. Juni
+  Verfügbar: \url{https://arxiv.org/abs/2204.06701}. [Zugriff am: 13. Juni
   2025].
 
 \bibitem{bengio1994learning}
@@ -181,6 +281,12 @@ Y.~Bengio, P.~Simard, and P.~Frasconi, ``Learning long-term dependencies with
   gradient descent is difficult,'' \emph{IEEE Transactions on Neural Networks},
   vol.~5, no.~2, pp. 157--166, 1994, [Online]. Verfügbar:
   \url{https://doi.org/10.1109/72.279181}. [Zugriff am 28. Juni 2025].
+
+\bibitem{chung2017hierarchical}
+J.~Chung, S.~Ahn, and Y.~Bengio, ``Hierarchical multiscale recurrent neural
+  networks,'' \emph{arXiv preprint arXiv:1609.01704}, 2017, [Online].
+  Verfügbar: \url{https://arxiv.org/abs/1609.01704}. [Zugriff am 28. Juni
+  2025].
 
 \bibitem{elnaggar2022counting}
 N.~El-Naggar, P.~Madhyastha, and T.~Weyde, ``Exploring the long-term
@@ -201,6 +307,32 @@ F.~Laakom, J.~Raitoharju, A.~Iosifidis, and M.~Gabbouj, ``Reducing redundancy
   \url{https://www.sciencedirect.com/science/article/pii/S0167865524000126}.
   Abgerufen am 28. Juni 2025. [Zugriff am: 19. August 2025].
 
+\bibitem{Pantelidis2021}
+\BIBentryALTinterwordspacing
+E.~Pantelidis, G.~Bendiab, S.~Shiaeles, and N.~Kolokotronis, ``Insider
+  detection using deep autoencoder and variational autoencoder neural
+  networks,'' in \emph{2021 IEEE International Conference on Cyber Security and
+  Resilience (CSR)}, 2021, pp. 1--7. [Online]. Available:
+  \url{https://arxiv.org/abs/2109.02568}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Skaf2022}
+\BIBentryALTinterwordspacing
+W.~Skaf and T.~Horváth, ``Denoising architecture for unsupervised anomaly
+  detection in time-series,'' in \emph{arXiv preprint arXiv:2208.14337}, 2022.
+  [Online]. Available: \url{https://arxiv.org/abs/2208.14337}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Wei2020}
+\BIBentryALTinterwordspacing
+Y.~Wei, K.-P. Chow, and S.-M. Yiu, ``Insider threat detection using
+  multi-autoencoder filtering and unsupervised learning,'' in \emph{Advances in
+  Digital Forensics XVI, IFIP Advances in Information and Communication
+  Technology, vol. 589}.\hskip 1em plus 0.5em minus 0.4em\relax Springer, 2020,
+  pp. 273--290. [Online]. Available:
+  \url{https://link.springer.com/chapter/10.1007/978-3-030-56223-6_15}
+\BIBentrySTDinterwordspacing
+
 \bibitem{liu2008isolation}
 F.~T. Liu, K.~M. Ting, and Z.~H. Zhou, ``Isolation forest,'' in \emph{2008
   Eighth IEEE International Conference on Data Mining}, 2008, pp. 413--422,
@@ -208,12 +340,33 @@ F.~T. Liu, K.~M. Ting, and Z.~H. Zhou, ``Isolation forest,'' in \emph{2008
   \url{https://www.researchgate.net/publication/224384174_Isolation_Forest}.[Zugriff
   am: 19. August 2025].
 
+\bibitem{Yang2021}
+\BIBentryALTinterwordspacing
+K.~Yang, S.~Kpotufe, and N.~Feamster, ``An efficient one-class svm for anomaly
+  detection in the internet of things,'' \emph{arXiv preprint
+  arXiv:2104.11146}, 2021. [Online]. Available:
+  \url{https://doi.org/10.48550/arXiv.2104.11146}
+\BIBentrySTDinterwordspacing
+
+\bibitem{Scholkopf2001}
+B.~Schölkopf, J.~C. Platt, J.~Shawe-Taylor, A.~J. Smola, and R.~C. Williamson,
+  ``Estimating the support of a high-dimensional distribution,'' \emph{Neural
+  Computation}, vol.~13, no.~7, pp. 1443--1471, 2001.
+
 \bibitem{li2003improving}
 K.-L. Li, H.-K. Huang, S.-F. Tian, and W.~Xu, ``Improving one-class svm for
   anomaly detection,'' in \emph{Proceedings of the Second International
   Conference on Machine Learning and Cybernetics}, 2003, pp. 2--5, [Online].
   Verfügbar: \url{https://ieeexplore.ieee.org/document/1260106}. [Zugriff am:
   25. Juni 2025].
+
+\bibitem{bounsiar2014oneclass}
+A.~Bounsiar and M.~G. Madden, ``One-class support vector machines revisited,''
+  in \emph{2014 International Conference on Information Science \& Applications
+  (ICISA)}.\hskip 1em plus 0.5em minus 0.4em\relax Seoul, Korea: IEEE, 2014,
+  [Online]. Verfügbar:
+  \url{https://ieeexplore.ieee.org/document/6847442}.[Zugriff am: 19. August
+  2025].
 
 \bibitem{ester1996dbscan}
 M.~Ester, H.-P. Kriegel, J.~Sander, and X.~Xu, ``A density-based algorithm for
@@ -269,8 +422,8 @@ R.~Mussabayev and R.~Mussabayev, ``Comparative analysis of optimization
   [Zugriff am 05. August 2025].
 
 \bibitem{springerlof2023}
-A.~unbekannt, ``Analysis of the effectiveness and efficiency of lof algorithm
-  for anomaly detection in large datasets,'' in \emph{Proceedings in
+A.~N.-B. C.~Horyń, ``Analysis of the effectiveness and efficiency of lof
+  algorithm for anomaly detection in large datasets,'' in \emph{Proceedings in
   SpringerLink}, 2023, [Online]. Verfügbar:
   \url{https://link.springer.com/chapter/10.1007/978-3-031-50959-9_43}.
   [Zugriff am 05. August 2025].
@@ -279,34 +432,52 @@ A.~unbekannt, ``Analysis of the effectiveness and efficiency of lof algorithm
 A.~A. Toor, J.-C. Lin, and E.~G. Gran, ``Exploring the impact of optimised
   hyperparameters on bi-lstm-based contextual anomaly detector,'' in
   \emph{Proc. Int. Conf. Inf. Security and Communication Technology}, Gjøvik,
-  Norway, 2022, [Online]. Verfügbar: https://arxiv.org/abs/2501.15053.[Zugriff
-  am: 19. August 2025].
+  Norway, 2022, [Online]. Verfügbar:
+  \url{https://arxiv.org/abs/2501.15053}.[Zugriff am: 19. August 2025].
 
 \bibitem{Santoso2022}
 B.~Santoso, W.~Anggraeni, H.~Pariaman, and M.~H. Purnomo, ``Rnn-autoencoder
   approach for anomaly detection in power plant predictive maintenance
   systems,'' \emph{Int. J. Intell. Eng. Syst.}, vol.~15, no.~4, pp. 422--433,
   2022, [Online]. Verfügbar:
-  https://www.researchgate.net/publication/361525909_RNN-Autoencoder_Approach_for_Anomaly_Detection_in_Power_Plant_Predictive_Maintenance_Systems.[Zugriff
+  \url{https://www.researchgate.net/publication/361525909_RNN-Autoencoder_Approach_for_Anomaly_Detection_in_Power_Plant_Predictive_Maintenance_Systems}.[Zugriff
   am: 19. August 2025].
 
 \bibitem{masters2018revisiting}
 D.~Masters and C.~Luschi, ``Revisiting small batch training for deep neural
   networks,'' arXiv preprint arXiv:1804.07612, 2018, [Online]. Verfügbar:
-  https://arxiv.org/abs/1804.07612. [Zugriff am: 18. August 2025].
+  \url{https://arxiv.org/abs/1804.07612}. [Zugriff am: 18. August 2025].
 
-\bibitem{Salehin2023}
-I.~Salehin and D.-K. Kang, ``A review on dropout regularization approaches for
-  deep neural networks within the scholarly domain,'' \emph{Electronics},
-  vol.~12, no.~14, p. 3106, 2023, [Online]. Verfügbar:
-  \url{https://www.mdpi.com/2079-9292/12/14/3106}.[Zugriff am: 19. August
-  2025].
+\bibitem{Hussein2024EarlyStopping}
+B.~M. Hussein and S.~M. Shareef, ``An empirical study on the correlation
+  between early stopping patience and epochs in deep learning,'' in \emph{ITM
+  Web of Conferences, ICACS24}, vol.~64.\hskip 1em plus 0.5em minus 0.4em\relax
+  EDP Sciences, 2024, p. 01003, open access under CC BY 4.0.
 
 \bibitem{malhotra2016lstm}
 P.~Malhotra, A.~Ramakrishnan, G.~Anand, L.~Vig, P.~Agarwal, and G.~Shroff,
   ``Lstm-based encoder-decoder for multi-sensor anomaly detection,''
   \emph{arXiv preprint arXiv:1607.00148}, 2016, [Online]. Verfügbar:
   \url{https://arxiv.org/abs/1607.00148}. [Zugriff am 25. Juni 2025].
+
+\bibitem{acharya2023bidirectional}
+T.~Acharya, A.~Annamalai, and M.~F. Chouikha, ``Efficacy of bidirectional lstm
+  model for network-based anomaly detection,'' in \emph{2023 IEEE 13th
+  Symposium on Computer Applications \& Industrial Electronics (ISCAIE)}.\hskip
+  1em plus 0.5em minus 0.4em\relax Penang, Malaysia: IEEE, May 2023, pp. 1--6,
+  [Online]. Verfügbar: \url{https://ieeexplore.ieee.org/document/10165336}.
+  Zugriff am 20. August 2025.
+
+\bibitem{Gudla2023}
+S.~P.~K. Gudla and S.~K. Bhoi, ``A study on effect of learning rates using adam
+  optimizer in lstm deep intelligent model for detection of ddos attack to
+  support fog based iot systems,'' in \emph{Proceedings of the International
+  Conference on Computing, Communication and Learning (CoCoLe 2022)}, ser.
+  Communications in Computer and Information Science (CCIS), vol. 1729.\hskip
+  1em plus 0.5em minus 0.4em\relax Springer, 2023, pp. 27--38, [Online].
+  Verfügbar:
+  \url{https://link.springer.com/chapter/10.1007/978-3-031-21750-0_3}. Zugriff
+  am 20. August 2025.
 
 \bibitem{torabi2023practical}
 H.~Torabi, S.~L. Mirtaheri, and S.~Greco, ``Practical autoencoder based anomaly
@@ -336,14 +507,6 @@ C.~Y. Priyanto, Hendry, and H.~D. Purnomo, ``Combination of isolation forest
   Conference on Artificial Intelligence and Mechatronics Systems (AIMS)}.\hskip
   1em plus 0.5em minus 0.4em\relax IEEE, 2021, [Online]. Verfügbar:
   \url{https://doi.org/10.1109/AIMS53203.2021.9588259}. [Zugriff am 04. August
-  2025].
-
-\bibitem{pu2021hybrid}
-G.~Pu, L.~Wang, J.~Shen, and F.~Dong, ``A hybrid unsupervised clustering-based
-  anomaly detection method,'' in \emph{Proceedings of the 2021 International
-  Conference on Machine Learning and Cybernetics (ICMLC)}.\hskip 1em plus 0.5em
-  minus 0.4em\relax IEEE, 2021, [Online]. Verfügbar:
-  \url{https://doi.org/10.1109/ICMLC51065.2021.9357266}. [Zugriff am 27. Juni
   2025].
 
 \bibitem{he2016deep}
@@ -377,11 +540,12 @@ T.~I. G{\"o}tz, S.~G{\"o}b, S.~Sawant, X.~F. Erick, T.~Wittenberg,
   \url{https://doi.org/10.1016/j.neucom.2023.02.087}. [Zugriff am 31. Juni
   2025].
 
-\bibitem{reimers2017score}
-N.~Reimers and I.~Gurevych, ``Reporting score distributions makes a difference:
-  Performance study of lstm-networks for sequence tagging,'' in
-  \emph{Proceedings of the 2017 Conference on Empirical Methods in Natural
-  Language Processing}, 2017, pp. 338--348, [Online]. Verfügbar:
-  \url{https://aclanthology.org/D17-1035/}.[Zugriff am: 19. August 2025].
+\bibitem{Pereira2015}
+\BIBentryALTinterwordspacing
+D.~G. Pereira, A.~Afonso, and F.~M. Medeiros, ``Overview of friedman's test and
+  post-hoc analysis,'' \emph{Journal of Statistics Education}, vol.~23, no.~3,
+  pp. 2636--2653, 2015. [Online]. Available:
+  \url{https://www.tandfonline.com/doi/abs/10.1080/03610918.2014.931971}
+\BIBentrySTDinterwordspacing
 
 \end{thebibliography}

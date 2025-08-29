@@ -8,28 +8,23 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: quellen.bib
-I was expecting a `,' or a `}'---line 174 of file quellen.bib
+I was expecting a `,' or a `}'---line 313 of file quellen.bib
  :  howpublished = {[Online]. Verfügbar: \url{https://arxiv.org/abs/2212.05347}. [Zugriff am: 18. August 2025}
  :                                                                                                             ]
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 298 of file quellen.bib
+I was expecting a `,' or a `}'---line 448 of file quellen.bib
  :  
  :  note         = {[Online]. Verfügbar: \url{https://ieeexplore.ieee.org/document/10011213}.[Zugriff am: 19. August 2025]}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
-I was expecting a `,' or a `}'---line 641 of file quellen.bib
+I was expecting a `,' or a `}'---line 899 of file quellen.bib
  :  note    = {[Online]. Verfügbar: \url{https://www.sciencedirect.com/science/article/pii/S026840122031481X}}
  :                                                                                                             . [Zugriff am 19.August 2025]}
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "bsi2024lage"
-Warning--I didn't find a database entry for "arjunan2024"
-Warning--I didn't find a database entry for "bounsiar2025oneclass"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Name 1 in "P. Legg, O. Buckley, M. Goldsmith, and S. Creese" has a comma at the end for entry legg2015visualizing
-while executing---line 2403 of file IEEEtran.bst
-Name 1 in "B. Waltl, G. Bonczek, and F. Matthes" has a comma at the end for entry waltl2017rulebased
 while executing---line 2403 of file IEEEtran.bst
 Name 1 in "Z. Ghrib, R. Jaziri, and R. Romdhane" has a comma at the end for entry ghrib2020hybrid
 while executing---line 2403 of file IEEEtran.bst
@@ -37,45 +32,45 @@ Name 1 in "X. Wei, J. Liu, and L. Zhang" has a comma at the end for entry wei202
 while executing---line 2403 of file IEEEtran.bst
 
 Done.
-You've used 53 entries,
+You've used 73 entries,
             4087 wiz_defined-function locations,
-            1161 strings with 23642 characters,
-and the built_in function-call counts, 37505 in all, are:
-= -- 3128
-> -- 876
-< -- 226
-+ -- 452
-- -- 164
-* -- 1777
-:= -- 5829
-add.period$ -- 113
-call.type$ -- 53
-change.case$ -- 101
-chr.to.int$ -- 510
-cite$ -- 53
-duplicate$ -- 2832
-empty$ -- 3089
-format.name$ -- 214
-if$ -- 8717
+            1297 strings with 29687 characters,
+and the built_in function-call counts, 52599 in all, are:
+= -- 4421
+> -- 1194
+< -- 326
++ -- 627
+- -- 228
+* -- 2520
+:= -- 8210
+add.period$ -- 159
+call.type$ -- 73
+change.case$ -- 133
+chr.to.int$ -- 720
+cite$ -- 73
+duplicate$ -- 3961
+empty$ -- 4288
+format.name$ -- 288
+if$ -- 12230
 int.to.chr$ -- 0
-int.to.str$ -- 53
-missing$ -- 541
-newline$ -- 182
-num.names$ -- 53
-pop$ -- 1231
+int.to.str$ -- 73
+missing$ -- 747
+newline$ -- 260
+num.names$ -- 73
+pop$ -- 1680
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2940
+skip$ -- 4110
 stack$ -- 0
-substring$ -- 1365
-swap$ -- 2133
-text.length$ -- 56
+substring$ -- 1946
+swap$ -- 3026
+text.length$ -- 86
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 53
+type$ -- 73
 warning$ -- 0
-while$ -- 150
-width$ -- 55
-write$ -- 551
-(There were 7 error messages)
+while$ -- 211
+width$ -- 75
+write$ -- 780
+(There were 6 error messages)
